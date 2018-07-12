@@ -1,0 +1,1320 @@
+<script>
+    $(function () {
+        // Default selected levels
+        $(".I111").show("slow");
+        $(".I131").hide("slow");
+        $(".I141").hide("slow");
+        $(".I151").hide("slow");
+        $(".I152").hide("slow");
+        $(".I161").hide("slow");
+        $(".I162").hide("slow");
+        $(".I171").hide("slow");
+        $(".I162c").hide("slow");
+        // Onchange Levels
+        $("#indicatorLevel").focus();
+        $("#indicatorLevel").change(function () {           
+
+             if ($(this).val() === "I111") {
+                $(".I111").show("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").hide("slow");
+                $(".Ixxx").show("slow");
+            }
+
+            if ($(this).val() === "I131") {
+                $(".I111").hide("slow");
+                $(".I131").show("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").hide("slow");
+                $(".Ixxx").hide("slow");
+            }
+            if ($(this).val() === "I141") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").show("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").show("slow");
+                $(".Ixxx").show("slow");
+            };
+            if ($(this).val() === "I151") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").show("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").hide("slow");
+                $(".Ixxx").hide("slow");
+            };
+            if ($(this).val() === "I152") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").show("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").hide("slow");
+                $(".Ixxx").hide("slow");
+            };
+            if ($(this).val() === "I161") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").show("slow");
+                $(".I162").hide("slow");
+                $(".I171").hide("slow");
+                $(".I162c").show("slow");
+                $(".Ixxx").show("slow");
+            };
+            if ($(this).val() === "I162") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").show("slow");
+                $(".I171").hide("slow");
+                $(".I162c").show("slow");
+                $(".Ixxx").show("slow");
+            };
+            if ($(this).val() === "I171") {
+                $(".I111").hide("slow");
+                $(".I131").hide("slow");
+                $(".I141").hide("slow");
+                $(".I151").hide("slow");
+                $(".I152").hide("slow");
+                $(".I161").hide("slow");
+                $(".I162").hide("slow");
+                $(".I171").show("slow");
+                $(".I162c").hide("slow");
+                $(".Ixxx").show("slow");
+            };
+
+        });
+    });
+
+$(document).ready(function() {
+   setTimeout(
+        function() {
+            $("input[name='entryfield']").first().change();
+    }, 15000);
+});
+
+</script>
+<style type="text/css">table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: center; padding: 8px; width: 70%; } tr:nth-child(even) { background-color: #dddddd; } .tableHeader{ 	background-color: #006400 !important; } th{ 	text-align: center !important; 	color:#ffffff !important; } h1{ 	color:#ffffff !important; } input{ 	width: 4em; }
+</style>
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#006400; "><strong>Aspiration 1: A Prosperous Africa Based On Inclusive Growth And Sustainable Development</strong></h3>
+
+<div><b>Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> <select id="indicatorLevel" name="indicators"><option value="I111">Gini coefficient</option><option value="I131">% of eligible population with HIV having access to ARV</option><option value="I141">Tourism value added as a proportion of GDP</option><option value="I151">Total factor productivity</option><option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option><option value="I161">Fishery Sector value added ( as share of GDP)</option><option value="I162">Marine biotechnology value added as a % of GDP</option><option value="I171">% of agricultural land placed under sustainable land management practice.</option> </select></div>
+
+<table class="Ixxx">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="2">
+			<h1>&nbsp;</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>&nbsp;</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="I111">
+			<td>Gini Coefficient</td>
+			<td><input id="eQYU5svjuDv-HllvX50cXC0-val" name="entryfield" title="ASP_1:Gini Coefficient" value="[ ASP_1:Gini Coefficient ]" /></td>
+		</tr>
+		<tr class="I162">
+			<td>Marine biotechnology contribution to GDP</td>
+			<td><input id="ZPFtZbsXQIT-HllvX50cXC0-val" name="entryfield" title="ASP_1:Marine biotechnolgy contribution to GDP" value="[ ASP_1:Marine biotechnolgy contribution to GDP ]" /></td>
+		</tr>
+		<tr class="I162c">
+			<td>GDP</td>
+			<td><input id="xd1rD8igIDV-HllvX50cXC0-val" name="entryfield" title="ASP_1:GDP" value="[ ASP_1:GDP ]" /></td>
+		</tr>
+		<tr class="I171">
+			<td>Land on which practices contributing to the environmental sustainability of agriculture are conducted</td>
+			<td><input id="NvMedxX5rd6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Land on which practices contributing to environmental sustainability of agriculture are conducted" value="[ ASP_1:Land on which practices contributing to environmental sustainability of agriculture are conducted ]" /></td>
+		</tr>
+		<tr class="I171">
+			<td>Total agricultural land</td>
+			<td><input id="oXGNeOZjg0F-HllvX50cXC0-val" name="entryfield" title="ASP_1:Total agricultural land" value="[ ASP_1:Total agricultural land ]" /></td>
+		</tr>
+		<tr class="I161">
+			<td>Fishery contribution to GDP</td>
+			<td><input id="w5VGTETV8sF-HllvX50cXC0-val" name="entryfield" title="ASP_1:Fishery contribution to GDP" value="[ ASP_1:Fishery contribution to GDP ]" /></td>
+		</tr>
+		<tr class="I141">
+			<td>Tourism direct GDP</td>
+			<td><input id="kSShIs8ejPy-HllvX50cXC0-val" name="entryfield" title="ASP_1:Tourism direct GDP" value="[ ASP_1:Tourism direct GDP ]" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<tr"> </tr"></p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, &lt; 5yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">&lt; 5yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-XmecQUJZG1x-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-MCUEQbuJsPs-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-Q0UKxIUXmcz-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-y43RdapspFy-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-VWvpk7I2Gqf-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-h2hPxbOc1OJ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-z8tZB6weuRI-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-pqub9nX5V3M-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-Zn8fgqkJDCJ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-sAKE1b6UFJJ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-eKmjdrUvnas-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-a0zTPeor3Ma-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, &lt;5yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 5-9yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">5-9yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-RprEsNdVnpM-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-fZkfbdaBRrD-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-JLli891ToF0-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-Indn0xgcw8W-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-d83iqI8Wfrb-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-x1dmYK9eUja-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-oGUJr74Abf1-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-ToCY0q1RUVH-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-z3SsDcxyM6O-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-b463WVHVHPm-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ku9GqSSEoBQ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-HLtUt8zHrga-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 5-9yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 10-14yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">10-14yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-BauX1iCNcIJ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-Bc9X4inmyVg-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-NR4ADuQDKU7-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-UceowxupoLy-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-LxfVb5sRK2w-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-qoErpiuh31V-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-phEvGJMCMzH-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-DkCvmM5p5do-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-wyNDMKYfyU1-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-MOV2rLXCoFa-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-p21PUe0uTOL-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-LWyDFoAkjSG-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 10-14yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 15-19yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">15-19yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-SqGB7eOWKGq-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-kuy5lm9rH9E-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-lJempISTs6K-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-nBuOzKOl4m0-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-y904RqDZh0o-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-dq4pIgHmfYm-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-zC7LGVsjVbd-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-XOgcgQ4SDlu-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ajHKJ2vPXv5-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-A2ScS2RVkNy-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-QEdmBJFASMJ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-qKGoiSAHa4p-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 15-19yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 20-24yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">20-24yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-WVpWQzDPuIY-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-eBohk11NSiq-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-pUtHpg2ajFG-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-RM7M9mKOB5C-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-xPKi5Nc7W28-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-VpdToFddYTH-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-rCqVRKPZpeq-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-waFOHEtMByH-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-uLu9LnuzeNu-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-BF1y2322weM-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-cRqike6sRDU-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-t2WYYlZhMED-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 20-24yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 25-49yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">25-49yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-JI4aGaqDZCD-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-w4P9jtjpdWN-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-zSzMS2Uee8q-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-TlryTbKAEV6-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-UmYdRFCLZ3v-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-JtMCrG50SL4-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-QMetwwhw5io-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-LvfZnOD4Z8W-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-BywMr7HOjMg-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-gVif2K1OVpZ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-AcFi718aGXg-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-tZrusnUv98E-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 25-49yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 50+yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">50+yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-wGCjwTZVgTC-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-WrGStaWkZsd-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ueFOYvEm3MP-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-gAlnrGHuE8y-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-XSEkFXszzQA-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-ssWsbwilr15-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ol4GsQko0Pk-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-Xwd0Cu4NT9r-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-nr1A6D1JhUr-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-leiUcj094Dk-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-SOsHk5jKGrh-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-odkh971SwCu-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Private, 50+ yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, &lt; 5yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">&lt; 5yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-OSqT0HFl3r3-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-tTbcr4z2nGp-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-TtA1GAIj63Z-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-KvSxbHtlQ2f-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-lQhuSxjpRGO-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-TG4TfsVpzl2-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-pYyRuFgWsDw-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-gVrJHfKzsjo-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-RVsFXlBlTnK-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-dF4CZlp2mpB-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-doTWnXAhhOY-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-W8PSJCjAp7J-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, &lt;5yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, 5-9yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">5-9yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-JNFZArLSD3m-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-vNgaY6W0aJG-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-k9S0xt6cL1O-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-mmRElwnIzNx-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-HXK3ch5deMo-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-Nc6ILC9hk74-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-PSrKTHmrQET-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-hi8LY7gl9iv-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-YeeRxHZKwWO-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-M5aTSUPzB7M-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-hi13SzwIyfv-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-yAC06dNhzdt-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 5-9yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<tr"> </tr"><tr"> </tr"></p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, 10-14yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">10-14yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-fq5R1eOFCnj-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-WepxvgPgS2Y-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-Ab8RSdhBnt4-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-rfK9GGTrZ2D-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-UYtLxRDMfMZ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-DnUzLrLHeH1-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-jCaCieZtMn5-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-KrDF3RbwJ3Q-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-FmvrrYJvnkt-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-YN7OrqbfWiV-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-juetAZUpmtL-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-vTS0R8wYsBn-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 10-14yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<tr"> </tr"></p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, 15-19yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">15-19yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-svhO7tes3Yo-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-ddMdS4DeTl5-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-TUxgtjCXEGL-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-Y33ex2eVdEr-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-edULojOFDRr-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-OsRu3rBSjpd-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-vsEpV1iIzQV-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-EMvSUAGZ6cK-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-XWzYvUgheP0-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-KLcua9u0AAu-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-owYChu05Obj-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-vZw5DV5aPoR-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 15-19yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, 20-24yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">20-24yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-pi16kZYEqwh-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-ItJhgiXEJh3-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-jBK2q0XTbxU-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-nZBA6xNgegx-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ZCWui5e4xmV-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-m8wc6mSXBT6-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-g3xaSijeN6O-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-M9dLJ006fp9-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-dkSXXtKKkBm-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-oZsZldxpexY-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-BPFTZUtkdQR-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-vooXa6LQVd4-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 20-24yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Private, 25-49yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">25-49yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-XBbTJxWQ2xC-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-hjZNmdKvgpL-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-OgXiETpPSrf-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-wcgGPcp2stU-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ZhoJ3X5DXID-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-cFwGYs0QdO5-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-Gx9jFGVq7S3-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-nUb8HmxhONx-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-YDtaOUYXdt0-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-gGAReY6m16e-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-D0kfbQbV0ov-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-KNYnh6c1j2u-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 25-49yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I131">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="13">
+			<h1>Public, 50+yrs Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th rowspan="4">&nbsp;</th>
+			<th colspan="12">50+yrs</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="4">MSM</th>
+			<th colspan="4">IDU</th>
+			<th colspan="4">Sex Workers</th>
+		</tr>
+		<tr class="tableHeader">
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+			<th colspan="2">1st Line</th>
+			<th colspan="2">2nd Line</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+			<td><input id="EIxxvp8CHka-oeU8DGVdIF1-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-VmLpZB9UdP0-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-P3jFmBerKDY-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-uE8dBe6UwB8-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, MSM, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-P3Pow99KsJs-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-y2Td95OrmVn-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-DI0MVBahQYw-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-NpAKUWKhond-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, IDU, 2nd Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-ZM78VN7eTFN-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 1st Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 1st Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-QzxvaQPlXS1-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 1st Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 1st Line, Male ]" /></td>
+			<td><input id="EIxxvp8CHka-XNlgpV0RXBZ-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 2nd Line, Female" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 2nd Line, Female ]" /></td>
+			<td><input id="EIxxvp8CHka-jCpz4rDMVKX-val" name="entryfield" title="ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 2nd Line, Male" value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Public, 50+ yrs, Sex Workers, 2nd Line, Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Estimated number of adults and children living with HIV</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I151">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="6">
+			<h1>Agricultural Sector Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>&nbsp;</th>
+			<th>Cultivation</th>
+			<th>Fishing</th>
+			<th>Forestry</th>
+			<th>Hunting</th>
+			<th>Livestock</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Agriculture Outputs</td>
+			<td><input id="ab5HIxZDpT6-LoVV8gOrqpP-val" name="entryfield" title="ASP_1:Agriculture Outputs Cultivation" value="[ ASP_1:Agriculture Outputs Cultivation ]" /></td>
+			<td><input id="ab5HIxZDpT6-EtjyIeHbZGA-val" name="entryfield" title="ASP_1:Agriculture Outputs Fishing" value="[ ASP_1:Agriculture Outputs Fishing ]" /></td>
+			<td><input id="ab5HIxZDpT6-QB9r5snsO7q-val" name="entryfield" title="ASP_1:Agriculture Outputs Forestry" value="[ ASP_1:Agriculture Outputs Forestry ]" /></td>
+			<td><input id="ab5HIxZDpT6-QvgZNsHmE3P-val" name="entryfield" title="ASP_1:Agriculture Outputs Hunting" value="[ ASP_1:Agriculture Outputs Hunting ]" /></td>
+			<td><input id="ab5HIxZDpT6-LuHNpoM443G-val" name="entryfield" title="ASP_1:Agriculture Outputs Livestock" value="[ ASP_1:Agriculture Outputs Livestock ]" /></td>
+		</tr>
+		<tr>
+			<td>Weighted average of inputs i.e.: 0.7L + 0.3K input</td>
+			<td><input id="ZeItmMcJmlK-LoVV8gOrqpP-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Cultivation" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Cultivation ]" /></td>
+			<td><input id="ZeItmMcJmlK-EtjyIeHbZGA-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Fishing" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Fishing ]" /></td>
+			<td><input id="ZeItmMcJmlK-QB9r5snsO7q-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Forestry" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Forestry ]" /></td>
+			<td><input id="ZeItmMcJmlK-QvgZNsHmE3P-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Hunting" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Hunting ]" /></td>
+			<td><input id="ZeItmMcJmlK-LuHNpoM443G-val" name="entryfield" title="ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Livestock" value="[ ASP_1:weighted average of inputs i.e.: 0.7L + 0.3K input Livestock ]" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table class="I152">
+	<thead>
+		<tr class="tableHeader">
+			<th colspan="6">
+			<h1>Sex Disaggregation</h1>
+			</th>
+		</tr>
+		<tr class="tableHeader">
+			<th>&nbsp;</th>
+			<th>Female</th>
+			<th>Male</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Number of small-scale farmers graduating into commercial farming</td>
+			<td><input id="P1da2rLseDI-pOdxP9BSsYQ-val" name="entryfield" title="ASP_1:Number of small scale farmers graduating into commerical farming Female" value="[ ASP_1:Number of small scale farmers graduating into commerical farming Female ]" /></td>
+			<td><input id="P1da2rLseDI-ffTNgp0tpZk-val" name="entryfield" title="ASP_1:Number of small scale farmers graduating into commerical farming Male" value="[ ASP_1:Number of small scale farmers graduating into commerical farming Male ]" /></td>
+		</tr>
+		<tr>
+			<td>Number of small-scale farmers</td>
+			<td><input id="ZgZNqYI4j8m-pOdxP9BSsYQ-val" name="entryfield" title="ASP_1:Number of small scale farmers Female" value="[ ASP_1:Number of small scale farmers Female ]" /></td>
+			<td><input id="ZgZNqYI4j8m-ffTNgp0tpZk-val" name="entryfield" title="ASP_1:Number of small scale farmers Male" value="[ ASP_1:Number of small scale farmers Male ]" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

@@ -1,0 +1,303 @@
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+<script>
+    $(function () {
+        // Default selected levels
+        $(".I111").show();
+        $(".I131").hide();
+        $(".I141").hide();
+        $(".I151").hide();
+        // Onchange Levels
+        $("#indicatorLevel").change(function () {           
+
+         if ($(this).val() === "I111") {
+            $(".I111").show();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+
+        if ($(this).val() === "I131") {
+            $(".I111").hide();
+            $(".I131").show();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+        if ($(this).val() === "I141") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").show();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+        if ($(this).val() === "I151") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").show();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I152") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").show();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I161") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").show();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I162") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").show();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I171") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").show();
+        };
+
+    });
+    });
+
+    $(document).ready(function() {
+       setTimeout(
+        function() {
+            $("input[name='entryfield']").first().change();
+        }, 15000);
+   });
+
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+</script>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 70%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.tableHeader{
+    background-color: #006400 !important;
+}
+th{
+    text-align: center !important;
+    color:#ffffff !important;
+}
+h1{
+    color:#ffffff !important;
+}
+input{
+    width: 4em;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+
+
+<h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#006400; "><strong>Aspiration 1: A Prosperous Africa Based On Inclusive Growth And Sustainable Development</strong></h3>
+<div>
+    <b style="color:#006400 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+    <select id="indicatorLevel" name="indicators">
+        <option value="I111">Gini coefficient</option>
+        <option value="I131">% of eligible population with HIV having access to ARV</option>
+        <option value="I141">Tourism value added as a proportion of GDP</option>
+        <option value="I151">Total factor productivity</option>
+        <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+        <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+        <option value="I162">Marine biotechnology value added as a % of GDP</option>
+        <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+    </select>
+</div>
+<!-- Tab links -->
+<div class="tab" style="margin-top: 10px;">
+  <button class="tablinks" onclick="openCity(event, 'NoDisagg')">No Disaggregation</button>
+  <button class="tablinks" onclick="openCity(event, 'Disagg')">Disaggregation</button>
+</div>
+
+<!-- Tab content -->
+<div id="NoDisagg" class="tabcontent">
+<table>
+    <thead>
+        <tr class="tableHeader">
+            <th>&nbsp;</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>     
+        <tr class="I111">
+            <td>Gini coefficient</td>
+            <td></td>
+        </tr>
+         <tr class="I131">
+            <td>% of eligible population with HIV having access to ARV</td>
+            <td></td>
+        </tr>
+        <tr class="I141">
+            <td>Tourism value added as a proportion of GDP</td>
+            <td></td>
+        </tr>
+        <tr class="I151">
+            <td>Total factor productivity</td>
+            <td></td>
+        </tr>
+        <tr class="I152">
+            <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+            <td></td>
+        </tr>
+        <tr class="I161">
+            <td>Fishery Sector value added ( as share of GDP) </td>
+            <td></td>
+        </tr>
+        <tr class="I162">
+            <td>Marine biotechnology value added as a % of GDP</td>
+            <td></td>
+        </tr>
+        <tr class="I171">
+            <td>% of agricultural land placed under sustainable land management practice.</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div id="Disagg" class="tabcontent">
+  <table>
+    <thead>
+        <tr class="tableHeader">
+            <th>&nbsp;</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>     
+        <tr class="I141">
+            <td>Consumption of energy from all renewable sources</td>
+            <td></td>
+        </tr>
+        <tr class="I131">
+            <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+            <td></td>
+        </tr>
+        <tr class="I111">
+            <td>Population with access to energy</td>
+            <td></td>
+        </tr>
+        <tr class="I151">
+            <td>Total energy supply to economy </td>
+            <td></td>
+        </tr>
+        <tr class="I151">
+            <td>GDP</td>
+            <td></td>
+        </tr>
+        <tr class="I141">
+            <td>Total final energy consumption  </td>
+            <td></td>
+        </tr>
+        <tr class="I131">
+            <td>Total population reporting any cooking, heating or lighting </td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+</div>
