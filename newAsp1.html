@@ -165,10 +165,11 @@ body {font-family: "Lato", sans-serif;}
 /* Change background color of buttons on hover */
 .tab button:hover {
     opacity: 2;
+    position: relative;
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5);
-    z-index: 20;
+    z-index: 200;
 }
 /* Create an active/current "tab button" class */
 .tab button.active {
@@ -231,8 +232,7 @@ input{
     transition: 0.3s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-right: 5px;
-    /*opacity: 0.2;
-    transition: transform .5s; /* Animation */*/
+   
 }
 
 /* Change background color of buttons on hover */
