@@ -9,43 +9,30 @@ crossorigin="anonymous">
 <script>
     $(function () {
         // Default selected levels
-        $(".I111").show();
-        $(".I131").hide();
-        $(".I141").hide();
-        $(".I151").hide();
+        $(".I111a").show();
+        $(".I111b").hide();
+        $(".I121").hide();
         // Onchange Levels
         $("#indicatorLevel").change(function () {           
 
-         if ($(this).val() === "I111") {
-            $(".I111").show();
-            $(".I131").hide();
-            $(".I141").hide();
-            $(".I151").hide();
-            $(".I152").hide();
-            $(".I161").hide();
-            $(".I162").hide();
-            $(".I171").hide();
+         if ($(this).val() === "I111a") {
+            $(".I111a").show();
+            $(".I111b").hide();
+            $(".I121").hide();
+            $(".I111x").show();
         }
 
-        if ($(this).val() === "I131") {
-            $(".I111").hide();
-            $(".I131").show();
-            $(".I141").hide();
-            $(".I151").hide();
-            $(".I152").hide();
-            $(".I161").hide();
-            $(".I162").hide();
-            $(".I171").hide();
+        if ($(this).val() === "I111b") {
+            $(".I111a").hide();
+            $(".I111b").show();
+            $(".I121").hide();
+            $(".I111x").hide();
         }
-        if ($(this).val() === "I141") {
-            $(".I111").hide();
-            $(".I131").hide();
-            $(".I141").show();
-            $(".I151").hide();
-            $(".I152").hide();
-            $(".I161").hide();
-            $(".I162").hide();
-            $(".I171").hide();
+        if ($(this).val() === "I121") {
+            $(".I111a").hide();
+            $(".I111b").hide();
+            $(".I121").show();
+            $(".I111x").hide();
         }
         if ($(this).val() === "I151") {
             $(".I111").hide();
@@ -301,14 +288,15 @@ crossorigin="anonymous">
         <div>
             <b style="color:#e5243b ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
-                <option value="I111">Gini coefficient</option>
-                <option value="I131">% of eligible population with HIV having access to ARV</option>
-                <option value="I141">Tourism value added as a proportion of GDP</option>
-                <option value="I151">Total factor productivity</option>
-                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
-                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
-                <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I111a">
+                    Population living below the international poverty line
+                </option>
+                <option value="I111b">
+                    Employed population living below the international poverty line
+                </option>
+                <option value="I121">
+                    Population living below the national poverty line
+                </option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -327,36 +315,16 @@ crossorigin="anonymous">
                     </tr>
                 </thead>
                 <tbody>     
-                    <tr class="I111">
-                        <td>Gini coefficient</td>
+                    <tr class="I111a">
+                        <td>Population living below the international poverty line</td>
                         <td></td>
                     </tr>
-                     <tr class="I131">
-                        <td>% of eligible population with HIV having access to ARV</td>
+                     <tr class="I111b">
+                        <td>Employed population living below the international poverty line</td>
                         <td></td>
                     </tr>
-                    <tr class="I141">
-                        <td>Tourism value added as a proportion of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total factor productivity</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I152">
-                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I161">
-                        <td>Fishery Sector value added ( as share of GDP) </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I162">
-                        <td>Marine biotechnology value added as a % of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I171">
-                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                    <tr class="I121">
+                        <td>Population living below the national poverty line</td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -367,39 +335,45 @@ crossorigin="anonymous">
             <table>
                 <thead>
                     <tr class="tableHeader">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
+                        <th></th>
+                        <th class="I111x">Employment Status</th>
+                        <th>Geographical Location</th>
+                        <th>Sex</th>
                     </tr>
                 </thead>
                 <tbody>     
-                    <tr class="I141">
-                        <td>Consumption of energy from all renewable sources</td>
+                    <tr class="I111a">
+                        <td>People living below the international poverty line/day</td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                     </tr>
-                    <tr class="I131">
-                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                    <tr class="I111a">
+                        <td>Total population</td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                     </tr>
-                    <tr class="I111">
-                        <td>Population with access to energy</td>
+                    <tr class="I111b">
+                        <td>Employed persons living in households below the poverty line</td>
                         <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total energy supply to economy </td>
                         <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>GDP</td>
+                    </tr> 
+                    <tr class="I111b">
+                        <td>Total number of employed persons</td>
                         <td></td>
-                    </tr>
-                    <tr class="I141">
-                        <td>Total final energy consumption  </td>
                         <td></td>
-                    </tr>
-                    <tr class="I131">
-                        <td>Total population reporting any cooking, heating or lighting </td>
+                    </tr>   
+                    <tr class="I121">
+                        <td>Total number of people living below the national  poverty line</td>
                         <td></td>
-                    </tr>
+                        <td></td>
+                    </tr>   
+                    <tr class="I121">
+                        <td>Total urban+rural population</td>
+                        <td></td>
+                        <td></td>
+                    </tr>                      
                 </tbody>
             </table>
         </div>
