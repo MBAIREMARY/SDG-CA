@@ -162,7 +162,7 @@ crossorigin="anonymous">
         cursor: pointer;
         transition: 0.3s;
         font-size: 17px;
-        opacity: 0.2;
+        opacity: 0.5;
         transition: transform .5s; /* Animation */
         z-index: 0;
     }
@@ -266,28 +266,40 @@ crossorigin="anonymous">
 
 <div class="row">
     <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2">
-          <button class="tablinks" onclick="openASP(event, 'asp1')" id="defaultOpen" style="background-color:   #9ACD32; color: white; font-weight: bold;">SDG1</button>
-          <button class="tablinks" onclick="openASP(event, 'asp2')" style="background-color:   #FF9933; color: white; font-weight: bold;">SDG2</button>
-          <button class="tablinks" onclick="openASP(event, 'asp3')" style="background-color:   #ff4c4c; color: white; font-weight: bold;">SDG3</button>
-          <button class="tablinks" onclick="openASP(event, 'asp4')" style="background-color:   #6666ff; color: white; font-weight: bold;">SDG4</button>
-          <button class="tablinks" onclick="openASP(event, 'asp5')" style="background-color:   #000000; color: white; font-weight: bold;">SDG5</button>
-          <button class="tablinks" onclick="openASP(event, 'asp6')" style="background-color:   #9932CC; color: white; font-weight: bold;">SDG6</button>
-          <button class="tablinks" onclick="openASP(event, 'asp7')" style="background-color:   #4ca6ff; color: white; font-weight: bold;">SDG7</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg1')" id="defaultOpen" style="background-color:   #e5243b; color: white; font-weight: bold;">
+            SDG1
+          </button>
+          <button class="tablinks" onclick="openASP(event, 'sdg2')" style="background-color:   #DDA63A; color: white; font-weight: bold;">SDG2</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg3')" style="background-color:   #4C9F38; color: white; font-weight: bold;">SDG3</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg4')" style="background-color:   #C5192D; color: white; font-weight: bold;">SDG4</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg5')" style="background-color:   #FF3A21; color: white; font-weight: bold;">SDG5</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg6')" style="background-color:   #26BDE2; color: white; font-weight: bold;">SDG6</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg7')" style="background-color:   #FCC30B; color: white; font-weight: bold;">SDG7</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg8')" style="background-color:   #A21942; color: white; font-weight: bold;">SDG8</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg9')" style="background-color:   #FD6925; color: white; font-weight: bold;">SDG9</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg10')" style="background-color:   #DD1367; color: white; font-weight: bold;">SDG10</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg11')" style="background-color:   #FD9D24; color: white; font-weight: bold;">SDG11</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg12')" style="background-color:   #BF8B2E; color: white; font-weight: bold;">SDG12</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg13')" style="background-color:   #3F7E44; color: white; font-weight: bold;">SDG13</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg14')" style="background-color:   #0A97D9; color: white; font-weight: bold;">SDG14</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg15')" style="background-color:   #56C02B; color: white; font-weight: bold;">SDG15</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg16')" style="background-color:   #00689D; color: white; font-weight: bold;">SDG16</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg17')" style="background-color:   #19486A; color: white; font-weight: bold;">SDG17</button>
     </div>  
 
 
 
 
 
-    <!-- Aspiration 1 Start -->
-    <div id="asp1" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32; ">
+    <!-- Goal 1 Start -->
+    <div id="sdg1" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#e5243b; ">
             <strong>
-                Aspiration 1: Une Afrique Prospère Portée Par Une Croissance Inclusive Et Le Développement Durable
+                Objectif 1. Éliminer la pauvreté sous toutes ses formes et partout dans le monde
             </strong>
         </h3>
         <div>
-            <b style="color:#9ACD32 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#e5243b ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -300,7 +312,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #9ACD32;">
+        <div class="tab2" style="margin-top: 10px; background-color: #e5243b;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -392,20 +404,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 1 End -->
+    <!-- Goal 1 End -->
 
 
 
 
-    <!-- Aspiration 2 Start -->
-    <div id="asp2" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933; ">
+    <!-- Goal 2 Start -->
+    <div id="sdg2" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DDA63A; ">
             <strong>
-                Aspiration 2. Un Continent Integre,Politiquement Uni Et Base Sur Les Ideaux Du Panafricanisme Et Une Vision De La Renaissance Africaine
+               Objectif 2. Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir l’agriculture durable
             </strong>
         </h3>
         <div>
-            <b style="color:#FF9933 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#DDA63A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -418,7 +430,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #FF9933;">
+        <div class="tab2" style="margin-top: 10px; background-color: #DDA63A;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -508,20 +520,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 2 End -->
+    <!-- Goal 2 End -->
 
 
 
 
-    <!-- Aspiration 3 Start -->
-    <div id="asp3" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c; ">
+    <!-- Goal 3 Start -->
+    <div id="sdg3" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4C9F38; ">
             <strong>
-                Aspiration 3. Une Afrique Où Règnent La Bonne Gouvernance, La Démocratie, Le Respect Des Droits De L’Homme, La Justice Et L’État De Droit
+                Objectif 3. Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge
             </strong>
         </h3>
         <div>
-            <b style="color:#ff4c4c ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#4C9F38 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -534,7 +546,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #ff4c4c;">
+        <div class="tab2" style="margin-top: 10px; background-color: #4C9F38;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -624,20 +636,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 3 End -->
+    <!-- Goal 3 End -->
 
 
 
 
-    <!-- Aspiration 4 Start -->
-    <div id="asp4" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff; ">
+    <!-- Goal 4 Start -->
+    <div id="sdg4" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#C5192D; ">
             <strong>
-                Aspiration 4. Une Afrique En Paix Et En Sécurité
+                Objectif 4. Assurer à tous une éducation équitable, inclusive et de qualité et des possibilités d’apprentissage tout au long de la vie
             </strong>
         </h3>
         <div>
-            <b style="color:#6666ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#C5192D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -650,7 +662,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #6666ff;">
+        <div class="tab2" style="margin-top: 10px; background-color: #C5192D;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -740,20 +752,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 4 End -->
+    <!-- Goal 4 End -->
 
 
 
 
-    <!-- Aspiration 5 Start -->
-    <div id="asp5" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000; ">
+    <!-- Goal 5 Start -->
+    <div id="sdg5" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF3A21; ">
             <strong>
-                Aspiration 5. Une Afrique À Identité Culturelle Forte, Ayant Des Valeurs, Une Éthique Et Un Patrimoine Communs
+                Objectif 5. Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles        
             </strong>
         </h3>
         <div>
-            <b style="color:#000000 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#FF3A21 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -766,7 +778,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #000000;">
+        <div class="tab2" style="margin-top: 10px; background-color: #FF3A21;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -856,20 +868,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 5 End-->
+    <!-- Goal 5 End-->
 
 
 
 
-    <!-- Aspiration 6 Start -->
-    <div id="asp6" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC; ">
+    <!-- Goal 6 Start -->
+    <div id="sdg6" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#26BDE2; ">
             <strong>
-                Aspiration 6. Une Afrique Dont Le Développement Est Conduit Par Les Peuples, Puisant Dans Le Potentiel De Ses Peuples, En Particulier De Ses Femmes Et De Ses Jeunes Et Se Préoccupant Du Bien-Être De Ses Enfants
+                Objectif 6. Garantir l’accès de tous à des services d’alimentation en eau et d’assainissement gérés de façon durable
             </strong>
         </h3>
         <div>
-            <b style="color:#9932CC ">
+            <b style="color:#26BDE2 ">
                 Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
             </b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
@@ -884,7 +896,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #9932CC;">
+        <div class="tab2" style="margin-top: 10px; background-color: #26BDE2;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -974,20 +986,20 @@ crossorigin="anonymous">
             </table>
         </div>
     </div>
-    <!-- Aspiration 6 End-->
+    <!-- Goal 6 End-->
 
 
 
 
-    <!-- Aspiration 7 Start -->
-    <div id="asp7" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff; ">
+    <!-- Goal 7 Start -->
+    <div id="sdg7" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FCC30B; ">
             <strong>
-                Aspiration 7:Une Afrique, En Tant Qu’Acteur Et Partenaire Fort, Uni, Résilient EtInfluent Dans Le Monde
+                Objectif 7. Garantir l’accès de tous à des services énergétiques fiables, durables et modernes, à un coût abordable
             </strong>
         </h3>
         <div>
-            <b style="color:#4ca6ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#FCC30B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1000,7 +1012,7 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #4ca6ff;">
+        <div class="tab2" style="margin-top: 10px; background-color: #FCC30B;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -1090,9 +1102,1175 @@ crossorigin="anonymous">
         </table>
         </div>
     </div>
-    <!-- Aspiration 7 End-->
+    <!-- Goal 7 End-->
 
 
+
+
+
+    <!-- Goal 8 Start -->
+    <div id="sdg8" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#A21942; ">
+            <strong>
+                Objectif 8. Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous        
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#A21942 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #A21942;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 8 End -->
+
+
+
+
+    <!-- Goal 9 Start -->
+    <div id="sdg9" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD6925; ">
+            <strong>
+                Objectif 9. Bâtir une infrastructure résiliente, promouvoir une industrialisation durable qui profite à tous et encourager l’innovation
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#FD6925 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #FD6925;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 9 End -->
+
+
+
+
+    <!-- Goal 10 Start -->
+    <div id="sdg10" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DD1367; ">
+            <strong>
+                Objectif 10. Réduire les inégalités dans les pays et d’un pays à l’autre
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#DD1367 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #DD1367;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 10 End -->
+
+
+
+
+    <!-- Goal 11 Start -->
+    <div id="sdg11" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD9D24; ">
+            <strong>
+                Objectif 11. Faire en sorte que les villes et les établissements humains soient ouverts à tous, sûrs, résilients et durables
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#FD9D24 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #FD9D24;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 11 End -->
+
+
+
+
+    <!-- Goal 12 Start -->
+    <div id="sdg12" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#BF8B2E; ">
+            <strong>
+                Objectif 12. Établir des modes de consommation et de production durables
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#BF8B2E ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #BF8B2E;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 12 End-->
+
+
+
+
+    <!-- Goal 13 Start -->
+    <div id="sdg13" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#3F7E44; ">
+            <strong>
+                Objectif 13. Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions2
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#3F7E44 ">
+                Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
+            </b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #3F7E44;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 13 End-->
+
+
+
+
+    <!-- Goal 14 Start -->
+    <div id="sdg14" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#0A97D9; ">
+            <strong>
+                Objectif 14. Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#0A97D9 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #0A97D9;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+          <table>
+            <thead>
+                <tr class="tableHeader">
+                    <th>&nbsp;</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>     
+                <tr class="I141">
+                    <td>Consumption of energy from all renewable sources</td>
+                    <td></td>
+                </tr>
+                <tr class="I131">
+                    <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                    <td></td>
+                </tr>
+                <tr class="I111">
+                    <td>Population with access to energy</td>
+                    <td></td>
+                </tr>
+                <tr class="I151">
+                    <td>Total energy supply to economy </td>
+                    <td></td>
+                </tr>
+                <tr class="I151">
+                    <td>GDP</td>
+                    <td></td>
+                </tr>
+                <tr class="I141">
+                    <td>Total final energy consumption  </td>
+                    <td></td>
+                </tr>
+                <tr class="I131">
+                    <td>Total population reporting any cooking, heating or lighting </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <!-- Goal 14 End-->
+
+
+
+
+
+    <!-- Goal 15 Start -->
+    <div id="sdg15" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#56C02B; ">
+            <strong>
+                Objectif 15. Préserver et restaurer les écosystèmes terrestres, en veillant à les exploiter de façon durable, gérer durablement les forêts, lutter contre la désertification, enrayer et inverser le processus de dégradation des terres et mettre fin à l’appauvrissement de la biodiversité 
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#56C02B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #56C02B;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 15 End -->
+
+
+
+
+    <!-- Goal 16 Start -->
+    <div id="sdg16" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#00689D; ">
+            <strong>
+                Objectif 16. Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#00689D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #00689D;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 16 End -->
+
+
+
+
+    <!-- Goal 17 Start -->
+    <div id="sdg17" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#19486A; ">
+            <strong>
+                Objectif 17. Renforcer les moyens de mettre en œuvre le Partenariat mondial pour le développement durable et le revitaliser
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#19486A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #19486A;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 17 End -->
 
 
 </div>
