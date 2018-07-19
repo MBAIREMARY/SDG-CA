@@ -7,15 +7,23 @@ crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-    $(function () {
+    function hideRow(indicatorLevel){
         // Default selected levels
         $(".I111a").show();
         $(".I111b").hide();
         $(".I121").hide();
-        // Onchange Levels
-        $("#indicatorLevel").change(function () {           
+        $(".I221").hide();
+        $(".I222a").hide();
+        $(".I251").hide();
+        $(".I252a1").hide();
+        $(".I252a2").hide();
+        $(".I252a3").hide();
+        $(".I2a2").hide();
+        $(".I2b1").hide();
 
-         if ($(this).val() === "I111a") {
+        // Onchange Levels
+        $("#"+indicatorLevel).change(function () {
+        if ($(this).val() === "I111a") {
             $(".I111a").show();
             $(".I111b").hide();
             $(".I121").hide();
@@ -193,8 +201,8 @@ crossorigin="anonymous">
             $(".I2a2").hide();
             $(".I2b1").show();
         }
-      });
-    })  
+         })
+    }  
     function openDisagg(evt, disagg) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -301,7 +309,7 @@ crossorigin="anonymous">
         background-color: #dddddd;
     }
     .tableHeader{
-        background-color: #9ACD32 !important;
+        background-color: #9ACD32;
     }
     th{
         text-align: center !important;
@@ -395,8 +403,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#e5243b ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel" onchange="hideRow('indicatorLevel')" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111a">
                     1.1.1a Population living below the international poverty line
                 </option>
@@ -418,7 +426,7 @@ crossorigin="anonymous">
         <div id="NoDisagg" class="tabcontent2">
             <table>
                 <thead>
-                    <tr class="tableHeader">
+                    <tr class="tableHeader" style="background-color:#e5243b !important;">
                         <th>&nbsp;</th>
                         <th>Value</th>
                     </tr>
@@ -443,7 +451,7 @@ crossorigin="anonymous">
         <div id="Disagg" class="tabcontent2">
             <table>
                 <thead>
-                    <tr class="tableHeader">
+                    <tr class="tableHeader" style="background-color:#e5243b !important;">
                         <th></th>
                         <th class="I111x">Employment Status</th>
                         <th>Geographical Location</th>
@@ -500,8 +508,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#DDA63A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel2" onchange="hideRow('indicatorLevel2')" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I211">2.1.1  Prevalence of undernourishment</option>
                 <option value="I221">2.2.1  Prevalence of stunting among children under 5</option>
                 <option value="I222a">2.2.2a Prevalence of overweight among children under 5</option>
@@ -522,7 +530,7 @@ crossorigin="anonymous">
         <div id="NoDisagg2" class="tabcontent2">
             <table>
                 <thead>
-                    <tr class="tableHeader">
+                    <tr class="tableHeader" style="background-color:#DDA63A !important;">
                         <th>&nbsp;</th>
                         <th>Value</th>
                     </tr>
@@ -570,7 +578,7 @@ crossorigin="anonymous">
         <div id="Disagg2" class="tabcontent2">
             <table>
                 <thead>
-                    <tr class="tableHeader">
+                    <tr class="tableHeader" style="background-color:#DDA63A !important;">
                         <th>&nbsp;</th>
                         <th>Value</th>
                     </tr>
