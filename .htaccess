@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteRule ^/SDG-CA/index$ /SDG-CA/newSdgs.html [NC]
-RewriteRule ^/SDG-CA/sdg$ /SDG-CA/newSdgs.html [NC]
-
-
-
