@@ -201,36 +201,8 @@ crossorigin="anonymous">
             $(".I2a2").hide();
             $(".I2b1").show();
         }
-        if ($(this).val() === "I311") {
-            // ​$("[class=I311]").hide();
-           // ​$("[class=I311]").show();
-            // $("select:regex(class, I.*)").hide()
-            // $("select:regex(class, I311)").show()
-
-            // $('div.tabcontent2 tr').not('.I311').hide();
-
-            // $(".I312").hide();
-            // $(".I321").hide();
-            // $(".I322").hide();
-            // $(".I332").hide();
-            // $(".I333").hide();
-            // $(".I335").hide();
-            // $(".I341").hide();
-            // $(".I342").hide();
-            // $(".I352").hide();
-            // $(".I361").hide();
-            // $(".I371").hide();
-            // $(".I391").hide();
-            // $(".I392").hide();
-            // $(".I393").hide();
-            // $(".I3a1").hide();
-            // $(".I3c1a").hide();
-            // $(".I3c1b").hide();
-            // $(".I3c1c").hide();
-            // $(".I3c1d").hide();
-        }
          })
-    }
+    }  
     function openDisagg(evt, disagg) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -250,7 +222,7 @@ crossorigin="anonymous">
     }
 
     /*Function for openning the Aspirations Tabs*/
-    function openSDG(evt, aspName) {
+    function openASP(evt, aspName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -368,7 +340,7 @@ crossorigin="anonymous">
         transition: 0.3s;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         margin-right: 5px;
-
+       
     }
 
     /* Change background color of buttons on hover */
@@ -401,23 +373,23 @@ crossorigin="anonymous">
           <button class="tablinks" onclick="openASP(event, 'sdg1')" id="defaultOpen" style="background-color:   #e5243b; color: white; font-weight: bold;">
             SDG1
           </button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg2')" style="background-color:   #DDA63A; color: white; font-weight: bold;">SDG2</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg3')" style="background-color:   #4C9F38; color: white; font-weight: bold;">SDG3</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg4')" style="background-color:   #C5192D; color: white; font-weight: bold;">SDG4</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg5')" style="background-color:   #FF3A21; color: white; font-weight: bold;">SDG5</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg6')" style="background-color:   #26BDE2; color: white; font-weight: bold;">SDG6</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg7')" style="background-color:   #FCC30B; color: white; font-weight: bold;">SDG7</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg8')" style="background-color:   #A21942; color: white; font-weight: bold;">SDG8</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg9')" style="background-color:   #FD6925; color: white; font-weight: bold;">SDG9</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg10')" style="background-color:   #DD1367; color: white; font-weight: bold;">SDG10</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg11')" style="background-color:   #FD9D24; color: white; font-weight: bold;">SDG11</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg12')" style="background-color:   #BF8B2E; color: white; font-weight: bold;">SDG12</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg13')" style="background-color:   #3F7E44; color: white; font-weight: bold;">SDG13</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg14')" style="background-color:   #0A97D9; color: white; font-weight: bold;">SDG14</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg15')" style="background-color:   #56C02B; color: white; font-weight: bold;">SDG15</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg16')" style="background-color:   #00689D; color: white; font-weight: bold;">SDG16</button>
-          <button class="tablinks" onclick="openSDG(event, 'sdg17')" style="background-color:   #19486A; color: white; font-weight: bold;">SDG17</button>
-    </div>
+          <button class="tablinks" onclick="openASP(event, 'sdg2')" style="background-color:   #DDA63A; color: white; font-weight: bold;">SDG2</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg3')" style="background-color:   #4C9F38; color: white; font-weight: bold;">SDG3</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg4')" style="background-color:   #C5192D; color: white; font-weight: bold;">SDG4</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg5')" style="background-color:   #FF3A21; color: white; font-weight: bold;">SDG5</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg6')" style="background-color:   #26BDE2; color: white; font-weight: bold;">SDG6</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg7')" style="background-color:   #FCC30B; color: white; font-weight: bold;">SDG7</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg8')" style="background-color:   #A21942; color: white; font-weight: bold;">SDG8</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg9')" style="background-color:   #FD6925; color: white; font-weight: bold;">SDG9</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg10')" style="background-color:   #DD1367; color: white; font-weight: bold;">SDG10</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg11')" style="background-color:   #FD9D24; color: white; font-weight: bold;">SDG11</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg12')" style="background-color:   #BF8B2E; color: white; font-weight: bold;">SDG12</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg13')" style="background-color:   #3F7E44; color: white; font-weight: bold;">SDG13</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg14')" style="background-color:   #0A97D9; color: white; font-weight: bold;">SDG14</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg15')" style="background-color:   #56C02B; color: white; font-weight: bold;">SDG15</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg16')" style="background-color:   #00689D; color: white; font-weight: bold;">SDG16</button>
+          <button class="tablinks" onclick="openASP(event, 'sdg17')" style="background-color:   #19486A; color: white; font-weight: bold;">SDG17</button>
+    </div>  
 
 
 
@@ -431,7 +403,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <select onchange="hideRow('indicatorLevel')" name="indicators" class="dropdown">
+            <select id="indicatorLevel" onchange="hideRow('indicatorLevel')" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I111a">
                     1.1.1a Population living below the international poverty line
@@ -441,7 +413,7 @@ crossorigin="anonymous">
                 </option>
                 <option value="I121">
                     1.2.1 Population living below the national poverty line
-                </option>
+                </option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -459,7 +431,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111a">
                         <td>Population living below the international poverty line</td>
                         <td></td>
@@ -486,7 +458,7 @@ crossorigin="anonymous">
                         <th>Sex</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111a">
                         <td>People living below the international poverty line/day</td>
                         <td></td>
@@ -503,22 +475,22 @@ crossorigin="anonymous">
                         <td>Employed persons living in households below the poverty line</td>
                         <td></td>
                         <td></td>
-                    </tr>
+                    </tr> 
                     <tr class="I111b">
                         <td>Total number of employed persons</td>
                         <td></td>
                         <td></td>
-                    </tr>
+                    </tr>   
                     <tr class="I121">
                         <td>Total number of people living below the national  poverty line</td>
                         <td></td>
                         <td></td>
-                    </tr>
+                    </tr>   
                     <tr class="I121">
                         <td>Total urban+rural population</td>
                         <td></td>
                         <td></td>
-                    </tr>
+                    </tr>                      
                 </tbody>
             </table>
         </div>
@@ -536,7 +508,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <select onchange="hideRow('indicatorLevel2')" name="indicators" class="dropdown">
+            <select id="indicatorLevel2" onchange="hideRow('indicatorLevel2')" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I211">2.1.1  Prevalence of undernourishment</option>
                 <option value="I221">2.2.1  Prevalence of stunting among children under 5</option>
@@ -563,7 +535,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I211">
                         <td>Prevalence of undernourishment</td>
                         <td></td>
@@ -611,7 +583,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I211">
                         <td>Population whose food intake is insufficient to meet dietary energy requirements for min 1yr</td>
                         <td></td>
@@ -681,183 +653,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <select  onchange="hideRow('indicatorLevel3')" name="indicators" class="dropdown">
-                <option disabled selected>Please select an indicator</option>
-                <option value="I311">3.1.1 Maternal mortality ratio</option>
-                <option value="I312">3.1.2 Proportion of births attended by skilled health personnel</option>
-                <option value="I321">3.2.1 Under-five mortality rate</option>
-                <option value="I322">3.2.2 Neonatal mortality rate</option>
-                <option value="I332">3.3.2 Tuberculosis incidence per 1,000 population</option>
-                <option value="I333">3.3.3 Malaria incidence per 1,000 population</option>
-                <option value="I335">3.3.5 Requiring intervention against NTDs</option>
-                <option value="I341">3.4.1 Death rate from NCDs (per 100,000)</option>
-                <option value="I342">3.4.2 Suicide mortality rate</option>
-                <option value="I352">3.5.2 Alcoholic consumption (in liters)</option>
-                <option value="I361">3.6.1 Traffic deaths (per 100,000)</option>
-                <option value="I371">3.7.1 Family planning needs satisfied (%)</option>
-                <option value="I391">3.9.1 Mortality, air pollution</option>
-                <option value="I392">3.9.2 Mortality, unsafe water (per 100,000)</option>
-                <option value="I393">3.9.3 Mortality, unintentional poisoning (per 100,000)</option>
-                <option value="I3a1">3.a.1 Tobacco users 15+ years (%)</option>
-                <option value="I3c1a">3.c.1 Physician Density (per 1,000)</option>
-                <option value="I3c1b">3.c.1 Nursing and Midwifery Density (per 1,000)</option>
-                <option value="I3c1c">3.c.1 Dentistry Density (per 1,000)</option>
-                <option value="I3c1d">3.c.1 Pharmaceutical Density (per 1,000)</option>
-            </select>
-        </div>
-        <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #4C9F38;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg3')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg3')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg3" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#4C9F38 !important;">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I311">
-                        <td>Maternal mortality ratio</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I312">
-                        <td>Proportion of births attended by skilled health personnel</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I321">
-                        <td>Under-five mortality rate</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I322">
-                        <td>Neonatal mortality rate</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I332">
-                        <td>Tuberculosis incidence per 1,000 population</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I333">
-                        <td>Malaria incidence per 1,000 population</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I335">
-                        <td>Requiring intervention against NTDs</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I341">
-                        <td>Death rate from NCDs (per 100,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I352">
-                        <td>Alcoholic consumption (in liters)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I361">
-                        <td>Traffic deaths (per 100,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I371">
-                        <td>Family planning needs satisfied (%)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I391">
-                        <td>Mortality, air pollution</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I392">
-                        <td>Mortality, unsafe water (per 100,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I393">
-                        <td>Mortality, unintentional poisoning (per 100,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I3a1">
-                        <td>Tobacco users 15+ years (%)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I3c1a">
-                        <td>Physician Density (per 1,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I3c1b">
-                        <td>Nursing and Midwifery Density (per 1,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I3c1c">
-                        <td>Dentistry Density (per 1,000)</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I3c1d">
-                        <td>Pharmaceutical Density (per 1,000)</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="Disagg3" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#4C9F38 !important;">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I111">
-                        <td>Gini coefficient</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I131">
-                        <td>% of eligible population with HIV having access to ARV</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I141">
-                        <td>Tourism value added as a proportion of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total factor productivity</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I152">
-                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I161">
-                        <td>Fishery Sector value added ( as share of GDP) </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I162">
-                        <td>Marine biotechnology value added as a % of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I171">
-                        <td>% of agricultural land placed under sustainable land management practice.</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <!-- Goal 3 End -->
-
-
-
-
-    <!-- Goal 4 Start -->
-    <div id="sdg4" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
-        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#C5192D; ">
-            <strong>
-                Objectif 4. Assurer à tous une éducation équitable, inclusive et de qualité et des possibilités d’apprentissage tout au long de la vie
-            </strong>
-        </h3>
-        <div>
-            <b style="color:#C5192D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#4C9F38 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -866,11 +662,11 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #C5192D;">
+        <div class="tab2" style="margin-top: 10px; background-color: #4C9F38;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
         </div>
@@ -883,7 +679,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -927,7 +723,123 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
+                    <tr class="I141">
+                        <td>Consumption of energy from all renewable sources</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I111">
+                        <td>Population with access to energy</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total energy supply to economy </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Total final energy consumption  </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I131">
+                        <td>Total population reporting any cooking, heating or lighting </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Goal 3 End -->
+
+
+
+
+    <!-- Goal 4 Start -->
+    <div id="sdg4" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#C5192D; ">
+            <strong>
+                Objectif 4. Assurer à tous une éducation équitable, inclusive et de qualité et des possibilités d’apprentissage tout au long de la vie
+            </strong>
+        </h3>
+        <div>
+            <b style="color:#C5192D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div class="tab2" style="margin-top: 10px; background-color: #C5192D;">
+          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
+          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
+        </div>
+        <!-- Tab content -->
+        <div id="NoDisagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
+                    <tr class="I111">
+                        <td>Gini coefficient</td>
+                        <td></td>
+                    </tr>
+                     <tr class="I131">
+                        <td>% of eligible population with HIV having access to ARV</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I141">
+                        <td>Tourism value added as a proportion of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I151">
+                        <td>Total factor productivity</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I152">
+                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I161">
+                        <td>Fishery Sector value added ( as share of GDP) </td>
+                        <td></td>
+                    </tr>
+                    <tr class="I162">
+                        <td>Marine biotechnology value added as a % of GDP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="I171">
+                        <td>% of agricultural land placed under sustainable land management practice.</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Disagg" class="tabcontent2">
+            <table>
+                <thead>
+                    <tr class="tableHeader">
+                        <th>&nbsp;</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -969,11 +881,11 @@ crossorigin="anonymous">
     <div id="sdg5" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF3A21; ">
             <strong>
-                Objectif 5. Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles
+                Objectif 5. Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles        
             </strong>
         </h3>
         <div>
-            <b style="color:#FF3A21 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#FF3A21 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -982,7 +894,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -999,7 +911,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1043,7 +955,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1091,7 +1003,7 @@ crossorigin="anonymous">
         <div>
             <b style="color:#26BDE2 ">
                 Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
-            </b>
+            </b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1100,7 +1012,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1117,7 +1029,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1161,7 +1073,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1207,7 +1119,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#FCC30B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#FCC30B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1216,7 +1128,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1233,7 +1145,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1277,7 +1189,7 @@ crossorigin="anonymous">
                     <th>Value</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody>     
                 <tr class="I141">
                     <td>Consumption of energy from all renewable sources</td>
                     <td></td>
@@ -1320,11 +1232,11 @@ crossorigin="anonymous">
     <div id="sdg8" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#A21942; ">
             <strong>
-                Objectif 8. Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous
+                Objectif 8. Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous        
             </strong>
         </h3>
         <div>
-            <b style="color:#A21942 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#A21942 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1333,7 +1245,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1351,7 +1263,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1396,7 +1308,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1442,7 +1354,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#FD6925 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#FD6925 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1451,7 +1363,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1468,7 +1380,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1512,7 +1424,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1558,7 +1470,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#DD1367 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#DD1367 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1567,7 +1479,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1584,7 +1496,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1628,7 +1540,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1674,7 +1586,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#FD9D24 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#FD9D24 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1683,7 +1595,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1700,7 +1612,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1744,7 +1656,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1790,7 +1702,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#BF8B2E ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#BF8B2E ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1799,7 +1711,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1816,7 +1728,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1860,7 +1772,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -1908,7 +1820,7 @@ crossorigin="anonymous">
         <div>
             <b style="color:#3F7E44 ">
                 Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
-            </b>
+            </b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -1917,7 +1829,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -1934,7 +1846,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1978,7 +1890,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -2024,7 +1936,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#0A97D9 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#0A97D9 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -2033,7 +1945,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -2050,7 +1962,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -2094,7 +2006,7 @@ crossorigin="anonymous">
                     <th>Value</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody>     
                 <tr class="I141">
                     <td>Consumption of energy from all renewable sources</td>
                     <td></td>
@@ -2137,11 +2049,11 @@ crossorigin="anonymous">
     <div id="sdg15" class="col-xm-11 col-sm-10 col-md-11 tabcontent">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#56C02B; ">
             <strong>
-                Objectif 15. Préserver et restaurer les écosystèmes terrestres, en veillant à les exploiter de façon durable, gérer durablement les forêts, lutter contre la désertification, enrayer et inverser le processus de dégradation des terres et mettre fin à l’appauvrissement de la biodiversité
+                Objectif 15. Préserver et restaurer les écosystèmes terrestres, en veillant à les exploiter de façon durable, gérer durablement les forêts, lutter contre la désertification, enrayer et inverser le processus de dégradation des terres et mettre fin à l’appauvrissement de la biodiversité 
             </strong>
         </h3>
         <div>
-            <b style="color:#56C02B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#56C02B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -2150,7 +2062,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -2168,7 +2080,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -2213,7 +2125,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -2259,7 +2171,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#00689D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#00689D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -2268,7 +2180,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -2285,7 +2197,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -2329,7 +2241,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -2375,7 +2287,7 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#19486A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
+            <b style="color:#19486A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -2384,7 +2296,7 @@ crossorigin="anonymous">
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
             </select>
         </div>
         <!-- Tab links -->
@@ -2401,7 +2313,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -2445,7 +2357,7 @@ crossorigin="anonymous">
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>     
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -2485,5 +2397,5 @@ crossorigin="anonymous">
 
 <script type="text/javascript">
     //Outer Tabs:Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click(); 
 </script>
