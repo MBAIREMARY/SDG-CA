@@ -6,7 +6,7 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
@@ -18,6 +18,35 @@ crossorigin="anonymous">
 
         // Onchange Levels
         $("#indicatorLevel").change(function () {
+        if ($(this).val() === "I111a") {
+            $(".I111a").show();
+            $(".I111b").hide();
+            $(".I121").hide();
+            $(".I111x").show();
+        }
+
+        if ($(this).val() === "I111b") {
+            $(".I111a").hide();
+            $(".I111b").show();
+            $(".I121").hide();
+            $(".I111x").hide();
+        }
+        if ($(this).val() === "I121") {
+            $(".I111a").hide();
+            $(".I111b").hide();
+            $(".I121").show();
+            $(".I111x").hide();
+        }
+        })
+    });
+    $(function(){
+        // Default selected levels
+        $(".I111a").hide();
+        $(".I111b").hide();
+        $(".I121").hide();
+
+        // Onchange Levels
+        $("#indicatorLevel17").change(function () {
         if ($(this).val() === "I111a") {
             $(".I111a").show();
             $(".I111b").hide();
@@ -156,6 +185,14 @@ crossorigin="anonymous">
     $( function() {
       $( "#sdgs" ).tabs();
       $( "#disaggregations" ).tabs();
+      $( "#disaggregations10" ).tabs();
+      $( "#disaggregations11" ).tabs();
+      $( "#disaggregations12" ).tabs();
+      $( "#disaggregations13" ).tabs();
+      $( "#disaggregations14" ).tabs();
+      $( "#disaggregations15" ).tabs();
+      $( "#disaggregations16" ).tabs();
+      $( "#disaggregations17" ).tabs();
       $( "#sdgs3" ).tabs();
     } );
 </script>
@@ -1379,7 +1416,7 @@ crossorigin="anonymous">
         </h3>
         <div>
             <b style="color:#DD1367 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel10" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1391,12 +1428,14 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #DD1367;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="disaggregations10" style="margin-top: 10px;">
+         <ul>
+            <li><a href="#NoDisagg10" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg10" class="disaggTab">Disaggregation</a></li>
+          </ul>
+
+           <!-- Tab content -->
+        <div id="NoDisagg10" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1440,7 +1479,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg10" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1479,6 +1518,7 @@ crossorigin="anonymous">
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
     <!-- Goal 10 End -->
@@ -1492,7 +1532,8 @@ crossorigin="anonymous">
         </h3>
         <div>
             <b style="color:#FD9D24 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel11" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1504,12 +1545,12 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #FD9D24;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="disaggregations11" style="margin-top: 10px;">
+          <ul>
+            <li><a href="#NoDisagg11" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg11" class="disaggTab">Disaggregation</a></li>
+          </ul>       <!-- Tab content -->
+        <div id="NoDisagg11" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1553,7 +1594,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg11" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1592,6 +1633,7 @@ crossorigin="anonymous">
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
     <!-- Goal 11 End -->
@@ -1604,8 +1646,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#BF8B2E ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel12" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1617,12 +1659,14 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #BF8B2E;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="disaggregations12" style="margin-top: 10px;">
+     <ul>
+            <li><a href="#NoDisagg12" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg12" class="disaggTab">Disaggregation</a></li>
+          </ul>
+
+              <!-- Tab content -->
+        <div id="NoDisagg12" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1666,7 +1710,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg12" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1706,6 +1750,8 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
+        </div>
+
     </div>
     <!-- Goal 12 End-->
 
@@ -1717,10 +1763,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#3F7E44 ">
-                Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
-            </b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel13" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1732,12 +1776,14 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #3F7E44;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
+        <div id="disaggregations13" style="margin-top: 10px;">
+        <ul>
+            <li><a href="#NoDisagg13" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg13" class="disaggTab">Disaggregation</a></li>
+          </ul>
+
         <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="NoDisagg13" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1781,7 +1827,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg13" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -1821,6 +1867,8 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
+        </div>
+       
     </div>
     <!-- Goal 13 End-->
 
@@ -1832,8 +1880,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#0A97D9 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel14" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1845,95 +1893,99 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #0A97D9;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="disaggregations14" style="margin-top: 10px;">
+            <ul>
+            <li><a href="#NoDisagg14" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg14" class="disaggTab">Disaggregation</a></li>
+          </ul>
+
+          <!-- Tab content -->
+          <div id="NoDisagg14" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111">
+                          <td>Gini coefficient</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I131">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Tourism value added as a proportion of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total factor productivity</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I152">
+                          <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I161">
+                          <td>Fishery Sector value added ( as share of GDP) </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I162">
+                          <td>Marine biotechnology value added as a % of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I171">
+                          <td>% of agricultural land placed under sustainable land management practice.</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div id="Disagg14" class="tabcontent2">
             <table>
-                <thead>
-                    <tr class="tableHeader">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I111">
-                        <td>Gini coefficient</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I131">
-                        <td>% of eligible population with HIV having access to ARV</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I141">
-                        <td>Tourism value added as a proportion of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total factor productivity</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I152">
-                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I161">
-                        <td>Fishery Sector value added ( as share of GDP) </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I162">
-                        <td>Marine biotechnology value added as a % of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I171">
-                        <td>% of agricultural land placed under sustainable land management practice.</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+              <thead>
+                  <tr class="tableHeader">
+                      <th>&nbsp;</th>
+                      <th>Value</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="I141">
+                      <td>Consumption of energy from all renewable sources</td>
+                      <td></td>
+                  </tr>
+                  <tr class="I131">
+                      <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                      <td></td>
+                  </tr>
+                  <tr class="I111">
+                      <td>Population with access to energy</td>
+                      <td></td>
+                  </tr>
+                  <tr class="I151">
+                      <td>Total energy supply to economy </td>
+                      <td></td>
+                  </tr>
+                  <tr class="I151">
+                      <td>GDP</td>
+                      <td></td>
+                  </tr>
+                  <tr class="I141">
+                      <td>Total final energy consumption  </td>
+                      <td></td>
+                  </tr>
+                  <tr class="I131">
+                      <td>Total population reporting any cooking, heating or lighting </td>
+                      <td></td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
         </div>
-        <div id="Disagg" class="tabcontent2">
-          <table>
-            <thead>
-                <tr class="tableHeader">
-                    <th>&nbsp;</th>
-                    <th>Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="I141">
-                    <td>Consumption of energy from all renewable sources</td>
-                    <td></td>
-                </tr>
-                <tr class="I131">
-                    <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
-                    <td></td>
-                </tr>
-                <tr class="I111">
-                    <td>Population with access to energy</td>
-                    <td></td>
-                </tr>
-                <tr class="I151">
-                    <td>Total energy supply to economy </td>
-                    <td></td>
-                </tr>
-                <tr class="I151">
-                    <td>GDP</td>
-                    <td></td>
-                </tr>
-                <tr class="I141">
-                    <td>Total final energy consumption  </td>
-                    <td></td>
-                </tr>
-                <tr class="I131">
-                    <td>Total population reporting any cooking, heating or lighting </td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+    
     </div>
     <!-- Goal 14 End-->
 
@@ -1945,8 +1997,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#56C02B ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel15" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -1958,97 +2010,99 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #56C02B;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
+        <div id="disaggregations15" style="margin-top: 10px;">
+            <ul>
+              <li><a href="#NoDisagg15" class="disaggTab">No Disaggregation</a></li>
+              <li><a href="#Disagg15" class="disaggTab">Disaggregation</a></li>
+          </ul>
+          <!-- Tab content -->
+          <div id="NoDisagg15" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111">
+                          <td>Gini coefficient</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I131">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Tourism value added as a proportion of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total factor productivity</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I152">
+                          <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I161">
+                          <td>Fishery Sector value added ( as share of GDP) </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I162">
+                          <td>Marine biotechnology value added as a % of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I171">
+                          <td>% of agricultural land placed under sustainable land management practice.</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div id="Disagg15" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I141">
+                          <td>Consumption of energy from all renewable sources</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111">
+                          <td>Population with access to energy</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total energy supply to economy </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Total final energy consumption  </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Total population reporting any cooking, heating or lighting </td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
 
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I111">
-                        <td>Gini coefficient</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I131">
-                        <td>% of eligible population with HIV having access to ARV</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I141">
-                        <td>Tourism value added as a proportion of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total factor productivity</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I152">
-                        <td>% of small-scale farmers graduating into small-scale commercial farming</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I161">
-                        <td>Fishery Sector value added ( as share of GDP) </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I162">
-                        <td>Marine biotechnology value added as a % of GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I171">
-                        <td>% of agricultural land placed under sustainable land management practice.</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div id="Disagg" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I141">
-                        <td>Consumption of energy from all renewable sources</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I131">
-                        <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I111">
-                        <td>Population with access to energy</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>Total energy supply to economy </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I151">
-                        <td>GDP</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I141">
-                        <td>Total final energy consumption  </td>
-                        <td></td>
-                    </tr>
-                    <tr class="I131">
-                        <td>Total population reporting any cooking, heating or lighting </td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+       </div>
+  
     </div>
     <!-- Goal 15 End -->
 
@@ -2060,8 +2114,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#00689D ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel16" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -2073,12 +2127,13 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #00689D;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
+        <div id="disaggregations16" style="margin-top: 10px;">
+            <ul>
+              <li><a href="#NoDisagg16" class="disaggTab">No Disaggregation</a></li>
+              <li><a href="#Disagg16" class="disaggTab">Disaggregation</a></li>
+          </ul>
         <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="NoDisagg16" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -2122,7 +2177,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg16" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -2162,6 +2217,8 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
+        </div>
+      
     </div>
     <!-- Goal 16 End -->
 
@@ -2173,8 +2230,8 @@ crossorigin="anonymous">
             </strong>
         </h3>
         <div>
-            <b style="color:#19486A ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel17" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -2185,13 +2242,13 @@ crossorigin="anonymous">
                 <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
-        <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #19486A;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
+        <div id="disaggregations17" style="margin-top: 10px;">
+          <ul>
+            <li><a href="#NoDisagg17" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg17" class="disaggTab">Disaggregation</a></li>
+          </ul>
+       <!-- Tab content -->
+        <div id="NoDisagg17" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -2235,7 +2292,7 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
-        <div id="Disagg" class="tabcontent2">
+        <div id="Disagg17" class="tabcontent2">
             <table>
                 <thead>
                     <tr class="tableHeader">
@@ -2275,6 +2332,8 @@ crossorigin="anonymous">
                 </tbody>
             </table>
         </div>
+        </div>
+    
     </div>
     <!-- Goal 17 End -->
 
