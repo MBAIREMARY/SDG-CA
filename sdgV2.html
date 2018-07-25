@@ -15,6 +15,32 @@ crossorigin="anonymous">
         $(".I111a").hide();
         $(".I111b").hide();
         $(".I121").hide();
+
+        // Onchange Levels
+        $("#indicatorLevel").change(function () {
+        if ($(this).val() === "I111a") {
+            $(".I111a").show();
+            $(".I111b").hide();
+            $(".I121").hide();
+            $(".I111x").show();
+        }
+
+        if ($(this).val() === "I111b") {
+            $(".I111a").hide();
+            $(".I111b").show();
+            $(".I121").hide();
+            $(".I111x").hide();
+        }
+        if ($(this).val() === "I121") {
+            $(".I111a").hide();
+            $(".I111b").hide();
+            $(".I121").show();
+            $(".I111x").hide();
+        }
+        })
+    });
+    $(function(){
+        // Default selected levels
         $(".I221").hide();
         $(".I222a").hide();
         $(".I251").hide();
@@ -25,55 +51,8 @@ crossorigin="anonymous">
         $(".I2b1").hide();
 
         // Onchange Levels
-        $("#indicatorLevel").change(function () {
-        if ($(this).val() === "I111a") {
-            $(".I111a").show();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").show();
-            $(".I221").hide();
-            $(".I222a").hide();
-            $(".I251").hide();
-            $(".I252a1").hide();
-            $(".I252a2").hide();
-            $(".I252a3").hide();
-            $(".I2a2").hide();
-            $(".I2b1").hide();
-        }
-
-        if ($(this).val() === "I111b") {
-            $(".I111a").hide();
-            $(".I111b").show();
-            $(".I121").hide();
-            $(".I111x").hide();
-            $(".I221").hide();
-            $(".I222a").hide();
-            $(".I251").hide();
-            $(".I252a1").hide();
-            $(".I252a2").hide();
-            $(".I252a3").hide();
-            $(".I2a2").hide();
-            $(".I2b1").hide();
-        }
-        if ($(this).val() === "I121") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").show();
-            $(".I111x").hide();
-            $(".I221").hide();
-            $(".I222a").hide();
-            $(".I251").hide();
-            $(".I252a1").hide();
-            $(".I252a2").hide();
-            $(".I252a3").hide();
-            $(".I2a2").hide();
-            $(".I2b1").hide();
-        }
+        $("#indicatorLevel2").change(function () {
         if ($(this).val() === "I211") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").show();
             $(".I221").hide();
             $(".I222a").hide();
@@ -85,10 +64,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         }
         if ($(this).val() === "I221") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").show();
             $(".I222a").hide();
@@ -100,10 +75,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         };
         if ($(this).val() === "I222a") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").show();
@@ -115,10 +86,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         };
         if ($(this).val() === "I251") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -130,10 +97,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         };
         if ($(this).val() === "I252a1") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -145,10 +108,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         };
         if ($(this).val() === "I252a2") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -160,10 +119,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         }
         if ($(this).val() === "I252a3") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -175,10 +130,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         }
         if ($(this).val() === "I2a2") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -190,10 +141,6 @@ crossorigin="anonymous">
             $(".I2b1").hide();
         }
         if ($(this).val() === "I2b1") {
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-            $(".I111x").hide();
             $(".I211").hide();
             $(".I221").hide();
             $(".I222a").hide();
@@ -204,35 +151,7 @@ crossorigin="anonymous">
             $(".I2a2").hide();
             $(".I2b1").show();
         }
-        if ($(this).val() === "I311") {
-            // ​$("[class=I311]").hide();
-           // ​$("[class=I311]").show();
-            // $("select:regex(class, I.*)").hide()
-            // $("select:regex(class, I311)").show()
-
-            // $('div.tabcontent2 tr').not('.I311').hide();
-
-            // $(".I312").hide();
-            // $(".I321").hide();
-            // $(".I322").hide();
-            // $(".I332").hide();
-            // $(".I333").hide();
-            // $(".I335").hide();
-            // $(".I341").hide();
-            // $(".I342").hide();
-            // $(".I352").hide();
-            // $(".I361").hide();
-            // $(".I371").hide();
-            // $(".I391").hide();
-            // $(".I392").hide();
-            // $(".I393").hide();
-            // $(".I3a1").hide();
-            // $(".I3c1a").hide();
-            // $(".I3c1b").hide();
-            // $(".I3c1c").hide();
-            // $(".I3c1d").hide();
-        }
-         })
+       })
     });
     $( function() {
       $( "#sdgs" ).tabs();
@@ -451,11 +370,11 @@ crossorigin="anonymous">
     <div id="sdg-2" class="col-xm-11 col-sm-10 col-md-11">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DDA63A; ">
             <strong>
-               Objectif 2. Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir l’agriculture durable
+               Goal 2. End hunger, achieve food security and improved nutrition and promote sustainable agriculture
             </strong>
         </h3>
         <div>
-            <select onchange="hideRow('indicatorLevel2')" name="indicators" class="dropdown">
+            <select id="indicatorLevel2" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I211">2.1.1  Prevalence of undernourishment</option>
                 <option value="I221">2.2.1  Prevalence of stunting among children under 5</option>
@@ -469,123 +388,130 @@ crossorigin="anonymous">
             </select>
         </div>
         <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #DDA63A;">
+        <div id="disaggregations" style="margin-top: 10px;">
+          <ul>
+            <li><a href="#NoDisagg2" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg2" class="disaggTab">Disaggregation</a></li>
+          </ul>
+          <div id="NoDisagg2" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader" style="background-color:#DDA63A !important;">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I211">
+                          <td>Prevalence of undernourishment</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I221">
+                          <td>Prevalence of stunting among children under 5</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I222a">
+                          <td>Prevalence of overweight among children under 5</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I251">
+                          <td>Number of plant and animal genetic resources for food and agriculture secured</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a1">
+                          <td>Local breeds classified as being at risk</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a2">
+                          <td>Local breeds classified as being not-at-risk</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a3">
+                          <td>Local breeds classified as unknown level of risk of extinction</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I2a2">
+                          <td>Total official flows to agriculture</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I2b1">
+                          <td>Agricultural export subsidies</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div id="Disagg2" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader" style="background-color:#DDA63A !important;">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I211">
+                          <td>Population whose food intake is insufficient to meet dietary energy requirements for min 1yr</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I221">
+                          <td>No. of children under five whose weight for height is > +2</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I221">
+                          <td>Total No. of children under 5 years of age</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I222a">
+                          <td>No. of children under 5 whose weight for height is < -2</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I251">
+                          <td>No. of plant and animal genetic resources for food and agriculture secured</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a1">
+                          <td>No. of local breeds classified as being at risk</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a1">
+                          <td>Total no. of local breeds in all risk categories</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a2">
+                          <td>No. of local breeds classified as not-at-risk</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I252a3">
+                          <td>No. of local breeds classified as unknown</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Total net ODA and OOF</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Total export subsidies budgetary outalys and quantities</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I2a2">
+                          <td>Total official flows to agriculture</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I2b1">
+                          <td>Total export subsidies budgetary outalys and quantities</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+        <!-- <div class="tab2" style="margin-top: 10px; background-color: #DDA63A;">
           <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg2')">No Disaggregation</button>
           <button class="tablinks2" onclick="openDisagg(event, 'Disagg2')">Disaggregation</button>
-        </div>
+        </div> -->
         <!-- Tab content -->
-        <div id="NoDisagg2" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#DDA63A !important;">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I211">
-                        <td>Prevalence of undernourishment</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I221">
-                        <td>Prevalence of stunting among children under 5</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I222a">
-                        <td>Prevalence of overweight among children under 5</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I251">
-                        <td>Number of plant and animal genetic resources for food and agriculture secured</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a1">
-                        <td>Local breeds classified as being at risk</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a2">
-                        <td>Local breeds classified as being not-at-risk</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a3">
-                        <td>Local breeds classified as unknown level of risk of extinction</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I2a2">
-                        <td>Total official flows to agriculture</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I2b1">
-                        <td>Agricultural export subsidies</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="Disagg2" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#DDA63A !important;">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I211">
-                        <td>Population whose food intake is insufficient to meet dietary energy requirements for min 1yr</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I221">
-                        <td>No. of children under five whose weight for height is > +2</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I221">
-                        <td>Total No. of children under 5 years of age</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I222a">
-                        <td>No. of children under 5 whose weight for height is < -2</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I251">
-                        <td>No. of plant and animal genetic resources for food and agriculture secured</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a1">
-                        <td>No. of local breeds classified as being at risk</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a1">
-                        <td>Total no. of local breeds in all risk categories</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a2">
-                        <td>No. of local breeds classified as not-at-risk</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I252a3">
-                        <td>No. of local breeds classified as unknown</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I131">
-                        <td>Total net ODA and OOF</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I131">
-                        <td>Total export subsidies budgetary outalys and quantities</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I2a2">
-                        <td>Total official flows to agriculture</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I2b1">
-                        <td>Total export subsidies budgetary outalys and quantities</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+
     </div>
     <!-- Goal 2 End -->
 
@@ -2354,8 +2280,3 @@ crossorigin="anonymous">
 
 
 </div>
-
-<script type="text/javascript">
-    //Outer Tabs:Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
