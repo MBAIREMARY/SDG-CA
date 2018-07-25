@@ -1,0 +1,794 @@
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"type="text/javascript"></script>
+	<script>
+		$(function () {
+			$("#tabs-left").tabs();
+		});
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<style type="text/css">
+		#tabs-left { position: relative; padding-left: 18em; }
+		#tabs-left .ui-tabs-nav {
+			position: absolute; left: 0.25em; top: 0.25em; bottom: 0.25em; width: 15em;
+			padding: 0.2em 0 0.2em 0.2em;
+		}
+		#tabs-left .ui-tabs-nav li {
+			right: 1px; width: 100%; border-right: none; border-bottom-width: 1px !important;
+			-moz-border-radius: 4px 0px 0px 4px; -webkit-border-radius: 4px 0px 0px 4px;
+			border-radius: 4px 0px 0px 4px; overflow: hidden;
+		}
+		#tabs-left .ui-tabs-nav li.ui-tabs-selected, #tabs-left .ui-tabs-nav li.ui-state-active {
+			border-right: 1px solid transparent;
+		}
+		#tabs-left .ui-tabs-nav li a { float: left; width: 100%; }
+		#tabs-left .ui-tabs-panel { display: table; }
+		#tabs-left-vertical .ui-tabs-nav { position: absolute;
+			width: 21em; transform: translate(-100%, 0%) rotate(-90deg); transform-origin: 100% 0%;
+		}
+		#tabs-left-vertical .ui-tabs-nav li { float: right; }
+		#tabs-left-vertical .ui-tabs-panel { padding-left: 3.5em; }
+		#tabs-left-vertical .ui-tabs-panel { display: table; }
+		/* table css */ table.tableizer-table {
+			font-size: 10px; 	border: 1px solid #CCC; 	font-family: Arial, Helvetica, sans-serif;
+			margin-bottom: 2em; 	margin-left: auto; 	margin-right: auto;
+			}
+			.tableizer-table td { 	padding: 2px; 	margin: 3px; 	border: 1px solid #CCC; 	vertical-align: middle; }
+			.tableizer-table th { 	background-color: #104E8B; 	color: #FFF; 	font-weight: bold; 	vertical-align: middle; }
+			input, input[type=text] { 	width: 2.58em; 	padding: 2px; } #extended .select2-container { 	width: 274px; }
+			img.commentlink { 	display: none; 	visibility: hidden; }
+			.cde-COMFORTABLE td, .cde-COMFORTABLE th { padding: 5px; border: 1px solid #c0c0c0; }
+			.tableizer-table tbody td:not(:first-child) { text-align: center; }
+			#extended tbody td{ 	text-align: left;; }
+	</style>
+	<p>&nbsp;</p>
+
+	<div id="tabs-left">
+		<ul>
+			<li><a href="#tabs-kp">Key Population</a></li>
+			<li><a href="#tabs-l">Labs</a></li>
+		</ul>
+
+		<div id="tabs-kp" style="width: 95%">
+		<table class="tableizer-table" style="width: 640px;">
+			<thead style="display: block; position:sticky; top:0; z-index:100;">
+				<tr>
+					<th colspan="5" style="text-align: center;">
+					<h1><font color="#ffffff">Key Population Results</font></h1>
+					</th>
+				</tr>
+				<tr>
+					<th>Indicator</th>
+					<th colspan="4" rowspan="1">KP Types</th>
+				</tr>
+				<tr>
+					<th colspan="1" rowspan="2" style="width: 454px;">&nbsp;</th>
+					<th colspan="1" rowspan="2">FSWs</th>
+					<th colspan="1" rowspan="2">MSMs</th>
+					<th colspan="2">PWID</th>
+				</tr>
+				<tr>
+					<th rowspan="1">Female</th>
+					<th rowspan="1">Male</th>
+				</tr>
+			</thead>
+			<tbody style="display: block;">
+				<tr>
+					<td>Estimated (SNU)</td>
+					<td><input id="YIBScBkel0X-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Estimated (SNU) FSWs" value="[ KPV2_Result: Estimated (SNU) FSWs ]" /></td>
+					<td><input id="YIBScBkel0X-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Estimated (SNU) MSMs" value="[ KPV2_Result: Estimated (SNU) MSMs ]" /></td>
+					<td><input id="YIBScBkel0X-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Estimated (SNU) Female" value="[ KPV2_Result: Estimated (SNU) Female ]" /></td>
+					<td><input id="YIBScBkel0X-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Estimated (SNU) Male" value="[ KPV2_Result: Estimated (SNU) Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Estimated (Hotspot)</td>
+					<td><input id="YGDA6rc0IGx-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Estimated (Hotspot) FSWs" value="[ KPV2_Result: Estimated (Hotspot) FSWs ]" /></td>
+					<td><input id="YGDA6rc0IGx-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Estimated (Hotspot) MSMs" value="[ KPV2_Result: Estimated (Hotspot) MSMs ]" /></td>
+					<td><input id="YGDA6rc0IGx-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Estimated (Hotspot) Female" value="[ KPV2_Result: Estimated (Hotspot) Female ]" /></td>
+					<td><input id="YGDA6rc0IGx-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Estimated (Hotspot) Male" value="[ KPV2_Result: Estimated (Hotspot) Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Target</td>
+					<td><input id="dFRCIfwMXMU-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Target FSWs" value="[ KPV2_Result: Target FSWs ]" /></td>
+					<td><input id="dFRCIfwMXMU-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Target MSMs" value="[ KPV2_Result: Target MSMs ]" /></td>
+					<td><input id="dFRCIfwMXMU-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Target Female" value="[ KPV2_Result: Target Female ]" /></td>
+					<td><input id="dFRCIfwMXMU-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Target Male" value="[ KPV2_Result: Target Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Contacted Total</td>
+					<td><input id="PUs3RyilHAt-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Contacted Total FSWs" value="[ KPV2_Result: Contacted Total FSWs ]" /></td>
+					<td><input id="PUs3RyilHAt-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Contacted Total MSMs" value="[ KPV2_Result: Contacted Total MSMs ]" /></td>
+					<td><input id="PUs3RyilHAt-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Contacted Total Female" value="[ KPV2_Result: Contacted Total Female ]" /></td>
+					<td><input id="PUs3RyilHAt-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Contacted Total Male" value="[ KPV2_Result: Contacted Total Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Contacted New</td>
+					<td><input id="NpppaheyJdK-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Contacted New FSWs" value="[ KPV2_Result: Contacted New FSWs ]" /></td>
+					<td><input id="NpppaheyJdK-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Contacted New MSMs" value="[ KPV2_Result: Contacted New MSMs ]" /></td>
+					<td><input id="NpppaheyJdK-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Contacted New Female" value="[ KPV2_Result: Contacted New Female ]" /></td>
+					<td><input id="NpppaheyJdK-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Contacted New Male" value="[ KPV2_Result: Contacted New Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs Reached (KP_PREV)</td>
+					<td><input id="deJSP0vWB4Y-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs Reached (KP_PREV) FSWs" value="[ KPV2_Result: Number of KPs Reached (KP_PREV) FSWs ]" /></td>
+					<td><input id="deJSP0vWB4Y-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs Reached (KP_PREV) MSMs" value="[ KPV2_Result: Number of KPs Reached (KP_PREV) MSMs ]" /></td>
+					<td><input id="deJSP0vWB4Y-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs Reached (KP_PREV) Female" value="[ KPV2_Result: Number of KPs Reached (KP_PREV) Female ]" /></td>
+					<td><input id="deJSP0vWB4Y-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs Reached (KP_PREV) Male" value="[ KPV2_Result: Number of KPs Reached (KP_PREV) Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Newly Enrolled</td>
+					<td><input id="bb1X8i53tvx-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Newly Enrolled FSWs" value="[ KPV2_Result: Newly Enrolled FSWs ]" /></td>
+					<td><input id="bb1X8i53tvx-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Newly Enrolled MSMs" value="[ KPV2_Result: Newly Enrolled MSMs ]" /></td>
+					<td><input id="bb1X8i53tvx-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Newly Enrolled Female" value="[ KPV2_Result: Newly Enrolled Female ]" /></td>
+					<td><input id="bb1X8i53tvx-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Newly Enrolled Male" value="[ KPV2_Result: Newly Enrolled Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Known Positive at entry into the program</td>
+					<td><input id="FN6AWTqfaiT-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Known Positive at entry into the program FSWs" value="[ KPV2_Result: Known Positive at entry into the program FSWs ]" /></td>
+					<td><input id="FN6AWTqfaiT-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Known Positive at entry into the program MSMs" value="[ KPV2_Result: Known Positive at entry into the program MSMs ]" /></td>
+					<td><input id="FN6AWTqfaiT-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Known Positive at entry into the program Female" value="[ KPV2_Result: Known Positive at entry into the program Female ]" /></td>
+					<td><input id="FN6AWTqfaiT-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Known Positive at entry into the program Male" value="[ KPV2_Result: Known Positive at entry into the program Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KP tested for HIV at enrollment</td>
+					<td><input id="GqSvBwjoLwa-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KP tested for HIV at enrollment FSWs" value="[ KPV2_Result: Number of KP tested for HIV at enrollment FSWs ]" /></td>
+					<td><input id="GqSvBwjoLwa-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KP tested for HIV at enrollment MSMs" value="[ KPV2_Result: Number of KP tested for HIV at enrollment MSMs ]" /></td>
+					<td><input id="GqSvBwjoLwa-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KP tested for HIV at enrollment Female" value="[ KPV2_Result: Number of KP tested for HIV at enrollment Female ]" /></td>
+					<td><input id="GqSvBwjoLwa-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KP tested for HIV at enrollment Male" value="[ KPV2_Result: Number of KP tested for HIV at enrollment Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Tested HIV+ at enrollment</td>
+					<td><input id="nRTJcQFDhzJ-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Tested HIV+ at enrollment FSWs" value="[ KPV2_Result: Tested HIV+ at enrollment FSWs ]" /></td>
+					<td><input id="nRTJcQFDhzJ-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Tested HIV+ at enrollment MSMs" value="[ KPV2_Result: Tested HIV+ at enrollment MSMs ]" /></td>
+					<td><input id="nRTJcQFDhzJ-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Tested HIV+ at enrollment Female" value="[ KPV2_Result: Tested HIV+ at enrollment Female ]" /></td>
+					<td><input id="nRTJcQFDhzJ-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Tested HIV+ at enrollment Male" value="[ KPV2_Result: Tested HIV+ at enrollment Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs Ever enrolled</td>
+					<td><input id="TwfKLhFVaWL-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs Ever enrolled FSWs" value="[ KPV2_Result: Number of KPs Ever enrolled FSWs ]" /></td>
+					<td><input id="TwfKLhFVaWL-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs Ever enrolled MSMs" value="[ KPV2_Result: Number of KPs Ever enrolled MSMs ]" /></td>
+					<td><input id="TwfKLhFVaWL-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs Ever enrolled Female" value="[ KPV2_Result: Number of KPs Ever enrolled Female ]" /></td>
+					<td><input id="TwfKLhFVaWL-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs Ever enrolled Male" value="[ KPV2_Result: Number of KPs Ever enrolled Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Net Enrollment</td>
+					<td><input id="uq7Ue4Kyhs2-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Net Enrollment FSWs" value="[ KPV2_Result: Net Enrollment FSWs ]" /></td>
+					<td><input id="uq7Ue4Kyhs2-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Net Enrollment MSMs" value="[ KPV2_Result: Net Enrollment MSMs ]" /></td>
+					<td><input id="uq7Ue4Kyhs2-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Net Enrollment Female" value="[ KPV2_Result: Net Enrollment Female ]" /></td>
+					<td><input id="uq7Ue4Kyhs2-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Net Enrollment Male" value="[ KPV2_Result: Net Enrollment Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs Currently Active in the DICE /Program</td>
+					<td><input id="PEopeA0d5ag-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs Currently Active in the DICE /Program FSWs" value="[ KPV2_Result: Number of KPs Currently Active in the DICE /Program FSWs ]" /></td>
+					<td><input id="PEopeA0d5ag-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs Currently Active in the DICE /Program MSMs" value="[ KPV2_Result: Number of KPs Currently Active in the DICE /Program MSMs ]" /></td>
+					<td><input id="PEopeA0d5ag-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs Currently Active in the DICE /Program Female" value="[ KPV2_Result: Number of KPs Currently Active in the DICE /Program Female ]" /></td>
+					<td><input id="PEopeA0d5ag-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs Currently Active in the DICE /Program Male" value="[ KPV2_Result: Number of KPs Currently Active in the DICE /Program Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPS eligible for HIV retest</td>
+					<td><input id="rcllC5YCLDL-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPS eligible for HIV retest FSWs" value="[ KPV2_Result: Number of KPS eligible for HIV retest FSWs ]" /></td>
+					<td><input id="rcllC5YCLDL-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPS eligible for HIV retest MSMs" value="[ KPV2_Result: Number of KPS eligible for HIV retest MSMs ]" /></td>
+					<td><input id="rcllC5YCLDL-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPS eligible for HIV retest Female" value="[ KPV2_Result: Number of KPS eligible for HIV retest Female ]" /></td>
+					<td><input id="rcllC5YCLDL-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPS eligible for HIV retest Male" value="[ KPV2_Result: Number of KPS eligible for HIV retest Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs eligible for HIV retest who made a revisit this month</td>
+					<td><input id="iPD0GulZOPg-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month FSWs" value="[ KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month FSWs ]" /></td>
+					<td><input id="iPD0GulZOPg-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month MSMs" value="[ KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month MSMs ]" /></td>
+					<td><input id="iPD0GulZOPg-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month Female" value="[ KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month Female ]" /></td>
+					<td><input id="iPD0GulZOPg-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month Male" value="[ KPV2_Result: Number of KPs eligible for HIV retest who made a revisit this month Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs tested for HIV at revisit</td>
+					<td><input id="xHAKjwIX84g-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs tested for HIV at revisit FSWs" value="[ KPV2_Result: Number of KPs tested for HIV at revisit FSWs ]" /></td>
+					<td><input id="xHAKjwIX84g-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs tested for HIV at revisit MSMs" value="[ KPV2_Result: Number of KPs tested for HIV at revisit MSMs ]" /></td>
+					<td><input id="xHAKjwIX84g-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs tested for HIV at revisit Female" value="[ KPV2_Result: Number of KPs tested for HIV at revisit Female ]" /></td>
+					<td><input id="xHAKjwIX84g-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs tested for HIV at revisit Male" value="[ KPV2_Result: Number of KPs tested for HIV at revisit Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs testing HIV + at retest</td>
+					<td><input id="lOuDgUAjj0G-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs testing HIV + at retest FSWs" value="[ KPV2_Result: Number of KPs testing HIV + at retest FSWs ]" /></td>
+					<td><input id="lOuDgUAjj0G-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs testing HIV + at retest MSMs" value="[ KPV2_Result: Number of KPs testing HIV + at retest MSMs ]" /></td>
+					<td><input id="lOuDgUAjj0G-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs testing HIV + at retest Female" value="[ KPV2_Result: Number of KPs testing HIV + at retest Female ]" /></td>
+					<td><input id="lOuDgUAjj0G-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs testing HIV + at retest Male" value="[ KPV2_Result: Number of KPs testing HIV + at retest Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KP sexual partners listed for PNS</td>
+					<td><input id="UJGVNmcNVX3-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners listed for PNS FSWs" value="[ KPV2_Result: Number of KP sexual partners listed for PNS FSWs ]" /></td>
+					<td><input id="UJGVNmcNVX3-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners listed for PNS MSMs" value="[ KPV2_Result: Number of KP sexual partners listed for PNS MSMs ]" /></td>
+					<td><input id="UJGVNmcNVX3-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners listed for PNS Female" value="[ KPV2_Result: Number of KP sexual partners listed for PNS Female ]" /></td>
+					<td><input id="UJGVNmcNVX3-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners listed for PNS Male" value="[ KPV2_Result: Number of KP sexual partners listed for PNS Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of listed KP partners eligible for HTS</td>
+					<td><input id="CBcwOpI1r10-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of listed KP partners eligible for HTS FSWs" value="[ KPV2_Result: Number of listed KP partners eligible for HTS FSWs ]" /></td>
+					<td><input id="CBcwOpI1r10-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of listed KP partners eligible for HTS MSMs" value="[ KPV2_Result: Number of listed KP partners eligible for HTS MSMs ]" /></td>
+					<td><input id="CBcwOpI1r10-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of listed KP partners eligible for HTS Female" value="[ KPV2_Result: Number of listed KP partners eligible for HTS Female ]" /></td>
+					<td><input id="CBcwOpI1r10-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of listed KP partners eligible for HTS Male" value="[ KPV2_Result: Number of listed KP partners eligible for HTS Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KP sexual partners tested for HIV</td>
+					<td><input id="ZrXGeQGVWtk-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested for HIV FSWs" value="[ KPV2_Result: Number of KP sexual partners tested for HIV FSWs ]" /></td>
+					<td><input id="ZrXGeQGVWtk-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested for HIV MSMs" value="[ KPV2_Result: Number of KP sexual partners tested for HIV MSMs ]" /></td>
+					<td><input id="ZrXGeQGVWtk-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested for HIV Female" value="[ KPV2_Result: Number of KP sexual partners tested for HIV Female ]" /></td>
+					<td><input id="ZrXGeQGVWtk-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested for HIV Male" value="[ KPV2_Result: Number of KP sexual partners tested for HIV Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KP sexual partners tested HIV +ve</td>
+					<td><input id="BpzrteRRPS9-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested HIV +ve FSWs" value="[ KPV2_Result: Number of KP sexual partners tested HIV +ve FSWs ]" /></td>
+					<td><input id="BpzrteRRPS9-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested HIV +ve MSMs" value="[ KPV2_Result: Number of KP sexual partners tested HIV +ve MSMs ]" /></td>
+					<td><input id="BpzrteRRPS9-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested HIV +ve Female" value="[ KPV2_Result: Number of KP sexual partners tested HIV +ve Female ]" /></td>
+					<td><input id="BpzrteRRPS9-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KP sexual partners tested HIV +ve Male" value="[ KPV2_Result: Number of KP sexual partners tested HIV +ve Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs screened for STIs</td>
+					<td><input id="zmNLcBNwr2e-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs screened for STIs FSWs" value="[ KPV2_Result: Number of KPs screened for STIs FSWs ]" /></td>
+					<td><input id="zmNLcBNwr2e-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs screened for STIs MSMs" value="[ KPV2_Result: Number of KPs screened for STIs MSMs ]" /></td>
+					<td><input id="zmNLcBNwr2e-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs screened for STIs Female" value="[ KPV2_Result: Number of KPs screened for STIs Female ]" /></td>
+					<td><input id="zmNLcBNwr2e-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs screened for STIs Male" value="[ KPV2_Result: Number of KPs screened for STIs Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs Screening positive for STI</td>
+					<td><input id="IrnoXgjMHAb-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs Screening positive for STI FSWs" value="[ KPV2_Result: Number of KPs Screening positive for STI FSWs ]" /></td>
+					<td><input id="IrnoXgjMHAb-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs Screening positive for STI MSMs" value="[ KPV2_Result: Number of KPs Screening positive for STI MSMs ]" /></td>
+					<td><input id="IrnoXgjMHAb-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs Screening positive for STI Female" value="[ KPV2_Result: Number of KPs Screening positive for STI Female ]" /></td>
+					<td><input id="IrnoXgjMHAb-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs Screening positive for STI Male" value="[ KPV2_Result: Number of KPs Screening positive for STI Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs put on treatment for STIs</td>
+					<td><input id="ksypT8cWhx7-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs put on treatment for STIs FSWs" value="[ KPV2_Result: Number of KPs put on treatment for STIs FSWs ]" /></td>
+					<td><input id="ksypT8cWhx7-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs put on treatment for STIs MSMs" value="[ KPV2_Result: Number of KPs put on treatment for STIs MSMs ]" /></td>
+					<td><input id="ksypT8cWhx7-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs put on treatment for STIs Female" value="[ KPV2_Result: Number of KPs put on treatment for STIs Female ]" /></td>
+					<td><input id="ksypT8cWhx7-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs put on treatment for STIs Male" value="[ KPV2_Result: Number of KPs put on treatment for STIs Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs eligible for PrEP</td>
+					<td><input id="qYIXK76ThVW-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for PrEP FSWs" value="[ KPV2_Result: Number of KPs eligible for PrEP FSWs ]" /></td>
+					<td><input id="qYIXK76ThVW-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for PrEP MSMs" value="[ KPV2_Result: Number of KPs eligible for PrEP MSMs ]" /></td>
+					<td><input id="qYIXK76ThVW-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for PrEP Female" value="[ KPV2_Result: Number of KPs eligible for PrEP Female ]" /></td>
+					<td><input id="qYIXK76ThVW-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs eligible for PrEP Male" value="[ KPV2_Result: Number of KPs eligible for PrEP Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of eligible KPs put on PrEP</td>
+					<td><input id="bAQ1fUQu1LJ-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of eligible KPs put on PrEP FSWs" value="[ KPV2_Result: Number of eligible KPs put on PrEP FSWs ]" /></td>
+					<td><input id="bAQ1fUQu1LJ-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of eligible KPs put on PrEP MSMs" value="[ KPV2_Result: Number of eligible KPs put on PrEP MSMs ]" /></td>
+					<td><input id="bAQ1fUQu1LJ-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of eligible KPs put on PrEP Female" value="[ KPV2_Result: Number of eligible KPs put on PrEP Female ]" /></td>
+					<td><input id="bAQ1fUQu1LJ-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of eligible KPs put on PrEP Male" value="[ KPV2_Result: Number of eligible KPs put on PrEP Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs ever put on PrEP</td>
+					<td><input id="sc5eTyiiYQV-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs ever put on PrEP FSWs" value="[ KPV2_Result: Number of KPs ever put on PrEP FSWs ]" /></td>
+					<td><input id="sc5eTyiiYQV-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs ever put on PrEP MSMs" value="[ KPV2_Result: Number of KPs ever put on PrEP MSMs ]" /></td>
+					<td><input id="sc5eTyiiYQV-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs ever put on PrEP Female" value="[ KPV2_Result: Number of KPs ever put on PrEP Female ]" /></td>
+					<td><input id="sc5eTyiiYQV-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs ever put on PrEP Male" value="[ KPV2_Result: Number of KPs ever put on PrEP Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs currently on PrEP</td>
+					<td><input id="UlWIoNETNxa-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP FSWs" value="[ KPV2_Result: Number of KPs currently on PrEP FSWs ]" /></td>
+					<td><input id="UlWIoNETNxa-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP MSMs" value="[ KPV2_Result: Number of KPs currently on PrEP MSMs ]" /></td>
+					<td><input id="UlWIoNETNxa-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP Female" value="[ KPV2_Result: Number of KPs currently on PrEP Female ]" /></td>
+					<td><input id="UlWIoNETNxa-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP Male" value="[ KPV2_Result: Number of KPs currently on PrEP Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs stopped taking PrEP</td>
+					<td><input id="m0zOoQzSfef-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs stopped taking PrEP FSWs" value="[ KPV2_Result: Number of KPs stopped taking PrEP FSWs ]" /></td>
+					<td><input id="m0zOoQzSfef-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs stopped taking PrEP MSMs" value="[ KPV2_Result: Number of KPs stopped taking PrEP MSMs ]" /></td>
+					<td><input id="m0zOoQzSfef-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs stopped taking PrEP Female" value="[ KPV2_Result: Number of KPs stopped taking PrEP Female ]" /></td>
+					<td><input id="m0zOoQzSfef-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs stopped taking PrEP Male" value="[ KPV2_Result: Number of KPs stopped taking PrEP Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs currently on PrEP who screened +ve for STI</td>
+					<td><input id="JxzWEVcXUxw-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI FSWs" value="[ KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI FSWs ]" /></td>
+					<td><input id="JxzWEVcXUxw-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI MSMs" value="[ KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI MSMs ]" /></td>
+					<td><input id="JxzWEVcXUxw-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI Female" value="[ KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI Female ]" /></td>
+					<td><input id="JxzWEVcXUxw-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI Male" value="[ KPV2_Result: Number of KPs currently on PrEP who screened +ve for STI Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs newly identified HIV +ve</td>
+					<td><input id="HJkau4mfAuT-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs newly identified HIV +ve FSWs" value="[ KPV2_Result: Number of KPs newly identified HIV +ve FSWs ]" /></td>
+					<td><input id="HJkau4mfAuT-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs newly identified HIV +ve MSMs" value="[ KPV2_Result: Number of KPs newly identified HIV +ve MSMs ]" /></td>
+					<td><input id="HJkau4mfAuT-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs newly identified HIV +ve Female" value="[ KPV2_Result: Number of KPs newly identified HIV +ve Female ]" /></td>
+					<td><input id="HJkau4mfAuT-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs newly identified HIV +ve Male" value="[ KPV2_Result: Number of KPs newly identified HIV +ve Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs new on HAART at the DICE</td>
+					<td><input id="sGU7NNU2mnn-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs new on HAART at the DICE FSWs" value="[ KPV2_Result: Number of KPs new on HAART at the DICE FSWs ]" /></td>
+					<td><input id="sGU7NNU2mnn-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs new on HAART at the DICE MSMs" value="[ KPV2_Result: Number of KPs new on HAART at the DICE MSMs ]" /></td>
+					<td><input id="sGU7NNU2mnn-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs new on HAART at the DICE Female" value="[ KPV2_Result: Number of KPs new on HAART at the DICE Female ]" /></td>
+					<td><input id="sGU7NNU2mnn-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs new on HAART at the DICE Male" value="[ KPV2_Result: Number of KPs new on HAART at the DICE Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPS new on HAART at other CCC</td>
+					<td><input id="Objf5Pd030y-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPS new on HAART at other CCC FSWs" value="[ KPV2_Result: Number of KPS new on HAART at other CCC FSWs ]" /></td>
+					<td><input id="Objf5Pd030y-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPS new on HAART at other CCC MSMs" value="[ KPV2_Result: Number of KPS new on HAART at other CCC MSMs ]" /></td>
+					<td><input id="Objf5Pd030y-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPS new on HAART at other CCC Female" value="[ KPV2_Result: Number of KPS new on HAART at other CCC Female ]" /></td>
+					<td><input id="Objf5Pd030y-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPS new on HAART at other CCC Male" value="[ KPV2_Result: Number of KPS new on HAART at other CCC Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs ever identified HIV +ve by the program</td>
+					<td><input id="MhI6zd0K5NV-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs ever identified HIV +ve by the program FSWs" value="[ KPV2_Result: Number of KPs ever identified HIV +ve by the program FSWs ]" /></td>
+					<td><input id="MhI6zd0K5NV-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs ever identified HIV +ve by the program MSMs" value="[ KPV2_Result: Number of KPs ever identified HIV +ve by the program MSMs ]" /></td>
+					<td><input id="MhI6zd0K5NV-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs ever identified HIV +ve by the program Female" value="[ KPV2_Result: Number of KPs ever identified HIV +ve by the program Female ]" /></td>
+					<td><input id="MhI6zd0K5NV-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs ever identified HIV +ve by the program Male" value="[ KPV2_Result: Number of KPs ever identified HIV +ve by the program Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of HIV +ve KPs ever put on HAART by the program</td>
+					<td><input id="zhuZh73yy1u-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program FSWs" value="[ KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program FSWs ]" /></td>
+					<td><input id="zhuZh73yy1u-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program MSMs" value="[ KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program MSMs ]" /></td>
+					<td><input id="zhuZh73yy1u-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program Female" value="[ KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program Female ]" /></td>
+					<td><input id="zhuZh73yy1u-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program Male" value="[ KPV2_Result: Number of HIV +ve KPs ever put on HAART by the program Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of active HIV +ve</td>
+					<td><input id="NBZlKI7T6vx-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of active HIV +ve FSWs" value="[ KPV2_Result: Number of active HIV +ve FSWs ]" /></td>
+					<td><input id="NBZlKI7T6vx-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of active HIV +ve MSMs" value="[ KPV2_Result: Number of active HIV +ve MSMs ]" /></td>
+					<td><input id="NBZlKI7T6vx-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of active HIV +ve Female" value="[ KPV2_Result: Number of active HIV +ve Female ]" /></td>
+					<td><input id="NBZlKI7T6vx-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of active HIV +ve Male" value="[ KPV2_Result: Number of active HIV +ve Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs currently active on HAART at&nbsp; the DICE</td>
+					<td><input id="l9dodRrtwPy-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at the DICE FSWs" value="[ KPV2_Result: Number of KPs currently active on HAART at the DICE FSWs ]" /></td>
+					<td><input id="l9dodRrtwPy-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at the DICE MSMs" value="[ KPV2_Result: Number of KPs currently active on HAART at the DICE MSMs ]" /></td>
+					<td><input id="l9dodRrtwPy-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at the DICE Female" value="[ KPV2_Result: Number of KPs currently active on HAART at the DICE Female ]" /></td>
+					<td><input id="l9dodRrtwPy-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at the DICE Male" value="[ KPV2_Result: Number of KPs currently active on HAART at the DICE Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs currently active on HAART at other CCC</td>
+					<td><input id="U0BLZZIsXzX-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at other CCC FSWs" value="[ KPV2_Result: Number of KPs currently active on HAART at other CCC FSWs ]" /></td>
+					<td><input id="U0BLZZIsXzX-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at other CCC MSMs" value="[ KPV2_Result: Number of KPs currently active on HAART at other CCC MSMs ]" /></td>
+					<td><input id="U0BLZZIsXzX-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at other CCC Female" value="[ KPV2_Result: Number of KPs currently active on HAART at other CCC Female ]" /></td>
+					<td><input id="U0BLZZIsXzX-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs currently active on HAART at other CCC Male" value="[ KPV2_Result: Number of KPs currently active on HAART at other CCC Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with valid initial viral load results at the DICE</td>
+					<td><input id="J5LGsFyGF7a-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at the DICE FSWs" value="[ KPV2_Result: Number of KPs with valid initial viral load results at the DICE FSWs ]" /></td>
+					<td><input id="J5LGsFyGF7a-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at the DICE MSMs" value="[ KPV2_Result: Number of KPs with valid initial viral load results at the DICE MSMs ]" /></td>
+					<td><input id="J5LGsFyGF7a-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at the DICE Female" value="[ KPV2_Result: Number of KPs with valid initial viral load results at the DICE Female ]" /></td>
+					<td><input id="J5LGsFyGF7a-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at the DICE Male" value="[ KPV2_Result: Number of KPs with valid initial viral load results at the DICE Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with valid initial viral load results at other CCC</td>
+					<td><input id="J4LdKFAZHD9-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at other CCC FSWs" value="[ KPV2_Result: Number of KPs with valid initial viral load results at other CCC FSWs ]" /></td>
+					<td><input id="J4LdKFAZHD9-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at other CCC MSMs" value="[ KPV2_Result: Number of KPs with valid initial viral load results at other CCC MSMs ]" /></td>
+					<td><input id="J4LdKFAZHD9-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at other CCC Female" value="[ KPV2_Result: Number of KPs with valid initial viral load results at other CCC Female ]" /></td>
+					<td><input id="J4LdKFAZHD9-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with valid initial viral load results at other CCC Male" value="[ KPV2_Result: Number of KPs with valid initial viral load results at other CCC Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with viral suppression at the DICE</td>
+					<td><input id="i1TTvvOrogP-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at the DICE FSWs" value="[ KPV2_Result: Number of KPs with viral suppression at the DICE FSWs ]" /></td>
+					<td><input id="i1TTvvOrogP-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at the DICE MSMs" value="[ KPV2_Result: Number of KPs with viral suppression at the DICE MSMs ]" /></td>
+					<td><input id="i1TTvvOrogP-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at the DICE Female" value="[ KPV2_Result: Number of KPs with viral suppression at the DICE Female ]" /></td>
+					<td><input id="i1TTvvOrogP-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at the DICE Male" value="[ KPV2_Result: Number of KPs with viral suppression at the DICE Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with viral suppression at other CCC</td>
+					<td><input id="GAbHjRBtWnT-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at other CCC FSWs" value="[ KPV2_Result: Number of KPs with viral suppression at other CCC FSWs ]" /></td>
+					<td><input id="GAbHjRBtWnT-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at other CCC MSMs" value="[ KPV2_Result: Number of KPs with viral suppression at other CCC MSMs ]" /></td>
+					<td><input id="GAbHjRBtWnT-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at other CCC Female" value="[ KPV2_Result: Number of KPs with viral suppression at other CCC Female ]" /></td>
+					<td><input id="GAbHjRBtWnT-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with viral suppression at other CCC Male" value="[ KPV2_Result: Number of KPs with viral suppression at other CCC Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with suspected treatment failure</td>
+					<td><input id="AuINyF1RHPx-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure FSWs" value="[ KPV2_Result: Number of KPs with suspected treatment failure FSWs ]" /></td>
+					<td><input id="AuINyF1RHPx-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure MSMs" value="[ KPV2_Result: Number of KPs with suspected treatment failure MSMs ]" /></td>
+					<td><input id="AuINyF1RHPx-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure Female" value="[ KPV2_Result: Number of KPs with suspected treatment failure Female ]" /></td>
+					<td><input id="AuINyF1RHPx-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure Male" value="[ KPV2_Result: Number of KPs with suspected treatment failure Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with suspected treatment failure who received 3 EAC sessions</td>
+					<td><input id="X1lh2ckFqDv-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions FSWs" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions FSWs ]" /></td>
+					<td><input id="X1lh2ckFqDv-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions MSMs" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions MSMs ]" /></td>
+					<td><input id="X1lh2ckFqDv-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions Female" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions Female ]" /></td>
+					<td><input id="X1lh2ckFqDv-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions Male" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received 3 EAC sessions Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with suspected treatment failure who received repeat viral load testing</td>
+					<td><input id="HKAm4A61BBB-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing FSWs" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing FSWs ]" /></td>
+					<td><input id="HKAm4A61BBB-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing MSMs" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing MSMs ]" /></td>
+					<td><input id="HKAm4A61BBB-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing Female" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing Female ]" /></td>
+					<td><input id="HKAm4A61BBB-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing Male" value="[ KPV2_Result: Number of KPs with suspected treatment failure who received repeat viral load testing Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with confirmed treatment failure</td>
+					<td><input id="ivtDfBN4UrQ-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure. FSWs" value="[ KPV2_Result: Number of KPs with confirmed treatment failure. FSWs ]" /></td>
+					<td><input id="ivtDfBN4UrQ-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure. MSMs" value="[ KPV2_Result: Number of KPs with confirmed treatment failure. MSMs ]" /></td>
+					<td><input id="ivtDfBN4UrQ-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure. Female" value="[ KPV2_Result: Number of KPs with confirmed treatment failure. Female ]" /></td>
+					<td><input id="ivtDfBN4UrQ-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure. Male" value="[ KPV2_Result: Number of KPs with confirmed treatment failure. Male ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of KPs with confirmed treatment failure and switched to 2nd line regimen</td>
+					<td><input id="fNEM3UNbdK0-ipDbyfDyuff-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen FSWs" value="[ KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen FSWs ]" /></td>
+					<td><input id="fNEM3UNbdK0-itHGAgZ8XZf-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen MSMs" value="[ KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen MSMs ]" /></td>
+					<td><input id="fNEM3UNbdK0-qq019i7VQEN-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen Female" value="[ KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen Female ]" /></td>
+					<td><input id="fNEM3UNbdK0-sNpjlFjbzyQ-val" name="entryfield" title="KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen Male" value="[ KPV2_Result: Number of KPs with confirmed treatment failure and switched to 2nd line regimen Male ]" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+		<div id="tabs-l" style="width: 95%">
+					<table class="tableizer-table" id="extended">
+			<thead style="display:block; position: sticky;top:0; z-index: 100;">
+				<tr>
+					<th colspan="3" style="color: white;">
+					<h1 style="color: white; text-align: center;">Labs Targets</h1>
+					</th>
+				</tr>
+				<tr>
+					<th style="color: white;text-align: center; width: 68px;">Test</th>
+					<th style="color: white;text-align: center; width: 385px;">Indicator</th>
+					<th style="color: white;text-align: center; width: 274px">Result</th>
+				</tr>
+			</thead>
+			<tbody style="display: block;">
+				<tr>
+					<td class="indicatorWidth" colspan="1" rowspan="9" style="background-color: rgb(237, 125, 49);">Viral Load</td>
+					<td>Does the Lab test for VL?</td>
+					<td><input id="FyKL5SM9UwM-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Does the Lab test for VL?" value="[ Lab_Result_ViralLoad:Does the Lab test for VL? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of VL samples tested this quarter</td>
+					<td><input id="a81vPAbHQ5P-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Number of VL samples tested this quarter" value="[ Lab_Result_ViralLoad:Number of VL samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="byqQ2dGNACz-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: What is the average  TAT in this quarter (days)" value="[ Lab_Result_ViralLoad: What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer VL samples to another Lab for Testing?</td>
+					<td><input id="t0uvz4yzqec-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: Does the Lab refer VL samples to another Lab for Testing?" value="[ Lab_Result_ViralLoad: Does the Lab refer VL samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of VL samples referred from this lab this quarter</td>
+					<td><input id="vckT72xfpQg-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: Number of VL samples referred from this lab this quarter" value="[ Lab_Result_ViralLoad: Number of VL samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="pBWAAN7Pipp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad: What is the Average  TAT in this quarter (days)" value="[ Lab_Result_ViralLoad: What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in VL PT this quarter?</td>
+					<td><input id="KVaIc07gsS9-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Did the site participate in VL PT this quarter?" value="[ Lab_Result_ViralLoad:Did the site participate in VL PT this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in VL PT?</td>
+					<td><input id="EBzEl4IOmd9-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Did the site pass in VL PT?" value="[ Lab_Result_ViralLoad:Did the site pass in VL PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed VL PT?</td>
+					<td><input id="MBi8mGXiG1V-HllvX50cXC0-val" name="entryfield" title="Lab_Result_ViralLoad:Was corrective action done and documented for failed VL PT?" value="[ Lab_Result_ViralLoad:Was corrective action done and documented for failed VL PT? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="9" style="; background-color: rgb(255, 229, 152);">EID</td>
+					<td>Does the lab test for EID?</td>
+					<td><input id="wq08g1ALNbb-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Does the test for EID?" value="[ Lab_Result_EID:Does the test for EID? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of EID samples tested this quarter</td>
+					<td><input id="Hb6M9kCbzxd-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Number of EID samples tested this quarter" value="[ Lab_Result_EID:Number of EID samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="VMKrrpc4Vhh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:What is the average  TAT in this quarter (days)" value="[ Lab_Result_EID:What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer EID samples to another Lab for Testing?</td>
+					<td><input id="OMOfPxWopxy-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Does the Lab refer EID samples to another Lab for Testing?" value="[ Lab_Result_EID:Does the Lab refer EID samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of VL samples referred from this lab this quarter</td>
+					<td><input id="qN9CqvFhray-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Number of VL samples referred from this lab this quarter" value="[ Lab_Result_EID:Number of VL samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="E6q1NEp8uEP-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_EID:What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in EID PT this quarter?</td>
+					<td><input id="y7VlX2HuQvy-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Did the site participate in EID  PT this quarter?" value="[ Lab_Result_EID:Did the site participate in EID  PT this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in EID PT?</td>
+					<td><input id="w2iThRTJKmE-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Did the site pass in EID PT?" value="[ Lab_Result_EID:Did the site pass in EID PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed EID PT?</td>
+					<td><input id="vbj8gLgZKwh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EID:Was corrective action done and documented for failed EID PT?" value="[ Lab_Result_EID:Was corrective action done and documented for failed EID PT? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="9" style="background-color: rgb(168, 208, 141);">TB Culture</td>
+					<td>Does the test for TB Culture?</td>
+					<td><input id="XvjpzoReVqw-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Does the test for TB Culture?" value="[ Lab_Result_TBCulture:Does the test for TB Culture? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of TB Culture samples tested this quarter</td>
+					<td><input id="JW56Kn5K82I-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Number of TB Culture samples tested this quarter" value="[ Lab_Result_TBCulture:Number of TB Culture samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="K60MUenzhk7-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:What is the average  TAT in this quarter (days)" value="[ Lab_Result_TBCulture:What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer TB culture samples to another Lab for Testing?</td>
+					<td><input id="STvvGCTgjm4-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Does the Lab refer TB culture samples to another Lab for Testing?" value="[ Lab_Result_TBCulture:Does the Lab refer TB culture samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of TB culture samples referred from this lab this quarter</td>
+					<td><input id="kzS0p2B0Y2A-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Number of TB culture samples referred from this lab this quarter" value="[ Lab_Result_TBCulture:Number of TB culture samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="pAuBEkOeMEZ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_TBCulture:What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in TB culture EQA this quarter?</td>
+					<td><input id="y6u2kjT3F8s-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Did the site participate in TB culutre EQA this quarter?" value="[ Lab_Result_TBCulture:Did the site participate in TB culutre EQA this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in TB culture PT?</td>
+					<td><input id="Dyxw1oYlFuF-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Did the site pass in TB culutre PT?" value="[ Lab_Result_TBCulture:Did the site pass in TB culutre PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed TB culture PT?</td>
+					<td><input id="lYnizCDhXkk-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBCulture:Was corrective action done and documented for failed  TB culutre PT?" value="[ Lab_Result_TBCulture:Was corrective action done and documented for failed  TB culutre PT? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="9" style="background-color: rgb(214, 220, 228);">Gene Expert</td>
+					<td>Does the test for GeneExpert?</td>
+					<td><input id="BjD6lDXEESB-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Does the test for GeneExpert?" value="[ Lab_Result_GeneXpert:Does the test for GeneExpert? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of Genexpert samples tested this quarter</td>
+					<td><input id="B5jb2YGaSUn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Number of Genexpert samples tested this quarter" value="[ Lab_Result_GeneXpert:Number of Genexpert samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="VmSjbP2nbON-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:What is the average  TAT in this quarter (days)" value="[ Lab_Result_GeneXpert:What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer GeneXpert samples to another Lab for Testing?</td>
+					<td><input id="VxubN6ktRWA-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Does the Lab refer GeneXpert samples to another Lab for Testing?" value="[ Lab_Result_GeneXpert:Does the Lab refer GeneXpert samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of GeneXpert samples referred from this lab this quarter</td>
+					<td><input id="lGuscKVzhQz-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Number of GeneXpert samples referred from this lab this quarter" value="[ Lab_Result_GeneXpert:Number of GeneXpert samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="XSsMsL7y4Hh-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_GeneXpert:What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in GeneXpert EQA this quarter?</td>
+					<td><input id="VFdLQ4xcLsu-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Did the site participate in GeneXpert  EQA this quarter?" value="[ Lab_Result_GeneXpert:Did the site participate in GeneXpert  EQA this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in TB culture PT?</td>
+					<td><input id="zhw88WlC0xv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Did the site pass in TB culutre PT?" value="[ Lab_Result_GeneXpert:Did the site pass in TB culutre PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed TB culture PT?</td>
+					<td><input id="M2PrIEUeBHi-HllvX50cXC0-val" name="entryfield" title="Lab_Result_GeneXpert:Was corrective action done and documented for failed  TB culutre PT?" value="[ Lab_Result_GeneXpert:Was corrective action done and documented for failed  TB culutre PT? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="9" style="background-color: rgb(255, 229, 152);">TB-AFB</td>
+					<td>Does the facility perform TB-AFB?</td>
+					<td><input id="xpGJIyJe82f-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Does the perform TB-AFB?" value="[ Lab_Result_TBAFB:Does the perform TB-AFB? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of TB-AFB samples tested this quarter</td>
+					<td><input id="PAI3eSgNFrT-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Number of TB-AFB samples tested this quarter" value="[ Lab_Result_TBAFB:Number of TB-AFB samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="pAWSTflVOUH-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:What is the average  TAT in this quarter (days)" value="[ Lab_Result_TBAFB:What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer TB-AFB samples to another Lab for Testing?</td>
+					<td><input id="Jd5vu8Gpsgp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Does the Lab refer TB-AFB samples to another Lab for Testing?" value="[ Lab_Result_TBAFB:Does the Lab refer TB-AFB samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of TB-AFB samples referred from this lab this quarter</td>
+					<td><input id="nFSU4uMNpH0-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Number of TB-AFB samples referred from this lab this quarter" value="[ Lab_Result_TBAFB:Number of TB-AFB samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="ZkKXTIhGxdV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_TBAFB:What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in TB-AFB EQA this quarter?</td>
+					<td><input id="TrDwxUWT7lQ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Did the site participate in TB-AFB EQA this quarter?" value="[ Lab_Result_TBAFB:Did the site participate in TB-AFB EQA this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in TB-AFB PT?</td>
+					<td><input id="kDxJMy8Esfs-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Did the site pass in TB-AFB PT?" value="[ Lab_Result_TBAFB:Did the site pass in TB-AFB PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed TB-AFB?</td>
+					<td><input id="kTm09yVMFmn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TBAFB:Was corrective action done and documented for failed  TB-AFB?" value="[ Lab_Result_TBAFB:Was corrective action done and documented for failed  TB-AFB? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="9" style="background-color: rgb(21, 226, 243);">CD4</td>
+					<td>Does the facility test for CD4?</td>
+					<td><input id="bOcWz83SSl1-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Does the test for CD4?" value="[ Lab_Result_CD4:Does the test for CD4? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of CD4 samples tested this quarter</td>
+					<td><input id="OwZj11St93y-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Number of CD4 samples tested this quarter" value="[ Lab_Result_CD4:Number of CD4 samples tested this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the average TAT in this quarter (days)</td>
+					<td><input id="D80ewvcvjPL-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:What is the average  TAT in this quarter (days)" value="[ Lab_Result_CD4:What is the average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Does the Lab refer CD4 samples to another Lab for Testing?</td>
+					<td><input id="EWRGoZYJn7C-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Does the Lab refer CD4  samples to another Lab for Testing?" value="[ Lab_Result_CD4:Does the Lab refer CD4  samples to another Lab for Testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of CD4 samples referred from this lab this quarter</td>
+					<td><input id="BEs232vbNGc-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Number of CD4 samples referred from this lab this quarter" value="[ Lab_Result_CD4:Number of CD4 samples referred from this lab this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>What is the Average TAT in this quarter (days)</td>
+					<td><input id="lVJsnEetP1p-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:What is the Average  TAT in this quarter (days)" value="[ Lab_Result_CD4:What is the Average  TAT in this quarter (days) ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site participate in CD4 EQA this quarter?</td>
+					<td><input id="PmG4JX8gG9C-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Did the site participate in CD4  EQA this quarter?" value="[ Lab_Result_CD4:Did the site participate in CD4  EQA this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Did the site pass in CD4 PT?</td>
+					<td><input id="er4MjnbvOek-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Did the site pass in CD4  PT?" value="[ Lab_Result_CD4:Did the site pass in CD4  PT? ]" /></td>
+				</tr>
+				<tr>
+					<td>Was corrective action done and documented for failed CD4 ?</td>
+					<td><input id="pFvu98XnvPv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_CD4:Was corrective action done and documented for failed  CD4 ?" value="[ Lab_Result_CD4:Was corrective action done and documented for failed  CD4 ? ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="7" style="background-color: rgb(197, 224, 179);">Rapid HIV</td>
+					<td>Does this facility perform rapid HIV testing?</td>
+					<td><input id="qkNKEdnDYbO-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Does this facility perform rapid HIV testing?" value="[ Lab_Result_RapidHIV:Does this facility perform rapid HIV testing? ]" /></td>
+				</tr>
+				<tr>
+					<td>Total number of staff offering HIV testing services in the facility</td>
+					<td><input id="zbeReqlhRLv-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Total number of staff offering HIV testing services in the facility" value="[ Lab_Result_RapidHIV:Total number of staff offering HIV testing services in the facility ]" /></td>
+				</tr>
+				<tr>
+					<td>Total number of rapid HIV tests done in the quarter per site</td>
+					<td><input id="t5B9q2vNT8y-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Total number of rapid HIV tests done in the quarter per site" value="[ Lab_Result_RapidHIV:Total number of rapid HIV tests done in the quarter per site ]" /></td>
+				</tr>
+				<tr>
+					<td>Was there a PT Round rolled out this quarter?</td>
+					<td><input id="ksv5w15ltOQ-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Was there a PT Round rolled out this quarter?" value="[ Lab_Result_RapidHIV:Was there a PT Round rolled out this quarter? ]" /></td>
+				</tr>
+				<tr>
+					<td>Enter the PT round for which participants received a panel</td>
+					<td><input id="XND90AhseiB-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Enter the PT round for which partpicpants received a panel" value="[ Lab_Result_RapidHIV:Enter the PT round for which partpicpants received a panel ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of HIV testing staff participating in HIV PT per site in this quarter</td>
+					<td><input id="twzEKxZi8kc-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Number of HIV testing staff participating in HIV PT per site in this quarter" value="[ Lab_Result_RapidHIV:Number of HIV testing staff participating in HIV PT per site in this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td>Number of HIV testing staff who passed the HIV PT in this quarter</td>
+					<td><input id="LNZ0UHr4U2k-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RapidHIV:Number of HIV testing staff who passed the  HIV PT in this quarter" value="[ Lab_Result_RapidHIV:Number of HIV testing staff who passed the  HIV PT in this quarter ]" /></td>
+				</tr>
+				<tr>
+					<td rowspan="1" style="background-color: rgb(211,211,211);">&nbsp;</td>
+					<td>Is the facility implementing in any of the CQI activities<br />
+					listed? (RTCQI, SLMTA,&nbsp;CQI)?</td>
+					<td><select id="choice" style=""><option disabled="disabled" selected="selected" value="">Please Select</option><option value="yes">Yes</option><option value="no">No</option> </select></td>
+				</tr>
+				<tr class="rtcqi">
+					<td rowspan="5" style="background-color: white;">RTCQI</td>
+					<td>Indicate the HIV testing points in the facility?</td>
+					<td><input id="HNzuO6XBmHn-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the HIV testing points in the facility" value="[ Lab_Result_RTCQI:Indicate the HIV testing points in the facility ]" /></td>
+				</tr>
+				<tr class="rtcqi">
+					<td>Indicate the HIV testing points on RTCQI</td>
+					<td><input id="RfyofT37IJV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the HIV testing points on RTCQI" value="[ Lab_Result_RTCQI:Indicate the HIV testing points on RTCQI ]" /></td>
+				</tr>
+				<tr class="rtcqi">
+					<td>Indicate the RTCQI sites audited this quarter</td>
+					<td><input id="ENep2yUUHen-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the RTCQI sites audited this quarter" value="[ Lab_Result_RTCQI:Indicate the RTCQI sites audited this quarter ]" /></td>
+				</tr>
+				<tr class="rtcqi">
+					<td>Indicate the SPI-Checklist level rating achieved</td>
+					<td><input id="whcFN3kq5uG-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the SPI-Checklist level rating achieved" value="[ Lab_Result_RTCQI:Indicate the SPI-Checklist level rating achieved ]" /></td>
+				</tr>
+				<tr class="rtcqi">
+					<td>Indicate the sites receiving RTCQI accreditation this quarter</td>
+					<td><input id="zmEyVkwceoA-HllvX50cXC0-val" name="entryfield" title="Lab_Result_RTCQI:Indicate the sites receiving RTCQI accrediattion this quarter" value="[ Lab_Result_RTCQI:Indicate the sites receiving RTCQI accrediattion this quarter ]" /></td>
+				</tr>
+				<tr class="slmta">
+					<td rowspan="5" style="background-color: white;">SLMTA</td>
+					<td>Was the lab audited for SLMTA this quarter?</td>
+					<td><input id="dXeIx0bu5iU-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Was the lab audited for SLMTA this quarter?" value="[ Lab_Result_SLMTA:Was the lab audited for SLMTA this quarter? ]" /></td>
+				</tr>
+				<tr class="slmta">
+					<td>What is the SLMTA star rating</td>
+					<td><input id="bqxYC2OI41z-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:What is the SLMTA star rating" value="[ Lab_Result_SLMTA:What is the SLMTA star rating ]" /></td>
+				</tr>
+				<tr class="slmta">
+					<td>Has the lab received an ASLM audit this quarter?</td>
+					<td><input id="TdOWcpmGkCp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Has the lab received an ASLM audit this quarter?" value="[ Lab_Result_SLMTA:Has the lab received an ASLM audit this quarter? ]" /></td>
+				</tr>
+				<tr class="slmta">
+					<td>What is the ASLM star rating?</td>
+					<td><input id="EKi3hhVki99-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:What is the ASLM star rating?" value="[ Lab_Result_SLMTA:What is the ASLM star rating? ]" /></td>
+				</tr>
+				<tr class="slmta">
+					<td>Is the lab ISO accredited</td>
+					<td><input id="rvxJeSsSYaN-HllvX50cXC0-val" name="entryfield" title="Lab_Result_SLMTA:Is the lab ISO accredited?" value="[ Lab_Result_SLMTA:Is the lab ISO accredited? ]" /></td>
+				</tr>
+				<tr class="bioSafety">
+					<td rowspan="3" style="background-color: rgb(251, 228, 213);">BioSafety</td>
+					<td>Number of laboratorians working in the lab</td>
+					<td><input id="qtecCDSAvko-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number of laboratorians working in the lab" value="[ Lab_Result_Biosafety:Number of laboratorians working in the lab ]" /></td>
+				</tr>
+				<tr class="bioSafety">
+					<td>Number who have been trained on biosafety to date</td>
+					<td><input id="N3ZWelrsIBq-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number who have been trained on biosafety to date" value="[ Lab_Result_Biosafety:Number who have been trained on biosafety to date ]" /></td>
+				</tr>
+				<tr class="bioSafety">
+					<td>Number who have received annual refresher training this quarter</td>
+					<td><input id="MwCkXSHfwEl-HllvX50cXC0-val" name="entryfield" title="Lab_Result_Biosafety:Number who have received annual refresher training this quarter" value="[ Lab_Result_Biosafety:Number who have received annual refresher training this quarter ]" /></td>
+				</tr>
+				<tr class="equipment">
+					<td rowspan="2" style="background-color: rgb(197, 224, 179);">Equipment<br />
+					Maintenance</td>
+					<td>Number of HIV-related equipment in this facility<br />
+					(microscope, CD4 Machines, BSC/TB hood, pipettes)</td>
+					<td><input id="xncEoiZAt40-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EquipM:Number of HIV-related equipment in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)" value="[ Lab_Result_EquipM:Number of HIV-related equipment in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes) ]" /></td>
+				</tr>
+				<tr class="equipment">
+					<td>Number of HIV-related equipment with up to date service/maintenance<br />
+					in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)</td>
+					<td><input id="VGpQtcQP2Zp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_EquipM:Number of HIV-related equipment with up to date  service/maintenance in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes)" value="[ Lab_Result_EquipM:Number of HIV-related equipment with up to date  service/maintenance in this facility (microscope, CD4 Machines, BSC/TB hood, pipettes) ]" /></td>
+				</tr>
+				<tr class="bloodSafety">
+					<td rowspan="4" style="background-color: rgb(217, 226, 243);">Blood Safety</td>
+					<td>Is this a blood transfusing facility?</td>
+					<td><input id="xZCFMyxp2YV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Is this a blood transfusing facility?" value="[ Lab_Result_BloodSafety:Is this a blood transfusing facility? ]" /></td>
+				</tr>
+				<tr class="bloodSafety">
+					<td>Has the Hospital Transfusion Committee met this quarter?</td>
+					<td><input id="pFtBxtcj0Vt-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Has the Hospital Transfusion Committee met this quarter?" value="[ Lab_Result_BloodSafety:Has the Hospital Transfusion Committee met this quarter? ]" /></td>
+				</tr>
+				<tr class="bloodSafety">
+					<td>Number of transfusions done in this quarter</td>
+					<td><input id="LRCekmjopOs-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Number of transfusions done in this quarter" value="[ Lab_Result_BloodSafety:Number of transfusions done in this quarter ]" /></td>
+				</tr>
+				<tr class="bloodSafety">
+					<td>Number of components used in this quarter</td>
+					<td><input id="d98A43oTUMK-HllvX50cXC0-val" name="entryfield" title="Lab_Result_BloodSafety:Number of components used in this quarter" value="[ Lab_Result_BloodSafety:Number of components used in this quarter ]" /></td>
+				</tr>
+				<tr class="ipc">
+					<td rowspan="2" style="background-color: rgb(251, 192, 0);">IPC</td>
+					<td>Has the IPC Committee met this quarter?</td>
+					<td><input id="o287NRe2JeS-HllvX50cXC0-val" name="entryfield" title="Lab_Result_IPC:Has the IPC Committee met this quarter?" value="[ Lab_Result_IPC:Has the IPC Committee met this quarter? ]" /></td>
+				</tr>
+				<tr class="ipc">
+					<td>How many staff have been trained on IPC, HCWM, Safe Phlebotomy?<br />
+					This quarter</td>
+					<td><input id="j6pYh9vjibp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_IPC:How many staff have been trained on IPC , HCWM, Safe Phlebotomy This quarter?" value="[ Lab_Result_IPC:How many staff have been trained on IPC , HCWM, Safe Phlebotomy This quarter? ]" /></td>
+				</tr>
+				<tr class="testing">
+					<td rowspan="3" style="background-color: rgb(112, 48, 160);">Testing<br />
+					Interruption</td>
+					<td>Was there testing interruption for (Rapid HIV test, VL, EID,<br />
+					CD4, Gene Xpert TB Microscopy and TB Culture)</td>
+					<td><input id="Zsg0sTKXiyE-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:Was there testing interruption for (Rapid  HIV test, VL, EID, CD4, Gene Xpert TB Microscopy and TB Culture)" value="[ Lab_Result_TestingI:Was there testing interruption for (Rapid  HIV test, VL, EID, CD4, Gene Xpert TB Microscopy and TB Culture) ]" /></td>
+				</tr>
+				<tr class="testing">
+					<td>How long was the test interrupted? (days)</td>
+					<td><input id="nWfiermYUwV-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:How long was the test interrupted? (days)" value="[ Lab_Result_TestingI:How long was the test interrupted? (days) ]" /></td>
+				</tr>
+				<tr class="testing">
+					<td>What was the reason?(Stockouts, power outage, equipment<br />
+					breakdown, staffing)</td>
+					<td><input id="LabGzhluYvp-HllvX50cXC0-val" name="entryfield" title="Lab_Result_TestingI:What was the reason ?(Stock outs, power outage, equipment breakdown, staffing)" value="[ Lab_Result_TestingI:What was the reason ?(Stock outs, power outage, equipment breakdown, staffing) ]" /></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
