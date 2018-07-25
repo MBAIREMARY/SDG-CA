@@ -106,25 +106,7 @@ crossorigin="anonymous"type="text/javascript"></script>
     /*Styling for the outter tab Start*/
     * {box-sizing: border-box}
     body {font-family: "Lato", sans-serif;}
-    /* Style the tab */
 
-    /* Style the buttons inside the tab */
-    .tab button {
-        display: block;
-        background-color: inherit;
-        color: black;
-        padding: 22px 16px;
-        width: 100%;
-        border: none;
-        outline: none;
-        text-align: center;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 17px;
-        opacity: 0.5;
-        transition: transform .5s; /* Animation */
-        z-index: 0;
-    }
     /* Change background color of buttons on hover */
     .tab button:hover {
         opacity: 2;
@@ -236,23 +218,29 @@ $( function() {
             border: 1px solid #ccc;
             background-color: #f1f1f1;
             padding: 0px;
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+            z-index: 0;
         }
         .aspirations{
-          display: block;
-          background-color: inherit;
-          color: black;
-          padding: 22px 16px;
-          width: 100%;
-          border: none;
-          outline: none;
-          text-align: center;
-          cursor: pointer;
-          transition: 0.3s;
-          font-size: 17px;
-          z-index: 0;
-        }
-        .aspirations hover{
 
+        }
+        .aspirations:hover{
+          opacity: 2;
+          position: relative;
+          -ms-transform: scale(1.5); /* IE 9 */
+          -webkit-transform: scale(1.5); /* Safari 3-8 */
+          transform: scale(1.5);
+          z-index: 200;
         }
     /* Outer Tab start */
 </style>
@@ -260,13 +248,13 @@ $( function() {
 <div class="row" id="tabs">
     <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2">
       <ul>
-        <li class="aspirations"><a href="#tabs-1">ASP1</a></li>
-        <li class="aspirations"><a href="#tabs-2">ASP2</a></li>
-        <li class="aspirations"><a href="#tabs-3">ASP3</a></li>
-        <li class="aspirations"><a href="#tabs-4">ASP4</a></li>
-        <li class="aspirations"><a href="#tabs-5">ASP5</a></li>
-        <li class="aspirations"><a href="#tabs-6">ASP6</a></li>
-        <li class="aspirations"><a href="#tabs-7">ASP7</a></li>
+        <li class="aspirations"><a href="#tabs-1" style="background-color:#9ACD32; color: white; font-weight: bold;">ASP1</a></li>
+        <li class="aspirations"><a href="#tabs-2" style="background-color:#FF9933; color: white; font-weight: bold;">ASP2</a></li>
+        <li class="aspirations"><a href="#tabs-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">ASP3</a></li>
+        <li class="aspirations"><a href="#tabs-4" style="background-color:#6666ff; color: white; font-weight: bold;">ASP4</a></li>
+        <li class="aspirations"><a href="#tabs-5" style="background-color:#000000; color: white; font-weight: bold;">ASP5</a></li>
+        <li class="aspirations"><a href="#tabs-6" style="background-color:#9932CC; color: white; font-weight: bold;">ASP6</a></li>
+        <li class="aspirations"><a href="#tabs-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">ASP7</a></li>
       </ul>
     </div>
 
@@ -279,7 +267,7 @@ $( function() {
         </h3>
         <div>
             <b style="color:#9ACD32 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
-            <select id="indicatorLevel" name="indicators" class="dropdown">
+            <select id="indicatorLevel" name="indicators">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
                 <option value="I141">Tourism value added as a proportion of GDP</option>
@@ -291,8 +279,8 @@ $( function() {
             </select>
         </div>
         <!-- Tab links -->
-        <div id="tabs2">
-          <div class="tab2" style="margin-top: 10px; background-color: #9ACD32;">
+        <div id="tabs2" style="margin-top: 10px;">
+          <div style="background-color: #9ACD32;">
             <ul>
               <li><a href="#tabs-8">No Disaggregation</a></li>
               <li><a href="#tabs-9">Disaggregation</a></li>
