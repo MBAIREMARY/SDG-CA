@@ -10,9 +10,9 @@ crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-    function hideRow(indicatorLevel){
+    $(function(){
         // Default selected levels
-        $(".I111a").show();
+        $(".I111a").hide();
         $(".I111b").hide();
         $(".I121").hide();
         $(".I221").hide();
@@ -25,7 +25,7 @@ crossorigin="anonymous">
         $(".I2b1").hide();
 
         // Onchange Levels
-        $("#"+indicatorLevel).change(function () {
+        $("#indicatorLevel").change(function () {
         if ($(this).val() === "I111a") {
             $(".I111a").show();
             $(".I111b").hide();
@@ -233,10 +233,10 @@ crossorigin="anonymous">
             // $(".I3c1d").hide();
         }
          })
-    }
+    });
     $( function() {
       $( "#sdgs" ).tabs();
-      $( "#sdgs2" ).tabs();
+      $( "#disaggregations" ).tabs();
       $( "#sdgs3" ).tabs();
     } );
 </script>
@@ -348,11 +348,11 @@ crossorigin="anonymous">
     <div id="sdg-1" class="col-xm-11 col-sm-10 col-md-11">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#e5243b; ">
             <strong>
-                Objectif 1. Éliminer la pauvreté sous toutes ses formes et partout dans le monde
+                Goal 1. End poverty in all its forms everywhere
             </strong>
         </h3>
         <div>
-            <select onchange="hideRow('indicatorLevel')" name="indicators" class="dropdown">
+            <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I111a">
                     1.1.1a Population living below the international poverty line
@@ -365,84 +365,85 @@ crossorigin="anonymous">
                 </option>
             </select>
         </div>
-        <!-- Tab links -->
-        <div class="tab2" style="margin-top: 10px; background-color: #e5243b;">
-          <button class="tablinks2" onclick="openDisagg(event, 'NoDisagg')">No Disaggregation</button>
-          <button class="tablinks2" onclick="openDisagg(event, 'Disagg')">Disaggregation</button>
-        </div>
+        <!-- Tab disaggregations Start -->
+        <div id="disaggregations" style="margin-top: 10px;">
+          <ul>
+            <li><a href="#NoDisagg" class="disaggTab">No Disaggregation</a></li>
+            <li><a href="#Disagg" class="disaggTab">Disaggregation</a></li>
+          </ul>
+          <div id="NoDisagg" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader" style="background-color:#e5243b !important;">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111a">
+                          <td>Population living below the international poverty line</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I111b">
+                          <td>Employed population living below the international poverty line</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I121">
+                          <td>Population living below the national poverty line</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
 
-        <!-- Tab content -->
-        <div id="NoDisagg" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#e5243b !important;">
-                        <th>&nbsp;</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I111a">
-                        <td>Population living below the international poverty line</td>
-                        <td></td>
-                    </tr>
-                     <tr class="I111b">
-                        <td>Employed population living below the international poverty line</td>
-                        <td></td>
-                    </tr>
-                    <tr class="I121">
-                        <td>Population living below the national poverty line</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+          <div id="Disagg" class="tabcontent2">
+              <table>
+                  <thead>
+                      <tr class="tableHeader" style="background-color:#e5243b !important;">
+                          <th></th>
+                          <th class="I111x">Employment Status</th>
+                          <th>Geographical Location</th>
+                          <th>Sex</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111a">
+                          <td>People living below the international poverty line/day</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111a">
+                          <td>Total population</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111b">
+                          <td>Employed persons living in households below the poverty line</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111b">
+                          <td>Total number of employed persons</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I121">
+                          <td>Total number of people living below the national  poverty line</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I121">
+                          <td>Total urban+rural population</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
         </div>
-
-        <div id="Disagg" class="tabcontent2">
-            <table>
-                <thead>
-                    <tr class="tableHeader" style="background-color:#e5243b !important;">
-                        <th></th>
-                        <th class="I111x">Employment Status</th>
-                        <th>Geographical Location</th>
-                        <th>Sex</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="I111a">
-                        <td>People living below the international poverty line/day</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="I111a">
-                        <td>Total population</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="I111b">
-                        <td>Employed persons living in households below the poverty line</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="I111b">
-                        <td>Total number of employed persons</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="I121">
-                        <td>Total number of people living below the national  poverty line</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="I121">
-                        <td>Total urban+rural population</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <!-- Tab disaggregations End -->
     </div>
     <!-- Goal 1 End -->
 
