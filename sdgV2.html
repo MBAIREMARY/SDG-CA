@@ -187,6 +187,14 @@
             })
         });
         $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel3").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
             $("#sdgs").tabs();
             $("#disaggregations").tabs();
             $("#disaggregations2").tabs();
@@ -690,31 +698,31 @@
                             <td>Gini coefficient</td>
                             <td></td>
                         </tr>
-                        <tr class="I131">
+                        <tr class="I331">
                             <td>% of eligible population with HIV having access to ARV</td>
                             <td></td>
                         </tr>
-                        <tr class="I141">
+                        <tr class="I341">
                             <td>Tourism value added as a proportion of GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I151">
+                        <tr class="I351">
                             <td>Total factor productivity</td>
                             <td></td>
                         </tr>
-                        <tr class="I152">
+                        <tr class="I352">
                             <td>% of small-scale farmers graduating into small-scale commercial farming</td>
                             <td></td>
                         </tr>
-                        <tr class="I161">
+                        <tr class="I361">
                             <td>Fishery Sector value added ( as share of GDP) </td>
                             <td></td>
                         </tr>
-                        <tr class="I162">
+                        <tr class="I362">
                             <td>Marine biotechnology value added as a % of GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I171">
+                        <tr class="I371">
                             <td>% of agricultural land placed under sustainable land management practice.</td>
                             <td></td>
                         </tr>
