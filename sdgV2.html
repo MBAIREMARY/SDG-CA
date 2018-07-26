@@ -11,185 +11,137 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
         $(function () {
-            // Default selected levels
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-
-            // Onchange Levels
-            $("#indicatorLevel").change(function () {
-                if ($(this).val() === "I111a") {
-                    $(".I111a").show();
-                    $(".I111b").hide();
-                    $(".I121").hide();
-                    $(".I111x").show();
-                }
-
-                if ($(this).val() === "I111b") {
-                    $(".I111a").hide();
-                    $(".I111b").show();
-                    $(".I121").hide();
-                    $(".I111x").hide();
-                }
-                if ($(this).val() === "I121") {
-                    $(".I111a").hide();
-                    $(".I111b").hide();
-                    $(".I121").show();
-                    $(".I111x").hide();
-                }
-            })
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+          })
         });
         $(function () {
-            // Default selected levels
-            $(".I111a").hide();
-            $(".I111b").hide();
-            $(".I121").hide();
-
-            // Onchange Levels
-            $("#indicatorLevel17").change(function () {
-                if ($(this).val() === "I111a") {
-                    $(".I111a").show();
-                    $(".I111b").hide();
-                    $(".I121").hide();
-                    $(".I111x").show();
-                }
-
-                if ($(this).val() === "I111b") {
-                    $(".I111a").hide();
-                    $(".I111b").show();
-                    $(".I121").hide();
-                    $(".I111x").hide();
-                }
-                if ($(this).val() === "I121") {
-                    $(".I111a").hide();
-                    $(".I111b").hide();
-                    $(".I121").show();
-                    $(".I111x").hide();
-                }
-            })
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel2").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+          })
         });
         $(function () {
-            // Default selected levels
-            $(".I221").hide();
-            $(".I222a").hide();
-            $(".I251").hide();
-            $(".I252a1").hide();
-            $(".I252a2").hide();
-            $(".I252a3").hide();
-            $(".I2a2").hide();
-            $(".I2b1").hide();
-
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel3").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+          })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
             // Onchange Levels
-            $("#indicatorLevel2").change(function () {
-                if ($(this).val() === "I211") {
-                    $(".I211").show();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                if ($(this).val() === "I221") {
-                    $(".I211").hide();
-                    $(".I221").show();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                ;
-                if ($(this).val() === "I222a") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").show();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                ;
-                if ($(this).val() === "I251") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").show();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                ;
-                if ($(this).val() === "I252a1") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").show();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                ;
-                if ($(this).val() === "I252a2") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").show();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                if ($(this).val() === "I252a3") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").show();
-                    $(".I2a2").hide();
-                    $(".I2b1").hide();
-                }
-                if ($(this).val() === "I2a2") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").show();
-                    $(".I2b1").hide();
-                }
-                if ($(this).val() === "I2b1") {
-                    $(".I211").hide();
-                    $(".I221").hide();
-                    $(".I222a").hide();
-                    $(".I251").hide();
-                    $(".I252a1").hide();
-                    $(".I252a2").hide();
-                    $(".I252a3").hide();
-                    $(".I2a2").hide();
-                    $(".I2b1").show();
-                }
+            $("#indicatorLevel4").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
             })
         });
         $(function () {
             $('.tabcontent2 tr').hide();
             // Onchange Levels
-            $("#indicatorLevel3").change(function () {
+            $("#indicatorLevel5").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel6").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel7").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel8").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel9").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel10").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel11").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel12").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel13").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel14").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel15").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel16").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel17").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
             })
