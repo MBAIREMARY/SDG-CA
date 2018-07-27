@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -11,7 +12,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
         $(function () {
-          $('.tabcontent2 tr').hide();
+          $('.tabcontent2 tr:not(.tableHeader)').hide();
           // Onchange Levels
           $("#indicatorLevel").change(function () {
             $('.'+ $(this).val()).show();
@@ -292,15 +293,15 @@
         </h3>
         <div>
             <select id="indicatorLevel" name="indicators" class="dropdown">
-                <option disabled selected>Please select an indicator</option>
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
                 <option value="I111a">
-                    1.1.1a Population living below the international poverty line
+                    1.1.1a Population vivant en dessous du seuil international de pauvreté
                 </option>
                 <option value="I111b">
-                    1.1.1b Employed population living below the international poverty line
+                    1.1.1b Population active vivant en dessous du seuil international de pauvreté
                 </option>
                 <option value="I121">
-                    1.2.1 Population living below the national poverty line
+                    1.2.1 Population vivant en dessous du seuil de pauvreté national
                 </option>
             </select>
         </div>
@@ -320,15 +321,15 @@
                     </thead>
                     <tbody>
                         <tr class="I111a">
-                            <td>Population living below the international poverty line</td>
+                            <td>Population vivant en dessous du seuil international de pauvreté</td>
                             <td></td>
                         </tr>
                         <tr class="I111b">
-                            <td>Employed population living below the international poverty line</td>
+                            <td>Population active vivant en dessous du seuil international de pauvreté</td>
                             <td></td>
                         </tr>
                         <tr class="I121">
-                            <td>Population living below the national poverty line</td>
+                            <td>Population vivant en dessous du seuil de pauvreté national</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -340,41 +341,41 @@
                     <thead>
                         <tr class="tableHeader" style="background-color:#e5243b !important;">
                             <th></th>
-                            <th class="I111x">Employment Status</th>
+                            <th>Employment Status</th>
                             <th>Geographical Location</th>
                             <th>Sex</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="I111a">
-                            <td>People living below the international poverty line/day</td>
+                            <td>Personnes vivant en dessous du seuil international de pauvreté</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr class="I111a">
-                            <td>Total population</td>
+                            <td>Population totale</td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr class="I111b">
-                            <td>Employed persons living in households below the poverty line</td>
+                            <td>Personnes actives vivant en dessous du seuil de pauvreté dans les ménages</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr class="I111b">
-                            <td>Total number of employed persons</td>
+                            <td>Nombre total de personnes actives</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr class="I121">
-                            <td>Total number of people living below the national  poverty line</td>
+                            <td>Total de personnes vivant en dessous du seuil national de pauvreté </td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr class="I121">
-                            <td>Total urban+rural population</td>
+                            <td>Population totale, urbaine ou rurale</td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -2060,7 +2061,7 @@
     <div id="sdg-17" class="col-xm-11 col-sm-10 col-md-11">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#19486A;text-align: center;">
             <strong>
-                Objectif 17. Renforcer les moyens de mettre en œuvre le Partenariat mondial pour le développement durable et le revitaliser        
+                Objectif 17. Renforcer les moyens de mettre en œuvre le Partenariat mondial pour le développement durable et le revitaliser
             </strong>
         </h3>
         <div>
