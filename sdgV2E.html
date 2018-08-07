@@ -103,6 +103,16 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if ($(this).val()=="I852") {
+                $('.sdg8Header').show();
+                $('.sdg8NoHeader').hide();
+              }
+              if (($(this).val()=="I821")||($(this).val()=="I842")||($(this).val()=="I811")||
+              ($(this).val()=="I861")||($(this).val()=="I8101")||($(this).val()=="I8102")||($(this).val()=="I8a1")) {
+                $('.sdg8Header').hide();
+                $('.sdg8NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -175,6 +185,15 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if (($(this).val()=="I1611")) {
+                $('.sdg16Header').show();
+                $('.sdg16NoHeader').hide();
+              }
+              else {
+                $('.sdg16Header').hide();
+                $('.sdg16NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -1323,8 +1342,13 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="sdg8Header" colspan="2">Sex</th>
+                            <th class="sdg8NoHeader">Value</th>
+                        </tr>
+                        <tr class="tableHeader">
+                            <th class="sdg8Header">Female</th>
+                            <th class="sdg8Header">Male</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2078,8 +2102,13 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="sdg16Header" colspan="2">Sex</th>
+                            <th class="sdg16NoHeader">Value</th>
+                        </tr>
+                        <tr class="tableHeader">
+                            <th class="sdg16Header">Female</th>
+                            <th class="sdg16Header">Male</th>
                         </tr>
                     </thead>
                     <tbody>
