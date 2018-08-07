@@ -29,6 +29,7 @@
           $("#indicatorLevel2").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
           })
         });
         $(function () {
@@ -37,6 +38,7 @@
           $("#indicatorLevel3").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
           })
         });
         $(function () {
@@ -45,6 +47,17 @@
             $("#indicatorLevel4").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ( ($(this).val()=="I4b1")) {
+                  $('.sdg4NoHeader').hide();
+                  $('.sdg4Header').show();
+              }
+              if ( ($(this).val()=="I422")||($(this).val()=="I451a")||($(this).val()=="I451b")) {
+                  $('.sdg4Header').hide();
+                  $('.sdg4NoHeader').show();
+              }
+
             })
         });
         $(function () {
@@ -53,6 +66,7 @@
             $("#indicatorLevel5").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -61,6 +75,7 @@
             $("#indicatorLevel6").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -69,6 +84,7 @@
             $("#indicatorLevel7").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -77,6 +93,7 @@
             $("#indicatorLevel8").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -85,6 +102,7 @@
             $("#indicatorLevel9").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -93,6 +111,7 @@
             $("#indicatorLevel10").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -101,6 +120,7 @@
             $("#indicatorLevel11").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -109,6 +129,7 @@
             $("#indicatorLevel12").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -117,6 +138,7 @@
             $("#indicatorLevel13").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -125,6 +147,7 @@
             $("#indicatorLevel14").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -133,6 +156,7 @@
             $("#indicatorLevel15").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -141,6 +165,7 @@
             $("#indicatorLevel16").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -149,6 +174,7 @@
             $("#indicatorLevel17").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -441,7 +467,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#DDA63A !important;">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -588,7 +614,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#4C9F38 !important;">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -863,7 +889,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -891,8 +917,13 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="sdg4NoHeader" colspan="2">Sex</th>
+                        </tr>
+                        <tr class="tableHeader">
+                            <th class="sdg4NoHeader">Female</th>
+                            <th class="sdg4NoHeader">Male</th>
+                            <th class="sdg4Header">Value</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -953,7 +984,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1041,7 +1072,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1128,7 +1159,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1233,7 +1264,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1377,7 +1408,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1528,7 +1559,7 @@
                     <table>
                         <thead>
                             <tr class="tableHeader">
-                                <th>&nbsp;</th>
+                                <th>Indicator</th>
                                 <th>Value</th>
                             </tr>
                         </thead>
@@ -1606,7 +1637,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1687,7 +1718,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1745,7 +1776,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1804,7 +1835,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -1876,7 +1907,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -2001,7 +2032,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
@@ -2117,7 +2148,7 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
+                            <th>Indicator</th>
                             <th>Value</th>
                         </tr>
                     </thead>
