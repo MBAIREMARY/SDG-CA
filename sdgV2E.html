@@ -85,6 +85,15 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if ($(this).val()=="I711") {
+                  $('.sdg7Header').show();
+                  $('.sdg7NoHeader').hide();
+              }
+              if (($(this).val()=="I712") || ($(this).val()=="I721")||($(this).val()=="I731")) {
+                  $('.sdg7Header').hide();
+                  $('.sdg7NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -1187,8 +1196,13 @@
                 <table>
                     <thead>
                         <tr class="tableHeader">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="sdg7Header" colspan="2">Geographical Location</th>
+                            <th class="sdg7NoHeader">Value</th>
+                        </tr>
+                        <tr class="tableHeader">
+                            <th class="sdg7Header">Rural</th>
+                            <th class="sdg7Header">Urban</th>
                         </tr>
                     </thead>
                     <tbody>
