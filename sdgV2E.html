@@ -16,6 +16,7 @@
           $("#indicatorLevel").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
           })
         });
         $(function () {
@@ -340,10 +341,18 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#e5243b !important;">
-                            <th></th>
+                            <th rowspan="2"></th>
                             <th colspan="2" class="I111x">Employment Status</th>
                             <th colspan="2">Geographical Location</th>
                             <th colspan="2">Sex</th>
+                        </tr>
+                        <tr id="tableHeader2" class="tableHeader" style="background-color:#e5243b !important;">
+                            <th>Employed</th>
+                            <th>Unemployed</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
+                            <th>Female</th>
+                            <th>Male</th>
                         </tr>
                     </thead>
                     <tbody>
