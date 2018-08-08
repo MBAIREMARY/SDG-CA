@@ -1,0 +1,466 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // Default selected levels
+        $(".I111").show();
+        $(".I131").hide();
+        $(".I141").hide();
+        $(".I151").hide();
+        // Onchange Levels
+        $("#indicatorLevel").change(function () {
+
+         if ($(this).val() === "I111") {
+            $(".I111").show();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+
+        if ($(this).val() === "I131") {
+            $(".I111").hide();
+            $(".I131").show();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+        if ($(this).val() === "I141") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").show();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        }
+        if ($(this).val() === "I151") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").show();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I152") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").show();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I161") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").show();
+            $(".I162").hide();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I162") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").show();
+            $(".I171").hide();
+        };
+        if ($(this).val() === "I171") {
+            $(".I111").hide();
+            $(".I131").hide();
+            $(".I141").hide();
+            $(".I151").hide();
+            $(".I152").hide();
+            $(".I161").hide();
+            $(".I162").hide();
+            $(".I171").show();
+        };
+
+    });
+    })
+</script>
+
+<style>
+    /*Styling for the outter tab Start*/
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+
+    /*Styling the Inner Tabs For Disaggregation*/
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        width: 70%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .tableHeader{
+        background-color: #9ACD32 !important;
+    }
+    th{
+        text-align: center !important;
+        color:#ffffff !important;
+    }
+    h1{
+        color:#ffffff !important;
+    }
+    input{
+        width: 4em;
+    }
+    /* Outer Tab start */
+    .tab {
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        padding: 0px;
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        z-index: 0;
+    }
+    .aspirations{
+
+    }
+    .aspirations:hover{
+      opacity: 2;
+      position: relative;
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+      z-index: 200;
+    }
+    /* Outer Tab start */
+    /* Inner Tab Start */
+    .disaggTab{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .disaggTab:hover{
+      position: relative;
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2);
+      z-index: 200;
+      background-color: #337ab7;
+      color: white;
+    }
+    /* Inner Tab End */
+</style>
+<script>
+    $( function() {
+      $( "#tabs" ).tabs();
+      $( "#tabs2" ).tabs();
+      $( "#tabs3" ).tabs();
+    } );
+</script>
+
+<div class="row" id="tabs">
+    <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2">
+      <ul>
+        <li class="aspirations"><a href="#tabs-1" style="background-color:#9ACD32; color: white; font-weight: bold;">ASP1</a></li>
+        <li class="aspirations"><a href="#tabs-2" style="background-color:#FF9933; color: white; font-weight: bold;">ASP2</a></li>
+        <li class="aspirations"><a href="#tabs-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">ASP3</a></li>
+        <li class="aspirations"><a href="#tabs-4" style="background-color:#6666ff; color: white; font-weight: bold;">ASP4</a></li>
+        <li class="aspirations"><a href="#tabs-5" style="background-color:#000000; color: white; font-weight: bold;">ASP5</a></li>
+        <li class="aspirations"><a href="#tabs-6" style="background-color:#9932CC; color: white; font-weight: bold;">ASP6</a></li>
+        <li class="aspirations"><a href="#tabs-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">ASP7</a></li>
+      </ul>
+    </div>
+
+    <!-- Aspiration 1 Start -->
+    <div id="tabs-1" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32; text-transform: capitalize;">
+            <strong>
+                Aspiration 1: A Prosperous Africa Based On Inclusive Growth And Sustainable Development
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel" name="indicators">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="tabs2" style="margin-top: 10px;">
+          <div style="background-color: #9ACD32;">
+            <ul>
+              <li><a href="#tabs-8" class="disaggTab">No Disaggregation</a></li>
+              <li><a href="#tabs-9" class="disaggTab">Disaggregation</a></li>
+            </ul>
+          </div>
+          <!-- Tab content Start-->
+          <div id="tabs-8">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111">
+                          <td>Gini coefficient</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I131">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Tourism value added as a proportion of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total factor productivity</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I152">
+                          <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I161">
+                          <td>Fishery Sector value added ( as share of GDP) </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I162">
+                          <td>Marine biotechnology value added as a % of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I171">
+                          <td>% of agricultural land placed under sustainable land management practice.</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <div id="tabs-9">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I141">
+                          <td>Consumption of energy from all renewable sources</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111">
+                          <td>Population with access to energy</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total energy supply to economy </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Total final energy consumption  </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Total population reporting any cooking, heating or lighting </td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!-- Tab content end-->
+        </div>
+    </div>
+    <!-- Aspiration 1 End -->
+
+
+    <!-- Aspiration 2 Start -->
+    <div id="tabs-2" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933; text-transform: capitalize;">
+            <strong>
+              Aspiration 2. An Integrated Continent,Politically United And Based On The Ideals Of Pan Africanism And Vision Of African Renaissance
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel" name="indicators">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I111">Gini coefficient</option>
+                <option value="I131">% of eligible population with HIV having access to ARV</option>
+                <option value="I141">Tourism value added as a proportion of GDP</option>
+                <option value="I151">Total factor productivity</option>
+                <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
+                <option value="I161">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I162">Marine biotechnology value added as a % of GDP</option>
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="tabs3" style="margin-top: 10px;">
+          <div style="background-color: #9ACD32;">
+            <ul>
+              <li><a href="#tabs-10" class="disaggTab">No Disaggregation</a></li>
+              <li><a href="#tabs-11" class="disaggTab">Disaggregation</a></li>
+            </ul>
+          </div>
+          <!-- Tab content Start-->
+          <div id="tabs-10">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I111">
+                          <td>Gini coefficient</td>
+                          <td></td>
+                      </tr>
+                       <tr class="I131">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Tourism value added as a proportion of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total factor productivity</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I152">
+                          <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I161">
+                          <td>Fishery Sector value added ( as share of GDP) </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I162">
+                          <td>Marine biotechnology value added as a % of GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I171">
+                          <td>% of agricultural land placed under sustainable land management practice.</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+          <div id="tabs-11">
+              <table>
+                  <thead>
+                      <tr class="tableHeader">
+                          <th>&nbsp;</th>
+                          <th>Value</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="I141">
+                          <td>Consumption of energy from all renewable sources</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Number of people using clean fuels and technologies for cooking, heating and lighting </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I111">
+                          <td>Population with access to energy</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>Total energy supply to economy </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I151">
+                          <td>GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I141">
+                          <td>Total final energy consumption  </td>
+                          <td></td>
+                      </tr>
+                      <tr class="I131">
+                          <td>Total population reporting any cooking, heating or lighting </td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!-- Tab content end-->
+        </div>
+    </div>
+    <!-- Aspiration 2 End -->
+
+
+    <!-- Aspiration 3 Start -->
+    <!-- Aspiration 3 End -->
+
+
+    <!-- Aspiration 4 Start -->
+    <!-- Aspiration 4 End -->
+
+
+    <!-- Aspiration 5 Start -->
+    <!-- Aspiration 5 End-->
+
+
+    <!-- Aspiration 6 Start -->
+    <!-- Aspiration 6 End-->
+
+
+    <!-- Aspiration 7 Start -->
+    <!-- Aspiration 7 End-->
+
+
+</div>

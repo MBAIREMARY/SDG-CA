@@ -1,0 +1,2392 @@
+<meta charset="UTF-8">
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+            if ( ($(this).val()=="I111b")||($(this).val()=="I121")) {
+                $('.I111x').hide();
+            }
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel2").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel3").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+          })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel4").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ( ($(this).val()=="I4b1")) {
+                  $('.sdg4NoHeader').hide();
+                  $('.sdg4Header').show();
+              }
+              if ( ($(this).val()=="I422")||($(this).val()=="I451a")||($(this).val()=="I451b")) {
+                  $('.sdg4Header').hide();
+                  $('.sdg4NoHeader').show();
+              }
+
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel5").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel6").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel7").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I711") {
+                  $('.sdg7Header').show();
+                  $('.sdg7NoHeader').hide();
+              }
+              if (($(this).val()=="I712") || ($(this).val()=="I721")||($(this).val()=="I731")) {
+                  $('.sdg7Header').hide();
+                  $('.sdg7NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel8").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I852") {
+                $('.sdg8Header').show();
+                $('.sdg8NoHeader').hide();
+              }
+              if (($(this).val()=="I821")||($(this).val()=="I842")||($(this).val()=="I811")||
+              ($(this).val()=="I861")||($(this).val()=="I8101")||($(this).val()=="I8102")||($(this).val()=="I8a1")) {
+                $('.sdg8Header').hide();
+                $('.sdg8NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel9").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel10").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel11").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel12").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel13").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel14").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel15").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel16").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I1611")) {
+                $('.sdg16Header').show();
+                $('.sdg16NoHeader').hide();
+              }
+              else {
+                $('.sdg16Header').hide();
+                $('.sdg16NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel17").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $("#sdgs").tabs();
+            $("#disaggregations").tabs();
+            $("#disaggregations2").tabs();
+            $("#disaggregations3").tabs();
+            $("#disaggregations4").tabs();
+            $("#disaggregations5").tabs();
+            $("#disaggregations6").tabs();
+            $("#disaggregations7").tabs();
+            $("#disaggregations8").tabs();
+            $("#disaggregations9").tabs();
+            $("#disaggregations10").tabs();
+            $("#disaggregations11").tabs();
+            $("#disaggregations12").tabs();
+            $("#disaggregations13").tabs();
+            $("#disaggregations14").tabs();
+            $("#disaggregations15").tabs();
+            $("#disaggregations16").tabs();
+            $("#disaggregations17").tabs();
+            $("#sdgs3").tabs();
+        });
+</script>
+
+<style>
+    /*Styling for the outter tab Start*/
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+
+    /*Styling the Inner Tabs For Disaggregation*/
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        width: 70%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .tableHeader{
+        background-color: #9ACD32 !important;
+    }
+    th{
+        text-align: center !important;
+        color:#ffffff !important;
+    }
+    h1{
+        color:#ffffff !important;
+    }
+    input{
+        width: 4em;
+    }
+    /* Outer Tab start */
+    .tab {
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        padding: 0px;
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        z-index: 0;
+    }
+    .aspirations{
+
+    }
+    .aspirations:hover{
+        opacity: 2;
+        position: relative;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+        z-index: 200;
+    }
+    /* Outer Tab start */
+    /* Inner Tab Start */
+    .disaggTab{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .disaggTab:hover{
+        position: relative;
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2);
+        z-index: 200;
+        background-color: #337ab7;
+        color: white;
+    }
+    /* Inner Tab End */
+    .tab ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .tab li{
+        display: inline-block;
+        padding: 2px;
+        float: none !important;
+    }
+</style>
+
+<div class="row" id="sdgs">
+    <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+        <ul>
+            <li class="aspirations"><a href="#sdg-1" style="background-color:#e5243b; color: white; font-weight: bold;">SDG1</a></li>
+            <li class="aspirations"><a href="#sdg-2" style="background-color:#DDA63A; color: white; font-weight: bold;">SDG2</a></li>
+            <li class="aspirations"><a href="#sdg-3" style="background-color:#4C9F38; color: white; font-weight: bold;">SDG3</a></li>
+            <li class="aspirations"><a href="#sdg-4" style="background-color:#C5192D; color: white; font-weight: bold;">SDG4</a></li>
+            <li class="aspirations"><a href="#sdg-5" style="background-color:#FF3A21; color: white; font-weight: bold;">SDG5</a></li>
+            <li class="aspirations"><a href="#sdg-6" style="background-color:#26BDE2; color: white; font-weight: bold;">SDG6</a></li>
+            <li class="aspirations"><a href="#sdg-7" style="background-color:#FCC30B; color: white; font-weight: bold;">SDG7</a></li>
+            <li class="aspirations"><a href="#sdg-8" style="background-color:#A21942; color: white; font-weight: bold;">SDG8</a></li>
+            <li class="aspirations"><a href="#sdg-9" style="background-color:#FD6925; color: white; font-weight: bold;">SDG9</a></li>
+            <li class="aspirations"><a href="#sdg-10" style="background-color:#DD1367; color: white; font-weight: bold;">SDG10</a></li>
+            <li class="aspirations"><a href="#sdg-11" style="background-color:#FD9D24; color: white; font-weight: bold;">SDG11</a></li>
+            <li class="aspirations"><a href="#sdg-12" style="background-color:#BF8B2E; color: white; font-weight: bold;">SDG12</a></li>
+            <li class="aspirations"><a href="#sdg-13" style="background-color:#3F7E44; color: white; font-weight: bold;">SDG13</a></li>
+            <li class="aspirations"><a href="#sdg-14" style="background-color:#0A97D9; color: white; font-weight: bold;">SDG14</a></li>
+            <li class="aspirations"><a href="#sdg-15" style="background-color:#56C02B; color: white; font-weight: bold;">SDG15</a></li>
+            <li class="aspirations"><a href="#sdg-16" style="background-color:#00689D; color: white; font-weight: bold;">SDG16</a></li>
+            <li class="aspirations"><a href="#sdg-17" style="background-color:#19486A; color: white; font-weight: bold;">SDG17</a></li>
+        </ul>
+    </div>
+
+    <!-- Goal 1 Start -->
+    <div id="sdg-1" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#e5243b;text-align: center; ">
+            <strong>
+                Objectif 1. Éliminer la pauvreté sous toutes ses formes et partout dans le monde
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I111a">
+                    1.1.1a Population vivant en dessous du seuil international de pauvreté
+                </option>
+                <option value="I111b">
+                    1.1.1b Population active vivant en dessous du seuil international de pauvreté
+                </option>
+                <option value="I121">
+                    1.2.1 Population vivant en dessous du seuil de pauvreté national
+                </option>
+            </select>
+        </div>
+        <!-- Tab disaggregations Start -->
+        <div id="disaggregations" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <div id="NoDisagg" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#e5243b !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I111a">
+                            <td>Population vivant en dessous du seuil international de pauvreté</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I111b">
+                            <td>Population active vivant en dessous du seuil international de pauvreté</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I121">
+                            <td>Population vivant en dessous du seuil de pauvreté national</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Disagg" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#e5243b !important;">
+                          <th rowspan="2"></th>
+                          <th colspan="2" class="I111x">Statut d'emploi</th>
+                          <th colspan="2">Localisation géographique</th>
+                          <th colspan="2">Sexe</th>
+                      </tr>
+                      <tr id="tableHeader2" class="tableHeader" style="background-color:#e5243b !important;">
+                          <th class="I111x">Employé</th>
+                          <th class="I111x">Sans emploi</th>
+                          <th>Rural</th>
+                          <th>Urbain</th>
+                          <th>Femme</th>
+                          <th>Homme</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I111a">
+                            <td>Personnes vivant en dessous du seuil international de pauvreté</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I111a">
+                            <td>Population totale</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I111b">
+                            <td>Personnes actives vivant en dessous du seuil de pauvreté dans les ménages</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I111b">
+                            <td>Nombre total de personnes actives</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I121">
+                            <td>Total de personnes vivant en dessous du seuil national de pauvreté </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I121">
+                            <td>Population totale, urbaine ou rurale</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Tab disaggregations End -->
+    </div>
+    <!-- Goal 1 End -->
+
+    <!-- Goal 2 Start -->
+    <div id="sdg-2" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DDA63A;text-align: center; ">
+            <strong>
+                Objectif 2. Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir l’agriculture durable
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel2" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I211">2.1.1  Prévalence de la sous-alimentation</option>
+                <option value="I221">2.2.1  Prévalence du retard de croissance</option>
+                <option value="I222a">2.2.2a Prévalence de surpoids parmi les enfants de moins de 5 ans</option>
+                <option value="I251">2.5.1  Nombre de plantes et de ressources animales génétiques destinées à l'alimentation et l'agriculture préservées</option>
+                <option value="I252a1">2.5.2a Races animales locales classées comme étant à risque (%)</option>
+                <option value="I252a2">2.5.2a Races animales locales classées comme n'étant pas à risque (%)</option>
+                <option value="I252a3">2.5.2a Races animales locales classées à un niveau de risque d'extinction inconnu (%)</option>
+                <option value="I2a2">2.a.2 Tota des  flux officiels vers l'agriculture</option>
+                <option value="I2b1">2.b.1 Subventions à l'exportation agricole</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations2" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg2" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg2" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <div id="NoDisagg2" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#DDA63A !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I211">
+                            <td>Prévalence de la sous-alimentation</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>Prévalence du retard de croissance</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I222a">
+                            <td>Prévalence de surpoids parmi les enfants de moins de 5 ans</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I251">
+                            <td>Nombre de plantes et de ressources animales génétiques destinées à l'alimentation et l'agriculture préservées</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>Races animales locales classées comme étant à risque (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a2">
+                            <td>Races animales locales classées comme n'étant pas à risque (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a3">
+                            <td>Races animales locales classées à un niveau de risque d'extinction inconnu (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2a2">
+                            <td>Tota des  flux officiels vers l'agriculture</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2b1">
+                            <td>Subventions à l'exportation agricole</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg2" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#DDA63A !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I211">
+                            <td>Le pourcentage de la population dont l'apport alimentaire ne suffit pas à répondre aux besoins énergétiques alimentaires pendant un minimum d'un an.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>Nombre d'enfants de moins de 5 ans dont la taille pour cet âge est < -2/td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>Nombre total d'enfants de moins de 5 ans </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I222a">
+                            <td>Nombre d'enfants de moins de 5 ans dont le poids par rapport à la taille est > +2</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I222a">
+                            <td>Nombre total d'enfants de moins de 5 ans </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I251">
+                            <td>Nombre de plantes et de ressources animales génétiques destinées à l'alimentation et l'agriculture préservées</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>Nombre de races animales locales classées comme étant à risque</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>Nombre total de races animales locales dans toutes les catégories de risques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a2">
+                            <td>Nombre de races animales locales classées comme n'étant pas à risque</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a2">
+                            <td>Nombre total de races animales locales dans toutes les catégories de risques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a3">
+                            <td>Nombre de races animales locales classés comme inconnu</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a3">
+                            <td>Nombre total de races animales locales dans toutes les catégories de risques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2a2">
+                            <td>Tota des  flux officiels vers l'agriculture</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2b1">
+                            <td>Total des subventions à l'exportation; dépenses budgétaires et quantités</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 2 End -->
+
+    <!-- Goal 3 Start -->
+    <div id="sdg-3" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4C9F38;text-align: center; ">
+            <strong>
+                Objectif 3. Permettre à tous de vivre en bonne santé et promouvoir le bien-être de tous à tout âge
+            </strong>
+        </h3>
+        <div>
+            <select  id="indicatorLevel3" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I311">3.1.1 Mortalité maternelle  (pour 100,000 naissances vivantes)</option>
+                <option value="I312">3.1.2 Naissances assistées par un personnel de  santé qualifié (%)</option>
+                <option value="I321">3.2.1 Mortalité des moins de cinq ans (pour 1,000 naissances vivantes)</option>
+                <option value="I322">3.2.2 Mortalité néo-natale (pour 1,000 naissances vivantes)</option>
+                <option value="I332">3.3.2 Incidence de tuberculose (pour 100,000)</option>
+                <option value="I333">3.3.3 Incidence de Paludisme (pour 1,000)</option>
+                <option value="I335">3.3.5 Nécessitant une intervention contre les MTN</option>
+                <option value="I341">3.4.1 Taux de mortalité des  MNT (pour 100,000)</option>
+                <option value="I342">3.4.2 Mortalité par suicide (pour 100,000) </option>
+                <option value="I352">3.5.2 Consommation alcoolique (en litres)</option>
+                <option value="I361">3.6.1 Décès dues aux accidents de la circulation (pour 100,000)</option>
+                <option value="I371">3.7.1 Besoins en planification famliale satisfaits (%)</option>
+                <option value="I391">3.9.1 Mortalité, pollution de l'air</option>
+                <option value="I392">3.9.2 Mortalité, eau insalubre (pour 100,000)</option>
+                <option value="I393">3.9.3 Mortalité, empoisonnement accidentel (pour 100,000)</option>
+                <option value="I3a1">3.a.1 Les consommateurs de tabac 15+ ans (%)</option>
+                <option value="I3c1a">3.c.1 La densité des médecins (pour 1,000)</option>
+                <option value="I3c1b">3.c.1 La densité des infirmières et des sages-femmes (pour 1,000)</option>
+                <option value="I3c1c">3.c.1 Densité de la Dentisterie (pour 1,000)</option>
+                <option value="I3c1d">3.c.1 Densité de la pharmacie (pour 1,000)</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations3" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg3" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg3" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg3" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4C9F38 !important;">
+                            <th>Indicateur</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I311">
+                            <td>Mortalité maternelle  (pour 100,000 naissances vivantes)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I312">
+                            <td>Naissances assistées par un personnel de  santé qualifié (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I321">
+                            <td>Mortalité des moins de cinq ans (pour 1,000 naissances vivantes)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I322">
+                            <td>Mortalité néo-natale (pour 1,000 naissances vivantes)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I332">
+                            <td>Incidence de tuberculose (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I333">
+                            <td>Incidence de Paludisme (pour 1,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I335">
+                            <td>Nécessitant une intervention contre les MTN</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I341">
+                            <td>Taux de mortalité des  MNT (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I352">
+                            <td>Consommation alcoolique (en litres)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I361">
+                            <td>Décès dues aux accidents de la circulation (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I371">
+                            <td>Besoins en planification famliale satisfaits (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I391">
+                            <td>Mortalité, pollution de l'air</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I392">
+                            <td>Mortalité, eau insalubre (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I393">
+                            <td>Mortalité, empoisonnement accidentel (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3a1">
+                            <td>Les consommateurs de tabac 15+ ans (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1a">
+                            <td>La densité des médecins (pour 1,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1b">
+                            <td>La densité des infirmières et des sages-femmes (pour 1,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1c">
+                            <td>Densité de la Dentisterie (pour 1,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1d">
+                            <td>Densité de la pharmacie (pour 1,000)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg3" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4C9F38 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I311">
+                            <td>Décès maternelles enregistrées/estimation</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I311">
+                            <td>Total des vies enregistrées/estimées dans la même période</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I312">
+                            <td>Nombre de naissances assistées par du personnel de santé qualifié</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I312">
+                            <td>Nombre total de naissances vivantes dans la même période</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I321">
+                            <td>Nombre de décès parmi les enfants agés de 0-4</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I321">
+                            <td>Nombre de naissances vivantes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I322">
+                            <td>Nombre d'enfants décédés pendant les 28 premiers jours de la vie</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I322">
+                            <td>Nombre de naissances vivantes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I332">
+                            <td>Nombre de nouveaux cas et de rechutes de tuberculose apparaissant  au cours d'une période donnée</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I332">
+                            <td>Nombre d'habitants-années d'exposition</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I333">
+                            <td>Nombre de cas de paludisme</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I333">
+                            <td>Population à risque</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I335">
+                            <td>Nombre moyen annuel de personnes ayant besoin d'une chimiothérapie préventive</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I335">
+                            <td>N'est pas applicable</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I341">
+                            <td>Nombre de décès entre 30 et 70 ans dues/causés parles 4 MNT</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I341">
+                            <td>Population à l'âge exact de 30 ans dans la table de mortalité synthétique de la population</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I342">
+                            <td>Nombre de décès  par suicide en une année</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I342">
+                            <td>Population résidente au milieu de l'année pour la même année civile</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I352">
+                            <td>Quantité totale d'alcool consommé par adulte (15 ans ou plus)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I352">
+                            <td>Population (15 ans ou plus) résidente en milieu d'année pour la même année civile</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I361">
+                            <td>Nombre de décès dû aux accidents de la circulation</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I361">
+                            <td>Total Population</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I371">
+                            <td>Percentage de femmes en âge de procréer (15-49 ans) qui pour le moment utilisent</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I371">
+                            <td>Total de la demande en planning familiale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I391">
+                            <td>Nombre de décès attribuables aux effets conjoint de la pollution de l'air dans les habitations et à la polution de l'air ambiant.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I391">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I392">
+                            <td>Nombre de décès dus à l'insalubrité de l'eau, à un assainissement déficiant et au manque d'hygiène</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I392">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I393">
+                            <td>Nombre de décès dus à un empoisonnement accidentel</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I393">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3a1">
+                            <td> Les consommateurs de tabac 15+ ans (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1a">
+                            <td>Nombre de médecins</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1a">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1b">
+                            <td>Nombre de membres du personnel de soins infirmiers et obstétricaux</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1b">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1c">
+                            <td>Nombre de dentistes, de techniciens dentistes/assistants</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1c">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1d">
+                            <td>pharmaciens, techniciens/assistants pharmaceutiques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I3c1d">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 3 End -->
+
+    <!-- Goal 4 Start -->
+    <div id="sdg-4" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#C5192D;text-align: center; ">
+            <strong>
+                Objectif 4. Assurer à tous une éducation équitable, inclusive et de qualité et des possibilités d’apprentissage tout au long de la vie
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel4" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I422">4.2.2 Les activité d'apprentissage organisé un an avant l'âge officiel d'inscription dans le primaire (%)</option>
+                <option value="I451a">4.5.1 Indice de la Parité de Genre - Inscription dans l'Education Primaire</option>
+                <option value="I451b">4.5.1 Indice de la Parité  Genre - Inscription dans l'Education Secondaire</option>
+                <option value="I4b1">4.b.1 APD total pour les bourses d'étude (en Dollards des Etats Unis - USD)</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations4" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg4" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg4" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg4" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#C5192D !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I422">
+                            <td>Les activité d'apprentissage organisé un an avant l'âge officiel d'inscription dans le primaire (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I451a">
+                            <td>Indice de la Parité de Genre - Inscription dans l'Education Primaire</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I451b">
+                            <td>Indice de la Parité  Genre - Inscription dans l'Education Secondaire</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I4b1">
+                            <td>APD total pour les bourses d'étude (en Dollards des Etats Unis - USD)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg4" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#C5192D !important;">
+                          <th rowspan="2">&nbsp;</th>
+                          <th class="sdg4NoHeader" colspan="2">Sexe</th>
+                      </tr>
+                      <tr class="tableHeader" style="background-color:#C5192D !important;">
+                          <th class="sdg4NoHeader">Femme</th>
+                          <th class="sdg4NoHeader">Homme</th>
+                          <th class="sdg4Header">Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I422">
+                            <td>Nombre d'enfants qui ont participé dans un ou plusieurs programmes organisés d'apprentissage une année avant l'âge officiel d'inscription dans le primaire. </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I422">
+                            <td>Population totale dans la même tranche d'âge</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I451a">
+                            <td>Taux brut de scolarisation dans l'enseignement primaire</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I451b">
+                            <td>Taux brut d'inscription dans l'éducation secondaire.</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!-- <tr class="I4b1">
+                            <td>Total official development assistance,ODA(scholarships)</td>
+                            <td></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 4 End -->
+
+    <!-- Goal 5 Start -->
+    <div id="sdg-5" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF3A21;text-align: center; ">
+            <strong>
+                Objectif 5. Parvenir à l’égalité des sexes et autonomiser toutes les femmes et les filles
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel5" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I551a">5.5.1a Les femmes dans un gouvernement élu (%)</option>
+                <option value="I552">5.5.2 Les femmes dans des postes de direction (%)</option>
+                <option value="I5b1">5.b.1 Propriétaires de téléphones portables (%)</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations5" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg5" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg5" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg5" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#FF3A21 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I551a">
+                            <td>Les femmes dans un gouvernement élu (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I552">
+                            <td>Les femmes dans des postes de direction (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I5b1">
+                            <td>Propriétaires de téléphones portables (%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg5" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF3A21 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I551a">
+                            <td>Le nombre de sièges occupés par des femmes membres d' une chambre unique ou d'une chambre basse des parlements nationaux<td>
+                            <td></td>
+                        </tr>
+                        <tr class="I551a">
+                            <td>Nombre total des sièges</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I552">
+                            <td>Femmes employées dans ISCO-08 catégorie 1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I552">
+                            <td>Toutes les personnes employées dans ISCO-08 catégorie 1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I5b1">
+                            <td>Nombre d'individus possédant un téléphone portable</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I5b1">
+                            <td>Population totale</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 5 End-->
+
+    <!-- Goal 6 Start -->
+    <div id="sdg-6" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#26BDE2;text-align: center; ">
+            <strong>
+                Objectif 6. Garantir l’accès de tous à des services d’alimentation en eau et d’assainissement gérés de façon durable
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel6" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I642">6.4.2 Niveau de stress hydrique</option>
+                <option value="I6a1">6.a.1 Proportion de l'APD destinée à l'eau et à l'assainissement comprise dans le plan des dépenses</option>
+                <option value="I6b1">6.b.1 Proportion d'unités administratives locales ayant une participation de la communauté locale dans les interventions liées à l'eau et l'assainissement</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations6" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg6" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg6" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg6" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#26BDE2 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I642">
+                            <td>Niveau de stress hydrique</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6a1">
+                            <td>Proportion de l'APD destinée à l'eau et à l'assainissement comprise dans le plan des dépenses</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6b1">
+                            <td>Proportion d'unités administratives locales ayant une participation de la communauté locale dans les interventions liées à l'eau et l'assainissement</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg6" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#26BDE2 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I642">
+                            <td>Total de l'eau douce prélevée</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I642">
+                            <td>Total des ressources en eau douce renouvelables</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6a1">
+                            <td>Le montant de l'APD relative à l'eau et à l'assainissement qui fait partie du budget du gouvernement </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6a1">
+                            <td>Montant total de l'APD relative à l'eau et à l'assainissement</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6b1">
+                            <td>Le nombre d'unités administratives locales avec des politiques et des procédures d'exploitation pour la participation locale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I6b1">
+                            <td>Le nombre total d'unités administratives locales dans le pays.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 6 End-->
+
+    <!-- Goal 7 Start -->
+    <div id="sdg-7" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FCC30B;text-align: center; ">
+            <strong>
+                Objectif 7. Garantir l’accès de tous à des services énergétiques fiables, durables et modernes, à un coût abordable
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel7" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I711">7.1.1 Accès à l'électricité (% population)</option>
+                <option value="I712">7.1.2 Accès à l'énergie propre (% population)</option>
+                <option value="I721">7.2.1 Consommation d'énergie renouvelable</option>
+                <option value="I731">7.3.1 Intensité d'énergie</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations7" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg7" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg7" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg7" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#FCC30B !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I711">
+                            <td>Accès à l'électricité (% population)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I712">
+                            <td>Accès à l'énergie propre (% population)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I721">
+                            <td>Consommation d'énergie renouvelable</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I731">
+                            <td>Intensité d'énergie</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg7" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#FCC30B !important;">
+                          <th rowspan="2">&nbsp;</th>
+                          <th class="sdg7Header" colspan="2">Localisation géographique</th>
+                          <th class="sdg7NoHeader">Valeur</th>
+                      </tr>
+                      <tr class="tableHeader" style="background-color:#FCC30B !important;">
+                          <th class="sdg7Header">Rural</th>
+                          <th class="sdg7Header">Urbain</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I711">
+                            <td>Population ayant accès à l'énergie</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I711">
+                            <td>Population totale</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I712">
+                            <td>Nombre de personnes utilisant les carburants et les technologies propres pour la cuisine, le chauffage et l'éclairage </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I712">
+                            <td>La population totale signalant  toute cuisine, chauffage ou éclairage</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I721">
+                            <td>Consommation d'énergie provenant de toutes les sources renouvelables</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I721">
+                            <td>Consommation totale finale d'énergie</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I731">
+                            <td>L'approvisionnement totale de l'économie en énergie </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I731">
+                            <td>PIB</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 7 End-->
+
+    <!-- Goal 8 Start -->
+    <div id="sdg-8" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#A21942;text-align: center; ">
+            <strong>
+                Objectif 8. Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel8" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I811">8.1.1  Taux de croissance annuel du PIB réel par habitant </option>
+                <option value="I821">8.2.1  Taux de croissance annuel du PIB réel par personne employée</option>
+                <option value="I842">8.4.2  Consommation matérielle intérieure</option>
+                <option value="I852">8.5.2  Taux de chômage</option>
+                <option value="I861">8.6.1  Jeunes qui ne sont ni éduqués, ni employés, ni formés </option>
+                <option value="I8101">8.10.1 Banques commerciales et présence de distributeurs automatiques ATMs (pour 100,000)</option>
+                <option value="I8102">8.10.2 Compte en banque ou service de détenteurs d'argent mobile (% population)</option>
+                <option value="I8a1">8.a.1 Engagements Aide au Commerce </option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations8" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg8" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg8" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg8" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#A21942 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I811">
+                            <td>Taux de croissance annuel du PIB réel par habitant</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I821">
+                            <td>Taux de croissance annuel du PIB réel par personne employée</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I842">
+                            <td>Consommation matérielle intérieure</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I852">
+                            <td>Taux de chômage</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I861">
+                            <td>Jeunes qui ne sont ni éduqués, ni employés, ni formés</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I8101">
+                            <td>Banques commerciales et présence de distributeurs automatiques ATMs (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I8102">
+                            <td>Compte en banque ou service de détenteurs d'argent mobile (% population)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I8a1">
+                            <td>Engagements Aide au Commerce</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Disagg8" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#A21942 !important;">
+                          <th rowspan="2">&nbsp;</th>
+                          <th class="sdg8Header" colspan="2">Sexe</th>
+                          <th class="sdg8NoHeader">Valeur</th>
+                      </tr>
+                      <tr class="tableHeader" style="background-color:#A21942 !important;">
+                          <th class="sdg8Header">Femme</th>
+                          <th class="sdg8Header">Homme</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I811">
+                            <td>PIB par habitant dans l'année  t+1</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I811">
+                            <td>PIB par habitant dans l'année t</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I821">
+                            <td>PIB réel par personne employée dans une année N  - (N-1)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I821">
+                            <td>PIB réel par personne  employée au cours de l'année N-1</td>
+                            <td></td>
+                        </tr>
+                        <!-- <tr class="I842">
+                            <td>Domestic material consumption</td>
+                            <td></td>
+                        </tr> -->
+                        <tr class="I852">
+                            <td>Personnes sans emploi</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I852">
+                            <td>Personnes qui sont sur le marché du travail </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I861">
+                            <td>Jeunes – Jeunes employés – Jeunes pas employés</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I861">
+                            <td>Population de jeunes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I8101">
+                            <td>Nombre de branches de banques commerciales</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I8101">
+                            <td>Nombres d' adultes (divisé par 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <!-- <tr class="I8102">
+                            <td>Bank account or mobile money service holders (% population)</td>
+                            <td></td>
+                        </tr> -->
+                        <!-- <tr class="I8a1">
+                            <td>Aid for Trade commitments</td>
+                            <td></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 8 End -->
+
+    <!-- Goal 9 Start -->
+    <div id="sdg-9" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD6925;text-align: center; ">
+            <strong>
+                Objectif 9. Bâtir une infrastructure résiliente, promouvoir une industrialisation durable qui profite à tous et encourager l’innovation
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel9" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I912">9.1.2 Passagers et volumes de fret</option>
+                <option value="I921">9.2.1 Proportion de la valeur ajoutée dans l'industrie manufacturière</option>
+                <option value="I922">9.2.2 Part de l'emploi dans l'industrie manufacturière dans l'emploi total</option>
+                <option value="I941">9.4.1 Emission de CO2 par unité de valeur ajoutée </option>
+                <option value="I951">9.5.1 Dépenses en Recherche et dévelopment en proportion du PIB</option>
+                <option value="I952">9.5.2 Chercheurs (équivalent à plein temps) par million d'habitants</option>
+                <option value="I9a1">9.a.1 Total de l'aide publique internationale allouée aux infrastructures</option>
+                <option value="I9b1">9.b.1 Proportion de la valeur ajoutée de l'industrie de moyenne et haute technologie dans la valeur ajoutée totale </option>
+                <option value="I9c1">9.c.1 Population ayant accès à un réseau mobile</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations9" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg9" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg9" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg9" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#FD6925 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I912">
+                            <td>Passagers et volumes de fret</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I921">
+                            <td>Proportion de la valeur ajoutée dans l'industrie manufacturière</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Part de l'emploi dans l'industrie manufacturière dans l'emploi total</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>Emission de CO2 par unité de valeur ajoutée</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>Dépenses en Recherche et dévelopment en proportion du PIB</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Chercheurs (équivalent à plein temps) par million d'habitants</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9a1">
+                            <td>Total de l'aide publique internationale allouée aux infrastructures</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9b1">
+                            <td>Proportion de la valeur ajoutée de l'industrie de moyenne et haute technologie dans la valeur ajoutée totale</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Population ayant accès à un réseau mobile</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg9" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FD6925 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr class="I912">
+                            <td>Passenger and freight volumes</td>
+                            <td></td>
+                        </tr> -->
+                        <tr class="I921">
+                            <td>Valeur ajoutée dans l'industrie manufacturière</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I921">
+                            <td>PIB</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Total des emplois dans les activités manufacturières</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Total de l'emploi dans toutes les activités économiques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>CO2 émission de CO2 dans l'industrie manufacturière (kg)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>Total de la valeur ajoutée dans l'industrie manufacturière (constant  2010 USD)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>Montant des dépenses en Recherche et développement (R&D)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>Production totale de l' économie (PIB)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Chercheurs (équivalent à plein temps)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Population (divisée par un  million)</td>
+                            <td></td>
+                        </tr>
+                        <!-- <tr class="I9a1">
+                            <td>Total official international support to infrastructure</td>
+                            <td></td>
+                        </tr> -->
+                        <tr class="I9b1">
+                            <td>La somme de la valeur ajoutée dans les activités économiques de l'industrie de moyenne et haute technologie </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9b1">
+                            <td>Montant total de la valeur ajoutée de l'industrie manufacturière</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Nombre d'habitants à portée d'un signal cellulaire mobile</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Population totale</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 9 End -->
+
+    <!-- Goal 10 Start -->
+    <div id="sdg-10" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DD1367;text-align: center; ">
+            <strong>
+                Objectif 10. Réduire les inégalités dans les pays et d’un pays à l’autre
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel10" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1061">10.6.1 Droits de vote dans les pays en développement</option>
+                <option value="I10a1">10.a.1 Lignes tarifaires aux importations</option>
+                <option value="I10b1">10.b.1 Total des flux de ressources pour le développement</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+            <div id="disaggregations10" style="margin-top: 10px;">
+                <ul>
+                    <li><a href="#NoDisagg10" class="disaggTab">Agrégation</a></li>
+                    <li><a href="#Disagg10" class="disaggTab">Désagrégation</a></li>
+                </ul>
+
+                <!-- Tab content -->
+                <div id="NoDisagg10" class="tabcontent2">
+                    <table>
+                        <thead>
+                          <tr class="tableHeader" style="background-color:#DD1367 !important;">
+                              <th>Indicateur</th>
+                              <th>Valeur</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="I1061">
+                                <td>Droits de vote dans les pays en développement</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I10a1">
+                                <td>Lignes tarifaires aux importations</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I10b1">
+                                <td>Total des flux de ressources pour le développement</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="Disagg10" class="tabcontent2">
+                    <table>
+                        <thead>
+                            <tr class="tableHeader" style="background-color:#DD1367 !important;">
+                                <th>&nbsp;</th>
+                                <th>Valeur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="I1061">
+                                <td>Le nombre de droits de vote alloués aux pays en développement</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I1061">
+                                <td>Nombre total de droits de vote </td>
+                                <td></td>
+                            </tr>
+                            <!-- <tr class="I10a1">
+                                <td>Average share of national tariff lines that are free of duty</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I10b1">
+                                <td>Sum of official and private flows from all donors to developing countries</td>
+                                <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <!-- Goal 10 End -->
+
+    <!-- Goal 11 Start -->
+    <div id="sdg-11" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FD9D24;text-align: center; ">
+            <strong>
+                Objectif 11. Faire en sorte que les villes et les établissements humains soient ouverts à tous, sûrs, résilients et durables
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel11" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1111">11.1.1 Population urbaine vivant dans les bidonvilles</option>
+                <option value="I1152">11.5.2 Perte économique directe</option>
+                <option value="I1162">11.6.2 Niveau annuel urbain de concentration de PM2.5</option>
+                <option value="I11b1">11.b.1 Stratégies nationales de réduction des risques de catastrophes alignées au Cadre de Sendai</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations11" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg11" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg11" class="disaggTab">Désagrégation</a></li>
+            </ul>       <!-- Tab content -->
+            <div id="NoDisagg11" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#FD9D24 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1111">
+                            <td>Population urbaine vivant dans les bidonvilles</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1152">
+                            <td>Perte économique directe</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1162">
+                            <td>Niveau annuel urbain de concentration de PM2.5</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I11b1">
+                            <td>Stratégies nationales de réduction des risques de catastrophes alignées au Cadre de Sendai</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg11" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FD9D24 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1111">
+                            <td>Nombre de personnes vivant dans les bidonvillles, des implantations informelles et des logements inadéquats</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1111">
+                            <td>Population totale de la ville</td>
+                            <td></td>
+                        </tr>
+                        <!-- <tr class="I1152">
+                            <td>Direct economic loss attributed to disasters</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I11b1">
+                            <td>Adopt and implement national disaster risk reduction strategies</td>
+                            <td></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 11 End -->
+
+    <!-- Goal 12 Start -->
+    <div id="sdg-12" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#BF8B2E;text-align: center; ">
+            <strong>
+                Objectif 12. Établir des modes de consommation et de production durables
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel12" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="#">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations12" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg12" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg12" class="disaggTab">Désagrégation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg12" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#BF8B2E !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="xyz">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg12" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#BF8B2E !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="xyz">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 12 End-->
+
+    <!-- Goal 13 Start -->
+    <div id="sdg-13" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#3F7E44;text-align: center; ">
+            <strong>
+              Objectif 13. Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions2
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel13" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="#">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations13" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg13" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg13" class="disaggTab">Désagrégation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg13" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#3F7E44 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="#">
+                            <td>xyz</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg13" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#3F7E44 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="#">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 13 End-->
+
+    <!-- Goal 14 Start -->
+    <div id="sdg-14" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#0A97D9;text-align: center; ">
+            <strong>
+                Objectif 14. Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel14" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1441">14.4.1 Stocks de poisson durables</option>
+                <option value="I1451">14.5.1 Sites marins, zone protégée moyenne (%)</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations14" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg14" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg14" class="disaggTab">Désagrégation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg14" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#0A97D9 !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1441">
+                            <td>Stocks de poisson durables</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1451">
+                            <td>Sites marins, zone protégée moyenne (%)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg14" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#0A97D9 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <!-- <tr class="I1441">
+                          <td>Proportion of fish stocks within biologically sustainable levels</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1451">
+                          <td>Coverage of protected areas in relation to marine areas</td>
+                          <td></td>
+                      </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 14 End-->
+
+    <!-- Goal 15 Start -->
+    <div id="sdg-15" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#56C02B;text-align: center;">
+            <strong>
+                Objectif 15. Préserver et restaurer les écosystèmes terrestres, en veillant à les exploiter de façon durable, gérer durablement les forêts, lutter contre la désertification, enrayer et inverser le processus de dégradation des terres et mettre fin à l’appauvrissement de la biodiversité
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel15" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1511">15.1.1 Zone forestière (%)</option>
+                <option value="I1512">15.1.2 Sites terrestres, zone protégée moyenne ou biodiversité de l'eau douce, zone protégée moyenne</option>
+                <option value="I1521">15.2.1 Progrès vers une gestion durable de la forêt</option>
+                <option value="I1541">15.4.1 Protection des sites de biodiversité des montagnes</option>
+                <option value="I1542">15.4.2 Indice de couvert végétal des Montagnes</option>
+                <option value="I1551">15.5.1 Indice de la Liste Rouge de survie des espèces (0-1)</option>
+                <option value="I1561">15.6.1 Rapport sur le Protocol de Nagoya (2010) sur l'Accès aux Ressources Génétiques</option>
+                <option value="I15a1">15.a.1 Dépenses publiques pour la conservation</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations15" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg15" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg15" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg15" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#56C02B !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1511">
+                            <td>Zone forestière (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1512">
+                            <td>Sites terrestres, zone protégée moyenne ou biodiversité de l'eau douce, zone protégée moyenne</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1521">
+                            <td>Progrès vers une gestion durable de la forêt</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1541">
+                            <td>Protection des sites de biodiversité des montagnes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1542">
+                            <td>Indice de couvert végétal des Montagnes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1551">
+                            <td>Indice de la Liste Rouge de survie des espèces (0-1)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1561">
+                            <td>Rapport sur le Protocol de Nagoya (2010) sur l'Accès aux Ressources Génétiques</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I15a1">
+                            <td>Dépenses publiques pour la conservation</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg15" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#56C02B !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1511">
+                          <td>Zone forestiere (année de référence)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1511">
+                          <td>Zone terrestre (2015)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1512">
+                          <td>Ensemble de la zone protégée</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1512">
+                          <td>Ensemble de la zone territoriale</td>
+                          <td></td>
+                      </tr>
+                      <!-- <tr class="I1521">
+                          <td>Progress towards sustainable forest management</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1541">
+                          <td>Protection of mountain biodiversity sites</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1542">
+                          <td>Mountain Green Cover Index</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1551">
+                          <td>Red List Index</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1561">
+                          <td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I15a1">
+                          <td>Public expenditure on conservation</td>
+                          <td></td>
+                      </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 15 End -->
+
+    <!-- Goal 16 Start -->
+    <div id="sdg-16" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#00689D; text-align: center;">
+            <strong>
+                Objectif 16. Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel16" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1611">16.1.1 Homicides (pour 100,000)</option>
+                <option value="I1632">16.3.2 Détenus en instance de jugement en proportion de la population globale emprisonnée</option>
+                <option value="I1661">16.6.1 Dépenses publiques en proportion du budget initial approuvé</option>
+                <option value="I1691">16.9.1 Naissances enregistrées (%)</option>
+                <option value="I16a1">16.a.1 Institutions indépendantes des droits de l'homme</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations16" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg16" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg16" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg16" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#00689D !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1611">
+                            <td>Homicides (pour 100,000)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1632">
+                            <td>Détenus en instance de jugement en proportion de la population globale emprisonnée</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1661">
+                            <td>Dépenses publiques en proportion du budget initial approuvé</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1691">
+                            <td>Naissances enregistrées (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I16a1">
+                            <td>Institutions indépendantes des droits de l'homme</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg16" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#00689D !important;">
+                          <th rowspan="2">&nbsp;</th>
+                          <th class="sdg16Header" colspan="2">Sexe</th>
+                          <th class="sdg16NoHeader">Valeur</th>
+                      </tr>
+                      <tr class="tableHeader" style="background-color:#00689D !important;">
+                          <th class="sdg16Header">Femme</th>
+                          <th class="sdg16Header">Homme</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1611">
+                          <td>Nombre total de victimes d'homicide intentionnel, homicide enregistré au cours d'une année donnée</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1611">
+                          <td>Population total au cours d'une année donnée divisé par  100,000</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1632">
+                          <td>Nombre total de détenus en instance de jugement</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1632">
+                          <td>Nombre total de personnes gardées en detention</td>
+                          <td></td>
+                      </tr>
+                      <!-- <tr class="I1661">
+                          <td>Country Score</td>
+                          <td></td>
+                      </tr> -->
+                      <tr class="I1691">
+                          <td>Nombre d'enfants de moins de 5 ans dont les naissances ont été déclarées comme ayant été enregistrées auprès d'une autorité nationale civile pertinente.</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1691">
+                          <td>Nombre total d'enfants de moins de 5 ans dans la population</td>
+                          <td></td>
+                      </tr>
+                      <!-- <tr class="I16a1">
+                          <td>Accréditation classification</td>
+                          <td></td>
+                      </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 16 End -->
+
+    <!-- Goal 17 Start -->
+    <div id="sdg-17" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#19486A;text-align: center;">
+            <strong>
+                Objectif 17. Renforcer les moyens de mettre en œuvre le Partenariat mondial pour le développement durable et le revitaliser
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel17" name="indicators" class="dropdown">
+                <option disabled selected>Veuillez sélectionner un indicateur</option>
+                <option value="I1721">17.2.1 APD nette en proportion du GNI des pays donateurs </option>
+                <option value="I1731">17.3.1 Ventilation APD en proportion du budget national total (en USD) </option>
+                <option value="I1732">17.3.2 Volume des envois de fonds (en USD)</option>
+                <option value="I1741">17.4.1 Services de la dette comme promotion des exportations de biens et services (%)</option>
+                <option value="I1762a">17.6.2 Abonnements large bande, 256 kbits/s à 2 Mbit/s (pour 100 habitants)</option>
+                <option value="I1762b">17.6.2 Abonnements large bande, 2 Mbit/s à moins de  10 Mbits/s (pour 100 habitants)</option>
+                <option value="I1762c">17.6.2 Abonnements bande large, égal à ou qui dépasse 10 Mbit/s (pour 100 habitants)</option>
+                <option value="I1781">17.8.1 Utilisateurs d'Internet (%)</option>
+                <option value="I1791">17.9.1 Total du flux monétaire en faveur du renforcement des capacités et la planification nationale (en USD)</option>
+                <option value="I17101">17.10.1 Moyenne tarifaire mondiale ponderée </option>
+                <option value="I17111">17.11.1 Part du commerce mondial dans le commerce total (%)</option>
+                <option value="I17121">17.12.1 Droits d'importations moyens auxquels sont confrontés les produits exportés (%)</option>
+                <option value="I17183a">17.18.3 Entièrement financé</option>
+                <option value="I17183b">17.18.3 Stade d'exécution </option>
+                <option value="I17191">17.19.1  Valeur des ressources pour renforcer les capacités statitiques (en USD)</option>
+            </select>
+        </div>
+        <div id="disaggregations17" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg17" class="disaggTab">Agrégation</a></li>
+                <li><a href="#Disagg17" class="disaggTab">Désagrégation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg17" class="tabcontent2">
+                <table>
+                    <thead>
+                      <tr class="tableHeader" style="background-color:#19486A !important;">
+                          <th>Indicateur</th>
+                          <th>Valeur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1721">
+                            <td>APD nette en proportion du GNI des pays donateurs </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1731">
+                            <td>Ventilation APD en proportion du budget national total (en USD)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1732">
+                            <td>Volume des envois de fonds (en USD)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1741">
+                            <td>Services de la dette comme promotion des exportations de biens et services (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1762a">
+                            <td>Abonnements large bande, 256 kbits/s à 2 Mbit/s (pour 100 habitants)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1762b">
+                            <td>Abonnements large bande, 2 Mbit/s à moins de  10 Mbits/s (pour 100 habitants)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1762c">
+                            <td>Abonnements bande large, égal à ou qui dépasse 10 Mbit/s (pour 100 habitants)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1781">
+                            <td>Utilisateurs d'Internet (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1791">
+                            <td>Total du flux monétaire en faveur du renforcement des capacités et la planification nationale (en USD)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17101">
+                            <td>Moyenne tarifaire mondiale ponderée </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17111">
+                            <td>Part du commerce mondial dans le commerce total (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17121">
+                            <td>Droits d'importations moyens auxquels sont confrontés les produits exportés (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17183a">
+                            <td>Entièrement financé</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17183b">
+                            <td>Stade d'exécution</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I17191">
+                            <td> Valeur des ressources pour renforcer les capacités statitiques (en USD)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg17" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#19486A !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1721">
+                          <td>Ventilation APD</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1721">
+                          <td>Revenu National Brut</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1731">
+                          <td>Ventilation APD</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1731">
+                          <td>Budget national total</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1732">
+                          <td>Transferts personnels + Rémunération des employés</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1732">
+                          <td>GDP</td>
+                          <td></td>
+                      </tr>
+                      <!-- <tr class="I1741">
+                          <td>Debt service as a proportion of exports of goods and services</td>
+                          <td></td>
+                      </tr> -->
+                      <tr class="I1762a">
+                          <td>Nombre d'abonnements large bande fixe (256kbit/s à 2Mbit/s)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1762a">
+                          <td>Population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1762b">
+                          <td>Nombre d'abonnements de large bande fixe (2Mbit/s à < 10 Mbit/s)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1762b">
+                          <td>Population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1762c">
+                          <td>Nombre d'abonnements de large bande fixe > 10 Mbit/s</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1762c">
+                          <td>Population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1781">
+                          <td>Nombre d'utilisateurs d' internet au cours des 3 derniers mois</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1781">
+                          <td>Population totale</td>
+                          <td></td>
+                      </tr>
+                      <!-- <tr class="I1791">
+                          <td>Total monetary flow for capacity building and national planning (in USD)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17101">
+                          <td>Worldwide weighted tariff-average</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17111">
+                          <td>Share of global trade of total trade (%)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17121">
+                          <td>Average import tariffs faced by products exported (%)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17183a">
+                          <td>Fully Funded</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17183b">
+                          <td>Implementation stage</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I17191">
+                          <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                          <td></td>
+                      </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 17 End -->
+
+
+    </div>

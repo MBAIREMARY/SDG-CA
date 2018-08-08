@@ -1,12 +1,9 @@
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"type="text/javascript"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
     $(function () {
         // Default selected levels
         $(".I111").show();
@@ -14,7 +11,7 @@ crossorigin="anonymous">
         $(".I141").hide();
         $(".I151").hide();
         // Onchange Levels
-        $("#indicatorLevel").change(function () {           
+        $("#indicatorLevel").change(function () {
 
          if ($(this).val() === "I111") {
             $(".I111").show();
@@ -99,7 +96,7 @@ crossorigin="anonymous">
         };
 
     });
-    })  
+    })
     function openDisagg(evt, disagg) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -135,129 +132,128 @@ crossorigin="anonymous">
 </script>
 
 <style>
+    /*Styling for the outter tab Start*/
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+    /* Style the tab */
+    .tab {
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        padding: 0px;
+    }
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        opacity: 0.5;
+        transition: transform .5s; /* Animation */
+        z-index: 0;
+    }
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        opacity: 2;
+        position: relative;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+        z-index: 200;
+    }
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        opacity: 2;
+    }
+    /* Style the tab content */
+    .tabcontent {
+        padding: 0px 12px;
+        border-left: none;
+    }
+    /*Styling for the outter tab End*/
 
-/*Styling for the outter tab Start*/
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-/* Style the tab */
-.tab {
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    padding: 0px;
-}
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-    opacity: 0.5;
-    transition: transform .5s; /* Animation */
-    z-index: 0;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-    opacity: 2;
-    position: relative;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
-    z-index: 200;
-}
-/* Create an active/current "tab button" class */
-.tab button.active {
-    opacity: 2;
-}
-/* Style the tab content */
-.tabcontent {
-    padding: 0px 12px;
-    border-left: none;
-}
-/*Styling for the outter tab End*/
 
+    /*Styling the Inner Tabs For Disaggregation*/
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-/*Styling the Inner Tabs For Disaggregation*/
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        width: 70%;
+    }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    width: 70%;
-}
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .tableHeader{
+        background-color: #9ACD32 !important;
+    }
+    th{
+        text-align: center !important;
+        color:#ffffff !important;
+    }
+    h1{
+        color:#ffffff !important;
+    }
+    input{
+        width: 4em;
+    }
+    /* Style the tab */
+    .tab2 {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-.tableHeader{
-    background-color: #9ACD32 !important;
-}
-th{
-    text-align: center !important;
-    color:#ffffff !important;
-}
-h1{
-    color:#ffffff !important;
-}
-input{
-    width: 4em;
-}
-/* Style the tab */
-.tab2 {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
+    /* Style the buttons that are used to open the tab content */
+    .tab2 button {
+        background-color: #9ACD32;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px 14px 16px;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-right: 5px;
 
-/* Style the buttons that are used to open the tab content */
-.tab2 button {
-    background-color: #9ACD32;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px 14px 16px;
-    transition: 0.3s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-right: 5px;
-   
-}
+    }
 
-/* Change background color of buttons on hover */
-.tab2 button:hover {
-    background-color: #ddd;
-    color: black;
-    opacity: 2;
-    -ms-transform: scale(1.3); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-}
+    /* Change background color of buttons on hover */
+    .tab2 button:hover {
+        background-color: #ddd;
+        color: black;
+        opacity: 2;
+        -ms-transform: scale(1.3); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2);
+    }
 
-/* Create an active/current tablink class */
-.tab2 button.active {
-    background-color: #ccc;
-    color: black;
-}
+    /* Create an active/current tablink class */
+    .tab2 button.active {
+        background-color: #ccc;
+        color: black;
+    }
 
-/* Style the tab content */
-.tabcontent2 {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
+    /* Style the tab content */
+    .tabcontent2 {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
 </style>
 
 <div class="row">
@@ -269,7 +265,7 @@ input{
           <button class="tablinks" onclick="openASP(event, 'asp5')" style="background-color:   #000000; color: white; font-weight: bold;">ASP5</button>
           <button class="tablinks" onclick="openASP(event, 'asp6')" style="background-color:   #9932CC; color: white; font-weight: bold;">ASP6</button>
           <button class="tablinks" onclick="openASP(event, 'asp7')" style="background-color:   #4ca6ff; color: white; font-weight: bold;">ASP7</button>
-    </div>  
+    </div>
 
 
 
@@ -283,7 +279,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#9ACD32 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#9ACD32 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -292,7 +288,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -310,7 +306,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -355,7 +351,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -401,7 +397,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#FF9933 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#FF9933 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -410,7 +406,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -427,7 +423,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -471,7 +467,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -517,7 +513,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#ff4c4c ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#ff4c4c ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -526,7 +522,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -543,7 +539,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -587,7 +583,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -633,7 +629,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#6666ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#6666ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -642,7 +638,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -659,7 +655,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -703,7 +699,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -749,7 +745,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#000000 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#000000 ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -758,7 +754,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -775,7 +771,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -819,7 +815,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -867,7 +863,7 @@ input{
         <div>
             <b style="color:#9932CC ">
                 Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;
-            </b> 
+            </b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -876,7 +872,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -893,7 +889,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -937,7 +933,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I141">
                         <td>Consumption of energy from all renewable sources</td>
                         <td></td>
@@ -983,7 +979,7 @@ input{
             </strong>
         </h3>
         <div>
-            <b style="color:#4ca6ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b> 
+            <b style="color:#4ca6ff ">Select Indicator: &nbsp;&nbsp; &nbsp;&nbsp;</b>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option value="I111">Gini coefficient</option>
                 <option value="I131">% of eligible population with HIV having access to ARV</option>
@@ -992,7 +988,7 @@ input{
                 <option value="I152">(a) % of small-scale farmers graduating into small-scale commercial farming</option>
                 <option value="I161">Fishery Sector value added ( as share of GDP)</option>
                 <option value="I162">Marine biotechnology value added as a % of GDP</option>
-                <option value="I171">% of agricultural land placed under sustainable land management practice.</option> 
+                <option value="I171">% of agricultural land placed under sustainable land management practice.</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -1009,7 +1005,7 @@ input{
                         <th>Value</th>
                     </tr>
                 </thead>
-                <tbody>     
+                <tbody>
                     <tr class="I111">
                         <td>Gini coefficient</td>
                         <td></td>
@@ -1053,7 +1049,7 @@ input{
                     <th>Value</th>
                 </tr>
             </thead>
-            <tbody>     
+            <tbody>
                 <tr class="I141">
                     <td>Consumption of energy from all renewable sources</td>
                     <td></td>
@@ -1095,5 +1091,5 @@ input{
 
 <script type="text/javascript">
     //Outer Tabs:Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click(); 
+    document.getElementById("defaultOpen").click();
 </script>
