@@ -12,11 +12,15 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
         $(function () {
-          $('.tabcontent2 tr:not(.tableHeader)').hide();
+          $('.tabcontent2 tr').hide();
           // Onchange Levels
           $("#indicatorLevel").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+            if ( ($(this).val()=="I111b")||($(this).val()=="I121")) {
+                $('.I111x').hide();
+            }
           })
         });
         $(function () {
@@ -25,6 +29,7 @@
           $("#indicatorLevel2").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
           })
         });
         $(function () {
@@ -33,6 +38,7 @@
           $("#indicatorLevel3").change(function () {
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
           })
         });
         $(function () {
@@ -41,6 +47,17 @@
             $("#indicatorLevel4").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ( ($(this).val()=="I4b1")) {
+                  $('.sdg4NoHeader').hide();
+                  $('.sdg4Header').show();
+              }
+              if ( ($(this).val()=="I422")||($(this).val()=="I451a")||($(this).val()=="I451b")) {
+                  $('.sdg4Header').hide();
+                  $('.sdg4NoHeader').show();
+              }
+
             })
         });
         $(function () {
@@ -49,6 +66,7 @@
             $("#indicatorLevel5").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -57,6 +75,7 @@
             $("#indicatorLevel6").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -65,6 +84,16 @@
             $("#indicatorLevel7").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I711") {
+                  $('.sdg7Header').show();
+                  $('.sdg7NoHeader').hide();
+              }
+              if (($(this).val()=="I712") || ($(this).val()=="I721")||($(this).val()=="I731")) {
+                  $('.sdg7Header').hide();
+                  $('.sdg7NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -73,6 +102,17 @@
             $("#indicatorLevel8").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ($(this).val()=="I852") {
+                $('.sdg8Header').show();
+                $('.sdg8NoHeader').hide();
+              }
+              if (($(this).val()=="I821")||($(this).val()=="I842")||($(this).val()=="I811")||
+              ($(this).val()=="I861")||($(this).val()=="I8101")||($(this).val()=="I8102")||($(this).val()=="I8a1")) {
+                $('.sdg8Header').hide();
+                $('.sdg8NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -81,6 +121,7 @@
             $("#indicatorLevel9").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -89,6 +130,7 @@
             $("#indicatorLevel10").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -97,6 +139,7 @@
             $("#indicatorLevel11").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -105,6 +148,7 @@
             $("#indicatorLevel12").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -113,6 +157,7 @@
             $("#indicatorLevel13").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -121,6 +166,7 @@
             $("#indicatorLevel14").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -129,6 +175,7 @@
             $("#indicatorLevel15").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -137,6 +184,16 @@
             $("#indicatorLevel16").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I1611")) {
+                $('.sdg16Header').show();
+                $('.sdg16NoHeader').hide();
+              }
+              else {
+                $('.sdg16Header').hide();
+                $('.sdg16NoHeader').show();
+              }
             })
         });
         $(function () {
@@ -145,6 +202,7 @@
             $("#indicatorLevel17").change(function () {
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
             })
         });
         $(function () {
@@ -169,6 +227,7 @@
             $("#sdgs3").tabs();
         });
 </script>
+
 <style>
     /*Styling for the outter tab Start*/
     * {box-sizing: border-box}
@@ -340,15 +399,26 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#e5243b !important;">
-                            <th></th>
-                            <th>Employment Status</th>
-                            <th>Geographical Location</th>
-                            <th>Sex</th>
-                        </tr>
+                          <th rowspan="2"></th>
+                          <th colspan="2" class="I111x">Statut d'emploi</th>
+                          <th colspan="2">Localisation géographique</th>
+                          <th colspan="2">Sexe</th>
+                      </tr>
+                      <tr id="tableHeader2" class="tableHeader" style="background-color:#e5243b !important;">
+                          <th class="I111x">Employé</th>
+                          <th class="I111x">Sans emploi</th>
+                          <th>Rural</th>
+                          <th>Urbain</th>
+                          <th>Femme</th>
+                          <th>Homme</th>
+                      </tr>
                     </thead>
                     <tbody>
                         <tr class="I111a">
                             <td>Personnes vivant en dessous du seuil international de pauvreté</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -358,9 +428,14 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr class="I111b">
                             <td>Personnes actives vivant en dessous du seuil de pauvreté dans les ménages</td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -368,14 +443,20 @@
                             <td>Nombre total de personnes actives</td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr class="I121">
                             <td>Total de personnes vivant en dessous du seuil national de pauvreté </td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr class="I121">
                             <td>Population totale, urbaine ou rurale</td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
