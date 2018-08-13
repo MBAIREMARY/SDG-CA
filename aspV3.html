@@ -38,6 +38,19 @@
             $('.'+ $(this).val()).show();
             $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
             $('.tableHeader').show();
+
+            if (($(this).val()=="I32")||($(this).val()=="I34")) {
+              $('.goal3NoHeader').hide();
+              $('.goal3NoHeaderSex').show();
+            }
+            else if (($(this).val()=="I33")) {
+              $('.goal3NoHeader').show();
+              $('.goal3NoHeaderSex').hide();
+            }
+             else {
+              $('.goal3NoHeader').show();
+              $('.goal3NoHeaderSex').show();
+            }
           })
         });
         $(function () {
@@ -253,7 +266,7 @@
             $("#disaggregations18").tabs();
             $("#disaggregations19").tabs();
             $("#disaggregations20").tabs();
-            $("#goals3").tabs();
+            // $("#goals3").tabs();
         });
 </script>
 <style>
@@ -381,9 +394,7 @@
         <div>
             <select id="indicatorLevel" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
-                <option value="xyz">
-                    xyz
-                </option>
+                <option value="xyz">xyz</option>
             </select>
         </div>
         <!-- Tab disaggregations Start -->
@@ -455,15 +466,7 @@
         <div>
             <select id="indicatorLevel2" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
-                <option value="I211">2.1.1  Prevalence of undernourishment</option>
-                <option value="I221">2.2.1  Prevalence of stunting among children under 5</option>
-                <option value="I222a">2.2.2a Prevalence of overweight among children under 5</option>
-                <option value="I251">2.5.1  Number of plant and animal genetic resources for food and agriculture secured </option>
-                <option value="I252a1">2.5.2a Local breeds classified as being at risk</option>
-                <option value="I252a2">2.5.2a Local breeds classified as being not-at-risk</option>
-                <option value="I252a3">2.5.2a Local breeds classified as unknown level of risk of extinction</option>
-                <option value="I2a2">2.a.2 Total official flows to agriculture</option>
-                <option value="I2b1">2.b.1 Agricultural export subsidies</option>
+                <option value="I211">xyz</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -612,82 +615,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I311">
-                            <td>Maternal mortality ratio</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I312">
-                            <td>Proportion of births attended by skilled health personnel</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I321">
-                            <td>Under-five mortality rate</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I322">
-                            <td>Neonatal mortality rate</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I332">
-                            <td>Tuberculosis incidence per 1,000 population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I333">
-                            <td>Malaria incidence per 1,000 population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I335">
-                            <td>Requiring intervention against NTDs</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I341">
-                            <td>Death rate from NCDs (per 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I352">
-                            <td>Alcoholic consumption (in liters)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I361">
-                            <td>Traffic deaths (per 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I371">
-                            <td>Family planning needs satisfied (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I391">
-                            <td>Mortality, air pollution</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I392">
-                            <td>Mortality, unsafe water (per 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I393">
-                            <td>Mortality, unintentional poisoning (per 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3a1">
-                            <td>Tobacco users 15+ years (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1a">
-                            <td>Physician Density (per 1,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1b">
-                            <td>Nursing and Midwifery Density (per 1,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1c">
-                            <td>Dentistry Density (per 1,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1d">
-                            <td>Pharmaceutical Density (per 1,000)</td>
-                            <td></td>
-                        </tr>
+                      <tr class="I31">
+                          <td>Number of new HIV infections per 1000 population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I32">
+                          <td>TB incidence per 100,000 persons per year</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I33">
+                          <td>Malaria incidence per 1,000 per year</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I34">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
                     </tbody>
                 </table>
             </div>
@@ -695,157 +638,60 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#ff4c4c !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2"></th>
+                            <th colspan="2" class="goal3NoHeaderSex">Sex</th>
+                            <th colspan="2" class="goal3NoHeader">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th class="goal3NoHeaderSex">Female</th>
+                            <th class="goal3NoHeaderSex">Male</th>
+                            <th class="goal3NoHeader">Rural</th>
+                            <th class="goal3NoHeader">Urban</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I311">
-                            <td>Recorded/estimated maternal deaths</td>
+                        <tr class="I31">
+                            <td>Total HIV cases over a specified period</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I311">
-                            <td>Total recorded/estimated lives in the same period</td>
+                        <tr class="I31">
+                            <td>Total people with HIV clustered</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I312">
-                            <td>No. of women with live birth attended by skilled personel</td>
+                        <tr class="I32">
+                            <td>Number of new and relapse TB cases arising in a year</td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I312">
-                            <td>Women with a live birth in the same period</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I321">
-                            <td>Number of dealths among childre age 0-4 </td>
-                            <td></td>
-                        </tr>
-                        <tr class="I321">
-                            <td>Number of live births </td>
-                            <td></td>
-                        </tr>
-                        <tr class="I322">
-                            <td>Number of children who died during the first 28 days of life</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I332">
-                            <td>Number of new and relapse TB cases arising in a specified time period</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I332">
+                        <tr class="I32">
                             <td>Number of person-years of exposure</td>
                             <td></td>
-                        </tr>
-                        <tr class="I333">
-                            <td>No. of Malaria Cases</td>
                             <td></td>
                         </tr>
-                        <tr class="I333">
-                            <td>Population at Risk</td>
+                        <tr class="I33">
+                            <td>Number of confirmed malaria cases</td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I335">
-                            <td>Average annual number of people requiring preventive chemotherapy</td>
+                        <tr class="I33">
+                            <td>Number of person-years of exposure</td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I341">
-                            <td>Number of deaths between ages 30 and 70 years from 4 NCD</td>
+                        <tr class="I34">
+                            <td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I341">
-                            <td>Population at exact age 30 in the synthetic life-table population</td>
+                        <tr class="I34">
+                            <td>Estimated number of adults and children living with HIV</td>
                             <td></td>
-                        </tr>
-                        <tr class="I342">
-                            <td>Number of suicide deaths in a year</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I342">
-                            <td>Midyear resident population for the same calendar year</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I352">
-                            <td>Total amount of alcohol consumed per adult (15+ years)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I352">
-                            <td>Midyear resident population (15+ years) for the same calendar year</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I361">
-                            <td>Number of deaths due to road traffic crashes</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I361">
-                            <td>Total Population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I371">
-                            <td>Women of reproductive age using contraceptive method</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I371">
-                            <td>Total demand for family planning</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I391">
-                            <td>Number of deaths attributable to the joint effects of household and ambient air pollution</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I391">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I392">
-                            <td>Number of deaths from unsafe water, sanitation and hygiene</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I392">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I393">
-                            <td>Number of deaths from unintentional poisoning</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I393">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3a1">
-                            <td> Tobacco users 15+ years</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1a">
-                            <td>Number of physicians</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1a">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1b">
-                            <td>Number of nursing and midwifery personnel</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1b">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1c">
-                            <td>Number of dentists, dental technician/assistants</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1c">
-                            <td>Total population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1d">
-                            <td>pharmacists, pharamaceutical, technicians/assistants</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I3c1d">
-                            <td>Total population</td>
                             <td></td>
                         </tr>
                     </tbody>
