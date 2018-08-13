@@ -194,6 +194,22 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if ( ($(this).val()=="I171")||($(this).val()=="I175")) {
+                  $('.sexDisagg').show();
+                  $('.geoDisagg').hide();
+                  $('.noDisagg').hide();
+              }
+              else if (($(this).val()=="I172")) {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+              }
+              else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+              }
             })
         });
         $(function () {
@@ -203,6 +219,22 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if (($(this).val()=="I181") ||($(this).val()=="I182")||($(this).val()=="I184")) {
+                  $('.sexDisagg').show();
+                  $('.geoDisagg').hide();
+                  $('.noDisagg').hide();
+              }
+              else if (($(this).val()=="I183")) {
+                $('.sexDisagg').show();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+              }
+              else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+              }
             })
         });
         $(function () {
@@ -1359,20 +1391,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1111">
-                            <td>Urban population living in slums</td>
+                        <tr class="I111">
+                            <td>% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable</td>
                             <td></td>
                         </tr>
-                        <tr class="I1152">
-                            <td>Direct economic loss attributed to disasters</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1162">
-                            <td>Annual urban mean concentration of PM2.5</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I11b1">
-                            <td>Implementation of national disaster risk reduction strategies</td>
+                        <tr class="I112">
+                            <td>% of people who perceive that there is freedom of the press.</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1382,27 +1406,47 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#6666ff !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2"></th>
+                            <th colspan="2">Sex</th>
+                            <th colspan="2">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>Female</th>
+                            <th>Male</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1111">
-                            <td>Number of people living in Slum/Informal Settlements households</td>
+                        <tr class="I111">
+                            <td>Number in the sample who believe that mechanisms and oversight institutions exist</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I1111">
-                            <td>Total city population</td>
+                        <tr class="I111">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I1152">
-                            <td>Direct economic loss attributed to disasters</td>
+                        <tr class="I112">
+                            <td>No. persons in the sample who perceive the press to be free</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
-                        <tr class="I11b1">
-                            <td>Adopt and implement national disaster risk reduction strategies</td>
+                        <tr class="I112">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -1420,7 +1464,7 @@
         <div>
             <select id="indicatorLevel12" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
-                <option value="I121">"Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official</option>
+                <option value="I121">Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -1440,8 +1484,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="xyz">
-                            <td></td>
+                        <tr class="I121">
+                            <td>Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1451,12 +1495,29 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#000000 !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2">Sex</th>
+                            <th colspan="2">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>Female</th>
+                            <th>Male</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="xyz">
+                        <tr class="I121">
+                            <td>Number of persons in the sample confirming receipt of request for bribe</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I122">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -1498,8 +1559,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="#">
-                            <td>xyz</td>
+                        <tr class="I131">
+                            <td>Conflict related deaths per 100,000 population</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1509,12 +1570,17 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#9932CC !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2"></th>
+                            <th colspan="2">Sex</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>Female</th>
+                            <th>Male</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="#">
+                        <tr class="I131">
+                            <td>Conflict related deaths</td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -1835,7 +1901,7 @@
                 <option value="I172">Seats held by women in national parliaments, regional and local bodies</option>
                 <option value="I173">Proportion of women & girls subjected to sexual and physical violence</option>
                 <option value="I174">Proportion of girls and women aged 15 - 49 years who have undergone FGM</option>
-                <option value="I175">Proportion of children whose births are registered in the first year"</option>
+                <option value="I175">Proportion of children whose births are registered in the first year</option>
             </select>
         </div>
         <div id="disaggregations17" style="margin-top: 10px;">
@@ -1853,64 +1919,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1721">
-                            <td>Net ODA as proportion of donors'</td>
+                        <tr class="I171">
+                            <td>Proportion of total agric. population with ownership</td>
                             <td></td>
                         </tr>
-                        <tr class="I1731">
-                            <td>ODA distributions as proportion of total domestic budget (in USD)</td>
+                        <tr class="I172">
+                            <td>Seats held by women in national parliaments, regional and local bodies</td>
                             <td></td>
                         </tr>
-                        <tr class="I1732">
-                            <td>Volume of remittances (in USD)</td>
+                        <tr class="I173">
+                            <td>Proportion of women & girls subjected to sexual and physical violence</td>
                             <td></td>
                         </tr>
-                        <tr class="I1741">
-                            <td>Debt service as a proportion of exports of goods and services</td>
+                        <tr class="I174">
+                            <td>Proportion of girls and women aged 15 - 49 years who have undergone FGM</td>
                             <td></td>
                         </tr>
-                        <tr class="I1762a">
-                            <td>Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762b">
-                            <td>Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762c">
-                            <td>Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1781">
-                            <td>Internet users (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1791">
-                            <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17101">
-                            <td>Worldwide weighted tariff-average</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17111">
-                            <td>Share of global trade of total trade (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17121">
-                            <td>Average import tariffs faced by products exported (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183a">
-                            <td>Fully Funded</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183b">
-                            <td>Implementation stage</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17191">
-                            <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                        <tr class="I175">
+                            <td>Proportion of children whose births are registered in the first year</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1920,85 +1946,65 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#ff4c4c !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2" class="sexDisagg">Sex</th>
+                            <th colspan="2" class="geoDisagg">Geographical Location</th>
+                            <th class="noDisagg">Value</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th class="sexDisagg">Female</th>
+                            <th class="sexDisagg">Male</th>
+                            <th class="geoDisagg">Rural</th>
+                            <th class="geoDisagg">Urban</th>
                         </tr>
                     </thead>
                     <tbody>
-                      <tr class="I1721">
-                          <td>ODA distribution</td>
+                      <tr class="I171">
+                          <td>Total number of farmers who own their land or with secure rights to the land</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1721">
-                          <td>Gross national income</td>
+                      <tr class="I171">
+                          <td>Total number of farmers</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>ODA distribution</td>
+                      <tr class="I172">
+                          <td>Number of Women – elected or appointed in the legislature</td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>Total domestic budget</td>
+                      <tr class="I172">
+                          <td>Total number of persons in the legislature or deliberative body at regional or local level</td>
                           <td></td>
                       </tr>
-                      <tr class="I1732">
-                          <td>Personal transfers + Compensation of employees</td>
+                      <tr class="I173">
+                          <td>Number of women and girls subjected to sexual or physical violence</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1732">
-                          <td>GDP</td>
+                      <tr class="I173">
+                          <td>Total number of women and girls</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1741">
-                          <td>Debt service as a proportion of exports of goods and services</td>
+                      <tr class="I174">
+                          <td>Number of girls and women aged 15-49 who have undergone FGM/C </td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1762a">
-                          <td>Number of fixed boardband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
+                      <tr class="I174">
+                          <td>Total number of women aged 15-49 in the population</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1762b">
-                          <td>Number of fixed boardband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
+                      <tr class="I175">
+                          <td>No. of children (0-1) whose births are registered within the first year</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1762c">
-                          <td>Number of fixed boardband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
+                      <tr class="I175">
+                          <td>Total No. of children aged 0 – 1 years</td>
                           <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Number of internet users in the last 3 months</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Total population</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1791">
-                          <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17101">
-                          <td>Worldwide weighted tariff-average</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17111">
-                          <td>Share of global trade of total trade (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17121">
-                          <td>Average import tariffs faced by products exported (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183a">
-                          <td>Fully Funded</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183b">
-                          <td>Implementation stage</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17191">
-                          <td>Value of resources to strengthen statistical capacity (in USD)</td>
                           <td></td>
                       </tr>
                     </tbody>
@@ -2041,64 +2047,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1721">
-                            <td>Net ODA as proportion of donors'</td>
+                        <tr class="I181">
+                            <td>Unemployment rate</td>
                             <td></td>
                         </tr>
-                        <tr class="I1731">
-                            <td>ODA distributions as proportion of total domestic budget (in USD)</td>
+                        <tr class="I182">
+                            <td>% of children engaged in child labour</td>
                             <td></td>
                         </tr>
-                        <tr class="I1732">
-                            <td>Volume of remittances (in USD)</td>
+                        <tr class="I183">
+                            <td>% of children engaged in child marriage</td>
                             <td></td>
                         </tr>
-                        <tr class="I1741">
-                            <td>Debt service as a proportion of exports of goods and services</td>
+                        <tr class="I184">
+                            <td>% of children who are victims of human trafficking</td>
                             <td></td>
                         </tr>
-                        <tr class="I1762a">
-                            <td>Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762b">
-                            <td>Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762c">
-                            <td>Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1781">
-                            <td>Internet users (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1791">
-                            <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17101">
-                            <td>Worldwide weighted tariff-average</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17111">
-                            <td>Share of global trade of total trade (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17121">
-                            <td>Average import tariffs faced by products exported (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183a">
-                            <td>Fully Funded</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183b">
-                            <td>Implementation stage</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17191">
-                            <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                        <tr class="I185">
+                            <td>Level of implementation of the provisions of the African Charter on the Rights of the Youth by Member States</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -2108,85 +2074,65 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#6666ff !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2" class="sexDisagg">Sex</th>
+                            <th colspan="2" class="geoDisagg">Geographical Location</th>
+                            <th class="noDisagg">Value</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th class="sexDisagg">Female</th>
+                            <th class="sexDisagg">Male</th>
+                            <th class="geoDisagg">Rural</th>
+                            <th class="geoDisagg">Urban</th>
                         </tr>
                     </thead>
                     <tbody>
-                      <tr class="I1721">
-                          <td>ODA distribution</td>
+                      <tr class="I181">
+                          <td>Number of unemployed persons</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1721">
-                          <td>Gross national income</td>
+                      <tr class="I181">
+                          <td>Total number of people in the civilian labor force</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>ODA distribution</td>
+                      <tr class="I182">
+                          <td>Total number of children who are working</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>Total domestic budget</td>
+                      <tr class="I182">
+                          <td>Total number of children</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1732">
-                          <td>Personal transfers + Compensation of employees</td>
+                      <tr class="I183">
+                          <td>Number of children married under 18 years</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1732">
-                          <td>GDP</td>
+                      <tr class="I183">
+                          <td>Total number of children in the population</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1741">
-                          <td>Debt service as a proportion of exports of goods and services</td>
+                      <tr class="I184">
+                          <td>No. of children who are victims of human trafficking</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1762a">
-                          <td>Number of fixed boardband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
+                      <tr class="I184">
+                          <td>Total number of children in the population</td>
+                          <td></td>
                           <td></td>
                       </tr>
-                      <tr class="I1762b">
-                          <td>Number of fixed boardband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1762c">
-                          <td>Number of fixed boardband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Number of internet users in the last 3 months</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Total population</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1791">
-                          <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17101">
-                          <td>Worldwide weighted tariff-average</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17111">
-                          <td>Share of global trade of total trade (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17121">
-                          <td>Average import tariffs faced by products exported (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183a">
-                          <td>Fully Funded</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183b">
-                          <td>Implementation stage</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17191">
-                          <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                      <tr class="I185">
+                          <td>Level of implementation</td>
                           <td></td>
                       </tr>
                     </tbody>
@@ -2227,64 +2173,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1721">
-                            <td>Net ODA as proportion of donors'</td>
+                        <tr class="I191">
+                            <td>Availability of statistical legislation</td>
                             <td></td>
                         </tr>
-                        <tr class="I1731">
-                            <td>ODA distributions as proportion of total domestic budget (in USD)</td>
+                        <tr class="I192">
+                            <td>Funding allocated for the implementation</td>
                             <td></td>
                         </tr>
-                        <tr class="I1732">
-                            <td>Volume of remittances (in USD)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1741">
-                            <td>Debt service as a proportion of exports of goods and services</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762a">
-                            <td>Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762b">
-                            <td>Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762c">
-                            <td>Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1781">
-                            <td>Internet users (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1791">
-                            <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17101">
-                            <td>Worldwide weighted tariff-average</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17111">
-                            <td>Share of global trade of total trade (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17121">
-                            <td>Average import tariffs faced by products exported (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183a">
-                            <td>Fully Funded</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183b">
-                            <td>Implementation stage</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17191">
-                            <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                        <tr class="I193">
+                            <td>Existence of formal institutional arrangements for the coordination</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -2299,80 +2197,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                      <tr class="I1721">
-                          <td>ODA distribution</td>
+                      <tr class="I191">
+                          <td>Availability (Yes / No) of legislation on statistics</td>
                           <td></td>
                       </tr>
-                      <tr class="I1721">
-                          <td>Gross national income</td>
+                      <tr class="I192">
+                          <td>The total budget allocated to the functional statistical system (X + Y + Z)</td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>ODA distribution</td>
+                      <tr class="I192">
+                          <td>Total government budget.</td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>Total domestic budget</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1732">
-                          <td>Personal transfers + Compensation of employees</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1732">
-                          <td>GDP</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1741">
-                          <td>Debt service as a proportion of exports of goods and services</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1762a">
-                          <td>Number of fixed boardband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1762b">
-                          <td>Number of fixed boardband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1762c">
-                          <td>Number of fixed boardband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Number of internet users in the last 3 months</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Total population</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1791">
-                          <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17101">
-                          <td>Worldwide weighted tariff-average</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17111">
-                          <td>Share of global trade of total trade (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17121">
-                          <td>Average import tariffs faced by products exported (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183a">
-                          <td>Fully Funded</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183b">
-                          <td>Implementation stage</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17191">
-                          <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                      <tr class="I193">
+                          <td>Existence of formal institutional arrangements for the coordination</td>
                           <td></td>
                       </tr>
                     </tbody>
@@ -2394,8 +2232,9 @@
             <select id="indicatorLevel20" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I201">Proportion of development expenditure contributed by national capital markets</option>
-                <option value="I202">Total ODA as a percentage of the national budget</option>
-                <option value="I203">Resources raised through innovative financing mechanisms as a % of national budget</option>
+                <option value="I202">Total tax revenue as a % GDP</option>
+                <option value="I203">Total ODA as a percentage of the national budget</option>
+                <option value="I204">Resources raised through innovative financing mechanisms as a % of national budget</option>
             </select>
         </div>
         <div id="disaggregations20" style="margin-top: 10px;">
@@ -2413,64 +2252,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I1721">
-                            <td>Net ODA as proportion of donors'</td>
+                        <tr class="I201">
+                            <td>Proportion of development expenditure contributed by national capital markets</td>
                             <td></td>
                         </tr>
-                        <tr class="I1731">
-                            <td>ODA distributions as proportion of total domestic budget (in USD)</td>
+                        <tr class="I202">
+                            <td>Total tax revenue as a % GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I1732">
-                            <td>Volume of remittances (in USD)</td>
+                        <tr class="I203">
+                            <td>Total ODA as a percentage of the national budget</td>
                             <td></td>
                         </tr>
-                        <tr class="I1741">
-                            <td>Debt service as a proportion of exports of goods and services</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762a">
-                            <td>Broadband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762b">
-                            <td>Broadband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1762c">
-                            <td>Broadband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1781">
-                            <td>Internet users (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I1791">
-                            <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17101">
-                            <td>Worldwide weighted tariff-average</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17111">
-                            <td>Share of global trade of total trade (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17121">
-                            <td>Average import tariffs faced by products exported (%)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183a">
-                            <td>Fully Funded</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17183b">
-                            <td>Implementation stage</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I17191">
-                            <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                        <tr class="I204">
+                            <td>Resources raised through innovative financing mechanisms as a % of national budget</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -2485,80 +2280,36 @@
                         </tr>
                     </thead>
                     <tbody>
-                      <tr class="I1721">
-                          <td>ODA distribution</td>
+                      <tr class="I201">
+                          <td>Total funds raised from the domestic capital market</td>
                           <td></td>
                       </tr>
-                      <tr class="I1721">
-                          <td>Gross national income</td>
+                      <tr class="I201">
+                          <td>Total public sector budget</td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>ODA distribution</td>
+                      <tr class="I202">
+                          <td>Total taxes collected as defined above</td>
                           <td></td>
                       </tr>
-                      <tr class="I1731">
-                          <td>Total domestic budget</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1732">
-                          <td>Personal transfers + Compensation of employees</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1732">
+                      <tr class="I202">
                           <td>GDP</td>
                           <td></td>
                       </tr>
-                      <tr class="I1741">
-                          <td>Debt service as a proportion of exports of goods and services</td>
+                      <tr class="I203">
+                          <td>Total of all sources of official development assistance as defined above</td>
                           <td></td>
                       </tr>
-                      <tr class="I1762a">
-                          <td>Number of fixed boardband subscriptions, 256 kbits/s to 2 Mbit/s (per 100 inhabitants)</td>
+                      <tr class="I203">
+                          <td>Total of all sources of funds – required to execute the budget</td>
                           <td></td>
                       </tr>
-                      <tr class="I1762b">
-                          <td>Number of fixed boardband subscriptions, 2 Mbit/s to less than 10 Mbits/s (per 100 inhabitants)</td>
+                      <tr class="I204">
+                          <td>Total of all sources of innovative financing as defined above</td>
                           <td></td>
                       </tr>
-                      <tr class="I1762c">
-                          <td>Number of fixed boardband subscriptions, equal to or above 10 Mbit/s (per 100 inhabitants)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Number of internet users in the last 3 months</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1781">
-                          <td>Total population</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I1791">
-                          <td>Total monetary flow for capacity building and national planning (in USD)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17101">
-                          <td>Worldwide weighted tariff-average</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17111">
-                          <td>Share of global trade of total trade (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17121">
-                          <td>Average import tariffs faced by products exported (%)</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183a">
-                          <td>Fully Funded</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17183b">
-                          <td>Implementation stage</td>
-                          <td></td>
-                      </tr>
-                      <tr class="I17191">
-                          <td>Value of resources to strengthen statistical capacity (in USD)</td>
+                      <tr class="I204">
+                          <td>Total of all sources of funds – required to execute the budget</td>
                           <td></td>
                       </tr>
                     </tbody>
@@ -2568,6 +2319,5 @@
 
     </div>
     <!-- Goal 20 End -->
-
 
     </div>
