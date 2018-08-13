@@ -69,6 +69,14 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
+
+              if (($(this).val()=="I52")) {
+                  $('.goal5NoHeader').show();
+                  $('.goal5Header').hide();
+              } else {
+                $('.goal5NoHeader').hide();
+                $('.goal5Header').show();
+              }
             })
         });
         $(function () {
@@ -87,15 +95,6 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
-
-              if ($(this).val()=="I711") {
-                  $('.goal7Header').show();
-                  $('.goal7NoHeader').hide();
-              }
-              if (($(this).val()=="I712") || ($(this).val()=="I721")||($(this).val()=="I731")) {
-                  $('.goal7Header').hide();
-                  $('.goal7NoHeader').show();
-              }
             })
         });
         $(function () {
@@ -105,16 +104,6 @@
               $('.'+ $(this).val()).show();
               $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
               $('.tableHeader').show();
-
-              if ($(this).val()=="I852") {
-                $('.goal8Header').show();
-                $('.goal8NoHeader').hide();
-              }
-              if (($(this).val()=="I821")||($(this).val()=="I842")||($(this).val()=="I811")||
-              ($(this).val()=="I861")||($(this).val()=="I8101")||($(this).val()=="I8102")||($(this).val()=="I8a1")) {
-                $('.goal8Header').hide();
-                $('.goal8NoHeader').show();
-              }
             })
         });
         $(function () {
@@ -835,13 +824,18 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#000000 !important;">
-                            <th>&nbsp;</th>
-                            <th>Value</th>
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="goal5Header">Value</th>
+                            <th colspan="2" class="goal5NoHeader">Sex</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th class="goal5NoHeader">Female</th>
+                            <th class="goal5NoHeader">Male</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="I51">
-                            <td>Agriculture Outputs<td>
+                            <td>Agriculture Outputs</td>
                             <td></td>
                         </tr>
                         <tr class="I51">
@@ -851,9 +845,11 @@
                         <tr class="I52">
                             <td>Number of small scale farmers graduating into commerical farming</td>
                             <td></td>
+                            <td></td>
                         </tr>
                         <tr class="I52">
                             <td>Number of small scale farmers</td>
+                            <td></td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -874,7 +870,7 @@
             <select id="indicatorLevel6" name="indicators" class="dropdown">
                 <option disabled selected>Please select an indicator</option>
                 <option value="I61">Fishery Sector value added ( as share of GDP)</option>
-                <option value="I62">"Marine biotechnology value added as a % of GDP"</option>
+                <option value="I62">Marine biotechnology value added as a % of GDP</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -893,16 +889,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I642">
-                            <td>Level of water stress</td>
+                        <tr class="I61">
+                            <td>Fishery Sector value added ( as share of GDP)</td>
                             <td></td>
                         </tr>
-                        <tr class="I6a1">
-                            <td>Proportion of water and sanitation ODA on spending plan</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I6b1">
-                            <td>Proportion of local admin units with local community participation on water and sanitation interventions</td>
+                        <tr class="I62">
+                            <td>Marine biotechnology value added as a % of GDP</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -917,28 +909,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I642">
-                            <td>Total freshwater withdrawn</td>
+                        <tr class="I61">
+                            <td>Fishery contribution to GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I642">
-                            <td>Total renewable freshwater resources</td>
+                        <tr class="I61">
+                            <td>GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I6a1">
-                            <td>The amount of water and sanitation</td>
+                        <tr class="I62">
+                            <td>Marine biotechnolgy contribution to GDP</td>
                             <td></td>
                         </tr>
-                        <tr class="I6a1">
-                            <td>Total amount of water and sanitation-related ODA</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I6b1">
-                            <td>Local admin units with operation policies and procedures for local participation</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I6b1">
-                            <td>The total number of local administrative units in the country</td>
+                        <tr class="I62">
+                            <td>GDP</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -978,20 +962,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I711">
-                            <td>Access to electricity (% population)</td>
+                        <tr class="I71">
+                            <td>% of agricultural land placed under sustainable land management practice.</td>
                             <td></td>
                         </tr>
-                        <tr class="I712">
-                            <td>Access to clean energy (% population)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I721">
-                            <td>Renewable energy consumption</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I731">
-                            <td>Energy intensity</td>
+                        <tr class="I72">
+                            <td>% of coastal and marine areas preserved</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1001,48 +977,25 @@
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#4ca6ff !important;">
-                            <th rowspan="2">&nbsp;</th>
-                            <th class="goal7Header" colspan="2">Geographical Location</th>
-                            <th class="goal7NoHeader">Value</th>
-                        </tr>
-                        <tr class="tableHeader" style="background-color:#4ca6ff !important;">
-                            <th class="goal7Header">Rural</th>
-                            <th class="goal7Header">Urban</th>
+                            <th>&nbsp;</th>
+                            <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I711">
-                            <td>Population with access to energy</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr class="I711">
-                            <td>Total population</td>
-                            <td></td>
+                        <tr class="I71">
+                            <td>Land on which practices contributing to environmental sustainability of agriculture are conducted</td>
                             <td></td>
                         </tr>
-                        <tr class="I712">
-                            <td>Number of people using clean fuels and technologies for cooking, heating and lighting</td>
+                        <tr class="I71">
+                            <td>Total agricultural land</td>
                             <td></td>
                         </tr>
-                        <tr class="I712">
-                            <td>Total population reporting any cooking, heating or lighting</td>
+                        <tr class="I72">
+                            <td>Total marine area protected</td>
                             <td></td>
                         </tr>
-                        <tr class="I721">
-                            <td>Consumption of energy from all renewable sources</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I721">
-                            <td>Total final energy consumption  </td>
-                            <td></td>
-                        </tr>
-                        <tr class="I731">
-                            <td>Total energy supply to economy</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I731">
-                            <td>GDP</td>
+                        <tr class="I72">
+                            <td>Total marine ecological region</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1082,108 +1035,35 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I811">
-                            <td>Annual growth rate of real GDP per capita</td>
+                        <tr class="I81">
+                            <td>No. of Non-tariff barriers (NTBs) reported and eliminated</td>
                             <td></td>
                         </tr>
-                        <tr class="I821">
-                            <td>Annual growth rate of real GDP per employed person</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I842">
-                            <td>Domestic material consumption</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I852">
-                            <td>Unemployment rate</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I861">
-                            <td>Proportion of youth</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8101">
-                            <td>Commercial bank and ATMs presence (per 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8102">
-                            <td>Bank account or mobile money service holders (% population)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8a1">
-                            <td>Bank account or mobile money service holders (% population)</td>
+                        <tr class="I81">
+                            <td>Change in Volume of intra-African trade per annum/td>
                             <td></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
             <div id="Disagg8" class="tabcontent2">
                 <table>
                     <thead>
                         <tr class="tableHeader" style="background-color:#9ACD32 !important;">
                             <th rowspan="2">&nbsp;</th>
-                            <th class="goal8Header" colspan="2">Sex</th>
-                            <th class="goal8NoHeader">Value</th>
-                        </tr>
-                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
-                            <th class="goal8Header">Female</th>
-                            <th class="goal8Header">Male</th>
+                            <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="I811">
-                            <td>GDP per capita in year t+1</td>
+                        <tr class="I81">
+                            <td>Use "No Disaggregation" Tab</td>
+                        </tr>
+                        <tr class="I82">
+                            <td>Volume of trade in goods between a country and others in Year (i)</td>
                             <td></td>
                         </tr>
-                        <tr class="I811">
-                            <td>GDP per capita in year t </td>
-                            <td></td>
-                        </tr>
-                        <tr class="I821">
-                            <td>Real GDP per employed person in year N -(N-1)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I821">
-                            <td>Real GDP per employed person in year N-1</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I842">
-                            <td>Domestic material consumption</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I852">
-                            <td>Unemployed persons</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr class="I852">
-                            <td>Persons in the labor force</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr class="I861">
-                            <td>Youth-Youth employed-Youth Training</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I861">
-                            <td>Youth Population</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8101">
-                            <td>Number of commerical bank branches</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8101">
-                            <td>Number of adults (divided by 100,000)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8102">
-                            <td>Bank account or mobile money service holders (% population)</td>
-                            <td></td>
-                        </tr>
-                        <tr class="I8a1">
-                            <td>Aid for Trade commitments</td>
+                        <tr class="I82">
+                            <td>Volume of trade in goods between a country and others in Year (0)</td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -1357,7 +1237,7 @@
                 <option value="I103">No. of protocols on African open skies Implemented</option>
                 <option value="I104">No. of Mega Watts added into the national grid</option>
                 <option value="I105">Proportion of population using mobile phones</option>
-                <option value="I106">"% of ICT contribution to GDP</option>
+                <option value="I106">% of ICT contribution to GDP</option>
             </select>
         </div>
         <!-- Tab links -->
@@ -1377,16 +1257,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="I1061">
-                                <td>Voting rights in developing countries</td>
+                            <tr class="I101">
+                                <td>% of the progress made on the implementation of Trans-African Highway Missing link</td>
                                 <td></td>
                             </tr>
-                            <tr class="I10a1">
-                                <td>Tariff lines to import</td>
+                            <tr class="I102">
+                                <td>% of the progress made on the implementation the African High Speed Rail Network</td>
                                 <td></td>
                             </tr>
-                            <tr class="I10b1">
-                                <td>Total resource flow for development</td>
+                            <tr class="I103">
+                                <td>No. of protocols on African open skies Implemented</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I104">
+                                <td>No. of Mega Watts added into the national grid</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I105">
+                                <td>Proportion of population using mobile phones</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>% of ICT contribution to GDP</td>
                                 <td></td>
                             </tr>
                         </tbody>
@@ -1401,20 +1293,34 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="I1061">
-                                <td>No. of voting rights allocated to developing countries</td>
+                            <tr class="I101">
+                                <td>Number of the 5 stages / components completed</td>
                                 <td></td>
                             </tr>
-                            <tr class="I1061">
-                                <td>Total number of voting rights</td>
+                            <tr class="I102">
+                                <td>Number of the 7 stages completed</td>
                                 <td></td>
                             </tr>
-                            <tr class="I10a1">
-                                <td>Average share of national tariff lines that are free of duty</td>
+                            <tr class="I103">
+                                <td colspan="2">Use "No Disaggregation" Tab</td>
+                            </tr>
+                            <tr class="I104">
+                                <td colspan="2">Use "No Disaggregation" Tab</td>
+                            </tr>
+                            <tr class="I105">
+                                <td>No. of persons using mobile phones</td>
                                 <td></td>
                             </tr>
-                            <tr class="I10b1">
-                                <td>Sum of official and private flows from all donors to developing countries</td>
+                            <tr class="I105">
+                                <td>Total eligible population (15+ years)</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>ICT contribution to GDP</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>GDP</td>
                                 <td></td>
                             </tr>
                         </tbody>
