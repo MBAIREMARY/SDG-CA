@@ -285,6 +285,39 @@
     });
   </script>
   <style>
+      /*Styling for the outter tab Start*/
+      * {box-sizing: border-box}
+      body {font-family: "Lato", sans-serif;}
+
+      /*Styling the Inner Tabs For Disaggregation*/
+      table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 8px;
+      }
+
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+      .tableHeader{
+          background-color: #9ACD32 !important;
+      }
+      th{
+          text-align: center !important;
+          color:#ffffff !important;
+      }
+      h1{
+          color:#ffffff !important;
+      }
+      input{
+          width: 4em;
+      }
       .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
           opacity: 2;
       }
@@ -298,7 +331,8 @@
         z-index: 0;
       }
       .tab2 ul{
-        width: 135% !important
+        /* width: 135% !important */
+        width: 106px !important
       }
       .tab2 li:hover {
           opacity: 2;
