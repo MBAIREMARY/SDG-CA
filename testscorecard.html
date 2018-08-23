@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://dhis2-cdn.org/v229/plugin/reporttable.js"></script>
+</head>
+
+<body>
+<div id="reportTable1"></div>
+
+<script>
+
+reportTablePlugin.url = "<url to server>";
+reportTablePlugin.username = "<username>";
+reportTablePlugin.password = "<password>";
+
+reportTablePlugin.load([{
+  "id": "ZNSgycKfECb",
+  "url": "https://test.sdgca.intellisoftkenya.com/dhis",
+  "el": "reportTable1"
+}]);
+
+</script>
+
+</body>
+</html>
