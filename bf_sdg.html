@@ -13,13 +13,17 @@
 <script>
     $(function () {
         $('.tabcontent2 tr').hide();
-
         $(document).ready(function () {
             setTimeout(function () {
                 if (!isNaN(parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val())) && (parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) > 0)) {
                     $("tr.I111a_disabled input").prop('disabled', true);
                     $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
                     console.log("Disabled Inputs Successful!");
+                } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
+                    ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
+                    $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
+                    $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
+
                 } else {
                     $("tr.I111a_disabled input[disabled]").css("background-color", "white");
                     $("tr.I111a_disabled input").prop('disabled', false);
@@ -32,7 +36,12 @@
                         $("tr.I111a_disabled input").prop('disabled', true);
                         $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
                         console.log("Disabled Inputs Successful!");
-                    } else {
+                    } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
+                        ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
+                        $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
+                        $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
+
+                    }  else {
                         $("tr.I111a_disabled input[disabled]").css("background-color", "white");
                         $("tr.I111a_disabled input").prop('disabled', false);
                     }
@@ -445,7 +454,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I111a">
+                    <tr class="I111a I111a_disabled_NoDisagtn">
                         <td>Population vivant en dessous du seuil international de pauvret&eacute;</td>
                         <td><input id="TsZLukacJ6T-bJmK5mlfvQk-val" name="entryfield"
                                    title="SDG_1:People living below US$1.90 per day No Dissaggregation"
@@ -527,7 +536,7 @@ input {
                         <td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield"
                                    title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]"/></td>
                     </tr>
-                    <tr class="I111b">
+                    <tr class="I111b I111b_disabled">
                         <td>Personnes actives vivant en dessous du seuil de pauvret&eacute; dans les m&eacute;nages</td>
                         <td><input id="wD1WS24kqQR-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Employed persons living in households below poverty line Rural"
@@ -546,22 +555,30 @@ input {
                                    value="[ SDG_1:Employed persons living in households below poverty line Male ]"/>
                         </td>
                     </tr>
-                    <tr class="I111b">
+                    <tr class="I111b  I111b_disabled">
                         <td>Nombre total de personnes actives</td>
-                        <td><input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total number of employed persons
- Rural" value="[ SDG_1:Total number of employed persons
- Rural ]"/></td>
-                        <td><input id="mEtKA2HMRkT-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total number of employed persons
- Urban" value="[ SDG_1:Total number of employed persons
- Urban ]"/></td>
-                        <td><input id="mEtKA2HMRkT-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total number of employed persons
- Female" value="[ SDG_1:Total number of employed persons
- Female ]"/></td>
-                        <td><input id="mEtKA2HMRkT-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total number of employed persons
- Male" value="[ SDG_1:Total number of employed persons
- Male ]"/></td>
+                        <td>
+                            <input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield"
+                                   title="SDG_1:Total number of employed persons Rural"
+                                   value="[ SDG_1:Total number of employed persons Rural ]"/>
+                        </td>
+                        <td>
+                            <input id="mEtKA2HMRkT-r8hBd63qzn4-val" name="entryfield"
+                                   title="SDG_1:Total number of employed persons Urban"
+                                   value="[ SDG_1:Total number of employed persons Urban ]"/>
+                        </td>
+                        <td>
+                            <input id="mEtKA2HMRkT-sLKRSW7xmwp-val" name="entryfield"
+                                   title="SDG_1:Total number of employed persons Female"
+                                   value="[ SDG_1:Total number of employed persons Female ]"/>
+                        </td>
+                        <td>
+                            <input id="mEtKA2HMRkT-sJUGNYho7Ey-val" name="entryfield"
+                                   title="SDG_1:Total number of employed persons Male"
+                                   value="[ SDG_1:Total number of employed persons Male ]"/>
+                        </td>
                     </tr>
-                    <tr class="I121">
+                    <tr class="I121 I121_disabled">
                         <td>Total de personnes vivant en dessous du seuil national de pauvret&eacute;</td>
                         <td><input id="HNUVvzz5Mcb-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:People living below the national  poverty line Rural"
@@ -576,7 +593,7 @@ input {
                                    title="SDG_1:People living below the national  poverty line Male"
                                    value="[ SDG_1:People living below the national  poverty line Male ]"/></td>
                     </tr>
-                    <tr class="I121">
+                    <tr class="I121 I121_disabled">
                         <td>Population totale, urbaine ou rurale</td>
                         <td><input id="NCsJ0u0J5kO-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Total, urban or rural population Rural"
@@ -2358,7 +2375,46 @@ input {
             <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
             <option value="#">No Indicator</option>
         </select></div>
-        <!-- Tab links --></div>
+        <!-- Tab links --><!-- <div id="disaggregations12" style="margin-top: 10px;">
+            <ul>
+                <li><a class="disaggTab" href="#NoDisagg12">Agr&eacute;gation</a></li>
+                <li><a class="disaggTab" href="#Disagg12">D&eacute;sagr&eacute;gation</a></li>
+            </ul>
+
+            <div class="tabcontent2" id="NoDisagg12">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#BF8B2E !important;">
+                            <th>Indicateur</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="xyz">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabcontent2" id="Disagg12">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#BF8B2E !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="xyz">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> --></div>
     <!-- Goal 12 End--><!-- Goal 13 Start -->
 
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-13">
@@ -2370,7 +2426,46 @@ input {
             <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
             <option value="#">No Indicator</option>
         </select></div>
-        <!-- Tab links --></div>
+        <!-- Tab links --><!-- <div id="disaggregations13" style="margin-top: 10px;">
+            <ul>
+                <li><a class="disaggTab" href="#NoDisagg13">Agr&eacute;gation</a></li>
+                <li><a class="disaggTab" href="#Disagg13">D&eacute;sagr&eacute;gation</a></li>
+            </ul>
+
+            <div class="tabcontent2" id="NoDisagg13">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#3F7E44 !important;">
+                            <th>Indicateur</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="#">
+                            <td>No Indicator</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabcontent2" id="Disagg13">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#3F7E44 !important;">
+                            <th>&nbsp;</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="#">
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> --></div>
     <!-- Goal 13 End--><!-- Goal 14 Start -->
 
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-14">
@@ -2986,5 +3081,6 @@ input {
         </div>
     </div>
     <!-- Goal 17 End --></div>
+
 
 
