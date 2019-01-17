@@ -1,0 +1,2317 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+            if ( ($(this).val()=="I111b")||($(this).val()=="I121")) {
+                $('.I111x').hide();
+            }
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel2").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+          })
+        });
+        $(function () {
+          $('.tabcontent2 tr').hide();
+          // Onchange Levels
+          $("#indicatorLevel3").change(function () {
+            $('.'+ $(this).val()).show();
+            $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+            $('.tableHeader').show();
+
+            if (($(this).val()=="I32")||($(this).val()=="I34")) {
+              $('.goal3NoHeader').hide();
+              $('.goal3NoHeaderSex').show();
+            }
+            else if (($(this).val()=="I33")) {
+              $('.goal3NoHeader').show();
+              $('.goal3NoHeaderSex').hide();
+            }
+             else {
+              $('.goal3NoHeader').show();
+              $('.goal3NoHeaderSex').show();
+            }
+          })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel4").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel5").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I52")) {
+                  $('.goal5NoHeader').show();
+                  $('.goal5Header').hide();
+              } else {
+                $('.goal5NoHeader').hide();
+                $('.goal5Header').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel6").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel7").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel8").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel9").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel10").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel11").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel12").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel13").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel14").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel15").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel16").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I1611")) {
+                $('.goal16Header').show();
+                $('.goal16NoHeader').hide();
+              }
+              else {
+                $('.goal16Header').hide();
+                $('.goal16NoHeader').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel17").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if ( ($(this).val()=="I171")||($(this).val()=="I175")) {
+                  $('.sexDisagg').show();
+                  $('.geoDisagg').hide();
+                  $('.noDisagg').hide();
+              }
+              else if (($(this).val()=="I172")) {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+              }
+              else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel18").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+
+              if (($(this).val()=="I181") ||($(this).val()=="I182")||($(this).val()=="I184")) {
+                  $('.sexDisagg').show();
+                  $('.geoDisagg').hide();
+                  $('.noDisagg').hide();
+              }
+              else if (($(this).val()=="I183")) {
+                $('.sexDisagg').show();
+                $('.geoDisagg').show();
+                $('.noDisagg').hide();
+              }
+              else {
+                $('.sexDisagg').hide();
+                $('.geoDisagg').hide();
+                $('.noDisagg').show();
+              }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel19").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel20").change(function () {
+              $('.'+ $(this).val()).show();
+              $('.tabcontent2 tr:not(.'+ $(this).val() +')').hide();
+              $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $("#goals").tabs();
+            $("#disaggregations").tabs();
+            $("#disaggregations2").tabs();
+            $("#disaggregations3").tabs();
+            $("#disaggregations4").tabs();
+            $("#disaggregations5").tabs();
+            $("#disaggregations6").tabs();
+            $("#disaggregations7").tabs();
+            $("#disaggregations8").tabs();
+            $("#disaggregations9").tabs();
+            $("#disaggregations10").tabs();
+            $("#disaggregations11").tabs();
+            $("#disaggregations12").tabs();
+            $("#disaggregations13").tabs();
+            $("#disaggregations14").tabs();
+            $("#disaggregations15").tabs();
+            $("#disaggregations16").tabs();
+            $("#disaggregations17").tabs();
+            $("#disaggregations18").tabs();
+            $("#disaggregations19").tabs();
+            $("#disaggregations20").tabs();
+            // $("#goals3").tabs();
+        });
+</script>
+<style>
+    /*Styling for the outter tab Start*/
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+
+    /*Styling the Inner Tabs For Disaggregation*/
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .tableHeader{
+        background-color: #9ACD32 !important;
+    }
+    th{
+        text-align: center !important;
+        color:#ffffff !important;
+    }
+    h1{
+        color:#ffffff !important;
+    }
+    input{
+        width: 4em;
+    }
+    /* Outer Tab start */
+    .tab {
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        padding: 0px;
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        z-index: 0;
+    }
+    .aspirations:hover{
+        opacity: 2;
+        position: relative;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+        z-index: 200;
+    }
+    /* Outer Tab start */
+    /* Inner Tab Start */
+    .disaggTab{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    }
+    .disaggTab:hover{
+        position: relative;
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2);
+        z-index: 200;
+        background-color: #337ab7;
+        color: white !important;
+    }
+    /* Inner Tab End */
+    .tab ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .tab li{
+        display: inline-block;
+        padding: 2px;
+        float: none !important;
+    }
+
+</style>
+<div class="row" id="goals">
+    <div class="tab col-xm-1 col-sm-2 col-md-1" style="z-index: 2;text-align:center; display:flex;justify-content:center;">
+      <ul>
+        <li class="aspirations"><a href="#goal-1" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 1</a></li>
+        <li class="aspirations"><a href="#goal-2" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 2</a></li>
+        <li class="aspirations"><a href="#goal-3" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 3</a></li>
+        <li class="aspirations"><a href="#goal-4" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 4</a></li>
+        <li class="aspirations"><a href="#goal-5" style="background-color:#000000; color: white; font-weight: bold;">Goal 5</a></li>
+        <li class="aspirations"><a href="#goal-6" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 6</a></li>
+        <li class="aspirations"><a href="#goal-7" style="background-color:#4ca6ff; color: white; font-weight: bold;">Goal 7</a></li>
+        <li class="aspirations"><a href="#goal-8" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 8</a></li>
+        <li class="aspirations"><a href="#goal-9" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 9</a></li>
+        <li class="aspirations"><a href="#goal-10" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 10</a></li>
+        <li class="aspirations"><a href="#goal-11" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 11</a></li>
+        <li class="aspirations"><a href="#goal-12" style="background-color:#000000; color: white; font-weight: bold;">Goal 12</a></li>
+        <li class="aspirations"><a href="#goal-13" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 13</a></li>
+        <li class="aspirations"><a href="#goal-14" style="background-color:#4ca6ff; color: white; font-weight: bold;">Goal 14</a></li>
+        <li class="aspirations"><a href="#goal-15" style="background-color:#9ACD32; color: white; font-weight: bold;">Goal 15</a></li>
+        <li class="aspirations"><a href="#goal-16" style="background-color:#FF9933; color: white; font-weight: bold;">Goal 16</a></li>
+        <li class="aspirations"><a href="#goal-17" style="background-color:#ff4c4c; color: white; font-weight: bold;">Goal 17</a></li>
+        <li class="aspirations"><a href="#goal-18" style="background-color:#6666ff; color: white; font-weight: bold;">Goal 18</a></li>
+        <li class="aspirations"><a href="#goal-19" style="background-color:#000000; color: white; font-weight: bold;">Goal 19</a></li>
+        <li class="aspirations"><a href="#goal-20" style="background-color:#9932CC; color: white; font-weight: bold;">Goal 20</a></li>
+      </ul>
+    </div>
+
+    <!-- Goal 1 Start -->
+    <div id="goal-1" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; ">
+            <strong>
+                Goal 1. A High Standard of Living, Quality of Life and Well Being for All
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="xyz">xyz</option>
+            </select>
+        </div>
+        <!-- Tab disaggregations Start -->
+        <div id="disaggregations" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <div id="NoDisagg" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="xyz">
+                            <td>xyz</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Disagg" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th rowspan="2"></th>
+                            <th colspan="2" class="I111x">Employment Status</th>
+                            <th colspan="2">Geographical Location</th>
+                            <th colspan="2">Sex</th>
+                        </tr>
+                        <tr id="tableHeader2" class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th class="I111x">Employed</th>
+                            <th class="I111x">Unemployed</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
+                            <th>Female</th>
+                            <th>Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I111a">
+                            <td>People living below the international poverty line/day</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Tab disaggregations End -->
+    </div>
+    <!-- Goal 1 End -->
+
+    <!-- Goal 2 Start -->
+    <div id="goal-2" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; ">
+            <strong>
+                Goal 2. Well Educated Citizens and Skills revolution underpinned by Science, Technology and Innovation
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel2" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I211">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations2" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg2" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg2" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <div id="NoDisagg2" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I211">
+                            <td>Prevalence of undernourishment</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>Prevalence of stunting among children under 5</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I222a">
+                            <td>Prevalence of overweight among children under 5</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I251">
+                            <td>Number of plant and animal genetic resources for food and agriculture secured</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>Local breeds classified as being at risk</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a2">
+                            <td>Local breeds classified as being not-at-risk</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a3">
+                            <td>Local breeds classified as unknown level of risk of extinction</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2a2">
+                            <td>Total official flows to agriculture</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2b1">
+                            <td>Agricultural export subsidies</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg2" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I211">
+                            <td>Population whose food intake is insufficient to meet dietary energy requirements for min 1yr</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>No. of children under five whose weight for height is > +2</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I221">
+                            <td>Total No. of children under 5 years of age</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I222a">
+                            <td>No. of children under 5 whose weight for height is < -2</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I251">
+                            <td>No. of plant and animal genetic resources for food and agriculture secured</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>No. of local breeds classified as being at risk</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a1">
+                            <td>Total no. of local breeds in all risk categories</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a2">
+                            <td>No. of local breeds classified as not-at-risk</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I252a3">
+                            <td>No. of local breeds classified as unknown</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2a2">
+                            <td>Total net ODA and OOF</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I2b1">
+                            <td>Total export subsidies budgetary outalys and quantities</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 2 End -->
+
+    <!-- Goal 3 Start -->
+    <div id="goal-3" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; ">
+            <strong>
+                Goal 3. Healthy and Well-Nourished Citizens
+            </strong>
+        </h3>
+        <div>
+            <select  id="indicatorLevel3" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I31">Number of new HIV infections per 1000 population</option>
+                <option value="I32">TB incidence per 100,000 persons per year</option>
+                <option value="I33">Malaria incidence per 1,000 per year</option>
+                <option value="I34">% of eligible population with HIV having access to ARV</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations3" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg3" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg3" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg3" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I31">
+                          <td>Number of new HIV infections per 1000 population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I32">
+                          <td>TB incidence per 100,000 persons per year</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I33">
+                          <td>Malaria incidence per 1,000 per year</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I34">
+                          <td>% of eligible population with HIV having access to ARV</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg3" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th rowspan="2"></th>
+                            <th colspan="2" class="goal3NoHeaderSex">Sex</th>
+                            <th colspan="2" class="goal3NoHeader">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th class="goal3NoHeaderSex">Female</th>
+                            <th class="goal3NoHeaderSex">Male</th>
+                            <th class="goal3NoHeader">Rural</th>
+                            <th class="goal3NoHeader">Urban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I31">
+                            <td>Total HIV cases over a specified period</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I31">
+                            <td>Total people with HIV clustered</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I32">
+                            <td>Number of new and relapse TB cases arising in a year</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I32">
+                            <td>Number of person-years of exposure</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I33">
+                            <td>Number of confirmed malaria cases</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I33">
+                            <td>Number of person-years of exposure</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I34">
+                            <td>Number of adults and children who have access to ARV treatment at the end of the reporting period</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I34">
+                            <td>Estimated number of adults and children living with HIV</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 3 End -->
+
+    <!-- Goal 4 Start -->
+    <div id="goal-4" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; ">
+            <strong>
+                Goal 4.
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel4" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I41">Real GDP Growth Rate</option>
+                <option value="I42">Manufacturing value added as % of GDP</option>
+                <option value="I43">Research and development expenditure as a proportion of GDP</option>
+                <option value="I44">Tourism value added as a proportion of GDP</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations4" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg4" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg4" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg4" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I41">
+                            <td>Real GDP Growth Rate</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I42">
+                            <td>Manufacturing value added as % of GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I43">
+                            <td>Research and development expenditure as a proportion of GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I44">
+                            <td>Tourism value added as a proportion of GDP</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg4" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I41">
+                            <td>Nominal GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I41">
+                            <td>The deflator (i.e. CPI)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I42">
+                            <td>Sum of value of all the outputs) – (value of intermediate inputs)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I42">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I43">
+                            <td>Gross Domestic Expenditure on R&D</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I43">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I44">
+                            <td>Tourism direct GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I44">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 4 End -->
+
+    <!-- Goal 5 Start -->
+    <div id="goal-5" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; ">
+            <strong>
+                Goal 5. Modern Agriculture for increased productivity and production
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel5" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I51">Total factor productivity</option>
+                <option value="I52">% of small-scale farmers graduating into small-scale commercial farming </option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations5" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg5" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg5" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg5" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I51">
+                            <td>Total factor productivity</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I52">
+                            <td>% of small-scale farmers graduating into small-scale commercial farming</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg5" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="goal5Header">Value</th>
+                            <th colspan="2" class="goal5NoHeader">Sex</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th class="goal5NoHeader">Female</th>
+                            <th class="goal5NoHeader">Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I51">
+                            <td>Agriculture Outputs</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I51">
+                            <td>Weighted average of inputs</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I52">
+                            <td>Number of small scale farmers graduating into commerical farming</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I52">
+                            <td>Number of small scale farmers</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 5 End-->
+
+    <!-- Goal 6 Start -->
+    <div id="goal-6" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; ">
+            <strong>
+                Goal 6. Blue/ ocean economy for accelerated economic growth
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel6" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I61">Fishery Sector value added ( as share of GDP)</option>
+                <option value="I62">Marine biotechnology value added as a % of GDP</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations6" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg6" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg6" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg6" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I61">
+                            <td>Fishery Sector value added ( as share of GDP)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I62">
+                            <td>Marine biotechnology value added as a % of GDP</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg6" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I61">
+                            <td>Fishery contribution to GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I61">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I62">
+                            <td>Marine biotechnolgy contribution to GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I62">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 6 End-->
+
+    <!-- Goal 7 Start -->
+    <div id="goal-7" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; ">
+            <strong>
+                Goal 7.Environmentally sustainable climate resilient economies and communities
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel7" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I71">% of agricultural land placed under sustainable land management practice.</option>
+                <option value="I72">% of coastal and marine areas preserved</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations7" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg7" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg7" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg7" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I71">
+                            <td>% of agricultural land placed under sustainable land management practice.</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I72">
+                            <td>% of coastal and marine areas preserved</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg7" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I71">
+                            <td>Land on which practices contributing to environmental sustainability of agriculture are conducted</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I71">
+                            <td>Total agricultural land</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I72">
+                            <td>Total marine area protected</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I72">
+                            <td>Total marine ecological region</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 7 End-->
+
+    <!-- Goal 8 Start -->
+    <div id="goal-8" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; ">
+            <strong>
+                Goal 8. United Africa (Federal or Confederate)
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel8" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I81">No. of Non-tariff barriers (NTBs) reported and eliminated</option>
+                <option value="I82">Change in Volume of intra-African trade per annum</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations8" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg8" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg8" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg8" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I81">
+                            <td>No. of Non-tariff barriers (NTBs) reported and eliminated</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I81">
+                            <td>Change in Volume of intra-African trade per annum/td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg8" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I81">
+                            <td>Use "No Disaggregation" Tab</td>
+                        </tr>
+                        <tr class="I82">
+                            <td>Volume of trade in goods between a country and others in Year (i)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I82">
+                            <td>Volume of trade in goods between a country and others in Year (0)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 8 End -->
+
+    <!-- Goal 9 Start -->
+    <div id="goal-9" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; ">
+            <strong>
+                Goal 9. Key Continental Financial and Monetary Institutions established and functional
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel9" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I912">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations9" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg9" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg9" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg9" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I912">
+                            <td>Passenger and freight volumes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I921">
+                            <td>Proportion of manufacturing value added</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Manufacturing employment as a proportion of total employment</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>CO2 emission per unit of value added</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>Research and development expenditure as a proportion of GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Researchers (in full-time equivalent) per million inhabitants </td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9a1">
+                            <td>Total official international support to infrastructure</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9b1">
+                            <td>Proportion of medium and high-tech industry value added in total value added</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Proportion of population covered by a mobile network</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg9" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I912">
+                            <td>Passenger and freight volumes</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I921">
+                            <td>Manufacturing value added</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I921">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Total employment in manufacturing activities</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I922">
+                            <td>Total employment in all economic activities</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>CO2 emission from manufacturing (kg)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I941">
+                            <td>Total manufacturing value added (constant 2010 USD)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>Amount of Research and development (R&D) expenditure</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I951">
+                            <td>GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Researchers (in full-time equivalent)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I952">
+                            <td>Population (divided by one million)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9a1">
+                            <td>Total official international support to infrastructure</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9b1">
+                            <td>Sum of value added in medium and high-tech industry economic activities</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9b1">
+                            <td>Total value added of manufacturing</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Number of inhabitants within range of a mobile-cellular signal</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I9c1">
+                            <td>Total population</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 9 End -->
+
+    <!-- Goal 10 Start -->
+    <div id="goal-10" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; ">
+            <strong>
+                Goal 10. World Class Infrastructure criss-crosses Africa
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel10" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I101">% of the progress made on the implementation of Trans-African Highway Missing link</option>
+                <option value="I102">% of the progress made on the implementation the African High Speed Rail Network</option>
+                <option value="I103">No. of protocols on African open skies Implemented</option>
+                <option value="I104">No. of Mega Watts added into the national grid</option>
+                <option value="I105">Proportion of population using mobile phones</option>
+                <option value="I106">% of ICT contribution to GDP</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+            <div id="disaggregations10" style="margin-top: 10px;">
+                <ul>
+                    <li><a href="#NoDisagg10" class="disaggTab">No Disaggregation</a></li>
+                    <li><a href="#Disagg10" class="disaggTab">Disaggregation</a></li>
+                </ul>
+
+                <!-- Tab content -->
+                <div id="NoDisagg10" class="tabcontent2">
+                    <table>
+                        <thead>
+                            <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                                <th>Indicator</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="I101">
+                                <td>% of the progress made on the implementation of Trans-African Highway Missing link</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I102">
+                                <td>% of the progress made on the implementation the African High Speed Rail Network</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I103">
+                                <td>No. of protocols on African open skies Implemented</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I104">
+                                <td>No. of Mega Watts added into the national grid</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I105">
+                                <td>Proportion of population using mobile phones</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>% of ICT contribution to GDP</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="Disagg10" class="tabcontent2">
+                    <table>
+                        <thead>
+                            <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                                <th>&nbsp;</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="I101">
+                                <td>Number of the 5 stages / components completed</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I102">
+                                <td>Number of the 7 stages completed</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I103">
+                                <td colspan="2">Use "No Disaggregation" Tab</td>
+                            </tr>
+                            <tr class="I104">
+                                <td colspan="2">Use "No Disaggregation" Tab</td>
+                            </tr>
+                            <tr class="I105">
+                                <td>No. of persons using mobile phones</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I105">
+                                <td>Total eligible population (15+ years)</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>ICT contribution to GDP</td>
+                                <td></td>
+                            </tr>
+                            <tr class="I106">
+                                <td>GDP</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <!-- Goal 10 End -->
+
+    <!-- Goal 11 Start -->
+    <div id="goal-11" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; ">
+            <strong>
+                Goal 11. Democratic values, practices, universal principles of human rights, justice and the rule of law entrenched
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel11" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I111">% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable</option>
+                <option value="I112">% of people who perceive that there is freedom of the press.</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations11" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg11" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg11" class="disaggTab">Disaggregation</a></li>
+            </ul>       <!-- Tab content -->
+            <div id="NoDisagg11" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I111">
+                            <td>% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I112">
+                            <td>% of people who perceive that there is freedom of the press.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg11" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th rowspan="2"></th>
+                            <th colspan="2">Sex</th>
+                            <th colspan="2">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>Female</th>
+                            <th>Male</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I111">
+                            <td>Number in the sample who believe that mechanisms and oversight institutions exist</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I111">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I112">
+                            <td>No. persons in the sample who perceive the press to be free</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I112">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Goal 11 End -->
+
+    <!-- Goal 12 Start -->
+    <div id="goal-12" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; ">
+            <strong>
+                Goal 12. Capable institutions and transformed leadership in place at all levels
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel12" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I121">Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations12" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg12" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg12" class="disaggTab">Disaggregation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg12" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I121">
+                            <td>Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg12" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2">Sex</th>
+                            <th colspan="2">Geographical Location</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>Female</th>
+                            <th>Male</th>
+                            <th>Rural</th>
+                            <th>Urban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I121">
+                            <td>Number of persons in the sample confirming receipt of request for bribe</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="I122">
+                            <td>Sample size</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 12 End-->
+
+    <!-- Goal 13 Start -->
+    <div id="goal-13" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; ">
+            <strong>
+              Goal 13. Peace, Security and Stability are preserved
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel13" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I131">Conflict related deaths per 100,000 population</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations13" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg13" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg13" class="disaggTab">Disaggregation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg13" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I131">
+                            <td>Conflict related deaths per 100,000 population</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg13" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th rowspan="2"></th>
+                            <th colspan="2">Sex</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>Female</th>
+                            <th>Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I131">
+                            <td>Conflict related deaths</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 13 End-->
+
+    <!-- Goal 14 Start -->
+    <div id="goal-14" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; ">
+            <strong>
+                Goal 14. A Stable and Peaceful Africa
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel14" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I1441">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations14" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg14" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg14" class="disaggTab">Disaggregation</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="NoDisagg14" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1441">
+                            <td>Proportion of fish stocks within biologically sustainable levels</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1451">
+                            <td>Coverage of protected areas in relation to marine areas</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg14" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#4ca6ff !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1441">
+                          <td>Proportion of fish stocks within biologically sustainable levels</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1451">
+                          <td>Coverage of protected areas in relation to marine areas</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 14 End-->
+
+    <!-- Goal 15 Start -->
+    <div id="goal-15" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center;">
+            <strong>
+                Goal 15. A Fully Functional and Operational African Peace and Security Architecture
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel15" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I1511">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations15" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg15" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg15" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg15" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1511">
+                            <td>Forest area as a proportion of total land area</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1512">
+                            <td>Proportion of important sites for terrestrial and freshwater biodiversity</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1521">
+                            <td>Progress towards sustainable forest management</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1541">
+                            <td>Protection of mountain biodiversity sites</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1542">
+                            <td>Mountain Green Cover Index</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1551">
+                            <td>Red List Index</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1561">
+                            <td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I15a1">
+                            <td>Public expenditure on conservation</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg15" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9ACD32 !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1511">
+                          <td>Forest area (reference year)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1511">
+                          <td>Land area (2015)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1512">
+                          <td>Total protected area</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1512">
+                          <td>Total territorial area</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1521">
+                          <td>Progress towards sustainable forest management</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1541">
+                          <td>Protection of mountain biodiversity sites</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1542">
+                          <td>Mountain Green Cover Index</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1551">
+                          <td>Red List Index</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1561">
+                          <td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I15a1">
+                          <td>Public expenditure on conservation</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 15 End -->
+
+    <!-- Goal 16 Start -->
+    <div id="goal-16" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933; text-align: center;">
+            <strong>
+                Goal 16. African Cultural Renaissance is pre-eminent
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel16" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I1611">xyz</option>
+            </select>
+        </div>
+        <!-- Tab links -->
+        <div id="disaggregations16" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg16" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg16" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg16" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I1611">
+                            <td>Number of victims of intentional homicide</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1632">
+                            <td>Unsentenced detainees as a proportion of overall prison population</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1661">
+                            <td>Government expenditures as a proportion of original approved budget</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I1691">
+                            <td>Registered births (%)</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I16a1">
+                            <td>Independent human rights institutions</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg16" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th class="goal16Header" colspan="2">Sex</th>
+                            <th class="goal16NoHeader">Value</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#FF9933 !important;">
+                            <th class="goal16Header">Female</th>
+                            <th class="goal16Header">Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I1611">
+                          <td>Total number of victims of intentional homicide recorded in a given year</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1611">
+                          <td>Total population in given year divided by 100,000</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1632">
+                          <td>Total number of unsentenced persons held in detention</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1632">
+                          <td>Total number of persons held in detention</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1661">
+                          <td>Country Score</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1691">
+                          <td>Number of children under age of five whose births are reported as being registered with the relevant national civil authorities</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I1691">
+                          <td>Total number of children under age of five in the population</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I16a1">
+                          <td>accreditation classification</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 16 End -->
+
+    <!-- Goal 17 Start -->
+    <div id="goal-17" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center;">
+            <strong>
+                Goal 17. Full Gender Equality in All Spheres of Life
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel17" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I171">Proportion of total agric. population with ownership</option>
+                <option value="I172">Seats held by women in national parliaments, regional and local bodies</option>
+                <option value="I173">Proportion of women & girls subjected to sexual and physical violence</option>
+                <option value="I174">Proportion of girls and women aged 15 - 49 years who have undergone FGM</option>
+                <option value="I175">Proportion of children whose births are registered in the first year</option>
+            </select>
+        </div>
+        <div id="disaggregations17" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg17" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg17" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg17" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I171">
+                            <td>Proportion of total agric. population with ownership</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I172">
+                            <td>Seats held by women in national parliaments, regional and local bodies</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I173">
+                            <td>Proportion of women & girls subjected to sexual and physical violence</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I174">
+                            <td>Proportion of girls and women aged 15 - 49 years who have undergone FGM</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I175">
+                            <td>Proportion of children whose births are registered in the first year</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg17" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2" class="sexDisagg">Sex</th>
+                            <th colspan="2" class="geoDisagg">Geographical Location</th>
+                            <th class="noDisagg">Value</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#ff4c4c !important;">
+                            <th class="sexDisagg">Female</th>
+                            <th class="sexDisagg">Male</th>
+                            <th class="geoDisagg">Rural</th>
+                            <th class="geoDisagg">Urban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I171">
+                          <td>Total number of farmers who own their land or with secure rights to the land</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I171">
+                          <td>Total number of farmers</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I172">
+                          <td>Number of Women – elected or appointed in the legislature</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I172">
+                          <td>Total number of persons in the legislature or deliberative body at regional or local level</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I173">
+                          <td>Number of women and girls subjected to sexual or physical violence</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I173">
+                          <td>Total number of women and girls</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I174">
+                          <td>Number of girls and women aged 15-49 who have undergone FGM/C </td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I174">
+                          <td>Total number of women aged 15-49 in the population</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I175">
+                          <td>No. of children (0-1) whose births are registered within the first year</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I175">
+                          <td>Total No. of children aged 0 – 1 years</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 17 End -->
+
+    <!-- Goal 18 Start -->
+    <div id="goal-18" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center;">
+            <strong>
+                Goal 18. Engaged and Empowered Youth and Children
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel18" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I181">Unemployment rate</option>
+                <option value="I182">% of children engaged in child labour</option>
+                <option value="I183">% of children engaged in child marriage</option>
+                <option value="I184">% of children who are victims of human trafficking</option>
+                <option value="I185">Level of implementation of the provisions of the African Charter on the Rights of the Youth by Member States</option>
+            </select>
+        </div>
+        <div id="disaggregations18" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg18" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg18" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg18" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I181">
+                            <td>Unemployment rate</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I182">
+                            <td>% of children engaged in child labour</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I183">
+                            <td>% of children engaged in child marriage</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I184">
+                            <td>% of children who are victims of human trafficking</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I185">
+                            <td>Level of implementation of the provisions of the African Charter on the Rights of the Youth by Member States</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg18" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th rowspan="2">&nbsp;</th>
+                            <th colspan="2" class="sexDisagg">Sex</th>
+                            <th colspan="2" class="geoDisagg">Geographical Location</th>
+                            <th class="noDisagg">Value</th>
+                        </tr>
+                        <tr class="tableHeader" style="background-color:#6666ff !important;">
+                            <th class="sexDisagg">Female</th>
+                            <th class="sexDisagg">Male</th>
+                            <th class="geoDisagg">Rural</th>
+                            <th class="geoDisagg">Urban</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I181">
+                          <td>Number of unemployed persons</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I181">
+                          <td>Total number of people in the civilian labor force</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I182">
+                          <td>Total number of children who are working</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I182">
+                          <td>Total number of children</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I183">
+                          <td>Number of children married under 18 years</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I183">
+                          <td>Total number of children in the population</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I184">
+                          <td>No. of children who are victims of human trafficking</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I184">
+                          <td>Total number of children in the population</td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr class="I185">
+                          <td>Level of implementation</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 18 End -->
+
+    <!-- Goal 19 Start -->
+    <div id="goal-19" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center;">
+            <strong>
+                Goal 19. Africa as a major partner in global affairs and peaceful co-existence
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel19" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I191">Availability of statistical legislation that complies with principles of official statistics</option>
+                <option value="I192">Funding allocated for the implementation of functional statistical system</option>
+                <option value="I193">Existence of formal institutional arrangements for the coordination of the compilation of official statistics</option>
+            </select>
+        </div>
+        <div id="disaggregations19" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg19" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg19" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg19" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I191">
+                            <td>Availability of statistical legislation</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I192">
+                            <td>Funding allocated for the implementation</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I193">
+                            <td>Existence of formal institutional arrangements for the coordination</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg19" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#000000 !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I191">
+                          <td>Availability (Yes / No) of legislation on statistics</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I192">
+                          <td>The total budget allocated to the functional statistical system (X + Y + Z)</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I192">
+                          <td>Total government budget.</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I193">
+                          <td>Existence of formal institutional arrangements for the coordination</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 19 End -->
+
+    <!-- Goal 20 Start -->
+    <div id="goal-20" class="col-xm-11 col-sm-10 col-md-11">
+        <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center;">
+            <strong>
+                Goal 20. Africa takes full responsibility for financing her development
+            </strong>
+        </h3>
+        <div>
+            <select id="indicatorLevel20" name="indicators" class="dropdown">
+                <option disabled selected>Please select an indicator</option>
+                <option value="I201">Proportion of development expenditure contributed by national capital markets</option>
+                <option value="I202">Total tax revenue as a % GDP</option>
+                <option value="I203">Total ODA as a percentage of the national budget</option>
+                <option value="I204">Resources raised through innovative financing mechanisms as a % of national budget</option>
+            </select>
+        </div>
+        <div id="disaggregations20" style="margin-top: 10px;">
+            <ul>
+                <li><a href="#NoDisagg20" class="disaggTab">No Disaggregation</a></li>
+                <li><a href="#Disagg20" class="disaggTab">Disaggregation</a></li>
+            </ul>
+            <!-- Tab content -->
+            <div id="NoDisagg20" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>Indicator</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="I201">
+                            <td>Proportion of development expenditure contributed by national capital markets</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I202">
+                            <td>Total tax revenue as a % GDP</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I203">
+                            <td>Total ODA as a percentage of the national budget</td>
+                            <td></td>
+                        </tr>
+                        <tr class="I204">
+                            <td>Resources raised through innovative financing mechanisms as a % of national budget</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="Disagg20" class="tabcontent2">
+                <table>
+                    <thead>
+                        <tr class="tableHeader" style="background-color:#9932CC !important;">
+                            <th>&nbsp;</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="I201">
+                          <td>Total funds raised from the domestic capital market</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I201">
+                          <td>Total public sector budget</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I202">
+                          <td>Total taxes collected as defined above</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I202">
+                          <td>GDP</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I203">
+                          <td>Total of all sources of official development assistance as defined above</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I203">
+                          <td>Total of all sources of funds – required to execute the budget</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I204">
+                          <td>Total of all sources of innovative financing as defined above</td>
+                          <td></td>
+                      </tr>
+                      <tr class="I204">
+                          <td>Total of all sources of funds – required to execute the budget</td>
+                          <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- Goal 20 End -->
+
+    </div>
