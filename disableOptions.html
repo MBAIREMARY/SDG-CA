@@ -27,8 +27,8 @@
                     (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")) {
                     //Enable all the disaggregation entry field
                     //Disable the No Disaggregation entry field
-                    // $("tr.I111aEnabled input").prop('disabled', true);
-                    // $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
+                    $("tr.I111aEnabled input").prop('disabled', true);
+                    $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
                     console.log("No Disaggregation entry disabled");
                 } else {
                     //enable all the inputs
@@ -39,6 +39,17 @@
                     console.log("No entries disabled");
                 }
             }, 1000);
+            // Onchange Levels
+            $("#indicatorLevel").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+                if (($(this).val() == "I111b") || ($(this).val() == "I121")) {
+                    $('.I111x').hide();
+                } else {
+                    $('.I111x').show();
+                }
+            });
 
 
         });
@@ -93,15 +104,15 @@
         //         });
         //     })
         // });
-        $(function () {
-            $('.tabcontent2 tr').hide();
-            // Onchange Levels
-            $("#indicatorLevel2").change(function () {
-                $('.' + $(this).val()).show();
-                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-                $('.tableHeader').show();
-            })
-        });
+        // $(function () {
+        //     $('.tabcontent2 tr').hide();
+        //     // Onchange Levels
+        //     $("#indicatorLevel2").change(function () {
+        //         $('.' + $(this).val()).show();
+        //         $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+        //         $('.tableHeader').show();
+        //     })
+        // });
         $(function () {
             $('.tabcontent2 tr').hide();
             // Onchange Levels
@@ -487,7 +498,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I111a I111a_disabled_NoDisagtn">
+                    <tr class="I111a I111aEnabled">
                         <td>Population vivant en dessous du seuil international de pauvret&eacute;</td>
                         <td><input id="TsZLukacJ6T-bJmK5mlfvQk-val" name="entryfield"
                                    title="SDG_1:People living below US$1.90 per day No Dissaggregation"
@@ -530,7 +541,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I111a I111a_disabled">
+                    <tr class="I111a I111aDisabled">
                         <td>Personnes vivant en dessous du seuil international de pauvret&eacute;</td>
                         <td><input id="TsZLukacJ6T-ssMY53iFjYm-val" name="entryfield"
                                    title="SDG_1:People living below US$1.90 per day Employed"
@@ -638,7 +649,8 @@ input {
             </div>
         </div>
     </div>
-    <!-- Goal 1 End --><!-- Goal 2 Start -->
+    <!-- Goal 1 End -->
+    <!-- Goal 2 Start -->
 
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-2">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#DDA63A;text-align: center; ">
