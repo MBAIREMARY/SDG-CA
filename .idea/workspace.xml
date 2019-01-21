@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disableOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/disableOptions.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disableOptions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="345">
+              <caret line="52" column="19" selection-end-line="3096" />
               <folding>
                 <element signature="n#script#0;n#!!top" />
                 <element signature="e#3364#3393#0" />
@@ -1233,12 +1232,12 @@
       <workItem from="1540459971467" duration="20000" />
       <workItem from="1540460013835" duration="14376000" />
       <workItem from="1547797818585" duration="1405000" />
-      <workItem from="1548072293783" duration="8743000" />
+      <workItem from="1548072293783" duration="11438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53973000" />
+    <option name="totallyTimeSpent" value="56668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -1430,8 +1429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disableOptions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="345">
+          <caret line="52" column="19" selection-end-line="3096" />
           <folding>
             <element signature="n#script#0;n#!!top" />
             <element signature="e#3364#3393#0" />
