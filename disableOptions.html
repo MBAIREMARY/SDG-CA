@@ -9,290 +9,300 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
 <script>
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        $(document).ready(function () {
-            setTimeout(function () {
-                if (!isNaN(parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val())) && (parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) > 0)) {
-                    $("tr.I111a_disabled input").prop('disabled', true);
-                    $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
-                    console.log("Disabled Inputs Successful!");
-                } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
-                    ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
-                    $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
-                    $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
-
-                } else {
-                    $("tr.I111a_disabled input[disabled]").css("background-color", "white");
-                    $("tr.I111a_disabled input").prop('disabled', false);
-                }
-
-            }, 1000)
-            $("#selectedPeriodId").change(function () {
-                setTimeout(function () {
-                    if (!isNaN(parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val())) && (parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) > 0)) {
-                        $("tr.I111a_disabled input").prop('disabled', true);
-                        $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
-                        console.log("Disabled Inputs Successful!");
-                    } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
-                        ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
-                        $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
-                        $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
-
-                    } else {
-                        $("tr.I111a_disabled input[disabled]").css("background-color", "white");
-                        $("tr.I111a_disabled input").prop('disabled', false);
-                    }
-
-                }, 1000)
-            })
-            // Onchange Levels
-            $("#indicatorLevel").change(function () {
-                $('.' + $(this).val()).show();
-                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-                $('.tableHeader').show();
-                if (($(this).val() == "I111b") || ($(this).val() == "I121")) {
-                    $('.I111x').hide();
-                } else {
-                    $('.I111x').show();
-                }
-            });
-        })
-    });
-
     //DisableOptions function Start
     $(function () {
         $(document).ready(function () {
+            //Onload.
             setTimeout(function () {
                 if (($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "") {
                     //Disable all the disaggregation entry field
                     //Enable the No Disaggregation entry field
+                    // $("tr.I111aDisabled input").prop('disabled', true);
+                    // $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
+                    console.log("Disaggregation entries disabled");
 
                 } else if ((($("#TsZLukacJ6T-ssMY53iFjYm-val").val()) != "") || (($("#TsZLukacJ6T-SOw3NHN47G7-val").val()) != "") || (($("#TsZLukacJ6T-iEgy3xKqVi5-val").val()) != "") || (($("#TsZLukacJ6T-r8hBd63qzn4-val").val()) != "") ||
                     (($("#TsZLukacJ6T-sLKRSW7xmwp-val").val()) != "") || (($("#TsZLukacJ6T-sJUGNYho7Ey-val").val()) != "") || (($("#pTOpNf6zkTv-ssMY53iFjYm-val").val()) != "") || (($("#pTOpNf6zkTv-SOw3NHN47G7-val").val()) != "") ||
                     (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")) {
                     //Enable all the disaggregation entry field
                     //Disable the No Disaggregation entry field
+                    // $("tr.I111aEnabled input").prop('disabled', true);
+                    // $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
+                    console.log("No Disaggregation entry disabled");
                 } else {
                     //enable all the inputs
+                    // $("tr.I111aDisabled input").prop('disabled', false);
+                    // $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+                    // $("tr.I111aEnabled input").prop('disabled', false);
+                    // $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+                    console.log("No entries disabled");
                 }
-            }, 1000)
-        })
+            }, 1000);
 
-    });
-    //DisableOptions function End
 
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel2").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel3").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel4").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
+        });
+        //DisableOptions function End
+        // $(function () {
+        //     $('.tabcontent2 tr').hide();
+        //     $(document).ready(function () {
+        //         setTimeout(function () {
+        //             if (!isNaN(parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val())) && (parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) > 0)) {
+        //                 $("tr.I111a_disabled input").prop('disabled', true);
+        //                 $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
+        //                 console.log("Disabled Inputs Successful!");
+        //             } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
+        //                 ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
+        //                 $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
+        //                 $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
+        //
+        //             } else {
+        //                 $("tr.I111a_disabled input[disabled]").css("background-color", "white");
+        //                 $("tr.I111a_disabled input").prop('disabled', false);
+        //             }
+        //
+        //         }, 1000)
+        //         $("#selectedPeriodId").change(function () {
+        //             setTimeout(function () {
+        //                 if (!isNaN(parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val())) && (parseInt($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) > 0)) {
+        //                     $("tr.I111a_disabled input").prop('disabled', true);
+        //                     $("tr.I111a_disabled input[disabled]").css("background-color", "#DCDAD1");
+        //                     console.log("Disabled Inputs Successful!");
+        //                 } else if (($("#TsZLukacJ6T-ssMY53iFjYm-val").val() > 0) || ($("#TsZLukacJ6T-SOw3NHN47G7-val").val() > 0) || ($("#TsZLukacJ6T-iEgy3xKqVi5-val").val() > 0) || ($("#TsZLukacJ6T-r8hBd63qzn4-val").val() > 0) ||
+        //                     ($("#TsZLukacJ6T-sLKRSW7xmwp-val").val() > 0) || ($("#TsZLukacJ6T-sJUGNYho7Ey-val").val() > 0)) {
+        //                     $("tr.I111a_disabled_NoDisagtn input").prop('disabled', true);
+        //                     $("tr.I111a_disabled_NoDisagtn input[disabled]").css("background-color", "#DCDAD1");
+        //
+        //                 } else {
+        //                     $("tr.I111a_disabled input[disabled]").css("background-color", "white");
+        //                     $("tr.I111a_disabled input").prop('disabled', false);
+        //                 }
+        //
+        //             }, 1000)
+        //         })
+        //         // Onchange Levels
+        //         $("#indicatorLevel").change(function () {
+        //             $('.' + $(this).val()).show();
+        //             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+        //             $('.tableHeader').show();
+        //             if (($(this).val() == "I111b") || ($(this).val() == "I121")) {
+        //                 $('.I111x').hide();
+        //             } else {
+        //                 $('.I111x').show();
+        //             }
+        //         });
+        //     })
+        // });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel2").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel3").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel4").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
 
-            if (($(this).val() == "I4b1")) {
-                $('.sdg4NoHeader').hide();
-                $('.sdg4Header').show();
-            }
-            if (($(this).val() == "I422") || ($(this).val() == "I451a") || ($(this).val() == "I451b")) {
-                $('.sdg4Header').hide();
-                $('.sdg4NoHeader').show();
-            }
+                if (($(this).val() == "I4b1")) {
+                    $('.sdg4NoHeader').hide();
+                    $('.sdg4Header').show();
+                }
+                if (($(this).val() == "I422") || ($(this).val() == "I451a") || ($(this).val() == "I451b")) {
+                    $('.sdg4Header').hide();
+                    $('.sdg4NoHeader').show();
+                }
 
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel5").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel5").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
 
-            if ($(this).val() == 'I5b1') {
-                $('.sexDisagg').show();
-                $('.noDisagg').hide();
-            } else {
-                $('.sexDisagg').hide();
-                $('.noDisagg').show();
-            }
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel6").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel7").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
+                if ($(this).val() == 'I5b1') {
+                    $('.sexDisagg').show();
+                    $('.noDisagg').hide();
+                } else {
+                    $('.sexDisagg').hide();
+                    $('.noDisagg').show();
+                }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel6").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel7").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
 
-            if ($(this).val() == "I711") {
-                $('.sdg7Header').show();
-                $('.sdg7NoHeader').hide();
-            }
-            if (($(this).val() == "I712") || ($(this).val() == "I721") || ($(this).val() == "I731")) {
-                $('.sdg7Header').hide();
-                $('.sdg7NoHeader').show();
-            }
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel8").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
+                if ($(this).val() == "I711") {
+                    $('.sdg7Header').show();
+                    $('.sdg7NoHeader').hide();
+                }
+                if (($(this).val() == "I712") || ($(this).val() == "I721") || ($(this).val() == "I731")) {
+                    $('.sdg7Header').hide();
+                    $('.sdg7NoHeader').show();
+                }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel8").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
 
-            if ($(this).val() == "I852") {
-                $('.sdg8Header').show();
-                $('.sdg8NoHeader').hide();
-            }
-            if (($(this).val() == "I821") || ($(this).val() == "I842") || ($(this).val() == "I811") ||
-                ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1")) {
-                $('.sdg8Header').hide();
-                $('.sdg8NoHeader').show();
-            }
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel9").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel10").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel11").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel12").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel13").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel14").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel15").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel16").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
+                if ($(this).val() == "I852") {
+                    $('.sdg8Header').show();
+                    $('.sdg8NoHeader').hide();
+                }
+                if (($(this).val() == "I821") || ($(this).val() == "I842") || ($(this).val() == "I811") ||
+                    ($(this).val() == "I861") || ($(this).val() == "I8101") || ($(this).val() == "I8102") || ($(this).val() == "I8a1")) {
+                    $('.sdg8Header').hide();
+                    $('.sdg8NoHeader').show();
+                }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel9").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel10").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel11").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel12").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel13").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel14").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel15").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel16").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
 
-            if (($(this).val() == "I1611")) {
-                $('.sdg16Header').show();
-                $('.sdg16NoHeader').hide();
-            } else {
-                $('.sdg16Header').hide();
-                $('.sdg16NoHeader').show();
-            }
+                if (($(this).val() == "I1611")) {
+                    $('.sdg16Header').show();
+                    $('.sdg16NoHeader').hide();
+                } else {
+                    $('.sdg16Header').hide();
+                    $('.sdg16NoHeader').show();
+                }
+            })
+        });
+        $(function () {
+            $('.tabcontent2 tr').hide();
+            // Onchange Levels
+            $("#indicatorLevel17").change(function () {
+                $('.' + $(this).val()).show();
+                $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
+                $('.tableHeader').show();
+            })
+        });
+        $(function () {
+            $("#sdgs").tabs();
+            $("#disaggregations").tabs();
+            $("#disaggregations2").tabs();
+            $("#disaggregations3").tabs();
+            $("#disaggregations4").tabs();
+            $("#disaggregations5").tabs();
+            $("#disaggregations6").tabs();
+            $("#disaggregations7").tabs();
+            $("#disaggregations8").tabs();
+            $("#disaggregations9").tabs();
+            $("#disaggregations10").tabs();
+            $("#disaggregations11").tabs();
+            $("#disaggregations12").tabs();
+            $("#disaggregations13").tabs();
+            $("#disaggregations14").tabs();
+            $("#disaggregations15").tabs();
+            $("#disaggregations16").tabs();
+            $("#disaggregations17").tabs();
+            $("#sdgs3").tabs();
         })
-    });
-    $(function () {
-        $('.tabcontent2 tr').hide();
-        // Onchange Levels
-        $("#indicatorLevel17").change(function () {
-            $('.' + $(this).val()).show();
-            $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
-            $('.tableHeader').show();
-        })
-    });
-    $(function () {
-        $("#sdgs").tabs();
-        $("#disaggregations").tabs();
-        $("#disaggregations2").tabs();
-        $("#disaggregations3").tabs();
-        $("#disaggregations4").tabs();
-        $("#disaggregations5").tabs();
-        $("#disaggregations6").tabs();
-        $("#disaggregations7").tabs();
-        $("#disaggregations8").tabs();
-        $("#disaggregations9").tabs();
-        $("#disaggregations10").tabs();
-        $("#disaggregations11").tabs();
-        $("#disaggregations12").tabs();
-        $("#disaggregations13").tabs();
-        $("#disaggregations14").tabs();
-        $("#disaggregations15").tabs();
-        $("#disaggregations16").tabs();
-        $("#disaggregations17").tabs();
-        $("#sdgs3").tabs();
     });
 </script>
 <style type="text/css">/*Styling for the outter tab Start*/
@@ -559,7 +569,7 @@ input {
                         <td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield"
                                    title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]"/></td>
                     </tr>
-                    <tr class="I111b I111b_disabled">
+                    <tr class="I111b">
                         <td>Personnes actives vivant en dessous du seuil de pauvret&eacute; dans les m&eacute;nages</td>
                         <td><input id="wD1WS24kqQR-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Employed persons living in households below poverty line Rural"
@@ -578,30 +588,22 @@ input {
                                    value="[ SDG_1:Employed persons living in households below poverty line Male ]"/>
                         </td>
                     </tr>
-                    <tr class="I111b  I111b_disabled">
+                    <tr class="I111b">
                         <td>Nombre total de personnes actives</td>
-                        <td>
-                            <input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield"
-                                   title="SDG_1:Total number of employed persons Rural"
-                                   value="[ SDG_1:Total number of employed persons Rural ]"/>
-                        </td>
-                        <td>
-                            <input id="mEtKA2HMRkT-r8hBd63qzn4-val" name="entryfield"
-                                   title="SDG_1:Total number of employed persons Urban"
-                                   value="[ SDG_1:Total number of employed persons Urban ]"/>
-                        </td>
-                        <td>
-                            <input id="mEtKA2HMRkT-sLKRSW7xmwp-val" name="entryfield"
-                                   title="SDG_1:Total number of employed persons Female"
-                                   value="[ SDG_1:Total number of employed persons Female ]"/>
-                        </td>
-                        <td>
-                            <input id="mEtKA2HMRkT-sJUGNYho7Ey-val" name="entryfield"
-                                   title="SDG_1:Total number of employed persons Male"
-                                   value="[ SDG_1:Total number of employed persons Male ]"/>
-                        </td>
+                        <td><input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Rural" value="[ SDG_1:Total number of employed persons
+ Rural ]"/></td>
+                        <td><input id="mEtKA2HMRkT-r8hBd63qzn4-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Urban" value="[ SDG_1:Total number of employed persons
+ Urban ]"/></td>
+                        <td><input id="mEtKA2HMRkT-sLKRSW7xmwp-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Female" value="[ SDG_1:Total number of employed persons
+ Female ]"/></td>
+                        <td><input id="mEtKA2HMRkT-sJUGNYho7Ey-val" name="entryfield" title="SDG_1:Total number of employed persons
+ Male" value="[ SDG_1:Total number of employed persons
+ Male ]"/></td>
                     </tr>
-                    <tr class="I121 I121_disabled">
+                    <tr class="I121">
                         <td>Total de personnes vivant en dessous du seuil national de pauvret&eacute;</td>
                         <td><input id="HNUVvzz5Mcb-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:People living below the national  poverty line Rural"
@@ -616,7 +618,7 @@ input {
                                    title="SDG_1:People living below the national  poverty line Male"
                                    value="[ SDG_1:People living below the national  poverty line Male ]"/></td>
                     </tr>
-                    <tr class="I121 I121_disabled">
+                    <tr class="I121">
                         <td>Population totale, urbaine ou rurale</td>
                         <td><input id="NCsJ0u0J5kO-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Total, urban or rural population Rural"
@@ -750,15 +752,7 @@ input {
                 <table>
                     <thead>
                     <tr class="tableHeader" style="background-color:#DDA63A !important;">
-                        <th><span
-                                style="color: white;font-weight: bold;">Nombre total d&#39;enfants de moins de 5 ans</span>&nbsp;&nbsp;
-                            <input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield"
-                                   title="SDG_2:Total number of children under 5 years of age"
-                                   value="[ SDG_2:Total number of children under 5 years of age ]"/>&nbsp;&nbsp;<span
-                                    style="color: white;font-weight: bold;">Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</span><input
-                                    id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield"
-                                    title="SDG_2:Total Number of Local Breeds in All Risk Categories"
-                                    value="[ SDG_2:Total Number of Local Breeds in All Risk Categories ]"/></th>
+                        <th>&nbsp; &nbsp;​​&nbsp;</th>
                         <th>Valeur</th>
                     </tr>
                     </thead>
@@ -773,11 +767,10 @@ input {
                                    value="[ SDG_2:Children under five whose weight for height is &gt; +2 ]"/></td>
                     </tr>
                     <tr class="I221">
-                        <td>Nombre total d&#39;enfants de moins de 5 ans<strong>(Please Enter this Value on the header
-                            section)</strong></td>
-                        <td><input id="indicatorkkv07pd2gUn" indicatorid="kkv07pd2gUn" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total number of children under 5 years of age"
-                                   value="[ SDG_common:Total number of children under 5 years of age ]"/></td>
+                        <td>Nombre total d&#39;enfants de moins de 5 ans</td>
+                        <td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_2:221_Total number of children under 5 years of age"
+                                   value="[ SDG_2:221_Total number of children under 5 years of age ]"/></td>
                     </tr>
                     <tr class="I222a">
                         <td>Nombre d&#39;enfants de moins de 5 ans dont le poids par rapport &agrave; la taille est &gt;
@@ -788,11 +781,10 @@ input {
                                    value="[ SDG_2:Children under 5 whose weight for height is &lt; -2 ]"/></td>
                     </tr>
                     <tr class="I222a">
-                        <td>Nombre total d&#39;enfants de moins de 5 ans<strong>(Please Enter this Value on the header
-                            section)</strong></td>
-                        <td><input id="indicatorkkv07pd2gUn" indicatorid="kkv07pd2gUn" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total number of children under 5 years of age"
-                                   value="[ SDG_common:Total number of children under 5 years of age ]"/></td>
+                        <td>Nombre total d&#39;enfants de moins de 5 ans</td>
+                        <td><input id="JaCkmheNO9p-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_2:222a_Total number of children under 5 years of age"
+                                   value="[ SDG_2:222a_Total number of children under 5 years of age ]"/></td>
                     </tr>
                     <tr class="I251">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -804,12 +796,10 @@ input {
                                    value="[ SDG_2:Livestock breeds classified as being at risk ]"/></td>
                     </tr>
                     <tr class="I252a1">
-                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques<strong>(Please
-                            Enter this Value on the header section)</strong></td>
-                        <td><input id="indicatorPbm1yJwAlj2" indicatorid="Pbm1yJwAlj2" name="indicator"
-                                   readonly="readonly"
-                                   title="SDG_common:Total Number of Local Breeds in All Risk Categories"
-                                   value="[ SDG_common:Total Number of Local Breeds in All Risk Categories ]"/></td>
+                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
+                        <td><input id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_2:Risk_Total Number of Local Breeds in All Risk Categories"
+                                   value="[ SDG_2:Risk_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
                     <tr class="I252a2">
                         <td>Nombre de races animales locales class&eacute;es comme n&#39;&eacute;tant pas &agrave;
@@ -820,12 +810,10 @@ input {
                                    value="[ SDG_2:Livestock breeds classified as not at risk ]"/></td>
                     </tr>
                     <tr class="I252a2">
-                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques<strong>(Please
-                            Enter this Value on the header section)</strong></td>
-                        <td><input id="indicatorPbm1yJwAlj2" indicatorid="Pbm1yJwAlj2" name="indicator"
-                                   readonly="readonly"
-                                   title="SDG_common:Total Number of Local Breeds in All Risk Categories"
-                                   value="[ SDG_common:Total Number of Local Breeds in All Risk Categories ]"/></td>
+                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
+                        <td><input id="bWLtB5B73Eh-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_2:NotRisk_Total Number of Local Breeds in All Risk Categories"
+                                   value="[ SDG_2:NotRisk_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
                     <tr class="I252a3">
                         <td>Nombre de races animales locales class&eacute;s comme inconnu</td>
@@ -834,12 +822,10 @@ input {
                                    value="[ SDG_2:Livestock breeds classified as unknown risk ]"/></td>
                     </tr>
                     <tr class="I252a3">
-                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques<strong>(Please
-                            Enter this Value on the header section)</strong></td>
-                        <td><input id="indicatorPbm1yJwAlj2" indicatorid="Pbm1yJwAlj2" name="indicator"
-                                   readonly="readonly"
-                                   title="SDG_common:Total Number of Local Breeds in All Risk Categories"
-                                   value="[ SDG_common:Total Number of Local Breeds in All Risk Categories ]"/></td>
+                        <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
+                        <td><input id="CZozIhs3oKt-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_2:Unknown_Total Number of Local Breeds in All Risk Categories"
+                                   value="[ SDG_2:Unknown_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
                     <tr class="I2a2">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -1032,13 +1018,8 @@ input {
                 <table>
                     <thead>
                     <tr class="tableHeader" style="background-color:#4C9F38 !important;">
-                        <th><span
-                                style="color: white;font-weight: bold;">Nombre de naissances vivantes</span>&nbsp;<input
-                                id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield" title="SDG_3:Number of live births"
-                                value="[ SDG_3:Number of live births ]"/> <span style="color: white;font-weight: bold;">Population totale</span>&nbsp;&nbsp;&nbsp;<input
-                                id="pTOpNf6zkTv-bJmK5mlfvQk-val" name="entryfield"
-                                title="SDG_1:Total population No Dissaggregation"
-                                value="[ SDG_1:Total population No Dissaggregation ]"/></th>
+                        <th>&nbsp;​&nbsp;<span style="color: white;font-weight: bold;">
+                        </span></th>
                         <th>Valeur</th>
                     </tr>
                     </thead>
@@ -1075,9 +1056,9 @@ input {
                     </tr>
                     <tr class="I321">
                         <td>Nombre de naissances vivantes</td>
-                        <td><input id="indicatorAmlLwKSRGce" indicatorid="AmlLwKSRGce" name="indicator"
-                                   readonly="readonly" title="SDG_common:Number of Live Births"
-                                   value="[ SDG_common:Number of Live Births ]"/></td>
+                        <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:321_Number of live births" value="[ SDG_3:321_Number of live births ]"/>
+                        </td>
                     </tr>
                     <tr class="I322">
                         <td>Nombre d&#39;enfants d&eacute;c&eacute;d&eacute;s pendant les 28 premiers jours de la vie
@@ -1088,9 +1069,9 @@ input {
                     </tr>
                     <tr class="I322">
                         <td>Nombre de naissances vivantes</td>
-                        <td><input id="indicatorAmlLwKSRGce" indicatorid="AmlLwKSRGce" name="indicator"
-                                   readonly="readonly" title="SDG_common:Number of Live Births"
-                                   value="[ SDG_common:Number of Live Births ]"/></td>
+                        <td><input id="M0V0lnx10d4-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:322_Number of live births" value="[ SDG_3:322_Number of live births ]"/>
+                        </td>
                     </tr>
                     <tr class="I332">
                         <td>Nombre de nouveaux cas et de rechutes de tuberculose apparaissant au cours d&#39;une p&eacute;riode
@@ -1171,10 +1152,9 @@ input {
                                    value="[ SDG_3:Deaths due to road traffic crashes ]"/></td>
                     </tr>
                     <tr class="I361">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="ZOPSuVDHGc7-HllvX50cXC0-val" name="entryfield" title="SDG_3:361_Total Population"
+                                   value="[ SDG_3:361_Total Population ]"/></td>
                     </tr>
                     <tr class="I371">
                         <td>Percentage de femmes en &acirc;ge de procr&eacute;er (15-49 ans) qui pour le moment
@@ -1200,10 +1180,9 @@ input {
                         </td>
                     </tr>
                     <tr class="I391">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="yntGu1ghoRH-HllvX50cXC0-val" name="entryfield" title="SDG_3:391_Total Population"
+                                   value="[ SDG_3:391_Total Population ]"/></td>
                     </tr>
                     <tr class="I392">
                         <td>Nombre de d&eacute;c&egrave;s dus &agrave; l&#39;insalubrit&eacute; de l&#39;eau, &agrave;
@@ -1214,10 +1193,9 @@ input {
                                    value="[ SDG_3:Number of deaths from unsafe water, sanitation and hygiene ]"/></td>
                     </tr>
                     <tr class="I392">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="D4oFW40gvT4-HllvX50cXC0-val" name="entryfield" title="SDG_3:392_Total Population"
+                                   value="[ SDG_3:392_Total Population ]"/></td>
                     </tr>
                     <tr class="I393">
                         <td>Nombre de d&eacute;c&egrave;s dus &agrave; un empoisonnement accidentel</td>
@@ -1226,10 +1204,9 @@ input {
                                    value="[ SDG_3:Number of deaths from unintentional poisoning ]"/></td>
                     </tr>
                     <tr class="I393">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="Sc0fSbRIgAd-HllvX50cXC0-val" name="entryfield" title="SDG_3:393_Total Population"
+                                   value="[ SDG_3:393_Total Population ]"/></td>
                     </tr>
                     <tr class="I3a1">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -1240,10 +1217,10 @@ input {
                                    value="[ SDG_3:Number of physicians ]"/></td>
                     </tr>
                     <tr class="I3c1a">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="MKn1soEZT8q-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:3c1_ Physicians Total Population"
+                                   value="[ SDG_3:3c1_ Physicians Total Population ]"/></td>
                     </tr>
                     <tr class="I3c1b">
                         <td>Nombre de membres du personnel de soins infirmiers et obst&eacute;tricaux</td>
@@ -1252,10 +1229,10 @@ input {
                                    value="[ SDG_3:Number of nursing and midwifery personnel ]"/></td>
                     </tr>
                     <tr class="I3c1b">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="tugJ7nwfL6c-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:3c1_ Nursing Total Population"
+                                   value="[ SDG_3:3c1_ Nursing Total Population ]"/></td>
                     </tr>
                     <tr class="I3c1c">
                         <td>Nombre de dentistes, de techniciens dentistes/assistants</td>
@@ -1264,10 +1241,10 @@ input {
                                    value="[ SDG_3:Number of dentists, dental technician/assistants ]"/></td>
                     </tr>
                     <tr class="I3c1c">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="mtasarJT0Lu-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:3c1_ Dentists Total Population"
+                                   value="[ SDG_3:3c1_ Dentists Total Population ]"/></td>
                     </tr>
                     <tr class="I3c1d">
                         <td>Pharmaciens, techniciens/assistants pharmaceutiques</td>
@@ -1276,10 +1253,10 @@ input {
                                    value="[ SDG_3:pharmacists, pharmaceutical, technicians/assistants ]"/></td>
                     </tr>
                     <tr class="I3c1d">
-                        <td>Population totale<strong>(Please enter this value on the table header section)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="G7cOxA0vVFP-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_3:3c1_ Pharmacists Total Population"
+                                   value="[ SDG_3:3c1_ Pharmacists Total Population ]"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -1523,14 +1500,13 @@ input {
                                    value="[ SDG_5:Individuals who own a mobile telephone. Male ]"/></td>
                     </tr>
                     <tr class="I5b1">
-                        <td>Population totale<strong>(Please enter this value on SDG 1, Indicator 1.1.1a Disaggregation
-                            Tab)</strong></td>
-                        <td><input id="indicatorC1vkUrrUKBq" indicatorid="C1vkUrrUKBq" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population Female"
-                                   value="[ SDG_common:Total Population Female ]"/></td>
-                        <td><input id="indicatorgqbOXA043lk" indicatorid="gqbOXA043lk" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population Male"
-                                   value="[ SDG_common:Total Population Male ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="EpOHcAxLP0E-sLKRSW7xmwp-val" name="entryfield"
+                                   title="SDG_5:5b1_Total Population Female"
+                                   value="[ SDG_5:5b1_Total Population Female ]"/></td>
+                        <td><input id="EpOHcAxLP0E-sJUGNYho7Ey-val" name="entryfield"
+                                   title="SDG_5:5b1_Total Population Male" value="[ SDG_5:5b1_Total Population Male ]"/>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -1717,9 +1693,7 @@ input {
                 <table>
                     <thead>
                     <tr class="tableHeader" style="background-color:#FCC30B !important;">
-                        <th rowspan="2"><span style="color: white;font-weight: bold;">PIB</span>&nbsp;<input
-                                id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:GDP"
-                                value="[ SDG_7:GDP ]"/></th>
+                        <th rowspan="2">​​</th>
                         <th class="sdg7Header" colspan="2">Localisation g&eacute;ographique</th>
                         <th class="sdg7NoHeader">Valeur</th>
                     </tr>
@@ -1740,12 +1714,12 @@ input {
                     </tr>
                     <tr class="I711">
                         <td>Population totale</td>
-                        <td><input id="indicatorVWVcS9VkxOX" indicatorid="VWVcS9VkxOX" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population Rural"
-                                   value="[ SDG_common:Total Population Rural ]"/></td>
-                        <td><input id="indicatorNH1dwvjfbP5" indicatorid="NH1dwvjfbP5" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population Urban"
-                                   value="[ SDG_common:Total Population Urban ]"/></td>
+                        <td><input id="RL5Cd2V59j9-iEgy3xKqVi5-val" name="entryfield"
+                                   title="SDG_7:711_Total Population Rural"
+                                   value="[ SDG_7:711_Total Population Rural ]"/></td>
+                        <td><input id="RL5Cd2V59j9-r8hBd63qzn4-val" name="entryfield"
+                                   title="SDG_7:711_Total Population Urban"
+                                   value="[ SDG_7:711_Total Population Urban ]"/></td>
                     </tr>
                     <tr class="I712">
                         <td>Nombre de personnes utilisant les carburants et les technologies propres pour la cuisine, le
@@ -1781,9 +1755,9 @@ input {
                                    value="[ SDG_7:Total energy supply to economy ]"/></td>
                     </tr>
                     <tr class="I731">
-                        <td>PIB<strong>(Please Enter this Value on the header section)</strong></td>
-                        <td><input id="indicatorD7HM5PlFEDS" indicatorid="D7HM5PlFEDS" name="indicator"
-                                   readonly="readonly" title="SDG_common:GDP" value="[ SDG_common:GDP ]"/></td>
+                        <td>PIB</td>
+                        <td><input id="DGX5LV26AD1-HllvX50cXC0-val" name="entryfield" title="SDG_7:731_GDP"
+                                   value="[ SDG_7:731_GDP ]"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -2109,9 +2083,9 @@ input {
                         </td>
                     </tr>
                     <tr class="I921">
-                        <td>PIB<strong>(Please Enter the GDP Value on SDG 7, Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorD7HM5PlFEDS" indicatorid="D7HM5PlFEDS" name="indicator"
-                                   readonly="readonly" title="SDG_common:GDP" value="[ SDG_common:GDP ]"/></td>
+                        <td>PIB</td>
+                        <td><input id="RiN9u844TAI-HllvX50cXC0-val" name="entryfield" title="SDG_9:921_GDP"
+                                   value="[ SDG_9:921_GDP ]"/></td>
                     </tr>
                     <tr class="I922">
                         <td>Total des emplois dans les activit&eacute;s manufacturi&egrave;res</td>
@@ -2146,10 +2120,9 @@ input {
                                    value="[ SDG_9:Amount of Research and development (R&amp;D) expenditure ]"/></td>
                     </tr>
                     <tr class="I951">
-                        <td>Production totale de l&#39; &eacute;conomie (PIB)<strong>(Please Enter the GDP Value on SDG
-                            7, Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorD7HM5PlFEDS" indicatorid="D7HM5PlFEDS" name="indicator"
-                                   readonly="readonly" title="SDG_common:GDP" value="[ SDG_common:GDP ]"/></td>
+                        <td>Production totale de l&#39; &eacute;conomie (PIB)</td>
+                        <td><input id="NehgnuC4gS7-HllvX50cXC0-val" name="entryfield" title="SDG_9:951_GDP"
+                                   value="[ SDG_9:951_GDP ]"/></td>
                     </tr>
                     <tr class="I952">
                         <td>Chercheurs (&eacute;quivalent &agrave; plein temps)</td>
@@ -2158,11 +2131,9 @@ input {
                                    value="[ SDG_9:Researchers (in full-time equivalent) ]"/></td>
                     </tr>
                     <tr class="I952">
-                        <td>Population (divis&eacute;e par un million)<strong>(Input this value under SDG 3,
-                            Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population (divis&eacute;e par un million)</td>
+                        <td><input id="wEolHaaEC5D-HllvX50cXC0-val" name="entryfield" title="SDG_9:952_Total Population"
+                                   value="[ SDG_9:952_Total Population ]"/></td>
                     </tr>
                     <tr class="I9a1">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -2188,10 +2159,9 @@ input {
                                    value="[ SDG_9:Inhabitants mobi-cellular signal range ]"/></td>
                     </tr>
                     <tr class="I9c1">
-                        <td>Population totale<strong>(Input this value under SDG 3, Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="lVztyk5abZZ-HllvX50cXC0-val" name="entryfield" title="SDG_9:9c1_Total Population"
+                                   value="[ SDG_9:9c1_Total Population ]"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -3032,9 +3002,9 @@ input {
                                    title="SDG_17:Gross national income" value="[ SDG_17:Gross national income ]"/></td>
                     </tr>
                     <tr class="I1731">
-                        <td>PIB<strong>(Please Enter the GDP Value on SDG 7, Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorD7HM5PlFEDS" indicatorid="D7HM5PlFEDS" name="indicator"
-                                   readonly="readonly" title="SDG_common:GDP" value="[ SDG_common:GDP ]"/></td>
+                        <td>PIB</td>
+                        <td><input id="r1De8ZJQ8lV-HllvX50cXC0-val" name="entryfield" title="SDG_17:1731_GDP"
+                                   value="[ SDG_17:1731_GDP ]"/></td>
                     </tr>
                     <tr class="I1731">
                         <td>Budget national total</td>
@@ -3048,9 +3018,9 @@ input {
                                    value="[ SDG_17:Personal transfers &amp; employees compensation ]"/></td>
                     </tr>
                     <tr class="I1732">
-                        <td>PIB<strong>(Please Enter the GDP Value on SDG 7, Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorD7HM5PlFEDS" indicatorid="D7HM5PlFEDS" name="indicator"
-                                   readonly="readonly" title="SDG_common:GDP" value="[ SDG_common:GDP ]"/></td>
+                        <td>PIB</td>
+                        <td><input id="XpY3cvVILxQ-HllvX50cXC0-val" name="entryfield" title="SDG_17:1732_GDP"
+                                   value="[ SDG_17:1732_GDP ]"/></td>
                     </tr>
                     <tr class="I1741">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -3071,11 +3041,9 @@ input {
                                    value="[ SDG_17:Number of internet users in the last 3 months ]"/></td>
                     </tr>
                     <tr class="I1781">
-                        <td>Population totale<strong>(Please enter this value on the table header section, SDG 3
-                            Disaggregation Tab)</strong></td>
-                        <td><input id="indicatorOqKArphf71O" indicatorid="OqKArphf71O" name="indicator"
-                                   readonly="readonly" title="SDG_common:Total Population"
-                                   value="[ SDG_common:Total Population ]"/></td>
+                        <td>Population totale</td>
+                        <td><input id="i3XdeahLux9-HllvX50cXC0-val" name="entryfield"
+                                   title="SDG_17:1781_Total Population" value="[ SDG_17:1781_Total Population ]"/></td>
                     </tr>
                     <tr class="I1791">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
@@ -3104,6 +3072,3 @@ input {
         </div>
     </div>
     <!-- Goal 17 End --></div>
-
-
-
