@@ -40,12 +40,13 @@
     }
 
     $(function () {
-        // $("#selectedPeriodId").change(function () {
-        //     disableOption();
-        // });
         $(document).ready(function () {
             //Onload.
             setTimeout(disableOption(), 1000);
+            $("#selectedPeriodId").change(function () { //TODO To be continued
+                setTimeout(disableOption(), 5000);
+                console.log("I am done Kelvin");
+            });
             // Onchange Levels
             $("#indicatorLevel").change(function () {
                 disableOption();
