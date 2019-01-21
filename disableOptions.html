@@ -18,8 +18,8 @@
                 if (($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "") {
                     //Disable all the disaggregation entry field
                     //Enable the No Disaggregation entry field
-                    // $("tr.I111aDisabled input").prop('disabled', true);
-                    // $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
+                    $("tr.I111aDisabled input").prop('disabled', true);
+                    $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
                     console.log("Disaggregation entries disabled");
 
                 } else if ((($("#TsZLukacJ6T-ssMY53iFjYm-val").val()) != "") || (($("#TsZLukacJ6T-SOw3NHN47G7-val").val()) != "") || (($("#TsZLukacJ6T-iEgy3xKqVi5-val").val()) != "") || (($("#TsZLukacJ6T-r8hBd63qzn4-val").val()) != "") ||
@@ -32,10 +32,10 @@
                     console.log("No Disaggregation entry disabled");
                 } else {
                     //enable all the inputs
-                    // $("tr.I111aDisabled input").prop('disabled', false);
-                    // $("tr.I111aDisabled input[disabled]").css("background-color", "white");
-                    // $("tr.I111aEnabled input").prop('disabled', false);
-                    // $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+                    $("tr.I111aDisabled input").prop('disabled', false);
+                    $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+                    $("tr.I111aEnabled input").prop('disabled', false);
+                    $("tr.I111aEnabled input[disabled]").css("background-color", "white");
                     console.log("No entries disabled");
                 }
             }, 1000);
@@ -562,7 +562,7 @@ input {
                                    title="SDG_1:People living below US$1.90 per day Male"
                                    value="[ SDG_1:People living below US$1.90 per day Male ]"/></td>
                     </tr>
-                    <tr class="I111a I111a_disabled">
+                    <tr class="I111a I111aDisabled">
                         <td>Population totale</td>
                         <td><input id="pTOpNf6zkTv-ssMY53iFjYm-val" name="entryfield"
                                    title="SDG_1:Total population Employed" value="[ SDG_1:Total population Employed ]"/>

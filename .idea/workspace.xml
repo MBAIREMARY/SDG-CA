@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/disableOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/disableOptions.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,10 +131,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disableOptions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+            <state relative-caret-position="420">
+              <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
               <folding>
                 <element signature="n#script#0;n#!!top" />
+                <element signature="e#3364#3393#0" />
                 <element signature="e#6432#6715#0" />
                 <element signature="e#6736#7367#0" />
                 <element signature="e#7388#7908#0" />
@@ -181,7 +181,6 @@
                 <element signature="e#16077#16085#0" expanded="true" />
                 <element signature="e#16169#16177#0" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#!!top" />
                 <element signature="e#16395#16403#0" expanded="true" />
                 <element signature="e#16476#16484#0" expanded="true" />
                 <element signature="e#16488#16496#0" expanded="true" />
@@ -1233,12 +1232,12 @@
       <workItem from="1540459971467" duration="20000" />
       <workItem from="1540460013835" duration="14376000" />
       <workItem from="1547797818585" duration="1405000" />
-      <workItem from="1548072293783" duration="6423000" />
+      <workItem from="1548072293783" duration="7464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51653000" />
+    <option name="totallyTimeSpent" value="52694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -1430,10 +1429,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disableOptions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="29" column="70" lean-forward="true" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+        <state relative-caret-position="420">
+          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
           <folding>
             <element signature="n#script#0;n#!!top" />
+            <element signature="e#3364#3393#0" />
             <element signature="e#6432#6715#0" />
             <element signature="e#6736#7367#0" />
             <element signature="e#7388#7908#0" />
@@ -1479,7 +1479,6 @@
             <element signature="e#16077#16085#0" expanded="true" />
             <element signature="e#16169#16177#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#!!top" />
             <element signature="e#16395#16403#0" expanded="true" />
             <element signature="e#16476#16484#0" expanded="true" />
             <element signature="e#16488#16496#0" expanded="true" />
