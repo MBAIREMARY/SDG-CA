@@ -16,7 +16,7 @@
         if (($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "") {
             $("tr.I111aDisabled input").prop('disabled', true);
             $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
-            // $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+            $("tr.I111aEnabled input[disabled]").css("background-color", "white");
             console.log("Disaggregation entries disabled");
 
         }
@@ -26,7 +26,7 @@
             (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")) {
             $("tr.I111aEnabled input").prop('disabled', true);
             $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
-            // $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+            $("tr.I111aDisabled input[disabled]").css("background-color", "white");
             console.log("No Disaggregation entry disabled");
         }
         //enable all the inputs
@@ -38,15 +38,20 @@
             console.log("No entries disabled");
         }
     }
+    $("#selectedPeriodId").change(function () {
+        $(document).ready(function () {
+            setTimeout(function(){
+                disableOption();
+                console.log("I am done Kelvin");
+            }, 1000);
+
+        });
+    });
 
     $(function () {
         $(document).ready(function () {
             //Onload.
             setTimeout(disableOption(), 1000);
-            $("#selectedPeriodId").change(function () { //TODO To be continued
-                setTimeout(disableOption(), 5000);
-                console.log("I am done Kelvin");
-            });
             // Onchange Levels
             $("#indicatorLevel").change(function () {
                 disableOption();
