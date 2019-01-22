@@ -11,31 +11,55 @@
 
 <script>
     //DisableOptions function Start
+    function DisaggregationDisabled(){
+        $("tr.I111aDisabled input").prop('disabled', true);
+        $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
+        $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+        console.log("Disaggregation entries disabled");
+    }
+    function noDisaggregationDisabled(){
+        $("tr.I111aEnabled input").prop('disabled', true);
+        $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
+        $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+        console.log("No Disaggregation entry disabled");
+    }
+    function noneDisabled() {
+        $("tr.I111aDisabled input").prop('disabled', false);
+        $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+        $("tr.I111aEnabled input").prop('disabled', false);
+        $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+        console.log("No entries disabled");
+    }
     function disableOption() {
         //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
-        if (($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "") {
-            $("tr.I111aDisabled input").prop('disabled', true);
-            $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
-            $("tr.I111aEnabled input[disabled]").css("background-color", "white");
-            console.log("Disaggregation entries disabled");
-
+        if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
+           DisaggregationDisabled();
         }
         //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
         else if ((($("#TsZLukacJ6T-ssMY53iFjYm-val").val()) != "") || (($("#TsZLukacJ6T-SOw3NHN47G7-val").val()) != "") || (($("#TsZLukacJ6T-iEgy3xKqVi5-val").val()) != "") || (($("#TsZLukacJ6T-r8hBd63qzn4-val").val()) != "") ||
             (($("#TsZLukacJ6T-sLKRSW7xmwp-val").val()) != "") || (($("#TsZLukacJ6T-sJUGNYho7Ey-val").val()) != "") || (($("#pTOpNf6zkTv-ssMY53iFjYm-val").val()) != "") || (($("#pTOpNf6zkTv-SOw3NHN47G7-val").val()) != "") ||
-            (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")) {
-            $("tr.I111aEnabled input").prop('disabled', true);
-            $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
-            $("tr.I111aDisabled input[disabled]").css("background-color", "white");
-            console.log("No Disaggregation entry disabled");
+            (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")){
+            noDisaggregationDisabled();
+        }
+
+        //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
+        else if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
+            DisaggregationDisabled();
+        }
+        //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
+        else if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") ){
+            noDisaggregationDisabled();
+        }
+        else if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled();
+        }
+        //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
+        else if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="")){
+            noDisaggregationDisabled();
         }
         //enable all the inputs
         else {
-            $("tr.I111aDisabled input").prop('disabled', false);
-            $("tr.I111aDisabled input[disabled]").css("background-color", "white");
-            $("tr.I111aEnabled input").prop('disabled', false);
-            $("tr.I111aEnabled input[disabled]").css("background-color", "white");
-            console.log("No entries disabled");
+            noneDisabled();
         }
     }
     $("#selectedPeriodId").change(function () {
@@ -64,8 +88,6 @@
                     $('.I111x').show();
                 }
             });
-
-
         });
         $(function () {
             $('.tabcontent2 tr').hide();
@@ -421,6 +443,7 @@ input {
                                        style="background-color:#19486A; color: white; font-weight: bold;">SDG17</a></li>
         </ul>
     </div>
+
     <!-- Goal 1 Start -->
 
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-1">
