@@ -34,26 +34,27 @@
     // disableOption function start
     function disableOption() {
         noneDisabled();
-        //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
         if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
            DisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
-        //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
         if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val()!="")  || ($('input[id^="pTOpNf6zkTv"]').val()!="") ){
             noDisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
-        //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
         if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
             DisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
-        //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
         if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="mEtKA2HMRkT"]').val()!="") ){
             noDisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
         if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
             DisaggregationDisabled("I121Disabled","I121Enabled");
         }
-        //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
+        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="NCsJ0u0J5kO"]').val()!="")){
+            noDisaggregationDisabled("I121Disabled","I121Enabled");
+        }
+        if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I121Disabled","I121Enabled");
+        }
         if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="NCsJ0u0J5kO"]').val()!="")){
             noDisaggregationDisabled("I121Disabled","I121Enabled");
         }
@@ -671,26 +672,26 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I211">
+                    <tr class="I211 I211Enabled">
                         <td>Pr&eacute;valence de la sous-alimentation</td>
                         <td><input id="pBeH3AFPieZ-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:% of the population whose food intake is insufficient to meet dietary energy requirements for minimum one year."
                                    value="[ SDG_2:% of the population whose food intake is insufficient to meet dietary energy requirements for minimum one year. ]"/>
                         </td>
                     </tr>
-                    <tr class="I221">
+                    <tr class="I221 I221Enabled">
                         <td>Pr&eacute;valence du retard de croissance</td>
                         <td><input id="Bt7EwzXnP1B-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Prevalence of stunting among children under 5"
                                    value="[ SDG_2:Prevalence of stunting among children under 5 ]"/></td>
                     </tr>
-                    <tr class="I222a">
+                    <tr class="I222a I222aEnabled">
                         <td>Pr&eacute;valence de surpoids parmi les enfants de moins de 5 ans</td>
                         <td><input id="SDnpTlaTfuA-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Prevalence of overweight among children under 5"
                                    value="[ SDG_2:Prevalence of overweight among children under 5 ]"/></td>
                     </tr>
-                    <tr class="I251">
+                    <tr class="I251 I251Enabled">
                         <td>Nombre de plantes et de ressources animales g&eacute;n&eacute;tiques destin&eacute;es
                             &agrave; l&#39;alimentation et l&#39;agriculture pr&eacute;serv&eacute;es
                         </td>
@@ -699,19 +700,19 @@ input {
                                    value="[ SDG_2:Number of plant and animal genetic resources for food and agriculture secured  ]"/>
                         </td>
                     </tr>
-                    <tr class="I252a1">
+                    <tr class="I252a1 I252a1Enabled">
                         <td>Races animales locales class&eacute;es comme &eacute;tant &agrave; risque (%)</td>
                         <td><input id="CDWr02Kxj2X-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Local breeds classified as being at risk	"
                                    value="[ SDG_2:Local breeds classified as being at risk	 ]"/></td>
                     </tr>
-                    <tr class="I252a2">
+                    <tr class="I252a2 I252a2Enabled">
                         <td>Races animales locales class&eacute;es comme n&#39;&eacute;tant pas &agrave; risque (%)</td>
                         <td><input id="tqDcS5WQm3T-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Local breeds classified as being not-at-risk	"
                                    value="[ SDG_2:Local breeds classified as being not-at-risk	 ]"/></td>
                     </tr>
-                    <tr class="I252a3">
+                    <tr class="I252a3 I252a3Enabled">
                         <td>Races animales locales class&eacute;es &agrave; un niveau de risque d&#39;extinction inconnu
                             (%)
                         </td>
@@ -720,14 +721,14 @@ input {
                                    value="[ SDG_2:Local breeds classified as unknown level of risk of extinction	 ]"/>
                         </td>
                     </tr>
-                    <tr class="I2a2">
+                    <tr class="I2a2 I2a2Enabled">
                         <td>Total des flux officiels vers l&#39;agriculture</td>
                         <td><input id="pH4ByZuNaRi-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Official development assistance (ODA) and other official flows"
                                    value="[ SDG_2:Official development assistance (ODA) and other official flows ]"/>
                         </td>
                     </tr>
-                    <tr class="I2b1">
+                    <tr class="I2b1 I2b1Enabled">
                         <td>Subventions &agrave; l&#39;exportation agricole</td>
                         <td><input id="KnUVvNnHny2-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Total export subsidies budgetary outalys and quantities"
@@ -746,22 +747,22 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I211">
+                    <tr class="I211 I211Disabled">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
-                    <tr class="I221">
+                    <tr class="I221 I221Disabled">
                         <td>Nombre d&#39;enfants de moins de 5 ans dont la taille pour cet &acirc;ge est &lt; -2</td>
                         <td><input id="nsPgvbrDPwQ-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Children under five whose weight for height is &gt; +2"
                                    value="[ SDG_2:Children under five whose weight for height is &gt; +2 ]"/></td>
                     </tr>
-                    <tr class="I221">
+                    <tr class="I221 I221Disabled">
                         <td>Nombre total d&#39;enfants de moins de 5 ans</td>
                         <td><input id="LgOeUwjhGva-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:221_Total number of children under 5 years of age"
                                    value="[ SDG_2:221_Total number of children under 5 years of age ]"/></td>
                     </tr>
-                    <tr class="I222a">
+                    <tr class="I222a I222aDisabled">
                         <td>Nombre d&#39;enfants de moins de 5 ans dont le poids par rapport &agrave; la taille est &gt;
                             +2
                         </td>
@@ -769,28 +770,28 @@ input {
                                    title="SDG_2:Children under 5 whose weight for height is &lt; -2"
                                    value="[ SDG_2:Children under 5 whose weight for height is &lt; -2 ]"/></td>
                     </tr>
-                    <tr class="I222a">
+                    <tr class="I222a I222aDisabled">
                         <td>Nombre total d&#39;enfants de moins de 5 ans</td>
                         <td><input id="JaCkmheNO9p-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:222a_Total number of children under 5 years of age"
                                    value="[ SDG_2:222a_Total number of children under 5 years of age ]"/></td>
                     </tr>
-                    <tr class="I251">
+                    <tr class="I251 I251Disabled">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
-                    <tr class="I252a1">
+                    <tr class="I252a1 I252a1Disabled">
                         <td>Nombre de races animales locales class&eacute;es comme &eacute;tant &agrave; risque</td>
                         <td><input id="jHGHRAQ0RcL-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Livestock breeds classified as being at risk"
                                    value="[ SDG_2:Livestock breeds classified as being at risk ]"/></td>
                     </tr>
-                    <tr class="I252a1">
+                    <tr class="I252a1 I252a1Disabled">
                         <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
                         <td><input id="NXhSDQe6OXB-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Risk_Total Number of Local Breeds in All Risk Categories"
                                    value="[ SDG_2:Risk_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
-                    <tr class="I252a2">
+                    <tr class="I252a2 I252a2Disabled">
                         <td>Nombre de races animales locales class&eacute;es comme n&#39;&eacute;tant pas &agrave;
                             risque
                         </td>
@@ -798,28 +799,28 @@ input {
                                    title="SDG_2:Livestock breeds classified as not at risk"
                                    value="[ SDG_2:Livestock breeds classified as not at risk ]"/></td>
                     </tr>
-                    <tr class="I252a2">
+                    <tr class="I252a2 I252a2Disabled">
                         <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
                         <td><input id="bWLtB5B73Eh-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:NotRisk_Total Number of Local Breeds in All Risk Categories"
                                    value="[ SDG_2:NotRisk_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
-                    <tr class="I252a3">
+                    <tr class="I252a3 I252a3Disabled">
                         <td>Nombre de races animales locales class&eacute;s comme inconnu</td>
                         <td><input id="Hz6LcIaTWfY-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Livestock breeds classified as unknown risk"
                                    value="[ SDG_2:Livestock breeds classified as unknown risk ]"/></td>
                     </tr>
-                    <tr class="I252a3">
+                    <tr class="I252a3 I252a3Disabled">
                         <td>Nombre total de races animales locales dans toutes les cat&eacute;gories de risques</td>
                         <td><input id="CZozIhs3oKt-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_2:Unknown_Total Number of Local Breeds in All Risk Categories"
                                    value="[ SDG_2:Unknown_Total Number of Local Breeds in All Risk Categories ]"/></td>
                     </tr>
-                    <tr class="I2a2">
+                    <tr class="I2a2 I2a2Disabled">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
-                    <tr class="I2b1">
+                    <tr class="I2b1 I2b1Disabled ">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
                     </tbody>
