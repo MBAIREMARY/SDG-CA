@@ -10,56 +10,52 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script>
-    //DisableOptions function Start
-    function DisaggregationDisabled(){
-        $("tr.I111aDisabled input").prop('disabled', true);
-        $("tr.I111aDisabled input[disabled]").css("background-color", "#DCDAD1");
-        $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+    // Disable functions start
+    function DisaggregationDisabled(disabled,enabled){
+        $("tr."+disabled+" input").prop('disabled', true);
+        $("tr."+disabled+" input[disabled]").css("background-color", "#DCDAD1");
+        $("tr."+enabled+" input[disabled]").css("background-color", "white");
         console.log("Disaggregation entries disabled");
     }
-    function noDisaggregationDisabled(){
-        $("tr.I111aEnabled input").prop('disabled', true);
-        $("tr.I111aEnabled input[disabled]").css("background-color", "#DCDAD1");
-        $("tr.I111aDisabled input[disabled]").css("background-color", "white");
+    function noDisaggregationDisabled(disabled,enabled){
+        $("tr."+enabled+" input").prop('disabled', true);
+        $("tr."+enabled+" input[disabled]").css("background-color", "#DCDAD1");
+        $("tr."+disabled+" input[disabled]").css("background-color", "white");
         console.log("No Disaggregation entry disabled");
     }
     function noneDisabled() {
-        $("tr.I111aDisabled input").prop('disabled', false);
-        $("tr.I111aDisabled input[disabled]").css("background-color", "white");
-        $("tr.I111aEnabled input").prop('disabled', false);
-        $("tr.I111aEnabled input[disabled]").css("background-color", "white");
+        $(":input").prop('disabled', false);
+        $(":input[disabled]").css("background-color", "white");
         console.log("No entries disabled");
     }
+    // Disable functions start
+
+
+    // disableOption function start
     function disableOption() {
+        noneDisabled();
         //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
         if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
-           DisaggregationDisabled();
+           DisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
         //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
-        else if ((($("#TsZLukacJ6T-ssMY53iFjYm-val").val()) != "") || (($("#TsZLukacJ6T-SOw3NHN47G7-val").val()) != "") || (($("#TsZLukacJ6T-iEgy3xKqVi5-val").val()) != "") || (($("#TsZLukacJ6T-r8hBd63qzn4-val").val()) != "") ||
-            (($("#TsZLukacJ6T-sLKRSW7xmwp-val").val()) != "") || (($("#TsZLukacJ6T-sJUGNYho7Ey-val").val()) != "") || (($("#pTOpNf6zkTv-ssMY53iFjYm-val").val()) != "") || (($("#pTOpNf6zkTv-SOw3NHN47G7-val").val()) != "") ||
-            (($("#pTOpNf6zkTv-iEgy3xKqVi5-val").val()) != "") || (($("#pTOpNf6zkTv-r8hBd63qzn4-val").val()) != "") || (($("#pTOpNf6zkTv-sLKRSW7xmwp-val").val()) != "") || (($("#pTOpNf6zkTv-sJUGNYho7Ey-val").val()) != "")){
-            noDisaggregationDisabled();
+        if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val()!="")  || ($('input[id^="pTOpNf6zkTv"]').val()!="") ){
+            noDisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
-
         //Disable all the disaggregation entry field and Enable the No Disaggregation entry field
-        else if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
-            DisaggregationDisabled();
+        if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
+            DisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
         //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
-        else if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") ){
-            noDisaggregationDisabled();
+        if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") ){
+            noDisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
-        else if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
-            DisaggregationDisabled();
+        if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I121Disabled","I121Enabled");
         }
         //Enable all the disaggregation entry field and Disable the No Disaggregation entry field
-        else if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="")){
-            noDisaggregationDisabled();
-        }
-        //enable all the inputs
-        else {
-            noneDisabled();
+        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="")){
+            noDisaggregationDisabled("I121Disabled","I121Enabled");
         }
     }
     $("#selectedPeriodId").change(function () {
@@ -481,14 +477,14 @@ input {
                                    title="SDG_1:People living below US$1.90 per day No Dissaggregation"
                                    value="[ SDG_1:People living below US$1.90 per day No Dissaggregation ]"/></td>
                     </tr>
-                    <tr class="I111b">
+                    <tr class="I111b I111bEnabled">
                         <td>Population active vivant en dessous du seuil international de pauvret&eacute;</td>
                         <td><input id="wD1WS24kqQR-bJmK5mlfvQk-val" name="entryfield"
                                    title="SDG_1:Employed persons living in households below poverty line No Dissaggregation"
                                    value="[ SDG_1:Employed persons living in households below poverty line No Dissaggregation ]"/>
                         </td>
                     </tr>
-                    <tr class="I121">
+                    <tr class="I121 I121Enabled">
                         <td>Population vivant en dessous du seuil de pauvret&eacute; national</td>
                         <td><input id="HNUVvzz5Mcb-bJmK5mlfvQk-val" name="entryfield"
                                    title="SDG_1:People living below the national  poverty line No Dissaggregation"
@@ -557,7 +553,7 @@ input {
                         <td><input id="pTOpNf6zkTv-sJUGNYho7Ey-val" name="entryfield"
                                    title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]"/></td>
                     </tr>
-                    <tr class="I111b">
+                    <tr class="I111b I111bDisabled">
                         <td>Personnes actives vivant en dessous du seuil de pauvret&eacute; dans les m&eacute;nages</td>
                         <td><input id="wD1WS24kqQR-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Employed persons living in households below poverty line Rural"
@@ -576,7 +572,7 @@ input {
                                    value="[ SDG_1:Employed persons living in households below poverty line Male ]"/>
                         </td>
                     </tr>
-                    <tr class="I111b">
+                    <tr class="I111b I111bDisabled">
                         <td>Nombre total de personnes actives</td>
                         <td><input id="mEtKA2HMRkT-iEgy3xKqVi5-val" name="entryfield" title="SDG_1:Total number of employed persons
  Rural" value="[ SDG_1:Total number of employed persons
@@ -591,7 +587,7 @@ input {
  Male" value="[ SDG_1:Total number of employed persons
  Male ]"/></td>
                     </tr>
-                    <tr class="I121">
+                    <tr class="I121 I121Disabled">
                         <td>Total de personnes vivant en dessous du seuil national de pauvret&eacute;</td>
                         <td><input id="HNUVvzz5Mcb-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:People living below the national  poverty line Rural"
@@ -606,7 +602,7 @@ input {
                                    title="SDG_1:People living below the national  poverty line Male"
                                    value="[ SDG_1:People living below the national  poverty line Male ]"/></td>
                     </tr>
-                    <tr class="I121">
+                    <tr class="I121 I121Disabled">
                         <td>Population totale, urbaine ou rurale</td>
                         <td><input id="NCsJ0u0J5kO-iEgy3xKqVi5-val" name="entryfield"
                                    title="SDG_1:Total, urban or rural population Rural"
