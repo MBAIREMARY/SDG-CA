@@ -33,33 +33,29 @@
 
     // disableOption function start
     function disableOption() {
-        // noneDisabled();
+        noneDisabled();
         if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
            DisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
-        else if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val()!="")  || ($('input[id^="pTOpNf6zkTv"]').val()!="") ){
+        if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val()!="")  || ($('input[id^="pTOpNf6zkTv"]').val()!="") ){
             noDisaggregationDisabled("I111aDisabled","I111aEnabled");
         }
-        else if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
+        if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
             DisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
-        else if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="mEtKA2HMRkT"]').val()!="") ){
+        if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="mEtKA2HMRkT"]').val()!="") ){
             noDisaggregationDisabled("I111bDisabled","I111bEnabled");
         }
-        else if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
+        if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
             DisaggregationDisabled("I121Disabled","I121Enabled");
         }
-        else if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="NCsJ0u0J5kO"]').val()!="")){
+        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="NCsJ0u0J5kO"]').val()!="")){
             noDisaggregationDisabled("I121Disabled","I121Enabled");
-        }
-        else{
-            noneDisabled();
         }
 
         // SDG 2 Start
         if ((($("#pBeH3AFPieZ-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I211Disabled","I211Enabled");
-            console.log("Hey1");
         }
         if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I221Disabled","I221Enabled");
