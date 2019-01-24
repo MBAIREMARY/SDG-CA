@@ -217,8 +217,32 @@
         if (($("#GYeuH3xRLlD-HllvX50cXC0-val").val()!="") || ($("#G7cOxA0vVFP-HllvX50cXC0-val").val()!="")){
             noDisaggregationDisabled("I3c1dDisabled","I3c1dEnabled");
         }
-
         // SDG 3 End
+
+
+        // SDG 4 Start
+        if ((($("#ES8fQnz9u4A-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I422Disabled","I422Enabled");
+        }
+        if (($('input[id^="q8mm20cJoYs"]').val()!="") || ($('input[id^="SBmI91hjx3T"]').val()!="")) {
+            noDisaggregationDisabled("I422Disabled","I422Enabled");
+        }
+        if ((($("#HcMZhdKHITQ-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I451aDisabled","I451aEnabled");
+        }
+        if (($("#MPwkNd0OtI2-sLKRSW7xmwp-val").val()!="") || ($("#MPwkNd0OtI2-sJUGNYho7Ey-val").val()!="")){
+            noDisaggregationDisabled("I451aDisabled","I451aEnabled");
+        }
+        if ((($("#xwCjzKpZEMe-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I451bDisabled","I451bEnabled");
+        }
+        if (($("#AhMpu40ZhnW-sLKRSW7xmwp-val").val()!="") || ($("#AhMpu40ZhnW-sJUGNYho7Ey-val").val()!="")){
+            noDisaggregationDisabled("I451bDisabled","I451bEnabled");
+        }
+        if ((($("#JdwU3qMoYxO-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I4b1Disabled","I4b1Enabled");
+        }
+        // SDG 4 End
     }
     // disableOption function start
 
@@ -1463,7 +1487,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I422">
+                    <tr class="I422 I422Enabled">
                         <td>Les activit&eacute; d&#39;apprentissage organis&eacute; un an avant l&#39;&acirc;ge officiel
                             d&#39;inscription dans le primaire (%)
                         </td>
@@ -1472,19 +1496,19 @@ input {
                                    value="[ SDG_4:Organized learning one year before official primary entry age (%)	 ]"/>
                         </td>
                     </tr>
-                    <tr class="I451a">
+                    <tr class="I451a I451aEnabled">
                         <td>Indice de la Parit&eacute; de Genre - Inscription dans l&#39;Education Primaire</td>
                         <td><input id="HcMZhdKHITQ-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_4:Gender Parity Index - Primary Education Enrollment	"
                                    value="[ SDG_4:Gender Parity Index - Primary Education Enrollment	 ]"/></td>
                     </tr>
-                    <tr class="I451b">
+                    <tr class="I451b I451bEnabled">
                         <td>Indice de la Parit&eacute; Genre - Inscription dans l&#39;Education Secondaire</td>
                         <td><input id="xwCjzKpZEMe-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_4:Gender Parity Index - Secondary Education Enrollment	"
                                    value="[ SDG_4:Gender Parity Index - Secondary Education Enrollment	 ]"/></td>
                     </tr>
-                    <tr class="I4b1">
+                    <tr class="I4b1 I4b1Enabled">
                         <td>APD total pour les bourses d&#39;&eacute;tude (en Dollards des Etats Unis - USD)</td>
                         <td><input id="JdwU3qMoYxO-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_4:Total official development assistance,ODA(scholarships)"
@@ -1508,7 +1532,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I422">
+                    <tr class="I422 I422Disabled">
                         <td>Nombre d&#39;enfants qui ont particip&eacute; dans un ou plusieurs programmes organis&eacute;s
                             d&#39;apprentissage une ann&eacute;e avant l&#39;&acirc;ge officiel d&#39;inscription dans
                             le primaire.
@@ -1522,7 +1546,7 @@ input {
                                    value="[ SDG_4:Number of children who participated in organized learning programs 1yr before entry age Male ]"/>
                         </td>
                     </tr>
-                    <tr class="I422">
+                    <tr class="I422 I422Disabled">
                         <td>Population totale dans la m&ecirc;me tranche d&#39;&acirc;ge</td>
                         <td><input id="SBmI91hjx3T-sLKRSW7xmwp-val" name="entryfield"
                                    title="SDG_4:Total population of children below entry age in primary education Female"
@@ -1533,7 +1557,7 @@ input {
                                    value="[ SDG_4:Total population of children below entry age in primary education Male ]"/>
                         </td>
                     </tr>
-                    <tr class="I451a">
+                    <tr class="I451a I451aDisabled">
                         <td>Taux brut de scolarisation dans l&#39;enseignement primaire</td>
                         <td><input id="MPwkNd0OtI2-sLKRSW7xmwp-val" name="entryfield"
                                    title="SDG_4:Gross enrollment ratio in primary education Female"
@@ -1542,7 +1566,7 @@ input {
                                    title="SDG_4:Gross enrollment ratio in primary education Male"
                                    value="[ SDG_4:Gross enrollment ratio in primary education Male ]"/></td>
                     </tr>
-                    <tr class="I451b">
+                    <tr class="I451b I451bDisabled">
                         <td>Taux brut d&#39;inscription dans l&#39;&eacute;ducation secondaire.</td>
                         <td><input id="AhMpu40ZhnW-sLKRSW7xmwp-val" name="entryfield"
                                    title="SDG_4:Gross enrollment ratio in secondary education Female"
