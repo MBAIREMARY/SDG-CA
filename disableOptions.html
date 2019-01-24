@@ -451,6 +451,16 @@
             noDisaggregationDisabled("I11b1Disabled", "I11b1Enabled");
         }
         // SDG 11 End
+
+
+        // SDG 14 Start
+        if ((($("#nhBNZvraNtR-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I1441Disabled", "I1441Enabled");
+        }
+        if ((($("#OI8W4V2UeCw-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I1451Disabled", "I1451Enabled");
+        }
+        // SDG 14 End
     }
 
     // disableOption function start
@@ -2815,13 +2825,13 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I1441">
+                    <tr class="I1441 I1441Enabled">
                         <td>Stocks de poisson durables</td>
                         <td><input id="nhBNZvraNtR-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_14:Sustainable fish stock" value="[ SDG_14:Sustainable fish stock ]"/>
                         </td>
                     </tr>
-                    <tr class="I1451">
+                    <tr class="I1451 I1451Enabled">
                         <td>Sites marins, zone prot&eacute;g&eacute;e moyenne (%)</td>
                         <td><input id="OI8W4V2UeCw-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_14:Marine sites, mean protected area (%)"
@@ -2851,8 +2861,9 @@ input {
             </div>
         </div>
     </div>
-    <!-- Goal 14 End--><!-- Goal 15 Start -->
+    <!-- Goal 14 End-->
 
+    <!-- Goal 15 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-15">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#56C02B;text-align: center;">
             <strong>Objectif 15. Pr&eacute;server et restaurer les &eacute;cosyst&egrave;mes terrestres, en veillant
