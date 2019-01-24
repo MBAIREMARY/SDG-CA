@@ -265,6 +265,28 @@
             noDisaggregationDisabled("I5b1Disabled","I5b1Enabled");
         }
         // SDG 5 End
+
+
+        // SDG 6 Start
+        if ((($("#jCcnjrZJy12-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I642Disabled","I642Enabled");
+        }
+        if (($('#XgtR08R2tWT-HllvX50cXC0-val').val()!="") || ($('#N6fWQSZhzXS-HllvX50cXC0-val').val()!="")) {
+            noDisaggregationDisabled("I642Disabled","I642Enabled");
+        }
+        if ((($("#ukncn1Hlzdf-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I6a1Disabled","I6a1Enabled");
+        }
+        if (($("#cZ1kDXBQ7C2-HllvX50cXC0-val").val()!="") || ($("#goDhooTdnpA-HllvX50cXC0-val").val()!="")){
+            noDisaggregationDisabled("I6a1Disabled","I6a1Enabled");
+        }
+        if ((($("#UkPFxKSr0wb-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I6b1Disabled","I6b1Enabled");
+        }
+        if (($('#nMmhSIi5hLE-HllvX50cXC0-val').val()!="") || ($('#aXgQjzyBOHY-HllvX50cXC0-val').val()!="")){
+            noDisaggregationDisabled("I6b1Disabled","I6b1Enabled");
+        }
+        // SDG 6 End
     }
     // disableOption function start
 
@@ -1757,13 +1779,13 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I642">
+                    <tr class="I642 I642Enabled">
                         <td>Niveau de stress hydrique</td>
                         <td><input id="jCcnjrZJy12-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_6:Level of water stress	" value="[ SDG_6:Level of water stress	 ]"/>
                         </td>
                     </tr>
-                    <tr class="I6a1">
+                    <tr class="I6a1 I6a1Enabled">
                         <td>Proportion de l&#39;APD destin&eacute;e &agrave; l&#39;eau et &agrave; l&#39;assainissement
                             comprise dans le plan des d&eacute;penses
                         </td>
@@ -1772,7 +1794,7 @@ input {
                                    value="[ SDG_6:The proportion of water and sanitation ODA on spending plan	 ]"/>
                         </td>
                     </tr>
-                    <tr class="I6b1">
+                    <tr class="I6b1 I6b1Enabled">
                         <td>Proportion d&#39;unit&eacute;s administratives locales ayant une participation de la
                             communaut&eacute; locale dans les interventions li&eacute;es &agrave; l&#39;eau et l&#39;assainissement
                         </td>
@@ -1794,19 +1816,19 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I642">
+                    <tr class="I642 I642Disabled">
                         <td>Total de l&#39;eau douce pr&eacute;lev&eacute;e</td>
                         <td><input id="XgtR08R2tWT-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_6:Total freshwater withdrawn"
                                    value="[ SDG_6:Total freshwater withdrawn ]"/></td>
                     </tr>
-                    <tr class="I642">
+                    <tr class="I642 I642Disabled">
                         <td>Total des ressources en eau douce renouvelables</td>
                         <td><input id="N6fWQSZhzXS-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_6:Total renewable freshwater resources"
                                    value="[ SDG_6:Total renewable freshwater resources ]"/></td>
                     </tr>
-                    <tr class="I6a1">
+                    <tr class="I6a1 I6a1Disabled">
                         <td>Le montant de l&#39;APD relative &agrave; l&#39;eau et &agrave; l&#39;assainissement qui
                             fait partie du budget du gouvernement
                         </td>
@@ -1814,13 +1836,13 @@ input {
                                    title="SDG_6:Amount of water and sanitation"
                                    value="[ SDG_6:Amount of water and sanitation ]"/></td>
                     </tr>
-                    <tr class="I6a1">
+                    <tr class="I6a1 I6a1Disabled">
                         <td>Montant total de l&#39;APD relative &agrave; l&#39;eau et &agrave; l&#39;assainissement</td>
                         <td><input id="goDhooTdnpA-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_6:Total amount of water and sanitation"
                                    value="[ SDG_6:Total amount of water and sanitation ]"/></td>
                     </tr>
-                    <tr class="I6b1">
+                    <tr class="I6b1 I6b1Disabled">
                         <td>Le nombre d&#39;unit&eacute;s administratives locales avec des politiques et des proc&eacute;dures
                             d&#39;exploitation pour la participation locale
                         </td>
@@ -1828,7 +1850,7 @@ input {
                                    title="SDG_6:Number of local admin units"
                                    value="[ SDG_6:Number of local admin units ]"/></td>
                     </tr>
-                    <tr class="I6b1">
+                    <tr class="I6b1 I6b1Disabled">
                         <td>Le nombre total d&#39;unit&eacute;s administratives locales dans le pays.</td>
                         <td><input id="aXgQjzyBOHY-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_6:Total number of local admin units in the country"
@@ -1839,8 +1861,9 @@ input {
             </div>
         </div>
     </div>
-    <!-- Goal 6 End--><!-- Goal 7 Start -->
+    <!-- Goal 6 End-->
 
+    <!-- Goal 7 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-7">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FCC30B;text-align: center; ">
             <strong>Objectif 7. Garantir l&rsquo;acc&egrave;s de tous &agrave; des services &eacute;nerg&eacute;tiques
