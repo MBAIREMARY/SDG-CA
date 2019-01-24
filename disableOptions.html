@@ -11,23 +11,26 @@
 
 <script>
     // Disable functions start
-    function DisaggregationDisabled(disabled,enabled){
-        $("tr."+disabled+" input").prop('disabled', true);
-        $("tr."+disabled+" input[disabled]").css("background-color", "#DCDAD1");
-        $("tr."+enabled+" input[disabled]").css("background-color", "white");
+    function DisaggregationDisabled(disabled, enabled) {
+        $("tr." + disabled + " input").prop('disabled', true);
+        $("tr." + disabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + enabled + " input[disabled]").css("background-color", "white");
         console.log("Disaggregation entries disabled");
     }
-    function noDisaggregationDisabled(disabled,enabled){
-        $("tr."+enabled+" input").prop('disabled', true);
-        $("tr."+enabled+" input[disabled]").css("background-color", "#DCDAD1");
-        $("tr."+disabled+" input[disabled]").css("background-color", "white");
+
+    function noDisaggregationDisabled(disabled, enabled) {
+        $("tr." + enabled + " input").prop('disabled', true);
+        $("tr." + enabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + disabled + " input[disabled]").css("background-color", "white");
         console.log("No Disaggregation entry disabled");
     }
+
     function noneDisabled() {
         $(":input").prop('disabled', false);
         $(":input[disabled]").css("background-color", "white");
         console.log("No entries disabled");
     }
+
     // Disable functions start
 
 
@@ -35,426 +38,427 @@
     function disableOption() {
         noneDisabled();
         if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
-           DisaggregationDisabled("I111aDisabled","I111aEnabled");
+            DisaggregationDisabled("I111aDisabled", "I111aEnabled");
         }
-        if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val()!="")  || ($('input[id^="pTOpNf6zkTv"]').val()!="") ){
-            noDisaggregationDisabled("I111aDisabled","I111aEnabled");
+        if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I111aDisabled", "I111aEnabled");
         }
-        if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "") ) {
-            DisaggregationDisabled("I111bDisabled","I111bEnabled");
+        if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I111bDisabled", "I111bEnabled");
         }
-        if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="mEtKA2HMRkT"]').val()!="") ){
-            noDisaggregationDisabled("I111bDisabled","I111bEnabled");
+        if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="mEtKA2HMRkT"]').val() != "")) {
+            noDisaggregationDisabled("I111bDisabled", "I111bEnabled");
         }
         if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
-            DisaggregationDisabled("I121Disabled","I121Enabled");
+            DisaggregationDisabled("I121Disabled", "I121Enabled");
         }
-        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val()!="") || ($('input[id^="NCsJ0u0J5kO"]').val()!="")){
-            noDisaggregationDisabled("I121Disabled","I121Enabled");
+        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="NCsJ0u0J5kO"]').val() != "")) {
+            noDisaggregationDisabled("I121Disabled", "I121Enabled");
         }
 
         // SDG 2 Start
         if ((($("#pBeH3AFPieZ-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I211Disabled","I211Enabled");
+            DisaggregationDisabled("I211Disabled", "I211Enabled");
         }
         if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I221Disabled","I221Enabled");
+            DisaggregationDisabled("I221Disabled", "I221Enabled");
         }
-        if (($("#nsPgvbrDPwQ-HllvX50cXC0-val").val()!="") || ($("#LgOeUwjhGva-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I221Disabled","I221Enabled");
+        if (($("#nsPgvbrDPwQ-HllvX50cXC0-val").val() != "") || ($("#LgOeUwjhGva-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I221Disabled", "I221Enabled");
         }
         if ((($("#SDnpTlaTfuA-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I222aDisabled","I222aEnabled");
+            DisaggregationDisabled("I222aDisabled", "I222aEnabled");
         }
-        if (($("#cBaVY4cTk1A-HllvX50cXC0-val").val()!="") || ($("#JaCkmheNO9p-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I222aDisabled","I222aEnabled");
+        if (($("#cBaVY4cTk1A-HllvX50cXC0-val").val() != "") || ($("#JaCkmheNO9p-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I222aDisabled", "I222aEnabled");
         }
         if ((($("#dGsxottaM20-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I251Disabled","I251Enabled");
+            DisaggregationDisabled("I251Disabled", "I251Enabled");
         }
         if ((($("#CDWr02Kxj2X-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I252a1Disabled","I252a1Enabled");
+            DisaggregationDisabled("I252a1Disabled", "I252a1Enabled");
         }
-        if (($("#jHGHRAQ0RcL-HllvX50cXC0-val").val()!="") || ($("#NXhSDQe6OXB-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I252a1Disabled","I252a1Enabled");
+        if (($("#jHGHRAQ0RcL-HllvX50cXC0-val").val() != "") || ($("#NXhSDQe6OXB-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I252a1Disabled", "I252a1Enabled");
         }
         if ((($("#tqDcS5WQm3T-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I252a2Disabled","I252a2Enabled");
+            DisaggregationDisabled("I252a2Disabled", "I252a2Enabled");
         }
-        if (($("#SdGVvEDBReG-HllvX50cXC0-val").val()!="") || ($("#bWLtB5B73Eh-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I252a2Disabled","I252a2Enabled");
+        if (($("#SdGVvEDBReG-HllvX50cXC0-val").val() != "") || ($("#bWLtB5B73Eh-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I252a2Disabled", "I252a2Enabled");
         }
         if ((($("#JhZxmBFYmuL-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I252a3Disabled","I252a3Enabled");
+            DisaggregationDisabled("I252a3Disabled", "I252a3Enabled");
         }
-        if (($("#Hz6LcIaTWfY-HllvX50cXC0-val").val()!="") || ($("#CZozIhs3oKt-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I252a3Disabled","I252a3Enabled");
+        if (($("#Hz6LcIaTWfY-HllvX50cXC0-val").val() != "") || ($("#CZozIhs3oKt-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I252a3Disabled", "I252a3Enabled");
         }
         if ((($("#pH4ByZuNaRi-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I2a2Disabled","I2a2Enabled");
+            DisaggregationDisabled("I2a2Disabled", "I2a2Enabled");
         }
         if ((($("#KnUVvNnHny2-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I2b1Disabled","I2b1Enabled");
+            DisaggregationDisabled("I2b1Disabled", "I2b1Enabled");
         }
         // SDG 2 End
 
 
         // SDG 3 Start
         if ((($("#qj15XcoUCDI-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I311Disabled","I311Enabled");
+            DisaggregationDisabled("I311Disabled", "I311Enabled");
         }
-        if ((($("#MemsRPHqriD-HllvX50cXC0-val").val()) != "") || ($("#x7dHhPJWJPe-HllvX50cXC0-val").val()!="")) {
-            noDisaggregationDisabled("I311Disabled","I311Enabled");
+        if ((($("#MemsRPHqriD-HllvX50cXC0-val").val()) != "") || ($("#x7dHhPJWJPe-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I311Disabled", "I311Enabled");
         }
         if ((($("#JCrwCxh05iE-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I312Disabled","I312Enabled");
+            DisaggregationDisabled("I312Disabled", "I312Enabled");
         }
-        if ((($("#F2kfyiytNRy-HllvX50cXC0-val").val()) != "") || ($("#vFCUplW58Dq-HllvX50cXC0-val").val()!="")) {
-            noDisaggregationDisabled("I312Disabled","I312Enabled");
+        if ((($("#F2kfyiytNRy-HllvX50cXC0-val").val()) != "") || ($("#vFCUplW58Dq-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I312Disabled", "I312Enabled");
         }
         if ((($("#Ti6DZBxiGsG-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I321Disabled","I321Enabled");
+            DisaggregationDisabled("I321Disabled", "I321Enabled");
         }
-        if (($("#rR9ege9U0X3-HllvX50cXC0-val").val()!="") || ($("#KjU4p8nocJQ-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I321Disabled","I321Enabled");
+        if (($("#rR9ege9U0X3-HllvX50cXC0-val").val() != "") || ($("#KjU4p8nocJQ-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I321Disabled", "I321Enabled");
         }
         if ((($("#iCihpG4jRzH-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I322Disabled","I322Enabled");
+            DisaggregationDisabled("I322Disabled", "I322Enabled");
         }
-        if (($("#r1tLOkgBXcw-HllvX50cXC0-val").val()!="") || ($("#M0V0lnx10d4-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I322Disabled","I322Enabled");
+        if (($("#r1tLOkgBXcw-HllvX50cXC0-val").val() != "") || ($("#M0V0lnx10d4-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I322Disabled", "I322Enabled");
         }
         if ((($("#aGhDRO2S4Lu-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I332Disabled","I332Enabled");
+            DisaggregationDisabled("I332Disabled", "I332Enabled");
         }
-        if (($("#mH9XBhoW1Cf-HllvX50cXC0-val").val()!="") || ($("#JFvlTEuknXq-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I332Disabled","I332Enabled");
+        if (($("#mH9XBhoW1Cf-HllvX50cXC0-val").val() != "") || ($("#JFvlTEuknXq-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I332Disabled", "I332Enabled");
         }
         if ((($("#atbJtXLSbyf-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I333Disabled","I333Enabled");
+            DisaggregationDisabled("I333Disabled", "I333Enabled");
         }
-        if (($("#IcUjJW2C9Im-HllvX50cXC0-val").val()!="") || ($("#dlinqsDHurO-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I333Disabled","I333Enabled");
+        if (($("#IcUjJW2C9Im-HllvX50cXC0-val").val() != "") || ($("#dlinqsDHurO-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I333Disabled", "I333Enabled");
         }
         if ((($("#wjtsNUXEZmA-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I335Disabled","I335Enabled");
+            DisaggregationDisabled("I335Disabled", "I335Enabled");
         }
-        if (($("#wZdc6Gvc3um-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I335Disabled","I335Enabled");
+        if (($("#wZdc6Gvc3um-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I335Disabled", "I335Enabled");
         }
         if ((($("#NS7zBWqKEXq-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I341Disabled","I341Enabled");
+            DisaggregationDisabled("I341Disabled", "I341Enabled");
         }
-        if ((($("#Cl2zeNxNNEM-HllvX50cXC0-val").val()) != "") || ($("#yj4fJbzFrfg-HllvX50cXC0-val").val()!="")) {
-            noDisaggregationDisabled("I341Disabled","I341Enabled");
+        if ((($("#Cl2zeNxNNEM-HllvX50cXC0-val").val()) != "") || ($("#yj4fJbzFrfg-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I341Disabled", "I341Enabled");
         }
         if ((($("#qO7NEsYVVXN-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I342Disabled","I342Enabled");
+            DisaggregationDisabled("I342Disabled", "I342Enabled");
         }
-        if ((($("#HzqYEXs8hoO-HllvX50cXC0-val").val()) != "") || ($("#Vak8DH4WNiD-HllvX50cXC0-val").val()!="")) {
-            noDisaggregationDisabled("I342Disabled","I342Enabled");
+        if ((($("#HzqYEXs8hoO-HllvX50cXC0-val").val()) != "") || ($("#Vak8DH4WNiD-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I342Disabled", "I342Enabled");
         }
         if ((($("#Yk7ej3qZXDv-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I352Disabled","I352Enabled");
+            DisaggregationDisabled("I352Disabled", "I352Enabled");
         }
-        if ((($("#w8oLlRxIzST-HllvX50cXC0-val").val()) != "") || ($("#b1IbuE6i9Tc-HllvX50cXC0-val").val()!="")) {
-            noDisaggregationDisabled("I352Disabled","I352Enabled");
+        if ((($("#w8oLlRxIzST-HllvX50cXC0-val").val()) != "") || ($("#b1IbuE6i9Tc-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I352Disabled", "I352Enabled");
         }
         if ((($("#vmzqxcCgqPd-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I361Disabled","I361Enabled");
+            DisaggregationDisabled("I361Disabled", "I361Enabled");
         }
-        if (($("#SJCuhkbZCqN-HllvX50cXC0-val").val()!="") || ($("#ZOPSuVDHGc7-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I361Disabled","I361Enabled");
+        if (($("#SJCuhkbZCqN-HllvX50cXC0-val").val() != "") || ($("#ZOPSuVDHGc7-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I361Disabled", "I361Enabled");
         }
         if ((($("#mFeVazpypaZ-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I371Disabled","I371Enabled");
+            DisaggregationDisabled("I371Disabled", "I371Enabled");
         }
-        if (($("#TU2VGO7AnYK-HllvX50cXC0-val").val()!="") || ($("#ETzoIk2kLNK-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I371Disabled","I371Enabled");
+        if (($("#TU2VGO7AnYK-HllvX50cXC0-val").val() != "") || ($("#ETzoIk2kLNK-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I371Disabled", "I371Enabled");
         }
         if ((($("#DtwIkKQchib-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I391Disabled","I391Enabled");
+            DisaggregationDisabled("I391Disabled", "I391Enabled");
         }
-        if (($("#fqqZhw9AMvn-HllvX50cXC0-val").val()!="") || ($("#yntGu1ghoRH-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I391Disabled","I391Enabled");
+        if (($("#fqqZhw9AMvn-HllvX50cXC0-val").val() != "") || ($("#yntGu1ghoRH-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I391Disabled", "I391Enabled");
         }
         if ((($("#Rd6xzemL4S5-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I392Disabled","I392Enabled");
+            DisaggregationDisabled("I392Disabled", "I392Enabled");
         }
-        if (($("#VM8F1Q8EVxB-HllvX50cXC0-val").val()!="") || ($("#D4oFW40gvT4-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I392Disabled","I392Enabled");
+        if (($("#VM8F1Q8EVxB-HllvX50cXC0-val").val() != "") || ($("#D4oFW40gvT4-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I392Disabled", "I392Enabled");
         }
         if ((($("#HW9SvVBHjfX-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I393Disabled","I393Enabled");
+            DisaggregationDisabled("I393Disabled", "I393Enabled");
         }
-        if (($("#C22hsuW2rE5-HllvX50cXC0-val").val()!="") || ($("#Sc0fSbRIgAd-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I393Disabled","I393Enabled");
+        if (($("#C22hsuW2rE5-HllvX50cXC0-val").val() != "") || ($("#Sc0fSbRIgAd-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I393Disabled", "I393Enabled");
         }
         if ((($("#OyAEqNG6RMg-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I3a1Disabled","I3a1Enabled");
+            DisaggregationDisabled("I3a1Disabled", "I3a1Enabled");
         }
         if ((($("#o7TozpqU8FT-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I3c1aDisabled","I3c1aEnabled");
+            DisaggregationDisabled("I3c1aDisabled", "I3c1aEnabled");
         }
-        if (($("#RbhomZoQGDs-HllvX50cXC0-val").val()!="") || ($("#MKn1soEZT8q-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I3c1aDisabled","I3c1aEnabled");
+        if (($("#RbhomZoQGDs-HllvX50cXC0-val").val() != "") || ($("#MKn1soEZT8q-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I3c1aDisabled", "I3c1aEnabled");
         }
         if ((($("#UKUOkTXaoz6-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I3c1bDisabled","I3c1bEnabled");
+            DisaggregationDisabled("I3c1bDisabled", "I3c1bEnabled");
         }
-        if (($("#aRe93xxQav7-HllvX50cXC0-val").val()!="") || ($("#tugJ7nwfL6c-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I3c1bDisabled","I3c1bEnabled");
+        if (($("#aRe93xxQav7-HllvX50cXC0-val").val() != "") || ($("#tugJ7nwfL6c-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I3c1bDisabled", "I3c1bEnabled");
         }
         if ((($("#K35BjlZcXYV-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I3c1cDisabled","I3c1cEnabled");
+            DisaggregationDisabled("I3c1cDisabled", "I3c1cEnabled");
         }
-        if (($("#s4SKEVPtp2m-HllvX50cXC0-val").val()!="") || ($("#mtasarJT0Lu-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I3c1cDisabled","I3c1cEnabled");
+        if (($("#s4SKEVPtp2m-HllvX50cXC0-val").val() != "") || ($("#mtasarJT0Lu-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I3c1cDisabled", "I3c1cEnabled");
         }
         if ((($("#W0lTMtPnlip-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I3c1dDisabled","I3c1dEnabled");
+            DisaggregationDisabled("I3c1dDisabled", "I3c1dEnabled");
         }
-        if (($("#GYeuH3xRLlD-HllvX50cXC0-val").val()!="") || ($("#G7cOxA0vVFP-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I3c1dDisabled","I3c1dEnabled");
+        if (($("#GYeuH3xRLlD-HllvX50cXC0-val").val() != "") || ($("#G7cOxA0vVFP-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I3c1dDisabled", "I3c1dEnabled");
         }
         // SDG 3 End
 
 
         // SDG 4 Start
         if ((($("#ES8fQnz9u4A-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I422Disabled","I422Enabled");
+            DisaggregationDisabled("I422Disabled", "I422Enabled");
         }
-        if (($('input[id^="q8mm20cJoYs"]').val()!="") || ($('input[id^="SBmI91hjx3T"]').val()!="")) {
-            noDisaggregationDisabled("I422Disabled","I422Enabled");
+        if (($('input[id^="q8mm20cJoYs"]').val() != "") || ($('input[id^="SBmI91hjx3T"]').val() != "")) {
+            noDisaggregationDisabled("I422Disabled", "I422Enabled");
         }
         if ((($("#HcMZhdKHITQ-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I451aDisabled","I451aEnabled");
+            DisaggregationDisabled("I451aDisabled", "I451aEnabled");
         }
-        if (($("#MPwkNd0OtI2-sLKRSW7xmwp-val").val()!="") || ($("#MPwkNd0OtI2-sJUGNYho7Ey-val").val()!="")){
-            noDisaggregationDisabled("I451aDisabled","I451aEnabled");
+        if (($("#MPwkNd0OtI2-sLKRSW7xmwp-val").val() != "") || ($("#MPwkNd0OtI2-sJUGNYho7Ey-val").val() != "")) {
+            noDisaggregationDisabled("I451aDisabled", "I451aEnabled");
         }
         if ((($("#xwCjzKpZEMe-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I451bDisabled","I451bEnabled");
+            DisaggregationDisabled("I451bDisabled", "I451bEnabled");
         }
-        if (($("#AhMpu40ZhnW-sLKRSW7xmwp-val").val()!="") || ($("#AhMpu40ZhnW-sJUGNYho7Ey-val").val()!="")){
-            noDisaggregationDisabled("I451bDisabled","I451bEnabled");
+        if (($("#AhMpu40ZhnW-sLKRSW7xmwp-val").val() != "") || ($("#AhMpu40ZhnW-sJUGNYho7Ey-val").val() != "")) {
+            noDisaggregationDisabled("I451bDisabled", "I451bEnabled");
         }
         if ((($("#JdwU3qMoYxO-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I4b1Disabled","I4b1Enabled");
+            DisaggregationDisabled("I4b1Disabled", "I4b1Enabled");
         }
         // SDG 4 End
 
 
         // SDG 5 Start
         if ((($("#rW9QXpbg4Xd-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I551aDisabled","I551aEnabled");
+            DisaggregationDisabled("I551aDisabled", "I551aEnabled");
         }
-        if (($('#q534i5qtxG2-HllvX50cXC0-val').val()!="") || ($('#UTKJklNQim3-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I551aDisabled","I551aEnabled");
+        if (($('#q534i5qtxG2-HllvX50cXC0-val').val() != "") || ($('#UTKJklNQim3-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I551aDisabled", "I551aEnabled");
         }
         if ((($("#ofjriq3zC1Y-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I552Disabled","I552Enabled");
+            DisaggregationDisabled("I552Disabled", "I552Enabled");
         }
-        if (($("#ygD0dPHpavK-HllvX50cXC0-val").val()!="") || ($("#Ebrx1HB3nkN-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I552Disabled","I552Enabled");
+        if (($("#ygD0dPHpavK-HllvX50cXC0-val").val() != "") || ($("#Ebrx1HB3nkN-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I552Disabled", "I552Enabled");
         }
         if ((($("#kqnpnHrcTcg-bJmK5mlfvQk-val").val()) != "")) {
-            DisaggregationDisabled("I5b1Disabled","I5b1Enabled");
+            DisaggregationDisabled("I5b1Disabled", "I5b1Enabled");
         }
-        if (($('input[id^="kqnpnHrcTcg"]').val()!="") || ($('input[id^="EpOHcAxLP0E"]').val()!="")){
-            noDisaggregationDisabled("I5b1Disabled","I5b1Enabled");
+        if (($('input[id^="kqnpnHrcTcg"]').val() != "") || ($('input[id^="EpOHcAxLP0E"]').val() != "")) {
+            noDisaggregationDisabled("I5b1Disabled", "I5b1Enabled");
         }
         // SDG 5 End
 
 
         // SDG 6 Start
         if ((($("#jCcnjrZJy12-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I642Disabled","I642Enabled");
+            DisaggregationDisabled("I642Disabled", "I642Enabled");
         }
-        if (($('#XgtR08R2tWT-HllvX50cXC0-val').val()!="") || ($('#N6fWQSZhzXS-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I642Disabled","I642Enabled");
+        if (($('#XgtR08R2tWT-HllvX50cXC0-val').val() != "") || ($('#N6fWQSZhzXS-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I642Disabled", "I642Enabled");
         }
         if ((($("#ukncn1Hlzdf-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I6a1Disabled","I6a1Enabled");
+            DisaggregationDisabled("I6a1Disabled", "I6a1Enabled");
         }
-        if (($("#cZ1kDXBQ7C2-HllvX50cXC0-val").val()!="") || ($("#goDhooTdnpA-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I6a1Disabled","I6a1Enabled");
+        if (($("#cZ1kDXBQ7C2-HllvX50cXC0-val").val() != "") || ($("#goDhooTdnpA-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I6a1Disabled", "I6a1Enabled");
         }
         if ((($("#UkPFxKSr0wb-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I6b1Disabled","I6b1Enabled");
+            DisaggregationDisabled("I6b1Disabled", "I6b1Enabled");
         }
-        if (($('#nMmhSIi5hLE-HllvX50cXC0-val').val()!="") || ($('#aXgQjzyBOHY-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I6b1Disabled","I6b1Enabled");
+        if (($('#nMmhSIi5hLE-HllvX50cXC0-val').val() != "") || ($('#aXgQjzyBOHY-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I6b1Disabled", "I6b1Enabled");
         }
         // SDG 6 End
 
 
         // SDG 7 Start
         if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I711Disabled","I711Enabled");
+            DisaggregationDisabled("I711Disabled", "I711Enabled");
         }
-        if (($('input[id^="kCRn8WKklIR"]').val()!="") || ($('input[id^="RL5Cd2V59j9"]').val()!="")) {
-            noDisaggregationDisabled("I711Disabled","I711Enabled");
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I711Disabled", "I711Enabled");
         }
         if ((($("#QUGGAviJi4F-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I712Disabled","I712Enabled");
+            DisaggregationDisabled("I712Disabled", "I712Enabled");
         }
-        if (($("#EUVnujhYWcR-HllvX50cXC0-val").val()!="") || ($("#oqhLWFqRC14-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I712Disabled","I712Enabled");
+        if (($("#EUVnujhYWcR-HllvX50cXC0-val").val() != "") || ($("#oqhLWFqRC14-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I712Disabled", "I712Enabled");
         }
         if ((($("#zT3hIUDKfgl-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I721Disabled","I721Enabled");
+            DisaggregationDisabled("I721Disabled", "I721Enabled");
         }
-        if (($('#OEpkeiWuqX0-HllvX50cXC0-val').val()!="") || ($('#WQGDscmrGgi-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I721Disabled","I721Enabled");
+        if (($('#OEpkeiWuqX0-HllvX50cXC0-val').val() != "") || ($('#WQGDscmrGgi-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I721Disabled", "I721Enabled");
         }
         if ((($("#iIHXuIzCh9H-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I731Disabled","I731Enabled");
+            DisaggregationDisabled("I731Disabled", "I731Enabled");
         }
-        if (($('#C0ScMXqXY02-HllvX50cXC0-val').val()!="") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I731Disabled","I731Enabled");
+        if (($('#C0ScMXqXY02-HllvX50cXC0-val').val() != "") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I731Disabled", "I731Enabled");
         }
         // SDG 7 End
 
 
         // SDG 8 Start
         if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I811Disabled","I811Enabled");
+            DisaggregationDisabled("I811Disabled", "I811Enabled");
         }
-        if (($('#MpwayQltPTy-HllvX50cXC0-val').val()!="") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I811Disabled","I811Enabled");
+        if (($('#MpwayQltPTy-HllvX50cXC0-val').val() != "") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I811Disabled", "I811Enabled");
         }
         if ((($("#NlcSFvZFfjA-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I821Disabled","I821Enabled");
+            DisaggregationDisabled("I821Disabled", "I821Enabled");
         }
-        if (($("#xYjKHmNPMKu-HllvX50cXC0-val").val()!="") || ($("#dX49L52V9WM-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I821Disabled","I821Enabled");
+        if (($("#xYjKHmNPMKu-HllvX50cXC0-val").val() != "") || ($("#dX49L52V9WM-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I821Disabled", "I821Enabled");
         }
         if ((($("#nQDrXyuARRa-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I842Disabled","I842Enabled");
+            DisaggregationDisabled("I842Disabled", "I842Enabled");
         }
         if ((($("#ePlRlJHXijB-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I852Disabled","I852Enabled");
+            DisaggregationDisabled("I852Disabled", "I852Enabled");
         }
-        if (($('input[id^="bKFp3z7BOK7"]').val()!="") || ($('input[id^="Gtrz0rkNIH9"]').val()!="")){
-            noDisaggregationDisabled("I852Disabled","I852Enabled");
+        if (($('input[id^="bKFp3z7BOK7"]').val() != "") || ($('input[id^="Gtrz0rkNIH9"]').val() != "")) {
+            noDisaggregationDisabled("I852Disabled", "I852Enabled");
         }
         if ((($("#qVkMsM6gB9n-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I861Disabled","I861Enabled");
+            DisaggregationDisabled("I861Disabled", "I861Enabled");
         }
-        if (($("#dAbyaqzPFQu-HllvX50cXC0-val").val()!="") || ($("#isVafLZvrzO-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I861Disabled","I861Enabled");
+        if (($("#dAbyaqzPFQu-HllvX50cXC0-val").val() != "") || ($("#isVafLZvrzO-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I861Disabled", "I861Enabled");
         }
         if ((($("#E8M2iiHaKLh-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I8101Disabled","I8101Enabled");
+            DisaggregationDisabled("I8101Disabled", "I8101Enabled");
         }
-        if (($("#tl6Qlw1d0FB-HllvX50cXC0-val").val()!="") || ($("#ReqlS094zxC-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I8101Disabled","I8101Enabled");
+        if (($("#tl6Qlw1d0FB-HllvX50cXC0-val").val() != "") || ($("#ReqlS094zxC-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I8101Disabled", "I8101Enabled");
         }
         if ((($("#ACLqta1bLlC-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I8102Disabled","I8102Enabled");
+            DisaggregationDisabled("I8102Disabled", "I8102Enabled");
         }
         if ((($("#KltV9viaHHG-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I8a1Disabled","I8a1Enabled");
+            DisaggregationDisabled("I8a1Disabled", "I8a1Enabled");
         }
         // SDG 8 End
 
 
         // SDG 9 Start
         if ((($("#rrjMth4f11Z-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I912Disabled","I912Enabled");
+            DisaggregationDisabled("I912Disabled", "I912Enabled");
         }
         if ((($("#D1xcT46JCVw-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I921Disabled","I921Enabled");
+            DisaggregationDisabled("I921Disabled", "I921Enabled");
         }
-        if (($("#o8atQWjlEQ5-HllvX50cXC0-val").val()!="") || ($("#RiN9u844TAI-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I921Disabled","I921Enabled");
+        if (($("#o8atQWjlEQ5-HllvX50cXC0-val").val() != "") || ($("#RiN9u844TAI-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I921Disabled", "I921Enabled");
         }
         if ((($("#sUHIdkbigKw-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I922Disabled","I922Enabled");
+            DisaggregationDisabled("I922Disabled", "I922Enabled");
         }
-        if (($('#YKfRIUfnqaw-HllvX50cXC0-val').val()!="") || ($('#TQGrrzcVi9a-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I922Disabled","I922Enabled");
+        if (($('#YKfRIUfnqaw-HllvX50cXC0-val').val() != "") || ($('#TQGrrzcVi9a-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I922Disabled", "I922Enabled");
         }
         if ((($("#tvhODPVwvvV-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I941Disabled","I941Enabled");
+            DisaggregationDisabled("I941Disabled", "I941Enabled");
         }
-        if (($('#Djjg8FIvCKp-HllvX50cXC0-val').val()!="") || ($('#grluc6vgaSM-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I941Disabled","I941Enabled");
+        if (($('#Djjg8FIvCKp-HllvX50cXC0-val').val() != "") || ($('#grluc6vgaSM-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I941Disabled", "I941Enabled");
         }
         if ((($("#WCjZOCH6jPx-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I951Disabled","I951Enabled");
+            DisaggregationDisabled("I951Disabled", "I951Enabled");
         }
-        if (($('#R64mkjYs7B7-HllvX50cXC0-val').val()!="") || ($('#NehgnuC4gS7-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I951Disabled","I951Enabled");
+        if (($('#R64mkjYs7B7-HllvX50cXC0-val').val() != "") || ($('#NehgnuC4gS7-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I951Disabled", "I951Enabled");
         }
         if ((($("#y39BBEAsVXl-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I952Disabled","I952Enabled");
+            DisaggregationDisabled("I952Disabled", "I952Enabled");
         }
-        if (($("#CXnbOm2RZE1-HllvX50cXC0-val").val()!="") || ($("#wEolHaaEC5D-HllvX50cXC0-val").val()!="")){
-            noDisaggregationDisabled("I952Disabled","I952Enabled");
+        if (($("#CXnbOm2RZE1-HllvX50cXC0-val").val() != "") || ($("#wEolHaaEC5D-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I952Disabled", "I952Enabled");
         }
         if ((($("#HrnVSfYnHma-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I9a1Disabled","I9a1Enabled");
+            DisaggregationDisabled("I9a1Disabled", "I9a1Enabled");
         }
         if ((($("#NqFPQJkDE9I-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I9b1Disabled","I9b1Enabled");
+            DisaggregationDisabled("I9b1Disabled", "I9b1Enabled");
         }
-        if (($('#fcy9TKaPBS0-HllvX50cXC0-val').val()!="") || ($('#F8JgS20k6r7-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I9b1Disabled","I9b1Enabled");
+        if (($('#fcy9TKaPBS0-HllvX50cXC0-val').val() != "") || ($('#F8JgS20k6r7-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I9b1Disabled", "I9b1Enabled");
         }
         if ((($("#oXdk88u7wtf-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I9c1Disabled","I9c1Enabled");
+            DisaggregationDisabled("I9c1Disabled", "I9c1Enabled");
         }
-        if (($('#U34Rhq28dIv-HllvX50cXC0-val').val()!="") || ($('#lVztyk5abZZ-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I9c1Disabled","I9c1Enabled");
+        if (($('#U34Rhq28dIv-HllvX50cXC0-val').val() != "") || ($('#lVztyk5abZZ-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I9c1Disabled", "I9c1Enabled");
         }
         // SDG 9 End
 
 
         // SDG 10 Start
         if ((($("#UYfKX2Zko4k-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I1061Disabled","I1061Enabled");
+            DisaggregationDisabled("I1061Disabled", "I1061Enabled");
         }
-        if (($('#wgG0LeHPhme-HllvX50cXC0-val').val()!="") || ($('#VGcl0oGA3gQ-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I1061Disabled","I1061Enabled");
+        if (($('#wgG0LeHPhme-HllvX50cXC0-val').val() != "") || ($('#VGcl0oGA3gQ-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I1061Disabled", "I1061Enabled");
         }
         if ((($("#LGR9NIOhJZN-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I10a1Disabled","I10a1Enabled");
+            DisaggregationDisabled("I10a1Disabled", "I10a1Enabled");
         }
         if ((($("#doGQYyiL5Xc-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I10b1Disabled","I10b1Enabled");
+            DisaggregationDisabled("I10b1Disabled", "I10b1Enabled");
         }
         // SDG 10 End
 
 
         // SDG 11 Start
         if ((($("#QF7w41u2GJH-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I1111Disabled","I1111Enabled");
+            DisaggregationDisabled("I1111Disabled", "I1111Enabled");
         }
-        if (($('#ixPGl1NVAjc-HllvX50cXC0-val').val()!="") || ($('#M7BMX4KeItQ-HllvX50cXC0-val').val()!="")) {
-            noDisaggregationDisabled("I1111Disabled","I1111Enabled");
+        if (($('#ixPGl1NVAjc-HllvX50cXC0-val').val() != "") || ($('#M7BMX4KeItQ-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I1111Disabled", "I1111Enabled");
         }
         if ((($("#LmtfIaGo0ze-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I1152Disabled","I1152Enabled");
+            DisaggregationDisabled("I1152Disabled", "I1152Enabled");
         }
         if ((($("#lAJhTUbm4uq-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I1162Disabled","I1162Enabled");
+            DisaggregationDisabled("I1162Disabled", "I1162Enabled");
         }
         if ((($("#DYoyQl1eYOo-HllvX50cXC0-val").val()) != "")) {
-            DisaggregationDisabled("I11b1Disabled","I11b1Enabled");
+            DisaggregationDisabled("I11b1Disabled", "I11b1Enabled");
         }
-        if (($('#fT9njJ08ONo-HllvX50cXC0-val').val()!="") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val()!="")){
-            noDisaggregationDisabled("I11b1Disabled","I11b1Enabled");
+        if (($('#fT9njJ08ONo-HllvX50cXC0-val').val() != "") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I11b1Disabled", "I11b1Enabled");
         }
         // SDG 11 End
     }
+
     // disableOption function start
 
 
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
-            setTimeout(function(){
+            setTimeout(function () {
                 disableOption();
                 console.log("Change Period Called");
             }, 1000);
@@ -2766,48 +2770,10 @@ input {
             <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
             <option value="#">No Indicator</option>
         </select></div>
-        <!-- Tab links --><!-- <div id="disaggregations12" style="margin-top: 10px;">
-            <ul>
-                <li><a class="disaggTab" href="#NoDisagg12">Agr&eacute;gation</a></li>
-                <li><a class="disaggTab" href="#Disagg12">D&eacute;sagr&eacute;gation</a></li>
-            </ul>
+    </div>
+    <!-- Goal 12 End-->
 
-            <div class="tabcontent2" id="NoDisagg12">
-                <table>
-                    <thead>
-                        <tr class="tableHeader" style="background-color:#BF8B2E !important;">
-                            <th>Indicateur</th>
-                            <th>Valeur</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="xyz">
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="tabcontent2" id="Disagg12">
-                <table>
-                    <thead>
-                        <tr class="tableHeader" style="background-color:#BF8B2E !important;">
-                            <th>&nbsp;</th>
-                            <th>Valeur</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="xyz">
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div> --></div>
-    <!-- Goal 12 End--><!-- Goal 13 Start -->
-
+    <!-- Goal 13 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-13">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#3F7E44;text-align: center; ">
             <strong>Objectif 13. Prendre d&rsquo;urgence des mesures pour lutter contre les changements climatiques et
@@ -2817,48 +2783,10 @@ input {
             <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
             <option value="#">No Indicator</option>
         </select></div>
-        <!-- Tab links --><!-- <div id="disaggregations13" style="margin-top: 10px;">
-            <ul>
-                <li><a class="disaggTab" href="#NoDisagg13">Agr&eacute;gation</a></li>
-                <li><a class="disaggTab" href="#Disagg13">D&eacute;sagr&eacute;gation</a></li>
-            </ul>
+    </div>
+    <!-- Goal 13 End-->
 
-            <div class="tabcontent2" id="NoDisagg13">
-                <table>
-                    <thead>
-                        <tr class="tableHeader" style="background-color:#3F7E44 !important;">
-                            <th>Indicateur</th>
-                            <th>Valeur</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="#">
-                            <td>No Indicator</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="tabcontent2" id="Disagg13">
-                <table>
-                    <thead>
-                        <tr class="tableHeader" style="background-color:#3F7E44 !important;">
-                            <th>&nbsp;</th>
-                            <th>Valeur</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="#">
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div> --></div>
-    <!-- Goal 13 End--><!-- Goal 14 Start -->
-
+    <!-- Goal 14 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-14">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#0A97D9;text-align: center; ">
             <strong>Objectif 14. Conserver et exploiter de mani&egrave;re durable les oc&eacute;ans, les mers et les
