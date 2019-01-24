@@ -269,6 +269,15 @@
             noDisaggregationDisabled("I121Disabled", "I121Enabled");
         }
         //Goal 12 End
+
+        //Goal 13 Start
+        if ((($("#u0VoltROklI-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I131Disabled", "I131Enabled");
+        }
+        if (($('input[id^="DDUZoDV8n2F"]').val() != "")) {
+            noDisaggregationDisabled("I131Disabled", "I131Enabled");
+        }
+        //Goal 13 End
     }
 
 
@@ -2182,8 +2191,8 @@ input {
                         15</a></li>
                 </ul>
             </div>
-            <!-- Goal 13 Start -->
 
+            <!-- Goal 13 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-13">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; ">
                     <strong>Objectif 13: Paix, S&eacute;curit&eacute; et Stabilit&eacute; sont
@@ -2213,7 +2222,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I131">
+                            <tr class="I131 I131Enabled">
                                 <td>D&eacute;c&egrave;s li&eacute;s &agrave; un conflit pour une population de 100,000
                                     habitants
                                 </td>
@@ -2238,7 +2247,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I131">
+                            <tr class="I131 I131Disabled">
                                 <td>Nombre de d&eacute;c&egrave;s li&eacute;s aux conflits</td>
                                 <td><input id="DDUZoDV8n2F-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_4:Number of deaths related to conflicts Female"
@@ -2252,8 +2261,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 13 End--><!-- Goal 14 Start -->
+            <!-- Goal 13 End-->
 
+            <!-- Goal 14 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-14">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; ">
                     <strong>Objectif 14: Une Afrique Stable et en Paix</strong></h3>
@@ -2261,57 +2271,10 @@ input {
                 <div><select class="dropdown" id="indicatorLevel14" name="indicators">
                     <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
                     <option value="I1441">No Indicator</option>
-                </select></div>
-                <!-- Tab links --><!-- <div id="disaggregations14" style="margin-top: 10px;">
-                    <ul>
-                        <li><a class="disaggTab" href="#NoDisagg14">Agr&eacute;gation</a></li>
-                        <li><a class="disaggTab" href="#Disagg14">D&eacute;sagr&eacute;gation</a></li>
-                    </ul>
+                </select></div></div>
+            <!-- Goal 14 End-->
 
-                    <div class="tabcontent2" id="NoDisagg14">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
-                                    <th>Indicateur</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="I1441">
-                                    <td>Proportion of fish stocks within biologically sustainable levels</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I1451">
-                                    <td>Coverage of protected areas in relation to marine areas</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="tabcontent2" id="Disagg14">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#4ca6ff !important;">
-                                    <th>&nbsp;</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="I1441">
-                                    <td>Proportion of fish stocks within biologically sustainable levels</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I1451">
-                                    <td>Coverage of protected areas in relation to marine areas</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div> --></div>
-            <!-- Goal 14 End--><!-- Goal 15 Start -->
-
+            <!-- Goal 15 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-15">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center;">
                     <strong>Objectif 15: Une Architecture Africaine pour la Paix et la S&eacute;curit&eacute; enti&egrave;rement
@@ -2320,45 +2283,13 @@ input {
                 <div><select class="dropdown" id="indicatorLevel15" name="indicators">
                     <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
                     <option value="I1511">No Indicator</option>
-                </select></div>
-                <!-- Tab links --><!--<div id="disaggregations15" style="margin-top: 10px;">--><!--<ul>-->
-                <!--<li><a class="disaggTab" href="#NoDisagg15">Agr&eacute;gation</a></li>-->
-                <!--<li><a class="disaggTab" href="#Disagg15">D&eacute;sagr&eacute;gation</a></li>--><!--</ul>-->
-                <!--&lt;!&ndash; Tab content &ndash;&gt;--><!--<div class="tabcontent2" id="NoDisagg15">-->
-                <!--<table>--><!--<thead>--><!--<tr class="tableHeader" style="background-color:#9ACD32 !important;">-->
-                <!--<th>Indicateur</th>--><!--<th>Valeur</th>--><!--</tr>--><!--</thead>--><!--<tbody>-->
-                <!--<tr class="I1511">--><!--<td>Forest area as a proportion of total land area</td>-->
-                <!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1512">-->
-                <!--<td>Proportion of important sites for terrestrial and freshwater biodiversity</td>-->
-                <!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1521">-->
-                <!--<td>Progress towards sustainable forest management</td>--><!--<td>&nbsp;</td>--><!--</tr>-->
-                <!--<tr class="I1541">--><!--<td>Protection of mountain biodiversity sites</td>--><!--<td>&nbsp;</td>-->
-                <!--</tr>--><!--<tr class="I1542">--><!--<td>Mountain Green Cover Index</td>--><!--<td>&nbsp;</td>-->
-                <!--</tr>--><!--<tr class="I1551">--><!--<td>Red List Index</td>--><!--<td>&nbsp;</td>--><!--</tr>-->
-                <!--<tr class="I1561">-->
-                <!--<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>-->
-                <!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I15a1">-->
-                <!--<td>Public expenditure on conservation</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--</tbody>-->
-                <!--</table>--><!--</div>--><!--<div class="tabcontent2" id="Disagg15">--><!--<table>--><!--<thead>-->
-                <!--<tr class="tableHeader" style="background-color:#9ACD32 !important;">--><!--<th>&nbsp;</th>-->
-                <!--<th>Valeur</th>--><!--</tr>--><!--</thead>--><!--<tbody>--><!--<tr class="I1511">-->
-                <!--<td>Forest area (reference year)</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1511">-->
-                <!--<td>Land area (2015)</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1512">-->
-                <!--<td>Total protected area</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1512">-->
-                <!--<td>Total territorial area</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I1521">-->
-                <!--<td>Progress towards sustainable forest management</td>--><!--<td>&nbsp;</td>--><!--</tr>-->
-                <!--<tr class="I1541">--><!--<td>Protection of mountain biodiversity sites</td>--><!--<td>&nbsp;</td>-->
-                <!--</tr>--><!--<tr class="I1542">--><!--<td>Mountain Green Cover Index</td>--><!--<td>&nbsp;</td>-->
-                <!--</tr>--><!--<tr class="I1551">--><!--<td>Red List Index</td>--><!--<td>&nbsp;</td>--><!--</tr>-->
-                <!--<tr class="I1561">-->
-                <!--<td>Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources</td>-->
-                <!--<td>&nbsp;</td>--><!--</tr>--><!--<tr class="I15a1">-->
-                <!--<td>Public expenditure on conservation</td>--><!--<td>&nbsp;</td>--><!--</tr>--><!--</tbody>-->
-                <!--</table>--><!--</div>--><!--</div>--></div>
-            <!-- Goal 15 End --></div>
+                </select></div></div>
+            <!-- Goal 15 End -->
+        </div>
     </div>
-    <!-- Aspiration 4 End --><!-- Aspiration 5 Start -->
+    <!-- Aspiration 4 End -->
 
+<!-- Aspiration 5 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-5">
         <div class="row" id="goals5" style="border: none;margin-left: 10px;">
             <div class="tab col-xm-1 col-sm-2 col-md-1"
