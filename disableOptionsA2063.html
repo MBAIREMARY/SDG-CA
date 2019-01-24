@@ -260,6 +260,15 @@
             DisaggregationDisabled("I113Disabled", "I113Enabled");
         }
         //Goal 11 End
+
+        //Goal 12 Start
+        if ((($("#iOUBfnKDDUd-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+        if (($('input[id^="x3ZQjj5q9hJ"]').val() != "") || ($('input[id^="mmwkAx1qU1B"]').val() != "")) {
+            noDisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+        //Goal 12 End
     }
 
 
@@ -2083,7 +2092,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I121">
+                            <tr class="I121 I121Enabled">
                                 <td>Institutions et Leadership</td>
                                 <td><input id="iOUBfnKDDUd-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_3:Proportion of persons who had at least one contact with a public official paid/asked a bribe to a public official	"
@@ -2110,7 +2119,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I121">
+                            <tr class="I121 I121Disabled">
                                 <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui confirment avoir
                                     re&ccedil;u des demandes de pots-de-vin
                                 </td>
@@ -2131,7 +2140,7 @@ input {
                                            value="[ ASP_3:Number of persons in the sample confirming receipt of request for bribe Urban ]"/>
                                 </td>
                             </tr>
-                            <tr class="I121">
+                            <tr class="I121 I121Disabled">
                                 <td>Taille de l&#39;&eacute;chantillon</td>
                                 <td><input id="mmwkAx1qU1B-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_2:Bribe_Sample Size Female"
@@ -2151,10 +2160,12 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 12 End--></div>
+            <!-- Goal 12 End-->
+        </div>
     </div>
-    <!-- Aspiration 3 End --><!-- Aspiration 4 Start -->
+    <!-- Aspiration 3 End -->
 
+<!-- Aspiration 4 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-4">
         <div class="row" id="goals4" style="border: none;margin-left: 10px;">
             <div class="tab col-xm-1 col-sm-2 col-md-1"
