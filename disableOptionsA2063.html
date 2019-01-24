@@ -243,6 +243,26 @@
         }
         //Goal 10 End
 
+        //Goal 11 Start
+        if ((($("#TDacBLZz715-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if (($('input[id^="TmujztOG0EK"]').val() != "") || ($('input[id^="HsNWdBITNHt"]').val() != "")) {
+            noDisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if ((($("#c2wpYi5Pb4q-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if (($('input[id^="DFEUctZegna"]').val() != "") || ($('input[id^="mXWnPtBQw0A"]').val() != "")) {
+            noDisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if ((($("#uM0hXE3jV3V-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        //Goal 11 End
+    }
+
+
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
             setTimeout(function () {
@@ -1687,7 +1707,7 @@ input {
                 </div> --></div>
             <!-- Goal 9 End -->
 
-        <!-- Goal 10 Start -->
+            <!-- Goal 10 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-10">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; ">
                     <strong>Objectif 10: Une infrastructure de Classe Mondiale sillonne l&#39;Afrique</strong></h3>
@@ -1877,8 +1897,8 @@ input {
                         12</a></li>
                 </ul>
             </div>
-            <!-- Goal 11 Start -->
 
+            <!-- Goal 11 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-11">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#6666ff;text-align: center; ">
                     <strong>Objectif 11: Valeurs, pratiques d&eacute;mocratiques, principes universels des droits de l&#39;homme,
@@ -1914,7 +1934,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I111">
+                            <tr class="I111 I111Enabled">
                                 <td>% de personnes qui croient qu&#39;il existe des m&eacute;canismes effectifs et des
                                     institutions de surveillance de la redevabilit&eacute; de leurs dirigeants
                                 </td>
@@ -1923,7 +1943,7 @@ input {
                                            value="[ ASP_1:% of people who believe that there are effective mechanisms and oversight institutions to hold their leaders accountable	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I112">
+                            <tr class="I112 I112Enabled">
                                 <td>% de la population qui per&ccedil;oit qu&#39;il y a une libert&eacute; de la
                                     presse
                                 </td>
@@ -1932,7 +1952,7 @@ input {
                                            value="[ ASP_3:% of people who perceive that there is freedom of the press.	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I113">
+                            <tr class="I113 I113Enabled">
                                 <td>D&eacute;penses publiques en proportion du budget initial approuv&eacute;</td>
                                 <td><input id="uM0hXE3jV3V-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_16:Country score" value="[ SDG_16:Country score ]"/></td>
@@ -1957,7 +1977,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I111">
+                            <tr class="I111 I111Disabled">
                                 <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui croient que des m&eacute;canismes
                                     et des institutions de surveillance existent
                                 </td>
@@ -1978,7 +1998,7 @@ input {
                                            value="[ ASP_3:Number in the sample who believe that mechanisms and oversight institutions exist Urban ]"/>
                                 </td>
                             </tr>
-                            <tr class="I111">
+                            <tr class="I111 I111Disabled">
                                 <td>Taille de l&#39;&eacute;chantillon</td>
                                 <td><input id="HsNWdBITNHt-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_3:Sample size Female" value="[ ASP_3:Sample size Female ]"/></td>
@@ -1989,7 +2009,7 @@ input {
                                 <td><input id="HsNWdBITNHt-r8hBd63qzn4-val" name="entryfield"
                                            title="ASP_3:Sample size Urban" value="[ ASP_3:Sample size Urban ]"/></td>
                             </tr>
-                            <tr class="I112">
+                            <tr class="I112 I112Disabled">
                                 <td>Nombre de personnes faisant partie de l&#39;&eacute;chantillon qui per&ccedil;oivent
                                     la presse comme &eacute;tant libre
                                 </td>
@@ -2010,7 +2030,7 @@ input {
                                            value="[ ASP_3:No. persons in the sample who perceive the press to be free Urban ]"/>
                                 </td>
                             </tr>
-                            <tr class="I112">
+                            <tr class="I112 I112Disabled">
                                 <td>Taille de l&#39;&eacute;chantillon</td>
                                 <td><input id="mXWnPtBQw0A-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_2:Press_Sample Size Female"
@@ -2033,8 +2053,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 11 End --><!-- Goal 12 Start -->
+            <!-- Goal 11 End -->
 
+            <!-- Goal 12 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-12">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; ">
                     <strong>Objectif 12: Des institutions performantes ainsi qu&#39;un leadership transform&eacute; mis
