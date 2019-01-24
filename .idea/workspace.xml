@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/disableOptionsA2063.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1263,12 +1260,12 @@
       <workItem from="1548135975063" duration="28424000" />
       <workItem from="1548223555565" duration="1347000" />
       <workItem from="1548242069536" duration="12204000" />
-      <workItem from="1548310259511" duration="19387000" />
+      <workItem from="1548310259511" duration="20010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119311000" />
+    <option name="totallyTimeSpent" value="119934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
