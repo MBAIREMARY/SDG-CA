@@ -599,7 +599,7 @@
             setTimeout(disableOption(), 1000);
             // Onchange Levels
             $("#indicatorLevel").change(function () {
-                disableOption();
+                disableOption();//TODO revisit this section and find if needed
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
