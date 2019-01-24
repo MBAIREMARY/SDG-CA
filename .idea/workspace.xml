@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/disableOptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/disableOptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disableOptionsA2063.html" beforeDir="false" afterPath="$PROJECT_DIR$/disableOptionsA2063.html" afterDir="false" />
-    </list>
+    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -504,8 +501,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disableOptionsA2063.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+            <state relative-caret-position="121">
+              <caret line="697" column="33" selection-start-line="697" selection-start-column="33" selection-end-line="697" selection-end-column="33" />
               <folding>
                 <element signature="e#1797#1877#0" />
                 <element signature="e#2016#2098#0" />
@@ -1307,16 +1304,15 @@
       <workItem from="1548135975063" duration="28424000" />
       <workItem from="1548223555565" duration="1347000" />
       <workItem from="1548242069536" duration="12204000" />
-      <workItem from="1548310259511" duration="22403000" />
+      <workItem from="1548310259511" duration="22741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122327000" />
+    <option name="totallyTimeSpent" value="122665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1444383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1991,8 +1987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disableOptionsA2063.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+        <state relative-caret-position="121">
+          <caret line="697" column="33" selection-start-line="697" selection-start-column="33" selection-end-line="697" selection-end-column="33" />
           <folding>
             <element signature="e#1797#1877#0" />
             <element signature="e#2016#2098#0" />

@@ -32,6 +32,9 @@
     // disableOption function start
     function disableOption() {
         noneDisabled();
+
+
+        //Goal 1 Start
         if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
             DisaggregationDisabled("I111Disabled", "I111Enabled");
         }
@@ -56,6 +59,61 @@
         if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
             noDisaggregationDisabled("I114Disabled", "I114Enabled");
         }
+        //Goal 1 End
+
+        //Goal 3 Start
+        if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if (($('#MpwayQltPTy-HllvX50cXC0-val').val() != "") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if ((($("#ePlRlJHXijB-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if (($('input[id^="bKFp3z7BOK7"]').val() != "") || ($('input[id^="Gtrz0rkNIH9"]').val() != "")) {
+            noDisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if (($('#nsPgvbrDPwQ-HllvX50cXC0-val').val() != "") || ($('#LgOeUwjhGva-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        if ((($("#rZQRXUXUPaL-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if (($('#MpwayQltPTy-HllvX50cXC0-val').val() != "") || ($('#j6NGNhKM1jz-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I111Disabled", "I111Enabled");
+        }
+        if ((($("#ePlRlJHXijB-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if (($('input[id^="bKFp3z7BOK7"]').val() != "") || ($('input[id^="Gtrz0rkNIH9"]').val() != "")) {
+            noDisaggregationDisabled("I112Disabled", "I112Enabled");
+        }
+        if ((($("#Bt7EwzXnP1B-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if (($('#nsPgvbrDPwQ-HllvX50cXC0-val').val() != "") || ($('#LgOeUwjhGva-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I113Disabled", "I113Enabled");
+        }
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I114Disabled", "I114Enabled");
+        }
+        //Goal 3 End
 
     }
 
@@ -128,6 +186,7 @@
         $('.tabcontent2 tr').hide();
         // Onchange Levels
         $("#indicatorLevel2").change(function () {
+            setTimeout(disableOption(), 1000);
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -549,8 +608,8 @@ input {
                         7</a></li>
                 </ul>
             </div>
-            <!-- Goal 1 Start -->
 
+            <!-- Goal 1 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-1">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; ">
                     <strong>Objectif 1: Un niveau de vie &eacute;lev&eacute;, Qualit&eacute; de vie et Bien-&ecirc;tre
@@ -704,49 +763,10 @@ input {
                 <div><select class="dropdown" id="indicatorLevel2" name="indicators">
                     <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
                     <option value="I211">No Indicator</option>
-                </select></div>
-                <!-- Tab links --><!-- <div id="disaggregations2" style="margin-top: 10px;">
-                    <ul>
-                        <li><a class="disaggTab" href="#NoDisagg2">Agr&eacute;gation</a></li>
-                        <li><a class="disaggTab" href="#Disagg2">D&eacute;sagr&eacute;gation</a></li>
-                    </ul>
+                </select></div></div>
+            <!-- Goal 2 End -->
 
-                    <div class="tabcontent2" id="NoDisagg2">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
-                                    <th>Indicateur</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="xyz">
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="tabcontent2" id="Disagg2">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
-                                    <th>&nbsp;</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="I211">
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div> --></div>
-            <!-- Goal 2 End --><!-- Goal 3 Start -->
-
+            <!-- Goal 3 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-3">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; ">
                     <strong>Objectif 3: Citoyens en Bonne Sant&eacute; et Bien Nourris</strong></h3>
@@ -785,25 +805,25 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I31">
+                            <tr class="I31 I31Enabled">
                                 <td>Nombre de nouveaux cas d&#39;infection par le VIH pour 1000 personnes</td>
                                 <td><input id="gAnNDrg3dLo-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Number of new HIV infections per 1000 population	"
                                            value="[ ASP_1:Number of new HIV infections per 1000 population	 ]"/></td>
                             </tr>
-                            <tr class="I32">
+                            <tr class="I32 I32Enabled">
                                 <td>Cas de tuberculose pour 100,000 personnes par an</td>
                                 <td><input id="aGhDRO2S4Lu-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Tuberculosis incidence per 1,000 population	"
                                            value="[ SDG_3:Tuberculosis incidence per 1,000 population	 ]"/></td>
                             </tr>
-                            <tr class="I33">
+                            <tr class="I33 I33Enabled">
                                 <td>Incidence de cas de Malaria pour 1,000 personnes par an</td>
                                 <td><input id="atbJtXLSbyf-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Malaria incidence per 1,000 population	"
                                            value="[ SDG_3:Malaria incidence per 1,000 population	 ]"/></td>
                             </tr>
-                            <tr class="I34">
+                            <tr class="I34 I34Enabled">
                                 <td>% de la population &eacute;ligible vivant avec le VIH ayant acc&egrave;s aux ARV
                                 </td>
                                 <td><input id="L32d5C6AIqv-HllvX50cXC0-val" name="entryfield"
@@ -811,31 +831,31 @@ input {
                                            value="[ ASP_1:% of eligible population with HIV having access to ARV	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I35">
+                            <tr class="I35 I35Enabled">
                                 <td>Besoins en planification famliale satisfaits (%)</td>
                                 <td><input id="mFeVazpypaZ-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Family planning needs satisfied (%)	"
                                            value="[ SDG_3:Family planning needs satisfied (%)	 ]"/></td>
                             </tr>
-                            <tr class="I36">
+                            <tr class="I36 I36Enabled">
                                 <td>Mortalit&eacute; maternelle (pour 100,000 naissances vivantes)</td>
                                 <td><input id="qj15XcoUCDI-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Maternal mortality ratio	"
                                            value="[ SDG_3:Maternal mortality ratio	 ]"/></td>
                             </tr>
-                            <tr class="I37">
+                            <tr class="I37 I37Enabled">
                                 <td>Mortalit&eacute; n&eacute;o-natale (pour 1,000 naissances vivantes)</td>
                                 <td><input id="iCihpG4jRzH-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Neonatal mortality rate	"
                                            value="[ SDG_3:Neonatal mortality rate	 ]"/></td>
                             </tr>
-                            <tr class="I38">
+                            <tr class="I38 I38Enabled">
                                 <td>Mortalit&eacute; des moins de cinq ans (pour 1,000 naissances vivantes)</td>
                                 <td><input id="Ti6DZBxiGsG-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Under-five mortality rate	"
                                            value="[ SDG_3:Under-five mortality rate	 ]"/></td>
                             </tr>
-                            <tr class="I39">
+                            <tr class="I39 I39Enabled">
                                 <td>Naissances assist&eacute;es par un personnel de sant&eacute; qualifi&eacute; (%)
                                 </td>
                                 <td><input id="JCrwCxh05iE-HllvX50cXC0-val" name="entryfield"
@@ -864,7 +884,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I31">
+                            <tr class="I31 I31Disabled">
                                 <td>Nombre total de cas de VIH sur une p&eacute;riode donn&eacute;e</td>
                                 <td><input id="oqVHB2xihvP-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_1:Total HIV cases over a specified period Female"
@@ -879,7 +899,7 @@ input {
                                            title="ASP_1:Total HIV cases over a specified period Urban"
                                            value="[ ASP_1:Total HIV cases over a specified period Urban ]"/></td>
                             </tr>
-                            <tr class="I31">
+                            <tr class="I31 I31Disabled">
                                 <td>Nombre total de personnes vivant avec le VIH</td>
                                 <td><input id="KKQuhnCMtEP-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_1:Total people with HIV clustered Female"
@@ -894,29 +914,29 @@ input {
                                            title="ASP_1:Total people with HIV clustered Urban"
                                            value="[ ASP_1:Total people with HIV clustered Urban ]"/></td>
                             </tr>
-                            <tr class="I32">
+                            <tr class="I32 I32Disabled">
                                 <td>Nombre de nouveaux cas et de rechutes de tuberculose qui surviennent en une ann&eacute;e</td>
                                 <td><input id="mH9XBhoW1Cf-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:New and relapse TB cases"
                                            value="[ SDG_3:New and relapse TB cases ]"/></td>
                             </tr>
-                            <tr class="I32">
+                            <tr class="I32 I32Disabled">
                                 <td>Nombre de personne-ann&eacute;es d&#39;exposition au risque</td>
                                 <td><input id="JFvlTEuknXq-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Person-years of exposure"
                                            value="[ SDG_3:Person-years of exposure ]"/></td>
                             </tr>
-                            <tr class="I33">
+                            <tr class="I33 I33Disabled">
                                 <td>Nombre de cas de malaria confirm&eacute;s</td>
                                 <td><input id="IcUjJW2C9Im-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Malaria cases" value="[ SDG_3:Malaria cases ]"/></td>
                             </tr>
-                            <tr class="I33">
+                            <tr class="I33 I33Disabled">
                                 <td>Nombre de personne-ann&eacute;es d&#39;exposition</td>
                                 <td><input id="dlinqsDHurO-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Population at risk" value="[ SDG_3:Population at risk ]"/></td>
                             </tr>
-                            <tr class="I34">
+                            <tr class="I34 I34Disabled">
                                 <td>Nombre d&#39;adultes et enfants qui ont acc&egrave;s au traitement ARV &agrave; la
                                     fin de la p&eacute;riode de reportage
                                 </td>
@@ -929,7 +949,7 @@ input {
                                            value="[ ASP_1:Number of adults and children who have access to ARV treatment at the end of the reporting period Male ]"/>
                                 </td>
                             </tr>
-                            <tr class="I34">
+                            <tr class="I34 I34Disabled">
                                 <td>Le nombre estim&eacute; d&#39;adultes et d&#39;enfants vivant avec le VIH</td>
                                 <td><input id="q2e5Wwjb7Ut-sLKRSW7xmwp-val" name="entryfield"
                                            title="ASP_1:Estimated number of adults and children living with HIV Female"
@@ -940,7 +960,7 @@ input {
                                            value="[ ASP_1:Estimated number of adults and children living with HIV Male ]"/>
                                 </td>
                             </tr>
-                            <tr class="I35">
+                            <tr class="I35 I35Disabled">
                                 <td>Percentage de femmes en &acirc;ge de procr&eacute;er (15-49 ans) qui pour le moment
                                     utilisent
                                 </td>
@@ -948,19 +968,19 @@ input {
                                            title="SDG_3:Women with family planning demand"
                                            value="[ SDG_3:Women with family planning demand ]"/></td>
                             </tr>
-                            <tr class="I35">
+                            <tr class="I35 I35Disabled">
                                 <td>Total de la demande en planning familiale</td>
                                 <td><input id="ETzoIk2kLNK-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Total demand for family planning"
                                            value="[ SDG_3:Total demand for family planning ]"/></td>
                             </tr>
-                            <tr class="I36">
+                            <tr class="I36 I36Disabled">
                                 <td>D&eacute;c&egrave;s maternelles enregistr&eacute;es/estimation</td>
                                 <td><input id="MemsRPHqriD-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Recorded/estimated maternal deaths * 100,000"
                                            value="[ SDG_3:Recorded/estimated maternal deaths * 100,000 ]"/></td>
                             </tr>
-                            <tr class="I36">
+                            <tr class="I36 I36Disabled">
                                 <td>Total des vies enregistr&eacute;es/estim&eacute;es dans la m&ecirc;me
                                     p&eacute;riode
                                 </td>
@@ -968,7 +988,7 @@ input {
                                            title="SDG_3:Total recorded/estimated lives in the same period"
                                            value="[ SDG_3:Total recorded/estimated lives in the same period ]"/></td>
                             </tr>
-                            <tr class="I37">
+                            <tr class="I37 I37Disabled">
                                 <td>Nombre d&#39;enfants d&eacute;c&eacute;d&eacute;s pendant les 28 premiers jours de
                                     la vie
                                 </td>
@@ -976,31 +996,31 @@ input {
                                            title="SDG_3:Children who died during the first 28 days of life"
                                            value="[ SDG_3:Children who died during the first 28 days of life ]"/></td>
                             </tr>
-                            <tr class="I37">
+                            <tr class="I37 I37Disabled">
                                 <td>Nombre de naissances vivantes</td>
                                 <td><input id="M0V0lnx10d4-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:322_Number of live births"
                                            value="[ SDG_3:322_Number of live births ]"/></td>
                             </tr>
-                            <tr class="I38">
+                            <tr class="I38 I38Disabled">
                                 <td>Nombre de d&eacute;c&egrave;s parmi les enfants ag&eacute;s de 0-4</td>
                                 <td><input id="rR9ege9U0X3-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Number of dealths among childre age 0-4"
                                            value="[ SDG_3:Number of dealths among childre age 0-4 ]"/></td>
                             </tr>
-                            <tr class="I38">
+                            <tr class="I38 I38Disabled">
                                 <td>Nombre de naissances vivantes</td>
                                 <td><input id="KjU4p8nocJQ-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:321_Number of live births"
                                            value="[ SDG_3:321_Number of live births ]"/></td>
                             </tr>
-                            <tr class="I39">
+                            <tr class="I39 I39Disabled">
                                 <td>Nombre de naissances assist&eacute;es par du personnel de sant&eacute; qualifi&eacute;</td>
                                 <td><input id="F2kfyiytNRy-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Births attended by skilled health personnel"
                                            value="[ SDG_3:Births attended by skilled health personnel ]"/></td>
                             </tr>
-                            <tr class="I39">
+                            <tr class="I39 I39Disabled">
                                 <td>Nombre total de naissances vivantes dans la m&ecirc;me p&eacute;riode</td>
                                 <td><input id="vFCUplW58Dq-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_3:Total number of live births in the same period"
