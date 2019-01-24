@@ -426,6 +426,34 @@
             DisaggregationDisabled("I10b1Disabled","I10b1Enabled");
         }
         // SDG 10 End
+
+
+        // SDG 11 Start
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I711Disabled","I711Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val()!="") || ($('input[id^="RL5Cd2V59j9"]').val()!="")) {
+            noDisaggregationDisabled("I711Disabled","I711Enabled");
+        }
+        if ((($("#QUGGAviJi4F-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I712Disabled","I712Enabled");
+        }
+        if (($("#EUVnujhYWcR-HllvX50cXC0-val").val()!="") || ($("#oqhLWFqRC14-HllvX50cXC0-val").val()!="")){
+            noDisaggregationDisabled("I712Disabled","I712Enabled");
+        }
+        if ((($("#zT3hIUDKfgl-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I721Disabled","I721Enabled");
+        }
+        if (($('#OEpkeiWuqX0-HllvX50cXC0-val').val()!="") || ($('#WQGDscmrGgi-HllvX50cXC0-val').val()!="")){
+            noDisaggregationDisabled("I721Disabled","I721Enabled");
+        }
+        if ((($("#iIHXuIzCh9H-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I731Disabled","I731Enabled");
+        }
+        if (($('#C0ScMXqXY02-HllvX50cXC0-val').val()!="") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val()!="")){
+            noDisaggregationDisabled("I731Disabled","I731Enabled");
+        }
+        // SDG 11 End
     }
     // disableOption function start
 
@@ -2662,25 +2690,25 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I1111">
+                    <tr class="I1111 I1111Enabled">
                         <td>Population urbaine vivant dans les bidonvilles</td>
                         <td><input id="QF7w41u2GJH-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_11:Urban population living in slums	"
                                    value="[ SDG_11:Urban population living in slums	 ]"/></td>
                     </tr>
-                    <tr class="I1152">
+                    <tr class="I1152 I1152Enabled">
                         <td>Perte &eacute;conomique directe</td>
                         <td><input id="LmtfIaGo0ze-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_11:Direct economic loss attributed to disasters"
                                    value="[ SDG_11:Direct economic loss attributed to disasters ]"/></td>
                     </tr>
-                    <tr class="I1162">
+                    <tr class="I1162 I1162Enabled">
                         <td>Niveau annuel urbain de concentration de PM2.5</td>
                         <td><input id="lAJhTUbm4uq-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_11:Annual Urban Mean Concentration of PM2.5"
                                    value="[ SDG_11:Annual Urban Mean Concentration of PM2.5 ]"/></td>
                     </tr>
-                    <tr class="I11b1">
+                    <tr class="I11b1 I11b1Enabled">
                         <td>Strat&eacute;gies nationales de r&eacute;duction des risques de catastrophes align&eacute;es
                             au Cadre de Sendai
                         </td>
@@ -2702,7 +2730,7 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I1111">
+                    <tr class="I1111 I1111Disabled">
                         <td>Nombre de personnes vivant dans les bidonvillles, des implantations informelles et des
                             logements inad&eacute;quats
                         </td>
@@ -2710,18 +2738,18 @@ input {
                                    title="SDG_11:People living in Slum/Informal Settlements"
                                    value="[ SDG_11:People living in Slum/Informal Settlements ]"/></td>
                     </tr>
-                    <tr class="I1111">
+                    <tr class="I1111 I1111Disabled">
                         <td>Population totale de la ville</td>
                         <td><input id="M7BMX4KeItQ-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_11:Total city population" value="[ SDG_11:Total city population ]"/></td>
                     </tr>
-                    <tr class="I1152">
+                    <tr class="I1152 I1152Disabled">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
-                    <tr class="I1162">
+                    <tr class="I1162 I1162Disabled">
                         <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                     </tr>
-                    <tr class="I11b1">
+                    <tr class="I11b1 I11b1Disabled">
                         <td>Adopt and implement national disaster risk reduction strategies</td>
                         <td><input id="fT9njJ08ONo-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_11:Does your country adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030"
@@ -2733,8 +2761,9 @@ input {
             </div>
         </div>
     </div>
-    <!-- Goal 11 End --><!-- Goal 12 Start -->
+    <!-- Goal 11 End -->
 
+    <!-- Goal 12 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-12">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#BF8B2E;text-align: center; ">
             <strong>Objectif 12. &Eacute;tablir des modes de consommation et de production durables</strong></h3>
