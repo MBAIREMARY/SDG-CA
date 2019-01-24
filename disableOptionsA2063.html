@@ -118,6 +118,36 @@
         }
         //Goal 3 End
 
+        //Goal 4 Start
+        if ((($("#gAnNDrg3dLo-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I31Disabled", "I31Enabled");
+        }
+        if (($('input[id^="oqVHB2xihvP"]').val() != "") || ($('input[id^="KKQuhnCMtEP"]').val() != ""))  {
+            noDisaggregationDisabled("I31Disabled", "I31Enabled");
+        }
+        if ((($("#aGhDRO2S4Lu-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I32Disabled", "I32Enabled");
+        }
+        if (($('#mH9XBhoW1Cf-HllvX50cXC0-val').val() != "") || ($('#JFvlTEuknXq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I32Disabled", "I32Enabled");
+        }
+        if ((($("#atbJtXLSbyf-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I33Disabled", "I33Enabled");
+        }
+        if (($('#IcUjJW2C9Im-HllvX50cXC0-val').val() != "") || ($('#dlinqsDHurO-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I33Disabled", "I33Enabled");
+        }
+        if ((($("#L32d5C6AIqv-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I34Disabled", "I34Enabled");
+        }
+        if (($('input[id^="EIxxvp8CHka"]').val() != "") || ($('input[id^="q2e5Wwjb7Ut"]').val() != "")) {
+            noDisaggregationDisabled("I34Disabled", "I34Enabled");
+        }
+        if ((($("#mFeVazpypaZ-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I35Disabled", "I35Enabled");
+        }
+        //Goal 4 End
+
     }
 
     $("#selectedPeriodId").change(function () {
@@ -1066,35 +1096,26 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I41">
+                            <tr class="I41 I41Enabled">
                                 <td>Taux r&eacute;el de croissance du PIB</td>
-                                <!-- <td>
-                                                                                                                        <input id="t0srib18QsM-HllvX50cXC0-val" name="entryfield" title="ASP_1:Real GDP Growth Rate	" value="[ ASP_1:Real GDP Growth Rate	 ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="rZQRXUXUPaL-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_8:Annual growth rate of real GDP per capita	"
                                            value="[ SDG_8:Annual growth rate of real GDP per capita	 ]"/></td>
                             </tr>
-                            <tr class="I42">
+                            <tr class="I42 I42Enabled">
                                 <td>Valeur ajout&eacute;e de la Manufacture en tant que pourcentage du PIB</td>
-                                <!-- <td>
-                                                                                                                        <input id="MMgShX5U862-HllvX50cXC0-val" name="entryfield" title="ASP_1:Manufacturing value added as % of GDP	" value="[ ASP_1:Manufacturing value added as % of GDP	 ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="D1xcT46JCVw-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_9:Proportion of manufacturing value added	"
                                            value="[ SDG_9:Proportion of manufacturing value added	 ]"/></td>
                             </tr>
-                            <tr class="I43">
+                            <tr class="I43 I43Enabled">
                                 <td>Proportion du PIB consacr&eacute;e aux d&eacute;penses pour la Recherche et D&eacute;veloppment</td>
-                                <!-- <td>
-                                                                                                                        <input id="KBGFT3kwOKC-HllvX50cXC0-val" name="entryfield" title="ASP_1:Research and development expenditure as a proportion of GDP	" value="[ ASP_1:Research and development expenditure as a proportion of GDP	 ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="WCjZOCH6jPx-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_9:Research and development expenditure as a proportion of GDP	"
                                            value="[ SDG_9:Research and development expenditure as a proportion of GDP	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I44">
+                            <tr class="I44 I44Enabled">
                                 <td>Valeur Ajout&eacute;e du Tourisme en proportion du PIB</td>
                                 <td><input id="C5f5nB3USZ6-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Tourism value added as a proportion of GDP	"
@@ -1113,26 +1134,20 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I41">
+                            <tr class="I41 I41Disabled">
                                 <td>PIB Nominal</td>
-                                <!-- <td>
-                                                                                                                        <input id="VuxFvcDYY9Z-HllvX50cXC0-val" name="entryfield" title="ASP_1:Nominal GDP" value="[ ASP_1:Nominal GDP ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="MpwayQltPTy-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars"
                                            value="[ SDG_8:GDP per capita in year t+1 at constant 2005 dollars- GDP per capita in year t at constant 2005 dollars ]"/>
                                 </td>
                             </tr>
-                            <tr class="I41">
+                            <tr class="I41 I41Disabled">
                                 <td>Le d&eacute;flateur (par exemple: IPC)</td>
-                                <!-- <td>
-                                                                                                                        <input id="fnfYh6ZTlY2-HllvX50cXC0-val" name="entryfield" title="ASP_1:The deflator (i.e. CPI)" value="[ ASP_1:The deflator (i.e. CPI) ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="j6NGNhKM1jz-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_8:GDP per capita in year t at constant 2005 dollars"
                                            value="[ SDG_8:GDP per capita in year t at constant 2005 dollars ]"/></td>
                             </tr>
-                            <tr class="I42">
+                            <tr class="I42 I42Disabled">
                                 <td>le montant de la valeur de toute la production &ndash; (valeur des consommations
                                     interm&eacute;diaires)
                                 </td>
@@ -1140,29 +1155,29 @@ input {
                                            title="SDG_9:Manufacturing value added"
                                            value="[ SDG_9:Manufacturing value added ]"/></td>
                             </tr>
-                            <tr class="I42">
+                            <tr class="I42 I42Disabled">
                                 <td>PIB</td>
                                 <td><input id="RiN9u844TAI-HllvX50cXC0-val" name="entryfield" title="SDG_9:921_GDP"
                                            value="[ SDG_9:921_GDP ]"/></td>
                             </tr>
-                            <tr class="I43">
+                            <tr class="I43 I43Disabled">
                                 <td>D&eacute;penses Int&eacute;rieures Brutes de R&amp;D</td>
                                 <td><input id="R64mkjYs7B7-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_9:Amount of Research and development (R&amp;D) expenditure"
                                            value="[ SDG_9:Amount of Research and development (R&amp;D) expenditure ]"/>
                                 </td>
                             </tr>
-                            <tr class="I43">
+                            <tr class="I43 I43Disabled">
                                 <td>PIB</td>
                                 <td><input id="NehgnuC4gS7-HllvX50cXC0-val" name="entryfield" title="SDG_9:951_GDP"
                                            value="[ SDG_9:951_GDP ]"/></td>
                             </tr>
-                            <tr class="I44">
+                            <tr class="I44 I44Disabled">
                                 <td>PIB direct du Tourisme</td>
                                 <td><input id="kSShIs8ejPy-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Tourism direct GDP" value="[ ASP_1:Tourism direct GDP ]"/></td>
                             </tr>
-                            <tr class="I44">
+                            <tr class="I44 I44Disabled">
                                 <td>PIB</td>
                                 <td><input id="EIFg3dxRTm6-HllvX50cXC0-val" name="entryfield" title="ASP_1:Tourism_GDP"
                                            value="[ ASP_1:Tourism_GDP ]"/></td>
@@ -1172,8 +1187,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 4 End --><!-- Goal 5 Start -->
+            <!-- Goal 4 End -->
 
+            <!-- Goal 5 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-5">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center; ">
                     <strong>Objectif 5: Agriculture moderne pour augmentation de la productivit&eacute; et de la
