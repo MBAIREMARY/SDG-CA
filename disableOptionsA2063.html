@@ -177,6 +177,27 @@
         }
         //Goal 6 End
 
+        //Goal 7 Start
+        if ((($("#Zvs9yZWgT9C-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I61Disabled", "I61Enabled");
+        }
+        if (($('#w5VGTETV8sF-HllvX50cXC0-val').val() != "") || ($('#bVLdO86vavP-HllvX50cXC0-val').val() != ""))  {
+            noDisaggregationDisabled("I61Disabled", "I61Enabled");
+        }
+        if ((($("#dJC0iHI9bWC-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+        if (($('#ZPFtZbsXQIT-HllvX50cXC0-val').val() != "") || ($('#EsP5GPtG6Nq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+        if ((($("#dJC0iHI9bWC-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+        if (($('#ZPFtZbsXQIT-HllvX50cXC0-val').val() != "") || ($('#EsP5GPtG6Nq-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I62Disabled", "I62Enabled");
+        }
+        //Goal 7 End
+
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
             setTimeout(function () {
@@ -1434,7 +1455,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I71">
+                            <tr class="I71 I71Enabled">
                                 <td>% de terre agricole plac&eacute;e sous la pratique de la gestion durable des
                                     terres
                                 </td>
@@ -1443,13 +1464,13 @@ input {
                                            value="[ ASP_1:% of agricultural land placed under sustainable land management practice.	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I72">
+                            <tr class="I72 I72Enabled">
                                 <td>% de zones c&ocirc;ti&egrave;res et marines pr&eacute;serv&eacute;es</td>
                                 <td><input id="OI8W4V2UeCw-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_14:Marine sites, mean protected area (%)"
                                            value="[ SDG_14:Marine sites, mean protected area (%) ]"/></td>
                             </tr>
-                            <tr class="I73">
+                            <tr class="I73 I73Enabled">
                                 <td>Sites terrestres, zone prot&eacute;g&eacute;e moyenne ou biodiversit&eacute; de l&#39;eau
                                     douce, zone prot&eacute;g&eacute;e moyenne
                                 </td>
@@ -1471,7 +1492,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I71">
+                            <tr class="I71 I71Disabled">
                                 <td>Terre sur laquelle des pratiques contribuant &agrave; la durabilit&eacute;
                                     environnementale de l&#39;agriculture sont appliqu&eacute;es
                                 </td>
@@ -1480,22 +1501,22 @@ input {
                                            value="[ ASP_1:Land on which practices contributing to environmental sustainability of agriculture are conducted ]"/>
                                 </td>
                             </tr>
-                            <tr class="I71">
+                            <tr class="I71 I71Disabled">
                                 <td>Terre agricole en entier</td>
                                 <td><input id="oXGNeOZjg0F-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Total agricultural land"
                                            value="[ ASP_1:Total agricultural land ]"/></td>
                             </tr>
-                            <tr class="I72">
+                            <tr class="I72 I72Disabled">
                                 <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                             </tr>
-                            <tr class="I73">
+                            <tr class="I73 I73Disabled">
                                 <td>Ensemble de la zone prot&eacute;g&eacute;e</td>
                                 <td><input id="fg10UJuPwYW-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_15:Total Protected Area" value="[ SDG_15:Total Protected Area ]"/>
                                 </td>
                             </tr>
-                            <tr class="I73">
+                            <tr class="I73 I73Disabled">
                                 <td>Ensemble de la zone territoriale</td>
                                 <td><input id="V9ahdUlT8ak-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_15:Total Territorial Area"
