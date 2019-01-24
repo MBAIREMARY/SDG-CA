@@ -461,6 +461,34 @@
             DisaggregationDisabled("I1451Disabled", "I1451Enabled");
         }
         // SDG 14 End
+
+
+        // SDG 15 Start
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I711Disabled", "I711Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="RL5Cd2V59j9"]').val() != "")) {
+            noDisaggregationDisabled("I711Disabled", "I711Enabled");
+        }
+        if ((($("#QUGGAviJi4F-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I712Disabled", "I712Enabled");
+        }
+        if (($("#EUVnujhYWcR-HllvX50cXC0-val").val() != "") || ($("#oqhLWFqRC14-HllvX50cXC0-val").val() != "")) {
+            noDisaggregationDisabled("I712Disabled", "I712Enabled");
+        }
+        if ((($("#zT3hIUDKfgl-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I721Disabled", "I721Enabled");
+        }
+        if (($('#OEpkeiWuqX0-HllvX50cXC0-val').val() != "") || ($('#WQGDscmrGgi-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I721Disabled", "I721Enabled");
+        }
+        if ((($("#iIHXuIzCh9H-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I731Disabled", "I731Enabled");
+        }
+        if (($('#C0ScMXqXY02-HllvX50cXC0-val').val() != "") || ($('#DGX5LV26AD1-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I731Disabled", "I731Enabled");
+        }
+        // SDG 15 End
     }
 
     // disableOption function start
@@ -2904,13 +2932,13 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I1511">
+                    <tr class="I1511 I1511Enabled">
                         <td>Zone foresti&egrave;re (%)</td>
                         <td><input id="cgp29l4lidD-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Forest area as a proportion of total land area	"
                                    value="[ SDG_15:Forest area as a proportion of total land area	 ]"/></td>
                     </tr>
-                    <tr class="I1512">
+                    <tr class="I1512 I1512Enabled">
                         <td>Sites terrestres, zone prot&eacute;g&eacute;e moyenne ou biodiversit&eacute; de l&#39;eau
                             douce, zone prot&eacute;g&eacute;e moyenne
                         </td>
@@ -2919,38 +2947,38 @@ input {
                                    value="[ SDG_15:Proportion of important sites for terrestrial and freshwater biodiversity	 ]"/>
                         </td>
                     </tr>
-                    <tr class="I1521">
+                    <tr class="I1521 I1521Enabled">
                         <td>Progr&egrave;s vers une gestion durable de la for&ecirc;t</td>
                         <td><input id="DC82t4TqvSt-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Progress towards sustainable forest management"
                                    value="[ SDG_15:Progress towards sustainable forest management ]"/></td>
                     </tr>
-                    <tr class="I1541">
+                    <tr class="I1541 I1541Enabled">
                         <td>Protection des sites de biodiversit&eacute; des montagnes</td>
                         <td><input id="lsR89zdhpE7-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Protection of mountain biodiversity sites"
                                    value="[ SDG_15:Protection of mountain biodiversity sites ]"/></td>
                     </tr>
-                    <tr class="I1542">
+                    <tr class="I1542 I1542Enabled">
                         <td>Indice de couvert v&eacute;g&eacute;tal des Montagnes</td>
                         <td><input id="jcWXxKiW0i4-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Mountain Green Cover Index"
                                    value="[ SDG_15:Mountain Green Cover Index ]"/></td>
                     </tr>
-                    <tr class="I1551">
+                    <tr class="I1551 I1551Enabled">
                         <td>Indice de la Liste Rouge de survie des esp&egrave;ces (0-1)</td>
                         <td><input id="ynSFHBIYfAc-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Red List Index of species survival (0-1)"
                                    value="[ SDG_15:Red List Index of species survival (0-1) ]"/></td>
                     </tr>
-                    <tr class="I1561">
+                    <tr class="I1561 I1561Enabled">
                         <td>Rapport sur le Protocol de Nagoya (2010) sur l&#39;Acc&egrave;s aux Ressources G&eacute;n&eacute;tiques</td>
                         <td><input id="APPRHhMypTn-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Is Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources done?"
                                    value="[ SDG_15:Is Reporting on the Nagoya Protocol (2010) on Access to Genetic Resources done? ]"/>
                         </td>
                     </tr>
-                    <tr class="I15a1">
+                    <tr class="I15a1 I15a1Enabled">
                         <td>D&eacute;penses publiques pour la conservation</td>
                         <td><input id="KI4KGmBjeK5-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Sum of ODA flows from all donors-biodiversity"
@@ -2969,23 +2997,23 @@ input {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="I1511">
+                    <tr class="I1511 I1511Disabled">
                         <td>Zone forestiere (ann&eacute;e de r&eacute;f&eacute;rence)</td>
                         <td><input id="J6mhwkHXYRX-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Forest area (reference year)"
                                    value="[ SDG_15:Forest area (reference year) ]"/></td>
                     </tr>
-                    <tr class="I1511">
+                    <tr class="I1511 I1511Disabled">
                         <td>Zone terrestre (2015)</td>
                         <td><input id="Et4Jnj4Y0bx-HllvX50cXC0-val" name="entryfield" title="SDG_15:Land area (2015)"
                                    value="[ SDG_15:Land area (2015) ]"/></td>
                     </tr>
-                    <tr class="I1512">
+                    <tr class="I1512 I1512Disabled">
                         <td>Ensemble de la zone prot&eacute;g&eacute;e</td>
                         <td><input id="fg10UJuPwYW-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Total Protected Area" value="[ SDG_15:Total Protected Area ]"/></td>
                     </tr>
-                    <tr class="I1512">
+                    <tr class="I1512 I1512Disabled">
                         <td>Ensemble de la zone territoriale</td>
                         <td><input id="V9ahdUlT8ak-HllvX50cXC0-val" name="entryfield"
                                    title="SDG_15:Total Territorial Area" value="[ SDG_15:Total Territorial Area ]"/>
@@ -3014,8 +3042,9 @@ input {
             </div>
         </div>
     </div>
-    <!-- Goal 15 End --><!-- Goal 16 Start -->
+    <!-- Goal 15 End -->
 
+    <!-- Goal 16 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11" id="sdg-16">
         <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#00689D; text-align: center;">
             <strong>Objectif 16. Promouvoir l&rsquo;av&egrave;nement de soci&eacute;t&eacute;s pacifiques et inclusives
