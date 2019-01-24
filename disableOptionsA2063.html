@@ -6,7 +6,63 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /><script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script>
+    // Disable functions start
+    function DisaggregationDisabled(disabled, enabled) {
+        $("tr." + disabled + " input").prop('disabled', true);
+        $("tr." + disabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + enabled + " input[disabled]").css("background-color", "white");
+        console.log("Disaggregation entries disabled");
+    }
+
+    function noDisaggregationDisabled(disabled, enabled) {
+        $("tr." + enabled + " input").prop('disabled', true);
+        $("tr." + enabled + " input[disabled]").css("background-color", "#DCDAD1");
+        $("tr." + disabled + " input[disabled]").css("background-color", "white");
+        console.log("No Disaggregation entry disabled");
+    }
+
+    function noneDisabled() {
+        $(":input").prop('disabled', false);
+        $(":input[disabled]").css("background-color", "white");
+        console.log("No entries disabled");
+    }
+
+    // disableOption function start
+    function disableOption() {
+        noneDisabled();
+        if ((($("#TsZLukacJ6T-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I111aDisabled", "I111aEnabled");
+        }
+        if (($('input[id^="TsZLukacJ6T"]:not(#TsZLukacJ6T-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I111aDisabled", "I111aEnabled");
+        }
+        if ((($("#wD1WS24kqQR-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I111bDisabled", "I111bEnabled");
+        }
+        if (($('input[id^="wD1WS24kqQR"]:not(#wD1WS24kqQR-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="mEtKA2HMRkT"]').val() != "")) {
+            noDisaggregationDisabled("I111bDisabled", "I111bEnabled");
+        }
+        if ((($("#HNUVvzz5Mcb-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+        if (($('input[id^="HNUVvzz5Mcb"]:not(#HNUVvzz5Mcb-bJmK5mlfvQk-val)').val() != "") || ($('input[id^="NCsJ0u0J5kO"]').val() != "")) {
+            noDisaggregationDisabled("I121Disabled", "I121Enabled");
+        }
+    }
+
+    $("#selectedPeriodId").change(function () {
+        $(document).ready(function () {
+            setTimeout(function () {
+                disableOption();
+                console.log("Change Period Called");
+            }, 1000);
+
+        });
+    });
+
+
     $(function () {
         $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
         $("#tabs > .tabs > li").removeClass("ui-corner-top").addClass("ui-corner-left");
