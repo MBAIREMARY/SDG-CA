@@ -195,6 +195,18 @@
         }
         //Goal 7 End
 
+        //Goal 8 Start
+        if ((($("#oLXCIJJx7vv-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I81Disabled", "I81Enabled");
+        }
+        if ((($("#yligDLmShDN-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I82Disabled", "I82Enabled");
+        }
+        if (($('#HhL5Ma8V4Xg-HllvX50cXC0-val').val() != "") || ($('#dowKCFTkX21-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I82Disabled", "I82Enabled");
+        }
+        //Goal 8 End
+
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
             setTimeout(function () {
@@ -656,8 +668,8 @@ input {
             </li>
         </ul>
     </div>
-    <!-- Aspiration 1 Start -->
 
+    <!-- Aspiration 1 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-1">
         <div class="row" id="goals" style="border: none;margin-left: 10px;">
             <div class="tab col-xm-1 col-sm-2 col-md-1"
@@ -1546,8 +1558,8 @@ input {
                         10</a></li>
                 </ul>
             </div>
-            <!-- Goal 8 Start -->
 
+            <!-- Goal 8 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-8">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9ACD32;text-align: center; ">
                     <strong>Objectif 8: Une Afrique Unie (F&eacute;d&eacute;r&eacute;e ou Conf&eacute;d&eacute;r&eacute;e)</strong>
@@ -1576,13 +1588,13 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I81">
+                            <tr class="I81 I81Enabled">
                                 <td>Nombre de Barri&egrave;res non tarifaires (BNT) signal&eacute;es et &eacute;limin&eacute;es</td>
                                 <td><input id="oLXCIJJx7vv-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:Number of NTBs reported and eliminated"
                                            value="[ ASP_2:Number of NTBs reported and eliminated ]"/></td>
                             </tr>
-                            <tr class="I82">
+                            <tr class="I82 I82Enabled">
                                 <td>Changement des volumes des &eacute;changes intra-africains par an</td>
                                 <td><input id="yligDLmShDN-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:Change in Volume of intra-African trade per annum	 "
@@ -1605,14 +1617,14 @@ input {
                             <tr class="I81">
                                 <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                             </tr>
-                            <tr class="I82">
+                            <tr class="I82 I82Disabled">
                                 <td>Volume par an des &eacute;changes de biens entre un pays et les autres (i)</td>
                                 <td><input id="HhL5Ma8V4Xg-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:volume of trade in goods between a country and others in Year (i)"
                                            value="[ ASP_2:volume of trade in goods between a country and others in Year (i) ]"/>
                                 </td>
                             </tr>
-                            <tr class="I82">
+                            <tr class="I82 I82Disabled">
                                 <td>Volume du commerce de biens entre un pays et les autres en un an (0)</td>
                                 <td><input id="dowKCFTkX21-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:volume of trade in goods between a country and others in Year (0)"
@@ -1624,8 +1636,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 8 End --><!-- Goal 9 Start -->
+            <!-- Goal 8 End -->
 
+            <!-- Goal 9 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-9">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#FF9933;text-align: center; ">
                     <strong>Objectif 9: Des Institutions Financi&egrave;res et Mon&eacute;taires cl&eacute;s sont cr&eacute;&eacute;es
@@ -1635,140 +1648,10 @@ input {
                     <option disabled="disabled" selected="selected">Veuillez s&eacute;lectionner un indicateur</option>
                     <option value="I912">No Indicator</option>
                 </select></div>
-                <!-- Tab links --><!-- <div id="disaggregations9" style="margin-top: 10px;">
-                    <ul>
-                        <li><a class="disaggTab" href="#NoDisagg9">Agr&eacute;gation</a></li>
-                        <li><a class="disaggTab" href="#Disagg9">D&eacute;sagr&eacute;gation</a></li>
-                    </ul>
-
-                    <div class="tabcontent2" id="NoDisagg9">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
-                                    <th>Indicateur</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="I912">
-                                    <td>Passenger and freight volumes</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I921">
-                                    <td>Proportion of manufacturing value added</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I922">
-                                    <td>Manufacturing employment as a proportion of total employment</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I941">
-                                    <td>CO2 emission per unit of value added</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I951">
-                                    <td>Research and development expenditure as a proportion of GDP</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I952">
-                                    <td>Researchers (in full-time equivalent) per million inhabitants</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9a1">
-                                    <td>Total official international support to infrastructure</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9b1">
-                                    <td>Proportion of medium and high-tech industry value added in total value added</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9c1">
-                                    <td>Proportion of population covered by a mobile network</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="tabcontent2" id="Disagg9">
-                        <table>
-                            <thead>
-                                <tr class="tableHeader" style="background-color:#FF9933 !important;">
-                                    <th>&nbsp;</th>
-                                    <th>Valeur</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="I912">
-                                    <td>Passenger and freight volumes</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I921">
-                                    <td>Manufacturing value added</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I921">
-                                    <td>PIB</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I922">
-                                    <td>Total employment in manufacturing activities</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I922">
-                                    <td>Total employment in all economic activities</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I941">
-                                    <td>CO2 emission from manufacturing (kg)</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I941">
-                                    <td>Total manufacturing value added (constant 2010 USD)</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I951">
-                                    <td>Amount of Research and development (R&amp;D) expenditure</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I951">
-                                    <td>PIB</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I952">
-                                    <td>Researchers (in full-time equivalent)</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I952">
-                                    <td>Population (divided by one million)</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9a1">
-                                    <td>Total official international support to infrastructure</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9b1">
-                                    <td>Sum of value added in medium and high-tech industry economic activities</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9b1">
-                                    <td>Total value added of manufacturing</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9c1">
-                                    <td>Number of inhabitants within range of a mobile-cellular signal</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr class="I9c1">
-                                    <td>Total population</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div> --></div>
-            <!-- Goal 9 End --><!-- Goal 10 Start -->
+            <!-- Goal 9 End -->
 
+        <!-- Goal 10 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-10">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#ff4c4c;text-align: center; ">
                     <strong>Objectif 10: Une infrastructure de Classe Mondiale sillonne l&#39;Afrique</strong></h3>
