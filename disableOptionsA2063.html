@@ -162,6 +162,21 @@
         }
         //Goal 5 End
 
+        //Goal 6 Start
+        if ((($("#aQ7C0r1YsV1-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I51Disabled", "I51Enabled");
+        }
+        if (($('#ab5HIxZDpT6-HllvX50cXC0-val').val() != "") || ($('#ZeItmMcJmlK-HllvX50cXC0-val').val() != ""))  {
+            noDisaggregationDisabled("I51Disabled", "I51Enabled");
+        }
+        if ((($("#qnlmEhaz3mm-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I52Disabled", "I52Enabled");
+        }
+        if (($('input[id^="P1da2rLseDI"]').val() != "") || ($('input[id^="ZgZNqYI4j8m"]').val() != "")) {
+            noDisaggregationDisabled("I52Disabled", "I52Enabled");
+        }
+        //Goal 6 End
+
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
             setTimeout(function () {
@@ -1302,8 +1317,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 5 End--><!-- Goal 6 Start -->
+            <!-- Goal 5 End-->
 
+            <!-- Goal 6 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-6">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center; ">
                     <strong>Objectif 6: Economie Bleue/Oc&eacute;ane pour une croissance &eacute;conomique acc&eacute;l&eacute;r&eacute;e </strong>
@@ -1332,13 +1348,13 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I61">
+                            <tr class="I61 I61Enabled">
                                 <td>Valeur Ajout&eacute;e du Secteur Poisson (en poucentage du PIB)</td>
                                 <td><input id="Zvs9yZWgT9C-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Fishery Sector value added ( as share of GDP)	"
                                            value="[ ASP_1:Fishery Sector value added ( as share of GDP)	 ]"/></td>
                             </tr>
-                            <tr class="I62">
+                            <tr class="I62 I62Enabled">
                                 <td>Valeur Ajout&eacute;e de la biotechnologie marine en % du PIB</td>
                                 <td><input id="dJC0iHI9bWC-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Marine biotechnology value added as a % of GDP	"
@@ -1357,24 +1373,24 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I61">
+                            <tr class="I61 I61Disabled">
                                 <td>Contribution de la p&ecirc;che au PIB</td>
                                 <td><input id="w5VGTETV8sF-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Fishery contribution to GDP"
                                            value="[ ASP_1:Fishery contribution to GDP ]"/></td>
                             </tr>
-                            <tr class="I61">
+                            <tr class="I61 I61Disabled">
                                 <td>PIB</td>
                                 <td><input id="bVLdO86vavP-HllvX50cXC0-val" name="entryfield" title="ASP_1:Fishery_GDP"
                                            value="[ ASP_1:Fishery_GDP ]"/></td>
                             </tr>
-                            <tr class="I62">
+                            <tr class="I62 I62Disabled">
                                 <td>Contribution de la biotechnologie marine au PIB</td>
                                 <td><input id="ZPFtZbsXQIT-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Marine biotechnolgy contribution to GDP"
                                            value="[ ASP_1:Marine biotechnolgy contribution to GDP ]"/></td>
                             </tr>
-                            <tr class="I62">
+                            <tr class="I62 I62Disabled">
                                 <td>PIB</td>
                                 <td><input id="EsP5GPtG6Nq-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:Biotechnology_GDP" value="[ ASP_1:Biotechnology_GDP ]"/></td>
@@ -1384,8 +1400,9 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 6 End--><!-- Goal 7 Start -->
+            <!-- Goal 6 End-->
 
+            <!-- Goal 7 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-7">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#4ca6ff;text-align: center; ">
                     <strong>Objectif 7: Climat &eacute;cologiquement durable; &eacute;conomies et communaut&eacute;s r&eacute;silientes</strong>
