@@ -207,6 +207,42 @@
         }
         //Goal 8 End
 
+        //Goal 10 Start
+        if ((($("#qldG2iRO23H-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I101Disabled", "I101Enabled");
+        }
+        if (($('#y2DZFRXCUDf-HllvX50cXC0-val').val() != ""))  {
+            noDisaggregationDisabled("I101Disabled", "I101Enabled");
+        }
+        if ((($("#ps0bFERNaI8-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I102Disabled", "I102Enabled");
+        }
+        if (($('#x2A8wcnnmQK-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I102Disabled", "I102Enabled");
+        }
+        if ((($("#BTmzpqEarJu-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I103Disabled", "I103Enabled");
+        }
+        if ((($("#EvxREEMoa5E-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I104Disabled", "I104Enabled");
+        }
+        if (($('input[id^="kCRn8WKklIR"]').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I104Disabled", "I104Enabled");
+        }
+        if ((($("#kqnpnHrcTcg-bJmK5mlfvQk-val").val()) != "")) {
+            DisaggregationDisabled("I105Disabled", "I105Enabled");
+        }
+        if (($('input[id^="kqnpnHrcTcg"]').val() != "") || ($('input[id^="pTOpNf6zkTv"]').val() != "")) {
+            noDisaggregationDisabled("I105Disabled", "I105Enabled");
+        }
+        if ((($("#w0tytyY7kos-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I106Disabled", "I106Enabled");
+        }
+        if (($('#IvsMptl5UT8-HllvX50cXC0-val').val() != "") || ($('#SL3O2NTNULs-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I106Disabled", "I106Enabled");
+        }
+        //Goal 10 End
+
     $("#selectedPeriodId").change(function () {
         $(document).ready(function () {
             setTimeout(function () {
@@ -1691,7 +1727,7 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I101">
+                            <tr class="I101 I101Enabled">
                                 <td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du chaȋnon manquant
                                     de l&#39;Autoroute Transafricaine
                                 </td>
@@ -1700,7 +1736,7 @@ input {
                                            value="[ ASP_2:% of the progress made on the implementation of Trans-African Highway Missing link	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I102">
+                            <tr class="I102 I102Enabled">
                                 <td>% du progr&egrave;s r&eacute;alis&eacute; dans la construction du R&eacute;seau
                                     Ferroviaire Africain de Grande Vitesse
                                 </td>
@@ -1709,38 +1745,26 @@ input {
                                            value="[ ASP_2:% of the progress made on the implementation the African High Speed Rail Network	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I103">
+                            <tr class="I103 I103Enabled">
                                 <td>Nombre de protocoles mis en oeuvre sur l&#39;ouverture des cieux africains</td>
-                                <td><input id="BTmzpqEarJu-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of protocols on
-African open skies
-Implemented" value="[ ASP_2:Number of protocols on
-African open skies
-Implemented ]"/></td>
+                                <td><input id="BTmzpqEarJu-HllvX50cXC0-val" name="entryfield" title="ASP_2:Number of protocols on African open skies Implemented"
+                                           value="[ ASP_2:Number of protocols on African open skies Implemented ]"/></td>
                             </tr>
-                            <tr class="I104">
+                            <tr class="I104 I104Enabled">
                                 <td>Nombre de Mega Watts ajout&eacute;s au r&eacute;seau &eacute;lectrique national</td>
-                                <!-- <td>
-                                                                                                                        <input id="ZTHSXqAvoRh-HllvX50cXC0-val" name="entryfield" title="ASP_2:No. of Mega Watts
-                    added into the national
-                    grid" value="[ ASP_2:No. of Mega Watts
-                    added into the national
-                    grid ]"/>
                                                                                                                     </td> -->
                                 <td><input id="EvxREEMoa5E-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_7:Access to electricity (% population)	"
                                            value="[ SDG_7:Access to electricity (% population)	 ]"/></td>
                             </tr>
-                            <tr class="I105">
+                            <tr class="I105 I105Enabled">
                                 <td>Proportion de la population utilisant les t&eacute;l&eacute;phones portables</td>
-                                <!-- <td>
-                                                                                                                        <input id="wOwLabpk4lJ-HllvX50cXC0-val" name="entryfield" title="ASP_2:Proportion of population using mobile phones	" value="[ ASP_2:Proportion of population using mobile phones	 ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="kqnpnHrcTcg-bJmK5mlfvQk-val" name="entryfield"
                                            title="SDG_5:Individuals who own a mobile telephone. No Dissaggregation"
                                            value="[ SDG_5:Individuals who own a mobile telephone. No Dissaggregation ]"/>
                                 </td>
                             </tr>
-                            <tr class="I106">
+                            <tr class="I106 I106Enabled">
                                 <td>% de la contribution des TIC au PIB</td>
                                 <td><input id="w0tytyY7kos-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_1:% of ICT contribution to GDP	"
@@ -1767,13 +1791,13 @@ Implemented ]"/></td>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I101">
+                            <tr class="I101 I101Disabled">
                                 <td>5 &eacute;tapes/composantes compl&eacute;t&eacute;es</td>
                                 <td><input id="y2DZFRXCUDf-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:Number of the 5 stages / components completed"
                                            value="[ ASP_2:Number of the 5 stages / components completed ]"/></td>
                             </tr>
-                            <tr class="I102">
+                            <tr class="I102 I102Disabled">
                                 <td>7 &eacute;tapes compl&eacute;t&eacute;es</td>
                                 <td><input id="x2A8wcnnmQK-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:Number of the 7 stages completed"
@@ -1782,7 +1806,7 @@ Implemented ]"/></td>
                             <tr class="I103">
                                 <td colspan="2">Utilisation &quot;Agr&eacute;gation&quot; languette</td>
                             </tr>
-                            <tr class="I104"><!-- <td colspan="2">Utilisation &quot;Agrégation&quot; languette</td> -->
+                            <tr class="I104 I104Disabled">
                                 <td>Population ayant acc&egrave;s &agrave; l&#39;&eacute;nergie</td>
                                 <td><input id="kCRn8WKklIR-iEgy3xKqVi5-val" name="entryfield"
                                            title="SDG_7:Population with access to energy Rural"
@@ -1791,7 +1815,7 @@ Implemented ]"/></td>
                                            title="SDG_7:Population with access to energy Urban"
                                            value="[ SDG_7:Population with access to energy Urban ]"/></td>
                             </tr>
-                            <tr class="I104"><!-- <td colspan="2">Utilisation &quot;Agrégation&quot; languette</td> -->
+                            <tr class="I104 I104Disabled">
                                 <td>Population totale</td>
                                 <td><input id="pTOpNf6zkTv-iEgy3xKqVi5-val" name="entryfield"
                                            title="SDG_1:Total population Rural"
@@ -1800,11 +1824,8 @@ Implemented ]"/></td>
                                            title="SDG_1:Total population Urban"
                                            value="[ SDG_1:Total population Urban ]"/></td>
                             </tr>
-                            <tr class="I105">
+                            <tr class="I105 I105Disabled">
                                 <td>Nombre de personnes utilisant les t&eacute;l&eacute;phones portables</td>
-                                <!-- <td>
-                                                                                                                        <input id="XIqXOpGgKW3-HllvX50cXC0-val" name="entryfield" title="ASP_2:No. of persons using mobile phones" value="[ ASP_2:No. of persons using mobile phones ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="kqnpnHrcTcg-sLKRSW7xmwp-val" name="entryfield"
                                            title="SDG_5:Individuals who own a mobile telephone. Female"
                                            value="[ SDG_5:Individuals who own a mobile telephone. Female ]"/></td>
@@ -1812,11 +1833,8 @@ Implemented ]"/></td>
                                            title="SDG_5:Individuals who own a mobile telephone. Male"
                                            value="[ SDG_5:Individuals who own a mobile telephone. Male ]"/></td>
                             </tr>
-                            <tr class="I105">
+                            <tr class="I105 I105Disabled">
                                 <td>Population total &eacute;ligible (15+ ans)</td>
-                                <!-- <td>
-                                                                                                                        <input id="UfvUkjWzWHS-HllvX50cXC0-val" name="entryfield" title="ASP_2:Total eligible population (15+ years)" value="[ ASP_2:Total eligible population (15+ years) ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="pTOpNf6zkTv-sLKRSW7xmwp-val" name="entryfield"
                                            title="SDG_1:Total population Female"
                                            value="[ SDG_1:Total population Female ]"/></td>
@@ -1824,13 +1842,13 @@ Implemented ]"/></td>
                                            title="SDG_1:Total population Male" value="[ SDG_1:Total population Male ]"/>
                                 </td>
                             </tr>
-                            <tr class="I106">
+                            <tr class="I106 I106Disabled">
                                 <td>Contribution des TIC au PIB</td>
                                 <td><input id="IvsMptl5UT8-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_2:ICT contribution to GDP"
                                            value="[ ASP_2:ICT contribution to GDP ]"/></td>
                             </tr>
-                            <tr class="I106">
+                            <tr class="I106 I106Disabled">
                                 <td>PIB</td>
                                 <td><input id="SL3O2NTNULs-HllvX50cXC0-val" name="entryfield" title="ASP_2:ICT_GDP"
                                            value="[ ASP_2:ICT_GDP ]"/></td>
@@ -1840,10 +1858,12 @@ Implemented ]"/></td>
                     </div>
                 </div>
             </div>
-            <!-- Goal 10 End --></div>
+            <!-- Goal 10 End -->
     </div>
-    <!-- Aspiration 2 End --><!-- Aspiration 3 Start -->
+    </div>
+    <!-- Aspiration 2 End -->
 
+<!-- Aspiration 3 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-3">
         <div class="row" id="goals3" style="border: none;margin-left: 10px;">
             <div class="tab col-xm-1 col-sm-2 col-md-1"
