@@ -359,6 +359,33 @@
             DisaggregationDisabled("I193Disabled", "I193Enabled");
         }
         //Goal 19 End
+
+        //Goal 20 Start
+        if ((($("#XnqjuYc8o6n-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I201Disabled", "I201Enabled");
+        }
+        if (($('#JoDKuZTXJwg-HllvX50cXC0-val').val() != "") || ($('#swN4BwyElT3-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I201Disabled", "I201Enabled");
+        }
+        if ((($("#xt2wtvE2Nse-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I202Disabled", "I202Enabled");
+        }
+        if (($('#arJXCM5aX0X-HllvX50cXC0-val').val() != "") || ($('#pLzcyCsoHlj-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I202Disabled", "I202Enabled");
+        }
+        if ((($("#QIdqsSCdmSP-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I203Disabled", "I203Enabled");
+        }
+        if (($('#WNbwHJdi9fj-HllvX50cXC0-val').val() != "") || ($('#R2mSVduTEHb-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I203Disabled", "I203Enabled");
+        }
+        if ((($("#RynAka2RtAM-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I204Disabled", "I204Enabled");
+        }
+        if (($('#DrAIwyrNJTi-HllvX50cXC0-val').val() != "") || ($('#UzzgE5rssPd-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I204Disabled", "I204Enabled");
+        }
+        //Goal 20 End
     }
 
 
@@ -2814,8 +2841,8 @@ input {
                         20</a></li>
                 </ul>
             </div>
-            <!-- Goal 19 Start -->
 
+            <!-- Goal 19 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-19">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#000000;text-align: center;">
                     <strong>Objectif 19: L&#39;Afrique en tant que Partenaire Important dans les Affaires Mondiales et
@@ -2936,30 +2963,27 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I201">
+                            <tr class="I201 I201Enabled">
                                 <td>March&eacute;s des Capitaux</td>
                                 <td><input id="XnqjuYc8o6n-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Proportion of development expenditure contributed by national capital markets	"
                                            value="[ ASP_7:Proportion of development expenditure contributed by national capital markets	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I202">
+                            <tr class="I202 I202Enabled">
                                 <td>Syst&egrave;me Fiscal et les Revenus</td>
                                 <td><input id="xt2wtvE2Nse-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Total tax revenue as a % GDP	"
                                            value="[ ASP_7:Total tax revenue as a % GDP	 ]"/></td>
                             </tr>
-                            <tr class="I203">
+                            <tr class="I203 I203Enabled">
                                 <td>Total de l&#39;APD en pourcentage du budget national</td>
-                                <!-- <td>
-                                                                                                                        <input id="PGnHsKoDdrK-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total ODA as a percentage of the national budget	" value="[ ASP_7:Total ODA as a percentage of the national budget	 ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="QIdqsSCdmSP-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_17:ODA distributions as proportion of total domestic budget (in USD)	"
                                            value="[ SDG_17:ODA distributions as proportion of total domestic budget (in USD)	 ]"/>
                                 </td>
                             </tr>
-                            <tr class="I204">
+                            <tr class="I204 I204Enabled">
                                 <td>Ressources mobilis&eacute;es gr&acirc;ce &agrave; des m&eacute;canismes de
                                     financement innovants en % du budget national
                                 </td>
@@ -2981,51 +3005,45 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I201">
+                            <tr class="I201 I201Disabled">
                                 <td>Total des fonds provenant du march&eacute; national des capitaux</td>
                                 <td><input id="JoDKuZTXJwg-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Total funds raised from the domestic capital market"
                                            value="[ ASP_7:Total funds raised from the domestic capital market ]"/></td>
                             </tr>
-                            <tr class="I201">
+                            <tr class="I201 I201Disabled">
                                 <td>Total du budget du secteur public</td>
                                 <td><input id="swN4BwyElT3-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Total public sector budget"
                                            value="[ ASP_7:Total public sector budget ]"/></td>
                             </tr>
-                            <tr class="I202">
+                            <tr class="I202 I202Disabled">
                                 <td>Total des taxes pr&eacute;lev&eacute;s comme d&eacute;fini ci-dessus</td>
                                 <td><input id="arJXCM5aX0X-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Total taxes collected as defined above"
                                            value="[ ASP_7:Total taxes collected as defined above ]"/></td>
                             </tr>
-                            <tr class="I202">
+                            <tr class="I202 I202Disabled">
                                 <td>PIB</td>
                                 <td><input id="pLzcyCsoHlj-HllvX50cXC0-val" name="entryfield" title="ASP_7:Revenue_GDP"
                                            value="[ ASP_7:Revenue_GDP ]"/></td>
                             </tr>
-                            <tr class="I203">
+                            <tr class="I203 I203Disabled">
                                 <td>Total de toutes les sources de l&#39;Assistance Publique au D&eacute;veloppement tel
                                     que d&eacute;fini ci-dessus
                                 </td>
-                                <!-- <td>
-                                                                                                                        <input id="h8IKDgZef2x-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of official development assistance as defined above" value="[ ASP_7:Total of all sources of official development assistance as defined above ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="WNbwHJdi9fj-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_17:ODA distribution" value="[ SDG_17:ODA distribution ]"/></td>
                             </tr>
-                            <tr class="I203">
+                            <tr class="I203 I203Disabled">
                                 <td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton
                                     du budget
                                 </td>
-                                <!-- <td>
-                                                                                                                        <input id="UzzgE5rssPd-HllvX50cXC0-val" name="entryfield" title="ASP_7:Total of all sources of funds – required to execute the budget" value="[ ASP_7:Total of all sources of funds – required to execute the budget ]"/>
-                                                                                                                    </td> -->
                                 <td><input id="R2mSVduTEHb-HllvX50cXC0-val" name="entryfield"
                                            title="SDG_17:Total domestic budget"
                                            value="[ SDG_17:Total domestic budget ]"/></td>
                             </tr>
-                            <tr class="I204">
+                            <tr class="I204 I204Disabled">
                                 <td>Total de toutes les sources de financement innovantes telles que d&eacute;finies
                                     ci-dessus
                                 </td>
@@ -3034,7 +3052,7 @@ input {
                                            value="[ ASP_7:Total of all sources of innovative financing as defined above ]"/>
                                 </td>
                             </tr>
-                            <tr class="I204">
+                            <tr class="I204 I204Disabled">
                                 <td>Total de toutes les sources de financement - n&eacute;cessaires &agrave; l&#39;ex&eacute;cuton
                                     du budget
                                 </td>
@@ -3048,6 +3066,8 @@ input {
                     </div>
                 </div>
             </div>
-            <!-- Goal 20 End --></div>
+            <!-- Goal 20 End -->
+        </div>
     </div>
-    <!-- Aspiration 7 End --></div>
+<!-- Aspiration 7 End -->
+</div>
