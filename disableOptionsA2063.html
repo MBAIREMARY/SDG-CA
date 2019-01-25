@@ -344,6 +344,21 @@
             noDisaggregationDisabled("I185Disabled", "I185Enabled");
         }
         //Goal 18 End
+
+        //Goal 19 Start
+        if ((($("#O5OlvsE3MwN-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I191Disabled", "I191Enabled");
+        }
+        if ((($("#MbHnRFptgWp-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I192Disabled", "I192Enabled");
+        }
+        if (($('#Ej7dXcqX99a-HllvX50cXC0-val').val() != "") || ($('#FLrQcqOLRfd-HllvX50cXC0-val').val() != "")) {
+            noDisaggregationDisabled("I192Disabled", "I192Enabled");
+        }
+        if ((($("#sSGLC3rkVGs-HllvX50cXC0-val").val()) != "")) {
+            DisaggregationDisabled("I193Disabled", "I193Enabled");
+        }
+        //Goal 19 End
     }
 
 
@@ -2783,7 +2798,7 @@ input {
             <!-- Goal 18 End -->
         </div>
     </div>
-    <!-- Aspiration 6 End -->
+<!-- Aspiration 6 End -->
 
 <!-- Aspiration 7 Start -->
     <div class="col-xm-11 col-sm-10 col-md-11 tabcontent" id="asp-7">
@@ -2829,19 +2844,19 @@ input {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr class="I191">
+                            <tr class="I191 I191Enabled">
                                 <td>Disponibilit&eacute; (Oui / Non) de la l&eacute;gislation sur les statistiques</td>
                                 <td><input id="O5OlvsE3MwN-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Availability (Yes / No) of legislation on statistics"
                                            value="[ ASP_7:Availability (Yes / No) of legislation on statistics ]"/></td>
                             </tr>
-                            <tr class="I192">
+                            <tr class="I192 I192Enabled">
                                 <td>Financement allou&eacute;e au syst&egrave;me statistique fonctionnel</td>
                                 <td><input id="MbHnRFptgWp-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Funding allocated for the implementation	"
                                            value="[ ASP_7:Funding allocated for the implementation	 ]"/></td>
                             </tr>
-                            <tr class="I193">
+                            <tr class="I193 I193Enabled">
                                 <td>Existencedesformels institutionnels arrangementspour la coordination de la
                                     compilation desofficielles statistiques
                                 </td>
@@ -2864,10 +2879,8 @@ input {
                             </thead>
                             <tbody>
                             <tr class="I191">
-                                <!--<td>Disponibilit&eacute; (Oui / Non) de la l&eacute;gislation sur les statistiques</td>-->
-                                <!--<td><input id="O5OlvsE3MwN-HllvX50cXC0-val" name="entryfield" title="ASP_7:Availability (Yes / No) of legislation on statistics" value="[ ASP_7:Availability (Yes / No) of legislation on statistics ]"/></td>-->
                             </tr>
-                            <tr class="I192">
+                            <tr class="I192 I192Disabled">
                                 <td>Le budget total allou&eacute; au syst&egrave;me statistique fonctionnel (X + Y +
                                     Z)
                                 </td>
@@ -2876,23 +2889,22 @@ input {
                                            value="[ ASP_7:The total budget allocated to the functional statistical system (X + Y + Z) ]"/>
                                 </td>
                             </tr>
-                            <tr class="I192">
+                            <tr class="I192 I192Disabled">
                                 <td>Le Budget total du gouvernement &eacute;tant</td>
                                 <td><input id="FLrQcqOLRfd-HllvX50cXC0-val" name="entryfield"
                                            title="ASP_7:Total government budget."
                                            value="[ ASP_7:Total government budget. ]"/></td>
                             </tr>
-                            <tr class="I193"><!--<td>Coordination de la compilation de statistiques officielles</td>-->
-                                <!--<td><input id="sSGLC3rkVGs-HllvX50cXC0-val" name="entryfield" title="ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics" value="[ ASP_7: Existence of formal institutional arrangements for the coordination of the compilation of official statistics ]"/>-->
-                                <!--</td>-->
+                            <tr class="I193">
                             </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- Goal 19 End --><!-- Goal 20 Start -->
+            <!-- Goal 19 End -->
 
+            <!-- Goal 20 Start -->
             <div class="col-xm-11 col-sm-10 col-md-11" id="goal-20">
                 <h3 style="font-family: LiberationSans, arial, sans-serif; font-size: 16pt; text-align: left; color:#9932CC;text-align: center;">
                     <strong>Objectif 20: L&#39;Afrique prend enti&egrave;rement en charge le financement de son d&eacute;veloppement</strong>
