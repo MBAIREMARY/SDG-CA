@@ -398,7 +398,7 @@
     });
 
 
-    $(function() {
+    $(function () {
         $("#tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
         $("#tabs > .tabs > li").removeClass("ui-corner-top").addClass("ui-corner-left");
         $("#goals").tabs();
@@ -429,31 +429,43 @@
         $("#disaggregations19").tabs();
         $("#disaggregations20").tabs();
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel").change(function() {
+        $("#indicatorLevel").change(function () {
+            setTimeout(disableOption(), 1000);
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
-            if (($(this).val() == "I111b") || ($(this).val() == "I121")) {
-                $('.I111x').hide();
+            if (($(this).val() == "I111") || ($(this).val() == "I113")) {
+                $('.goal1NoHeaderSex').hide();
+                $('.goal1NoHeaderValue').show();
+                $('.goal1HeaderLoc').hide();
+            } else if (($(this).val() == "I112")) {
+                $('.goal1NoHeaderSex').show();
+                $('.goal1NoHeaderValue').hide();
+                $('.goal1HeaderLoc').hide();
+            } else {
+                $('.goal1NoHeaderSex').hide();
+                $('.goal1NoHeaderValue').hide();
+                $('.goal1HeaderLoc').show();
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel2").change(function() {
+        $("#indicatorLevel2").change(function () {
+            setTimeout(disableOption(), 1000);
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel3").change(function() {
+        $("#indicatorLevel3").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -466,26 +478,30 @@
                 $('.goal3NoHeader').hide();
                 $('.goal3NoHeaderSex').hide();
                 $('.goal3NoHeaderValue').show();
-            } else {
+            } else if ($(this).val() == "I31") {
                 $('.goal3NoHeader').show();
                 $('.goal3NoHeaderSex').show();
                 $('.goal3NoHeaderValue').hide();
+            } else {
+                $('.goal3NoHeader').hide();
+                $('.goal3NoHeaderSex').hide();
+                $('.goal3NoHeaderValue').show();
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel4").change(function() {
+        $("#indicatorLevel4").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel5").change(function() {
+        $("#indicatorLevel5").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -499,46 +515,46 @@
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel6").change(function() {
+        $("#indicatorLevel6").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel7").change(function() {
+        $("#indicatorLevel7").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel8").change(function() {
+        $("#indicatorLevel8").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel9").change(function() {
+        $("#indicatorLevel9").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel10").change(function() {
+        $("#indicatorLevel10").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -558,55 +574,55 @@
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel11").change(function() {
+        $("#indicatorLevel11").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel12").change(function() {
+        $("#indicatorLevel12").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel13").change(function() {
+        $("#indicatorLevel13").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel14").change(function() {
+        $("#indicatorLevel14").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel15").change(function() {
+        $("#indicatorLevel15").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel16").change(function() {
+        $("#indicatorLevel16").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -620,10 +636,10 @@
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel17").change(function() {
+        $("#indicatorLevel17").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -643,10 +659,10 @@
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel18").change(function() {
+        $("#indicatorLevel18").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
@@ -666,19 +682,19 @@
             }
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel19").change(function() {
+        $("#indicatorLevel19").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
         })
     });
-    $(function() {
+    $(function () {
         $('.tabcontent2 tr').hide();
         // Onchange Levels
-        $("#indicatorLevel20").change(function() {
+        $("#indicatorLevel20").change(function () {
             $('.' + $(this).val()).show();
             $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
             $('.tableHeader').show();
