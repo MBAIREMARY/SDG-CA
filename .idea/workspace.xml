@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/disableOptionsA2063.html" beforeDir="false" afterPath="$PROJECT_DIR$/disableOptionsA2063.html" afterDir="false" />
-    </list>
+    <list default="true" id="8de9ef61-ea8f-4eb8-8a5a-9b94f8e5a42e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disableOptionsA2063.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="420">
+              <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
               <folding>
                 <element signature="e#3135#3151#0" />
                 <element signature="e#6308#6324#0" />
@@ -1038,11 +1036,13 @@
       <find>wD1WS24kqQR</find>
       <find>pBeH3AFPieZ-HllvX50cXC0-val</find>
       <find>if</find>
+      <find>else if</find>
     </findStrings>
     <replaceStrings>
       <replace>/ 0.00000001 +</replace>
       <replace>/ (0.00000001 +</replace>
       <replace>else if</replace>
+      <replace>if</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -1136,16 +1136,15 @@
       <workItem from="1548223555565" duration="1347000" />
       <workItem from="1548242069536" duration="12204000" />
       <workItem from="1548310259511" duration="43924000" />
-      <workItem from="1548659031611" duration="11866000" />
+      <workItem from="1548659031611" duration="15923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155714000" />
+    <option name="totallyTimeSpent" value="159771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1456777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2579,8 +2578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disableOptionsA2063.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="420">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
           <folding>
             <element signature="e#3135#3151#0" />
             <element signature="e#6308#6324#0" />
