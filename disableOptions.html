@@ -30,8 +30,7 @@
         $(":input[disabled]").css("background-color", "white");
         console.log("No entries disabled");
     }
-
-    // Disable functions start
+    // Disable functions end
 
 
     // disableOption function start
@@ -600,7 +599,7 @@
             setTimeout(disableOption(), 1000);
             // Onchange Levels
             $("#indicatorLevel").change(function () {
-                disableOption();
+                disableOption();//TODO revisit this section and find if needed
                 $('.' + $(this).val()).show();
                 $('.tabcontent2 tr:not(.' + $(this).val() + ')').hide();
                 $('.tableHeader').show();
